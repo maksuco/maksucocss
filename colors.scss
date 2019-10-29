@@ -1,0 +1,192 @@
+//TEXTS
+.text-dark {
+  color: $dark;
+}
+
+.text-light {
+  color: $light;
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+//BACKGROUNDS
+.bg-dark {
+  background-color: $dark;
+}
+
+.bg-light {
+  background-color: $light;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+
+$colors: primary, secondary, gray, blue, indigo, purple, red, green, yellow, orange;
+@each $name in $colors {
+  $color: $primary;
+  @if $name == secondary { $color: $secondary;
+  } @else if $name == gray { $color: $gray;
+  } @else if $name == blue { $color: $blue;
+  } @else if $name == indigo { $color: $indigo;
+  } @else if $name == purple { $color: $purple;
+  } @else if $name == red { $color: $red;
+  } @else if $name == green { $color: $green;
+  } @else if $name == yellow { $color: $yellow;
+  } @else if $name == orange { $color: $orange;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+  .text-#{$name}-100 {
+    color: lighten($color, 25%);
+  }
+  .text-#{$name}-200 {
+    color: lighten($color, 18%);
+  }
+  .text-#{$name}-300 {
+    color: lighten($color, 10%);
+  }
+  .text-#{$name}-400 {
+    color: lighten($color, 5%);
+  }
+  .text-#{$name}-500 {
+    color: $color;
+  }
+  .text-#{$name}-600 {
+    color: darken($color, 5%);
+  }
+  .text-#{$name}-700 {
+    color: darken($color, 10%);
+  }
+  .text-#{$name}-800 {
+    color: darken($color, 15%);
+  }
+  .text-#{$name}-900 {
+    color: darken($color, 30%);
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .bg-#{$name}-100 {
+    background-color: lighten($color, 25%);
+  }
+  .bg-#{$name}-200 {
+    background-color: lighten($color, 18%);
+  }
+  .bg-#{$name}-300 {
+    background-color: lighten($color, 10%);
+  }
+  .bg-#{$name}-400 {
+    background-color: lighten($color, 5%);
+  }
+  .bg-#{$name}-500 {
+    background-color: $color;
+  }
+  .bg-#{$name}-600 {
+    background-color: darken($color, 5%);
+  }
+  .bg-#{$name}-700 {
+    background-color: darken($color, 10%);
+  }
+  .bg-#{$name}-800 {
+    background-color: darken($color, 15%);
+  }
+  .bg-#{$name}-900 {
+    background-color: darken($color, 30%);
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  @each $name in $colors {
+    $color: $primary;
+    @if $name == secondary { $color: $secondary;
+    } @else if $name == gray { $color: $gray;
+    } @else if $name == blue { $color: $blue;
+    } @else if $name == indigo { $color: $indigo;
+    } @else if $name == purple { $color: $purple;
+    } @else if $name == red { $color: $red;
+    } @else if $name == green { $color: $green;
+    } @else if $name == yellow { $color: $yellow;
+    } @else if $name == orange { $color: $orange;
+    }
+    .md-text-#{$name} {
+      color: $color;
+    }
+    .md-text-#{$name}-100 {
+      color: lighten($color, 25%);
+    }
+    .md-text-#{$name}-200 {
+      color: lighten($color, 18%);
+    }
+    .md-text-#{$name}-300 {
+      color: lighten($color, 10%);
+    }
+    .md-text-#{$name}-400 {
+      color: lighten($color, 5%);
+    }
+    .md-text-#{$name}-500 {
+      color: $color;
+    }
+    .md-text-#{$name}-600 {
+      color: darken($color, 5%);
+    }
+    .md-text-#{$name}-700 {
+      color: darken($color, 10%);
+    }
+    .md-text-#{$name}-800 {
+      color: darken($color, 15%);
+    }
+    .md-text-#{$name}-900 {
+      color: darken($color, 30%);
+    }
+    .md-bg-#{$name} {
+      background-color: $color;
+    }
+    .md-bg-#{$name}-100 {
+      background-color: lighten($color, 25%);
+    }
+    .md-bg-#{$name}-200 {
+      background-color: lighten($color, 18%);
+    }
+    .md-bg-#{$name}-300 {
+      background-color: lighten($color, 10%);
+    }
+    .md-bg-#{$name}-400 {
+      background-color: lighten($color, 5%);
+    }
+    .md-bg-#{$name}-500 {
+      background-color: $color;
+    }
+    .md-bg-#{$name}-600 {
+      background-color: darken($color, 5%);
+    }
+    .md-bg-#{$name}-700 {
+      background-color: darken($color, 10%);
+    }
+    .md-bg-#{$name}-800 {
+      background-color: darken($color, 15%);
+    }
+    .md-bg-#{$name}-900 {
+      background-color: darken($color, 30%);
+    }
+  }
+}
