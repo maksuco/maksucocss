@@ -1,0 +1,49 @@
+
+//GRID
+$desktop-breakpoint: 768px !default;
+$container-max: 1300px !default;
+$columns: 24 !default;
+
+//BOOTSTRAP
+$grid-columns: $columns !default;
+$grid-gutter-width: 0px !default;
+//$line-height-base: 1.2 !default;
+$container-max-widths: (
+  sm: 540px,
+  md: $desktop-breakpoint,
+  lg: 1000,
+  xl: $container-max
+) !default;
+
+//TYPE
+$font-family: "Metropolis" !default;
+$font-base: 16px !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-black: 700 !default;
+
+//COLORS
+$primary: #301680;
+$secondary: #244260;
+$dark: #1e2229;
+$light: #edf2f8;
+$gray: #A0AEC0;
+$blue: #4299E1;
+$indigo: #667EEA;
+$purple: #9F7AEA;
+$green: rgb(29, 161, 57);
+$teal: #38B2AC;
+$red: #E53E3E;
+$yellow: #ECC94B;
+$orange: #ff8800;
+$body: $dark;
+$bg: white;
+
+//BUTTONS
+$btn-padding-y: .6rem !default;
+$btn-padding-x: 1.3rem !default;
+$btn-radius: .4rem !default;
+
+//BACKEND
+$backend-body-bg-color: #f4f6f8 !default;

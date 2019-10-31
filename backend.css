@@ -1,0 +1,260 @@
+body {
+  background-color: #f4f6f8; }
+
+.container-admin {
+  width: 100%;
+  max-width: 1700px !important;
+  margin: 0 auto; }
+
+.container {
+  max-width: 100% !important;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+
+aside.sidebar {
+  position: fixed;
+  z-index: 9;
+  width: 230px;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #301680, #0f0729);
+  padding: 20px 0px; }
+  aside.sidebar .logo {
+    width: 100%;
+    text-align: center; }
+    aside.sidebar .logo img {
+      width: 100%;
+      max-width: 90%;
+      max-height: 100px; }
+  aside.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(237, 242, 248, 0.3); }
+  aside.sidebar .sidebar-panel {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #200f54;
+    color: rgba(237, 242, 248, 0.8);
+    font-weight: bold;
+    line-height: 1.15; }
+    aside.sidebar .sidebar-panel span {
+      display: block;
+      font-size: 85%;
+      color: #A0AEC0;
+      font-weight: lighter; }
+  aside.sidebar .sidebar-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    overflow-y: scroll !important;
+    padding-bottom: 30px; }
+  aside.sidebar .sidebar-nav {
+    margin-top: 15px;
+    font-size: 13px;
+    list-style: none;
+    line-height: 36px;
+    width: 100%;
+    padding-left: 0px; }
+    aside.sidebar .sidebar-nav li i {
+      width: 27px;
+      padding-right: 10px; }
+    aside.sidebar .sidebar-nav a {
+      position: relative;
+      padding-left: 20px;
+      color: #dae9f5;
+      font-size: 15px;
+      font-weight: normal;
+      display: block;
+      text-decoration: none;
+      width: 100%; }
+    aside.sidebar .sidebar-nav a:hover {
+      background: #301680; }
+    aside.sidebar .sidebar-nav .active {
+      cursor: default;
+      color: #724ee1 !important;
+      background: transparent !important; }
+  aside.sidebar h5 {
+    text-transform: uppercase;
+    color: #677694;
+    padding: 20px 0px 2px 14px !important;
+    font-size: .8rem;
+    line-height: 1;
+    letter-spacing: .06rem; }
+  @media (max-width: 768px) {
+    aside.sidebar {
+      transition: all .25s ease-out;
+      left: -230px; }
+      aside.sidebar.active {
+        left: 0px !important; } }
+
+.topnav {
+  display: inline-flex !important;
+  position: absolute;
+  z-index: 999;
+  right: 15px;
+  top: 10px;
+  text-align: right;
+  background: #edf2f8;
+  padding: 5px 6px;
+  border-radius: 25px !important; }
+  .topnav .sidemenu_toggler {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: white;
+    margin-right: 6px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px !important; }
+    .topnav .sidemenu_toggler i {
+      margin-top: 12.5px;
+      margin-left: 1.5px;
+      color: #A0AEC0; }
+  @media (max-width: 768px) {
+    .topnav .sidemenu_toggler {
+      display: block; } }
+  .topnav .search {
+    outline: none !important;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    background-color: white !important;
+    transition: all .35s ease-in-out;
+    color: white;
+    border-radius: 25px !important;
+    padding: .375rem .7rem;
+    text-align: left; }
+    .topnav .search::placeholder {
+      color: white; }
+    .topnav .search:focus {
+      width: 180px;
+      color: #A0AEC0;
+      padding-left: 35px; }
+      .topnav .search:focus::placeholder {
+        color: #A0AEC0; }
+  .topnav::before {
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 17px;
+    font-family: "Font Awesome 5 Pro";
+    content: '\f002';
+    color: #A0AEC0 !important; }
+  .topnav .search-spinner {
+    display: none; }
+    .topnav .search-spinner.spinner {
+      display: block;
+      position: absolute;
+      z-index: 999999;
+      top: 16px;
+      left: 163px;
+      color: #A0AEC0; }
+
+.dropdown-user {
+  outline: none !important; }
+  .dropdown-user .dropdown-toggle {
+    cursor: pointer;
+    position: relative; }
+    .dropdown-user .dropdown-toggle img {
+      border-radius: 25px !important;
+      width: 40px;
+      height: 40px; }
+  .dropdown-user .dropdown-toggle::after {
+    display: none; }
+  .dropdown-user .dropdown-menu {
+    position: absolute;
+    display: block;
+    border: none;
+    border-radius: 0.44rem;
+    padding: 4px 6px;
+    background-color: white;
+    box-shadow: rgba(48, 22, 128, 0.1) 0px 5px 20px 0px;
+    margin-right: -2px !important;
+    top: 40px !important;
+    min-width: 11rem;
+    text-align: left;
+    right: 0;
+    left: auto; }
+    .dropdown-user .dropdown-menu .dropdown-item {
+      display: block;
+      width: 100%;
+      font-size: .95rem;
+      font-weight: light;
+      line-height: 1.1;
+      color: #1e2229;
+      text-transform: capitalize;
+      clear: both;
+      border-radius: 0.44rem;
+      margin: 2px 0;
+      padding: .4rem 1rem; }
+      .dropdown-user .dropdown-menu .dropdown-item:hover {
+        background-color: #edf2f8; }
+      .dropdown-user .dropdown-menu .dropdown-item:active {
+        color: #edf2f8;
+        background-color: #301680; }
+    .dropdown-user .dropdown-menu::before {
+      content: "";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #FFFFFF;
+      position: absolute;
+      top: -9px;
+      right: 15px; }
+
+main {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  min-height: 100% !important;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-left: 230px;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch; }
+  main header {
+    padding: 1.5rem 2rem 2rem 2rem;
+    align-items: baseline; }
+    main header h1 {
+      display: block;
+      width: 100%;
+      font-size: 3.2rem;
+      line-height: 1.1;
+      letter-spacing: -1.2px; }
+      main header h1 .btn {
+        margin-top: -.4rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.2rem;
+        vertical-align: middle; }
+  @media (max-width: 768px) {
+    main {
+      margin-left: 0px; }
+      main header {
+        text-align: center;
+        padding: 1.5rem 1rem; }
+        main header h1 {
+          padding-top: 50px;
+          font-size: 2.5rem; } }
+
+.breadcrumbs {
+  background-color: transparent;
+  font-size: .7em;
+  margin-bottom: 5px;
+  padding-left: 0px; }
+  .breadcrumbs a {
+    color: #edf2f8; }
+
+.footer {
+  margin-left: 1rem !important;
+  margin-top: 20px;
+  font-size: .8rem;
+  opacity: .5; }

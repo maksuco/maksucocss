@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VueSimpleSuggest</title>
+  <link href="compiled.css" rel="stylesheet">
+</head>
+<body>
+
+  <section class="bg-primary p-10 flex items-baseline">
+    <h1 class="text-white text-5x md-text-7x font-bold w-full">VueSimpleSuggest</h1>
+  </section>
+
+  
+  
+  <section class="container flex mt-4" id="app">
+      <div class="col-24">
+        <h3>{{message}}</h3>
+        Search
+        <vue-simple-suggest v-model="chosen" :list="simpleSuggestionList" :filter-by-query="true"></vue-simple-suggest>
+<br>
+<p>Chosen element: {{ chosen }}</p>
+
+<hr>
+Search JSON
+<vue-simple-suggest v-model="chosen3" :list="simpleSuggestionJson" :filter-by-query="true" display-attribute="name" value-attribute="url"></vue-simple-suggest>
+<br>
+<p>Chosen element: {{ chosen3 }}</p>
+
+<hr>
+  <vue-simple-suggest v-model="chosen2" display-attribute="name" value-attribute="url" :list="getSuggestionList">
+      <template slot="misc-item-above" slot-scope="{ suggestions, query }">
+        <div class="misc-item">
+          <span>You're searching for {{ query }}.</span>
+        </div>
+        <div class="misc-item">
+          <span>{{ suggestions.length }} suggestions are shown...</span>
+        </div>
+      </template>
+    
+      <div slot="misc-item-below" slot-scope="{ suggestions }" v-if="isLoading" class="misc-item mt-30">
+        <h1>Loading...</h1>
+      </div>
+  </vue-simple-suggest>
+  <br>
+  <p>Chosen element: {{ chosen2 }}</p>
+
+
+      </div>
+  </section>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/vue-simple-suggest"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vue-simple-suggest/dist/styles.css">
+  <style>
+    .default-input {
+      border-radius: 2rem !important;
+    }
+    .suggestions {
+      box-shadow: #000000 0px 5px 20px 0px;
+    }
+    .suggest-item {
+      padding: 2rem 3rem;
+    }
+  </style>
+  <script>
+Vue.component('vue-simple-suggest', VueSimpleSuggest)
+  var app = new Vue({
+    el: '#app',
+    components: {
+      VueSimpleSuggest
+    },
+    data: {
+      message: 'vue active',
+      //SUGGESTION
+        chosen: '',
+        chosen2: '',
+        chosen3: '',
+        isLoading: false
+    },
+    mounted: function() {
+    },
+    methods: {
+      simpleSuggestionList() {
+        return [
+          'Vue.js',
+          'React.js',
+          'Angular.js'
+        ]
+      },
+      simpleSuggestionJson() {
+        return [
+          {
+            "name": "Laravel",
+            "url": "https://laravel.com"
+          },
+          {
+            "name": "PHP",
+            "url": "https://php.net"
+          },
+          {
+            "name": "Vue",
+            "url": "https://vuejs.com"
+          }
+        ]
+      },
+      getSuggestionList() {
+        return fetch('https://swapi.co/api/people', { method: 'GET' })
+          .then(this.isLoading = true)
+          .then(response => response.json())
+          .then(json => json.results); /*
+          returns a promise with a list of star-wars characters
+        */
+      },
+      getSuggestionListAxios() {
+        axios.get('https://swapi.co/api/people')
+          .then(function (response) {
+            return response.data.results;
+          })
+          .catch(function (error) {
+            console.log(error);
+          })
+          .finally(function () {
+            // always executed
+          });
+      }
+    }
+  })
+  </script>
+</body>
+</html>

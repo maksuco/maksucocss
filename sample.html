@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>BootWind TEST</title>
+  <title>BootWind FRONT</title>
   <link href="compiled.css" rel="stylesheet">
 </head>
 <body>
 
-  <section class="bg-primary p-10">
-    <h1 class="text-white text-5x md-text-7x font-bold">BOOTWIND SAMPLE</h1>
+  <section class="bg-primary p-10 flex items-baseline">
+    <h1 class="text-white text-5x md-text-7x font-bold w-full">BOOTWIND SAMPLES</h1>
     <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="font-bold text-white ml-2 sm-hidden">buttons in the middle</span>
   </section>
 
@@ -34,31 +34,42 @@
 
   <section class="container flex mt-4">
       <div class="col-24">
-        <div class="bg-light p-10">12</div>
+        <div class="bg-light p-10">24</div>
       </div>
   </section>
 
 
+  <section class="container flex flex-wrap mt-10 items-center">
+    <figure class="col-24 col-md-12 text-center">
+      <div class="bg-primary-100 p-10">12</div>
+    </figure>
+    <figure class="col-6 text-center">
+      <div class="bg-gray-100 p-10">6</div>
+    </figure>
+    <figure class="col-3 text-center invisible"></figure>
+    <figure class="col-3 text-center align-items-center">
+      <div class="bg-gray-200 align-self-center">3</div>
+    </figure>
+  </section>
+
   <section class="container flex mt-10">
-      <figure class="col-12">
-        <div class="bg-primary-100 p-10">12</div>
-      </figure>
-      <figure class="col-12">
-        <div class="bg-primary-100 p-10">12</div>
-      </figure>
-      <figure class="col-6">
-        <div class="bg-gray-100 p-10">6</div>
-      </figure>
-      <figure class="col-3 offset-1">
-        <div class="bg-gray-200 p-10">3</div>
-      </figure>
-      <figure class="col-6">
-        <div class="bg-gray-300 p-10">6</div>
-      </figure>
+    <div class="col-auto p-3 bg-gray-700">1 of 2</div>
+    <div class="col-auto p-3 bg-gray-400">
+      2 of 2
+    </div>
+    <div class="col-auto p-3 bg-gray-500">
+      1 of 3
+    </div>
+    <div class="col-12 md-col-8 p-3 bg-gray-600">
+      2 of 3
+    </div>
+    <div class="col-12 md-col-8 p-3 bg-gray-700">
+      3 of 3
+    </div>
   </section>
 
 
-  <section class="container flex mt-20">
+  <section class="container flex mt-20 z-30">
       <div class="col-4 bg-light p-3" style="border: 0px solid #1e2229">4</div>
       <div class="col-4 bg-light p-3 bg-red" style="border: 0px solid #1e2229">and if the text is longer than the container</div>
       <div class="col-4 bg-light p-3" style="border: 0px solid #1e2229">4</div>
@@ -69,31 +80,118 @@
   </section>
 
 
-  <section class="container flex my-20">
-      <button type="button" class="btn btn-primary rounded-full m-px">Primary</button>
-      <button type="button" class="btn btn-secondary m-px">Secondary</button>
-      <button type="button" class="btn btn-blue m-px">Blue Info</button>
-      <button type="button" class="btn btn-purple m-px">Purple</button>
-      <button type="button" class="btn btn-indigo m-px">Indigo</button>
-      <button type="button" class="btn btn-green m-px">Green Success</button>
-      <button type="button" class="btn btn-red m-px">Red Danger</button>
-      <button type="button" class="btn btn-yellow m-px">Yellow Warning</button>
-      <button type="button" class="btn btn-light m-px">Light</button>
-      <button type="button" class="btn btn-dark m-px">Dark</button>
-      <button type="button" class="btn m-px">Link</button>
+  <section class="container flex flex-wrap bg-light mt-10">
+      <figure class="col-24 col-md-7 p-2">
+        <a href="#">
+        <div class="relative bg-white rounded-lg shadow hover:shadow-lg cursor-pointer">
+            <div class="absolute absolute-hc top-10 z-30 bg-primary p-2 px-3 text-white">
+              Absolute child
+            </div>
+            <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full zoom" style="height: 200px;" src="https://source.unsplash.com/random" alt="Woman paying for a purchase">
+            </div>
+            
+            <div class="mt-1 p-6"><a href="#">
+              <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
+              <a href="#2" class="block mt-1 text-lg leading-tight font-bold text-dark">Finding customers for your new business</a>
+              <p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+            </div>
+          </div>
+        </a>
+      </figure>
+
+      <figure class="col-24 col-md-10 p-2">
+        <a href="/hope.html">
+        <div class="relative bg-white rounded-lg shadow cursor-pointer flex flex-wrap md-flex-no-wrap">
+            <div class="overflow-hidden w-full md-w-200 rounded-bl-lg rounded-tl-lg">
+                <img class="object-cover h-225 w-full" src="https://source.unsplash.com/random" alt="Woman paying for a purchase">
+            </div>
+            
+            <div class="mt-1 p-6 w-full">
+              <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
+              <a href="#2" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Finding customers for your new business</a>
+              <p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+            </div>
+          </div>
+        </a>
+      </figure>
+
+      <figure class="col-md-6 p-2">
+        <a href="/hope.html">
+        <div class="relative text-white rounded-lg shadow cursor-pointer flex text-center overflow-hidden items-center bg-cover bg-center overlay-gradient-black" style="background-image: url(https://source.unsplash.com/random);">
+            <div class="overlay-gradient-black"></div>
+            <div class="my-3 p-6 w-full">
+              <div class="uppercase text-sm text-teal-300 font-bold">Marketing</div>
+              <span class="block mt-1 text-lg leading-tight font-semibold text-gray-300">Finding customers for your new business</span>
+              <p class="mt-2 text-gray-600">Getting a new business of customers.</p>
+            </div>
+          </div>
+        </a>
+      </figure>
+
+      <div class="w-1/2 md:w-1/3 p-2 hidden md:block">
+        <div class="text-gray-700 text-center bg-gray-400 p-2">3</div>
+      </div>
+      <div class="w-1/2 md:w-1/3 p-2">
+        <div class="text-gray-700 text-center bg-gray-400 p-2">4</div>
+      </div>
+    </section>
+
+
+
+  <section class="container my-14">
+    <h1 class="col-24text-dark text-3x font-bold">Buttons</h1>
+    <p class="pb-4">Use buttons with first .btn and then .btn-*</p>
+    <button class="btn btn-xs btn-primary mr-1 shadow">Button XS</button>
+    <button class="btn btn-sm btn-primary mr-1 shadow-lg">Button SM</button>
+    <button class="btn btn btn-primary mr-1">Button Normal</button>
+    <button class="btn btn-lg btn-primary">Button LG</button>
+    <button class="btn btn-xl btn-primary">Button XL</button>
+    <hr class="my-5">
+    <button type="button" class="btn btn-primary rounded-full m-px">Primary</button>
+    <button type="button" class="btn btn-secondary m-px">Secondary</button>
+    <button type="button" class="btn btn-blue m-px">Blue Info</button>
+    <button type="button" class="btn btn-purple m-px">Purple</button>
+    <button type="button" class="btn btn-indigo m-px">Indigo</button>
+    <button type="button" class="btn btn-green m-px">Green Success</button>
+    <button type="button" class="btn btn-red m-px">Red Danger</button>
+    <button type="button" class="btn btn-orange m-px">Orange Warning</button>
+    <button type="button" class="btn btn-light m-px">Light</button>
+    <button type="button" class="btn btn-dark m-px">Dark</button>
+    <button type="button" class="btn btn-black m-px">Black</button>
+    <button type="button" class="btn btn-white m-px">White</button>
+    <button type="button" class="btn m-px">just btn</button>
   </section>
 
 
-  <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Colors</h1>
-    <div class="bg-dark text-light p-10 rounded m-1">dark</div>
-    <div class="bg-light text-dark p-10 rounded m-1">light</div>
-    <div class="bg-black text-white p-10 rounded m-1">black</div>
-    <div class="bg-white text-black p-10 rounded m-1">white</div>
+
+  <section class="container my-14">
+      <h1 class="col-24 pb-4 text-dark text-3x font-bold">Badges <span class="badge badge-danger">Light</span> </h1>
+      <p class="pb-2">Use buttons with first .badge and .badge-dark or .badge-light, then apply your .bg-*</p>
+      <span class="badge text-white bg-primary">Primary</span> <span class="badge badge-dark bg-teal">Teal</span> <span class="badge badge-dark">Dark</span> Sin paragraph
+      <span class="badge text-white bg-secondary badge-sm">Secondary</span> <span class="badge badge-dark bg-orange badge-sm">Orange SM</span> <span class="badge badge-yellow badge-sm">Yellow</span>
+      <h2 class="text-5x mt-3">In a H2 heading  <span class="badge badge-light">Normal</span> From xs <span class="badge badge-light badge-xs">XS</span> to a SM <span class="badge badge-light badge-sm">SM</span> Or even a large one <span class="badge badge-light badge-lg">LG</span> <span class="badge badge-dark bg-primary badge-xl">XL</span> for bigger things</h2>
+      <p class="mt-3">In a paragraph  <span class="badge badge-light">Normal</span> From xs <span class="badge badge-light badge-xs">XS</span> to a SM <span class="badge badge-light badge-sm">SM</span> Or even a large one <span class="badge badge-light badge-lg">LG</span> <span class="badge badge-dark bg-primary badge-xl">XL</span> for bigger things</p>
+
+          <div class="mt-5 p-3 bg-indigo-900 text-indigo-100 rounded-full inline-block" role="alert">
+            <span class="badge rounded-full bg-indigo-500 text-indigo-100 uppercase font-bold mr-1 py-2">Badges</span>
+            <span class="font-bold mr-3">Inside divs with background</span>
+          </div>
+    </section>
+
+
+  <section class="container flex my-10 mt-15">
+    <h1 class="col-24 pb-4 text-dark text-3x font-bold">Basic Colors & Shadows</h1>
+    <div class="bg-dark text-light p-10 rounded mr-2 shadow-3d">dark<br>Shadow-3D</div>
+    <div class="bg-light text-dark p-10 rounded mr-2 shadow">light<br>Shadow</div>
+    <div class="bg-black text-white p-10 rounded mr-2 shadow-md">black<br>Shadow-MD</div>
+    <div class="bg-white text-black p-10 rounded mr-2 shadow-lg">white<br>Shadow-LG</div>
+    <div class="bg-primary bg-gradient-primary text-white p-10 rounded mr-2 shadow-xl">Gradient Primary<br>Shadow-XL</div>
+    <div class="bg-red bg-gradient-red text-white p-10 rounded mr-2 shadow-2x">Gradient Red<br>Shadow-2X</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-gray">Gray</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-gray">Gray</span></h1>
     <div class="bg-gray-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-gray-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-gray-300 text-white p-10 rounded m-1">300</div>
@@ -103,10 +201,11 @@
     <div class="bg-gray-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-gray-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-gray-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-gray text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-primary">Primary</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-primary">Primary</span></h1>
     <div class="bg-primary-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-primary-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-primary-300 text-white p-10 rounded m-1">300</div>
@@ -116,10 +215,11 @@
     <div class="bg-primary-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-primary-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-primary-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-primary text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-secondary">Secondary</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-secondary">Secondary</span></h1>
     <div class="bg-secondary-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-secondary-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-secondary-300 text-white p-10 rounded m-1">300</div>
@@ -129,10 +229,11 @@
     <div class="bg-secondary-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-secondary-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-secondary-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-secondary text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-blue">Blue</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-blue">Blue</span></h1>
     <div class="bg-blue-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-blue-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-blue-300 text-white p-10 rounded m-1">300</div>
@@ -142,10 +243,11 @@
     <div class="bg-blue-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-blue-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-blue-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-blue text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-indigo">Indigo</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-indigo">Indigo</span></h1>
     <div class="bg-indigo-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-indigo-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-indigo-300 text-white p-10 rounded m-1">300</div>
@@ -155,10 +257,11 @@
     <div class="bg-indigo-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-indigo-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-indigo-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-indigo text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-purple">Purple</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-purple">Purple</span></h1>
     <div class="bg-purple-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-purple-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-purple-300 text-white p-10 rounded m-1">300</div>
@@ -168,10 +271,11 @@
     <div class="bg-purple-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-purple-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-purple-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-purple text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-green">Green</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-green">Green</span></h1>
     <div class="bg-green-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-green-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-green-300 text-white p-10 rounded m-1">300</div>
@@ -181,10 +285,25 @@
     <div class="bg-green-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-green-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-green-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-green text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-red">Red</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-teal">Teal</span></h1>
+    <div class="bg-teal-100 text-white p-10 rounded m-1">100</div>
+    <div class="bg-teal-200 text-white p-10 rounded m-1">200</div>
+    <div class="bg-teal-300 text-white p-10 rounded m-1">300</div>
+    <div class="bg-teal-400 text-white p-10 rounded m-1">400</div>
+    <div class="bg-teal-500 text-white p-10 rounded m-1">500</div>
+    <div class="bg-teal-600 text-white p-10 rounded m-1">600</div>
+    <div class="bg-teal-700 text-white p-10 rounded m-1">700</div>
+    <div class="bg-teal-800 text-white p-10 rounded m-1">800</div>
+    <div class="bg-teal-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-teal text-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-red">Red</span></h1>
     <div class="bg-red-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-red-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-red-300 text-white p-10 rounded m-1">300</div>
@@ -194,10 +313,11 @@
     <div class="bg-red-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-red-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-red-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-red text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-orange">Orange</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-orange">Orange</span></h1>
     <div class="bg-orange-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-orange-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-orange-300 text-white p-10 rounded m-1">300</div>
@@ -207,10 +327,11 @@
     <div class="bg-orange-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-orange-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-orange-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-orange text-white p-10 rounded m-1">Gradient</div>
   </section>
 
   <section class="container flex my-10">
-    <h1 class="col-24 pb-4 text-light">Color: <span class="text-yellow">Yellow</span></h1>
+    <h1 class="col-24 pb-4 text-light text-3x font-bold">Color: <span class="text-yellow">Yellow</span></h1>
     <div class="bg-yellow-100 text-white p-10 rounded m-1">100</div>
     <div class="bg-yellow-200 text-white p-10 rounded m-1">200</div>
     <div class="bg-yellow-300 text-white p-10 rounded m-1">300</div>
@@ -220,8 +341,78 @@
     <div class="bg-yellow-700 text-white p-10 rounded m-1">700</div>
     <div class="bg-yellow-800 text-white p-10 rounded m-1">800</div>
     <div class="bg-yellow-900 text-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-yellow text-white p-10 rounded m-1">Gradient</div>
   </section>
 
+
+
+
+  <section class="container my-14 bg-light">
+    <h1 class="col-24 text-dark text-3x font-bold">Tables with DIV's</h1>
+    <p class="pb-4">For regular tables you can use B4</p>
+
+    <section class="table-div-striped">
+        <div class="row head uppercase text-gray-900">
+          <div class="col-md-2">Status</div>
+          <div class="col-md-2">Reference</div>
+          <div class="col-md-6 text-left pl-2">Client</div>
+          <div class="col-md-4">Amount</div>
+          <div class="col-md-4">Recurring</div>
+          <div class="col-md-2">Date</div>
+          <div class="col-md-2">Updated</div>
+          <div class="col-md-1"></div>
+        </div>
+    
+        <figure class="row">
+          <div class="col-24 col-md-2">10 <span></span></div>
+          <div class="col-24 col-md-2">CC-566</div>
+          <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
+          <div class="col-8 col-md-4">600,000 COP</div>
+          <div class="col-8 col-md-4"><a href="http://45" class="btn bg-dark btn-sm text-white">Recurring #45</a></div>
+          <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+          <div class="col-8 col-md-1"></div>
+        </figure>
+    
+        <figure class="row">
+          <div class="col-24 col-md-2">1 <span></span></div>
+          <div class="col-24 col-md-2">CC-566dsds</div>
+          <div class="col-24 col-md-6 text-left pl-2">Someone <span class="badge badge-dark">Featured</span></div>
+          <div class="col-8 col-md-4">600,000 COP</div>
+          <div class="col-8 col-md-4"><a href="http://45" class="btn bg-green btn-sm">Recurring #45</a><br><small>Este es el nombre</small></div>
+          <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+          <div class="col-8 col-md-1"></div>
+        </figure>
+    
+        <figure class="row">
+          <div class="col-24 col-md-2">10 <span></span></div>
+          <div class="col-24 col-md-2">CC-566</div>
+          <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
+          <div class="col-8 col-md-4">600,000 COP</div>
+          <div class="col-8 col-md-4"><a href="http://45" class="btn bg-primary btn-sm">Recurring #45</a></div>
+          <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+          <div class="col-8 col-md-1"></div>
+        </figure>
+    </div>
+
+  </section>
+
+
+
+  <section class="container my-14">
+      <h1 class="col-24text-dark text-3x font-bold">Icons</h1>
+      <p class="pb-2">Webfonts of Font Awesome are used, and you can create this using .icon-layer also with stuff like .icon-badge</p>
+      <div class="text-5x">
+
+          <span class="icon-layer icon-badge" data-content="16"><i class="fal fa-envelope"></i></span>
+
+          <span class="icon-layer icon-badge-orange" data-content="266"><i class="fal fa-address-book"></i></span>
+
+          <a href="/" class="icon-layer icon-file text-gray-500" data-content="DOCX"><i class="fal fa-file"></i></a>
+    
+          <span class="icon-layer icon-calendar" data-content="24"><i class="fas fa-calendar"></i></span>
+      </div>
+      
+    </section>
     
 <script>
 

@@ -1,0 +1,557 @@
+//PADDING
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+$sizes:0.25rem, 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.25rem, 2.5rem, 2.75rem, 3rem, 4rem, 5rem, 6rem, 7rem, 8rem, 9rem, 10rem, 11rem;
+$paddings: p, pl, pr, pt, pb, py, px;
+@each $row in $paddings {
+  .#{$row}-0 {
+    @if $row == p { padding: 0;
+    } @else if $row == pl { padding-left: 0;
+    } @else if $row == pr { padding-right: 0;
+    } @else if $row == pt { padding-top: 0;
+    } @else if $row == pb { padding-bottom: 0;
+    } @else if $row == py { padding-top: 0; padding-bottom: 0;
+    } @else if $row == px { padding-left: 0; padding-right: 0;
+    }
+  }
+  .#{$row}-px {
+    @if $row == p { padding: 1px;
+    } @else if $row == pl { padding-left: 1px;
+    } @else if $row == pr { padding-right: 1px;
+    } @else if $row == pt { padding-top: 1px;
+    } @else if $row == pb { padding-bottom: 1px;
+    } @else if $row == py { padding-top: 1px; padding-bottom: 1px;
+    } @else if $row == px { padding-left: 1px; padding-right: 1px;
+    }
+  }
+}
+@each $row in $paddings {
+  @each $size in $sizes {
+  $i: index($sizes, $size);
+    .#{$row}-#{$i} {
+      @if $row == p { padding: #{$size};
+      } @else if $row == pl { padding-left: #{$size};
+      } @else if $row == pr { padding-right: #{$size};
+      } @else if $row == pt { padding-top: #{$size};
+      } @else if $row == pb { padding-bottom: #{$size};
+      } @else if $row == py { padding-top: #{$size}; padding-bottom: #{$size};
+      } @else if $row == px { padding-left: #{$size}; padding-right: #{$size};
+      }
+    }
+  }
+}
+//DESKTOP
+@media (min-width: $desktop-breakpoint) {
+  @each $row in $paddings {
+    .md-#{$row}-0 {
+      @if $row == p { padding: 0;
+      } @else if $row == pl { padding-left: 0;
+      } @else if $row == pr { padding-right: 0;
+      } @else if $row == pt { padding-top: 0;
+      } @else if $row == pb { padding-bottom: 0;
+      } @else if $row == py { padding-top: 0; padding-bottom: 0;
+      } @else if $row == px { padding-left: 0; padding-right: 0;
+      }
+    }
+    .md-#{$row}-px {
+      @if $row == p { padding: 1px;
+      } @else if $row == pl { padding-left: 1px;
+      } @else if $row == pr { padding-right: 1px;
+      } @else if $row == pt { padding-top: 1px;
+      } @else if $row == pb { padding-bottom: 1px;
+      } @else if $row == py { padding-top: 1px; padding-bottom: 1px;
+      } @else if $row == px { padding-left: 1px; padding-right: 1px;
+      }
+    }
+    @each $size in $sizes {
+      $i: index($sizes, $size);
+      .md-#{$row}-#{$i} {
+        @if $row == p { padding: #{$size};
+        } @else if $row == pl { padding-left: #{$size};
+        } @else if $row == pr { padding-right: #{$size};
+        } @else if $row == pt { padding-top: #{$size};
+        } @else if $row == pb { padding-bottom: #{$size};
+        } @else if $row == py { padding-top: #{$size}; padding-bottom: #{$size};
+        } @else if $row == px { padding-left: #{$size}; padding-right: #{$size};
+        }
+      }
+    }
+  }
+}
+
+//MARGINS
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+$margins: m, ml, mr, mt, mb, my, mx;
+@each $row in $margins {
+  .#{$row}-0 {
+    @if $row == m { margin: 0;
+    } @else if $row == ml { margin-left: 0;
+    } @else if $row == mr { margin-right: 0;
+    } @else if $row == mt { margin-top: 0;
+    } @else if $row == mb { margin-bottom: 0;
+    } @else if $row == my { margin-top: 0; margin-bottom: 0;
+    } @else if $row == mx { margin-left: 0; margin-right: 0;
+    }
+  }
+  .#{$row}-px {
+    @if $row == m { margin: 1px;
+    } @else if $row == ml { margin-left: 1px;
+    } @else if $row == mr { margin-right: 1px;
+    } @else if $row == mt { margin-top: 1px;
+    } @else if $row == mb { margin-bottom: 1px;
+    } @else if $row == my { margin-top: 1px; margin-bottom: 1px;
+    } @else if $row == mx { margin-left: 1px; margin-right: 1px;
+    }
+  }
+}
+@each $row in $margins {
+  @each $size in $sizes {
+  $i: index($sizes, $size);
+    .#{$row}-#{$i} {
+      @if $row == m { margin: #{$size};
+      } @else if $row == ml { margin-left: #{$size};
+      } @else if $row == mr { margin-right: #{$size};
+      } @else if $row == mt { margin-top: #{$size};
+      } @else if $row == mb { margin-bottom: #{$size};
+      } @else if $row == my { margin-top: #{$size}; margin-bottom: #{$size};
+      } @else if $row == mx { margin-left: #{$size}; margin-right: #{$size};
+      }
+    }
+  }
+}
+//DESKTOP
+@media (min-width: $desktop-breakpoint) {
+  @each $row in $margins {
+    .md-#{$row}-0 {
+      @if $row == m { margin: 0;
+      } @else if $row == ml { margin-left: 0;
+      } @else if $row == mr { margin-right: 0;
+      } @else if $row == mt { margin-top: 0;
+      } @else if $row == mb { margin-bottom: 0;
+      } @else if $row == my { margin-top: 0; margin-bottom: 0;
+      } @else if $row == mx { margin-left: 0; margin-right: 0;
+      }
+    }
+    .md-#{$row}-px {
+      @if $row == m { margin: 1px;
+      } @else if $row == ml { margin-left: 1px;
+      } @else if $row == mr { margin-right: 1px;
+      } @else if $row == mt { margin-top: 1px;
+      } @else if $row == mb { margin-bottom: 1px;
+      } @else if $row == my { margin-top: 1px; margin-bottom: 1px;
+      } @else if $row == mx { margin-left: 1px; margin-right: 1px;
+      }
+    }
+    @each $size in $sizes {
+    $i: index($sizes, $size);
+      .#{$row}-#{$i} {
+        @if $row == m { margin: #{$size};
+        } @else if $row == ml { margin-left: #{$size};
+        } @else if $row == mr { margin-right: #{$size};
+        } @else if $row == mt { margin-top: #{$size};
+        } @else if $row == mb { margin-bottom: #{$size};
+        } @else if $row == my { margin-top: #{$size}; margin-bottom: #{$size};
+        } @else if $row == mx { margin-left: #{$size}; margin-right: #{$size};
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+//RADIUS
+.rounded-none {
+  border-radius: 0;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-t-none {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.rounded-r-none {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rounded-b-none {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rounded-l-none {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rounded-t-sm {
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+}
+
+.rounded-r-sm {
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
+.rounded-b-sm {
+  border-bottom-right-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-l-sm {
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-t {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-r {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-b {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-l-lg {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-t-full {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-b-full {
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.rounded-l-full {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.rounded-tl-none {
+  border-top-left-radius: 0;
+}
+
+.rounded-tr-none {
+  border-top-right-radius: 0;
+}
+
+.rounded-br-none {
+  border-bottom-right-radius: 0;
+}
+
+.rounded-bl-none {
+  border-bottom-left-radius: 0;
+}
+
+.rounded-tl-sm {
+  border-top-left-radius: 0.125rem;
+}
+
+.rounded-tr-sm {
+  border-top-right-radius: 0.125rem;
+}
+
+.rounded-br-sm {
+  border-bottom-right-radius: 0.125rem;
+}
+
+.rounded-bl-sm {
+  border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-tl {
+  border-top-left-radius: 0.25rem;
+}
+
+.rounded-tr {
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-br {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-bl {
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-tl-lg {
+  border-top-left-radius: 0.5rem;
+}
+
+.rounded-tr-lg {
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-br-lg {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-bl-lg {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-tl-full {
+  border-top-left-radius: 9999px;
+}
+
+.rounded-tr-full {
+  border-top-right-radius: 9999px;
+}
+
+.rounded-br-full {
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-bl-full {
+  border-bottom-left-radius: 9999px;
+}
+
+
+
+
+//OVERFLOW
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
+}
+
+
+//SCROLL
+.scroll-y, .scroll-x {
+	-webkit-overflow-scrolling: touch;
+	&::-webkit-scrollbar {
+	}
+}
+.scroll-y {
+	overflow-y: auto; //scroll?
+  overflow-x: hidden;
+	height: 100%;
+}
+.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-auto {
+  -webkit-overflow-scrolling: auto;
+}
+
+.no-resize {
+	resize: none;
+}
+
+//ANIMATIONS
+.zoom { 
+	transition: all .2s ease-in-out; 
+}	 
+.zoom:hover { 
+	transform: scale(1.1); 
+}
+
+
+//OBJECT
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.object-left-bottom {
+  -o-object-position: left bottom;
+     object-position: left bottom;
+}
+
+.object-left-top {
+  -o-object-position: left top;
+     object-position: left top;
+}
+
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
+.object-right-bottom {
+  -o-object-position: right bottom;
+     object-position: right bottom;
+}
+
+.object-right-top {
+  -o-object-position: right top;
+     object-position: right top;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+
+
+//OPACITY
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+.opacity-100 {
+  opacity: 1;
+}

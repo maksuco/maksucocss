@@ -1,0 +1,142 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: .95rem;
+  line-height: 1.3;
+  padding: $btn-padding-y $btn-padding-x;
+  border-radius: $btn-radius;
+  transition: all .15s ease-in-out;
+  cursor: pointer;
+  color: $body;
+  background: transparent;
+  border: 1px solid transparent;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.btn-xs {
+  font-size: .8rem !important;
+  padding: ($btn-padding-y * .5) ($btn-padding-x * .5) !important;
+}
+
+.btn-sm {
+  font-size: .9rem !important;
+  padding: ($btn-padding-y * .9) ($btn-padding-x * .9) !important;
+}
+
+.btn-lg {
+  font-size: 1.3rem;
+  padding: ($btn-padding-y * 1.3) ($btn-padding-x * 1.3);
+}
+
+.btn-xl {
+  font-size: 1.6rem;
+  padding: ($btn-padding-y * 1.6) ($btn-padding-x * 1.6);
+}
+
+.btn-primary {
+  color: white;
+  background-color: $primary;
+  &:hover {
+    background: darken($primary, 10%)
+  }
+}
+
+.btn-secondary {
+  color: white;
+  background-color: $secondary;
+  &:hover {
+    background: darken($secondary, 10%)
+  }
+}
+
+.btn-dark {
+  color: white;
+  background-color: $dark;
+  &:hover {
+    background: lighten($dark, 10%)
+  }
+}
+
+.btn-black {
+  color: white;
+  background-color: #000000;
+  &:hover {
+    background: lighten(#000000, 6%)
+  }
+}
+
+.btn-white {
+  color: $body;
+  background-color: white;
+  &:hover {
+    background: $light;
+  }
+}
+
+.btn-light {
+  color: $body;
+  background-color: $light;
+  &:hover {
+    background: darken($light, 10%)
+  }
+}
+
+.btn-blue {
+  color: white;
+  background-color: $blue;
+  &:hover {
+    background: darken($blue, 10%)
+  }
+}
+
+.btn-indigo {
+  color: white;
+  background-color: $indigo;
+  &:hover {
+    background: darken($indigo, 10%)
+  }
+}
+
+.btn-purple {
+  color: white;
+  background-color: $purple;
+  &:hover {
+    background: darken($purple, 10%)
+  }
+}
+
+.btn-green {
+  color: white;
+  background-color: $green;
+  &:hover {
+    background: darken($green, 10%)
+  }
+}
+
+.btn-red {
+  color: white;
+  background-color: $red;
+  &:hover {
+    background: darken($red, 10%)
+  }
+}
+
+.btn-orange {
+  color: white;
+  background-color: $orange;
+  &:hover {
+    background: darken($orange, 10%)
+  }
+}
+
+.btn-yellow {
+  color: white;
+  background-color: $yellow;
+  &:hover {
+    background: darken($yellow, 10%)
+  }
+}

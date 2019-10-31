@@ -1,0 +1,21 @@
+{
+  "name": "@nam-co/bootwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/nam-co/bootwind#readme",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nam-co/bootwind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nam-co/bootwind/issues"
+  },
+  "dependencies": {
+    "axios": "^2.0",
+    "vue": "^2.1"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BootWind ADMIN BACKEND</title>
+  <link href="compiled.css" rel="stylesheet">
+  <link href="backend.css" rel="stylesheet">
+</head>
+<body>
+<section class="container-admin">
+
+  <div id="navVue">
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <a href="/" class="logo">
+        <img src="https://cscontact.com/assets/img/logo-white.png" alt="back_home" class="">
+      </a>
+      <div class="sidebar-panel">
+        Maksuco <span>Michael McSwain</span>
+      </div> 
+      <ul class="sidebar-nav">
+        <li><a href="/account/maksuco/dashboard"><i class="fa fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="/account/maksuco/inbox" class="active"><i class="fa fa-inbox-in"></i> Bandeja Entrada</a></li>
+        <li><a href="/account/maksuco/helpdesk"><i class="fa fa-project-diagram"></i> projects</a></li>
+        <li><a href="/account/maksuco/helpdesk"><i class="fa fa-life-ring"></i> helpdesk</a></li>
+        <li><a href="/account/maksuco/clients"><i class="fa fa-users"></i> Clients</a></li>
+        <li><a href="/account/maksuco/reports"><i class="fa fa-chart-bar"></i> Reports</a></li>
+        <li><a href="/account/maksuco/settings"><i class="fa fa-cog fa-fw"></i> Settings</a></li>
+        <li><a href="/account/maksuco/templates"><i class="fa fa-edit"></i> Templates</a></li>
+        <h5>user</h5>
+        <li><a href="/user/profile" class="nav-templates"><i class="fa fa-sitemap"></i> Empresas</a></li>
+        <li><a href="/user/profile" class="nav-templates"><i class="fa fa-user"></i> Profile</a></li>
+        <hr>
+        <li><a href="/help/inbox"><i class="fas fa-question-circle"></i> Help</a></li>
+        <li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+      </ul>
+    </div>
+  </aside>
+
+
+  <section class="topnav">
+    <div class="prefetch">
+      <input type="text" class="search" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false">
+      <i class="fas fa-spinner fa-spin search-spinner"></i>
+    </div>
+
+    <div class="sidemenu_toggler">
+      <a class="" v-on:click="navSidebar"><i class="fa fa-lg" v-bind:class="navSidebarIcon"></i></a>
+    </div>
+
+    <div tabindex="0" class="dropdown-user" @mouseover="nav_dropdown = true" @mouseleave="nav_dropdown = false" @click="nav_dropdown = !nav_dropdown">
+      <a class="dropdown-toggle">
+        <img src="https://s.gravatar.com/avatar/807f4be95506954f8cacf642a03375cd?d=https://s3.amazonaws.com/cscontact/users/avatar.png" class="">
+      </a>
+      <div class="dropdown-menu" v-if="nav_dropdown">
+        <a href="/user/dashboard" class="dropdown-item">Start</a>
+        <a href="/user/profile" class="dropdown-item">Profile</a>
+        <a href="/user/accounts" class="dropdown-item">your_business</a>
+        <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka drt</a>
+        <a href="/logout" class="dropdown-item">Logout</a>
+        <a href="/user/profile" class="dropdown-item">logout_all</a>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <main id="app">
+
+    <header class="bg-white">
+      <h1 class="text-dark font-bold w-full">BACKEND
+        <button type="button" class="btn btn-primary ml-1 px-4"><i class="fas fa-plus"></i></button>
+      </h1>
+      <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="font-bold text-secondary ml-2">buttons in the middle</span>
+    </header>
+
+
+    <section class="container">
+      <a class="btn btn-primary btn-sm mt-1 active" role="tab" data-toggle="tab" href="#new_leads">new</a>
+      <button class="btn btn-xs btn-primary mr-1 shadow">Button XS</button>
+      <button class="btn btn-sm btn-primary mr-1 shadow-lg">Button SM</button>
+      <button class="btn btn btn-primary mr-1">Button Normal</button>
+      <button class="btn btn-lg btn-primary">Button LG</button>
+      <button class="btn btn-xl btn-primary">Button XL</button>
+
+      <div class="col-24 p-3 bg-light">Con Container</div>
+      <div class="col p-3 bg-gray-700">1 of 2</div>
+      <div class="col p-3 bg-gray-400">2 of 2</div>
+      <div class="col-auto p-3 bg-gray-500">1 of 3</div>
+      <div class="col-12 md-col-8 p-3 bg-gray-600">12</div>
+      <div class="col-24 p-3 bg-gray-700">24 Complete</div>
+    </section>
+
+    <section class="row flex mt-10">
+      <div class="col-24 p-3 bg-light">Con Row</div>
+      <div class="col-auto p-3 bg-gray-700">1 of 2</div>
+      <div class="col-auto p-3 bg-gray-400">2 of 2</div>
+      <div class="col-auto p-3 bg-gray-500">1 of 3</div>
+      <div class="col-12 md-col-8 p-3 bg-gray-600">2 of 3</div>
+      <div class="col-24 p-3 bg-gray-700">24 Complete</div>
+    </section>
+
+
+    <section class="container my-14">
+      <h1 class="col-24 text-dark text-3x font-bold">Tables with DIV's</h1>
+      <p class="pb-4">For regular tables you can use B4</p>
+  
+      <div class="table-div-striped">
+          <div class="row head uppercase text-gray-900">
+            <div class="col-md-2">Status</div>
+            <div class="col-md-2">Reference</div>
+            <div class="col-md-6 text-left pl-2">Client</div>
+            <div class="col-md-4">Amount</div>
+            <div class="col-md-4">Recurring</div>
+            <div class="col-md-2">Date</div>
+            <div class="col-md-2">Updated</div>
+            <div class="col-md-1"></div>
+          </div>
+      
+          <figure class="row">
+            <div class="col-24 col-md-2">10 <span></span></div>
+            <div class="col-24 col-md-2">CC-566</div>
+            <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
+            <div class="col-8 col-md-4">600,000 COP</div>
+            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-dark btn-sm text-white">Recurring #45</a></div>
+            <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+            <div class="col-8 col-md-1"></div>
+          </figure>
+      
+          <figure class="row">
+            <div class="col-24 col-md-2">1 <span></span></div>
+            <div class="col-24 col-md-2">CC-566dsds</div>
+            <div class="col-24 col-md-6 text-left pl-2">Someone <span class="badge badge-dark">Featured</span></div>
+            <div class="col-8 col-md-4">600,000 COP</div>
+            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-green btn-sm">Recurring #45</a><br><small>Este es el nombre</small></div>
+            <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+            <div class="col-8 col-md-1"></div>
+          </figure>
+      
+          <figure class="row">
+            <div class="col-24 col-md-2">10 <span></span></div>
+            <div class="col-24 col-md-2">CC-566</div>
+            <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
+            <div class="col-8 col-md-4">600,000 COP</div>
+            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-primary text-white btn-sm">Recurring #45</a></div>
+            <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+            <div class="col-8 col-md-1"></div>
+          </figure>
+      </div>
+  
+    </section>
+
+    <section class="container my-14">
+        <h1 class="col-24text-dark text-3x font-bold">Buttons</h1>
+        <p class="pb-4">Use buttons with first .btn and then .btn-*</p>
+        <button class="btn btn-xs btn-primary mr-1 shadow">Button XS</button>
+        <button class="btn btn-sm btn-primary mr-1 shadow-lg">Button SM</button>
+        <button class="btn btn btn-primary mr-1">Button Normal</button>
+        <button class="btn btn-lg btn-primary">Button LG</button>
+        <button class="btn btn-xl btn-primary">Button XL</button>
+        <hr class="my-5">
+        <button type="button" class="btn btn-primary rounded-full m-px">Primary</button>
+        <button type="button" class="btn btn-secondary m-px">Secondary</button>
+        <button type="button" class="btn btn-blue m-px">Blue Info</button>
+        <button type="button" class="btn btn-purple m-px">Purple</button>
+        <button type="button" class="btn btn-indigo m-px">Indigo</button>
+        <button type="button" class="btn btn-green m-px">Green Success</button>
+        <button type="button" class="btn btn-red m-px">Red Danger</button>
+        <button type="button" class="btn btn-orange m-px">Orange Warning</button>
+        <button type="button" class="btn btn-light m-px">Light</button>
+        <button type="button" class="btn btn-dark m-px">Dark</button>
+        <button type="button" class="btn btn-black m-px">Black</button>
+        <button type="button" class="btn btn-white m-px">White</button>
+        <button type="button" class="btn m-px">just btn</button>
+      </section>
+
+    <section class="footer">
+      ©{{date("Y")}} {{__('All Rights Reserved')}} <span class="text-muted"><a href="{{__('/terms-conditions')}}" class="m-l-10 m-r-10">{{__('Terms and Conditions')}}</a>  <a href="#" class="m-l-10"></a></span>
+    </section>
+
+  <section class="modal modal-vue">
+  <div class="modal-backdrop"></div>
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-right">
+      <div class="modal-content" action="" id="modal_help" method="POST">
+        <div class="modal-header">
+          <h5>Help</h5>
+          <a class="close far fa-times"></a>
+        </div>
+        <div class="modal-body">
+        <h5 class="mt-30">OPTIONS</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script>
+//NAV VUE
+var navVue = new Vue({
+  el: '#navVue',
+  data: {
+    nav_dropdown: false,
+    navSidebarIcon: 'fa-bars'
+  },
+  methods: {
+    navDropdown() {
+      document.querySelector(".dropdown-menu").classList.toggle("show");
+    },
+    navDropdownFocusOut() {
+      document.querySelector(".dropdown-menu").classList.remove("show");
+    },
+    navSidebar() {
+      document.querySelector(".sidebar").classList.toggle("active");
+      //document.querySelector(".sidebar-before").classList.toggle("show");
+      this.navSidebarIcon = (this.navSidebarIcon == "fa-bars")? "fa-times" : "fa-bars";
+    }
+  },
+  watch: {
+  },
+  components: {
+  }
+});
+</script>
+</body>
+</html>
