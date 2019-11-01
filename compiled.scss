@@ -1,4 +1,4 @@
-@import 'css/variables';
+@import 'scss/variables';
 
 //BOOTSTRAP GRID
 @import "./bootstrap/scss/_functions";
@@ -11,17 +11,17 @@
 
 //BOOTWIND
 //@import 'reset';
-@import 'css/grid';
-@import 'css/tables';
-@import 'css/buttons';
-@import 'css/badges';
-@import 'css/modals';
-@import 'css/forms';
-@import 'css/media';
-@import 'css/styles';
-@import 'css/text';
-@import 'css/colors';
-@import 'css/helpers';
+@import 'scss/grid';
+@import 'scss/tables';
+@import 'scss/buttons';
+@import 'scss/badges';
+@import 'scss/modals';
+@import 'scss/forms';
+@import 'scss/media';
+@import 'scss/styles';
+@import 'scss/text';
+@import 'scss/colors';
+@import 'scss/helpers';
 
 
 //ICONS
