@@ -1518,6 +1518,12 @@ ul {
 .table-cell {
   display: table-cell !important; }
 
+.breakline {
+  display: table;
+  width: 100%;
+  height: 1px;
+  clear: both; }
+
 @media (max-width: 768px) {
   .sm-hidden {
     display: none !important; }
@@ -1526,7 +1532,12 @@ ul {
   .sm-inline-block {
     display: inline-block !important; }
   .sm-block {
-    display: block !important; } }
+    display: block !important; }
+  .sm-breakline {
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both; } }
 
 @media (min-width: 768px) {
   .md-hidden {
@@ -1536,7 +1547,12 @@ ul {
   .md-inline-block {
     display: inline-block !important; }
   .md-block {
-    display: block !important; } }
+    display: block !important; }
+  .md-breakline {
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both; } }
 
 .flex {
   display: flex;
@@ -2390,6 +2406,48 @@ ul {
 .w-screen {
   width: 100vw; }
 
+.w-fit {
+  width: fit-content; }
+
+.w-unset {
+  width: unset; }
+
+@media (min-width: 768px) {
+  .md-w-auto {
+    width: auto; }
+  .md-w-full {
+    width: 100%; }
+  .md-w-half {
+    width: 50%; }
+  .md-w-third {
+    width: 33.333%; }
+  .md-w-fourth {
+    width: 25%; }
+  .md-w-screen {
+    width: 100vw; }
+  .md-w-fit {
+    width: fit-content; }
+  .md-w-unset {
+    width: unset; } }
+
+@media (max-width: 768px) {
+  .sm-w-auto {
+    width: auto; }
+  .sm-w-full {
+    width: 100%; }
+  .sm-w-half {
+    width: 50%; }
+  .sm-w-third {
+    width: 33.333%; }
+  .sm-w-fourth {
+    width: 25%; }
+  .sm-w-screen {
+    width: 100vw; }
+  .sm-w-fit {
+    width: fit-content; }
+  .sm-w-unset {
+    width: unset; } }
+
 .h-auto {
   height: auto; }
 
@@ -2407,6 +2465,48 @@ ul {
 
 .h-screen {
   height: 100vh; }
+
+.h-fit {
+  height: fit-content; }
+
+.h-unset {
+  height: unset; }
+
+@media (min-width: 768px) {
+  .md-h-auto {
+    height: auto; }
+  .md-h-full {
+    height: 100%; }
+  .md-h-half {
+    height: 50%; }
+  .md-h-third {
+    height: 33.333%; }
+  .md-h-fourth {
+    height: 25%; }
+  .md-h-screen {
+    height: 100vh; }
+  .md-h-fit {
+    height: fit-content; }
+  .md-h-unset {
+    height: unset; } }
+
+@media (max-width: 768px) {
+  .sm-h-auto {
+    height: auto; }
+  .sm-h-full {
+    height: 100%; }
+  .sm-h-half {
+    height: 50%; }
+  .sm-h-third {
+    height: 33.333%; }
+  .sm-h-fourth {
+    height: 25%; }
+  .sm-h-screen {
+    height: 100vh; }
+  .sm-h-fit {
+    height: fit-content; }
+  .sm-h-unset {
+    height: unset; } }
 
 .w-0 {
   width: 0px !important; }
