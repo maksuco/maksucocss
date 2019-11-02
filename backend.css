@@ -1,11 +1,6 @@
 body {
   background-color: #f4f6f8; }
 
-.container-admin {
-  width: 100%;
-  max-width: 1700px !important;
-  margin: 0 auto; }
-
 .container {
   max-width: 100% !important;
   padding-left: 2rem;

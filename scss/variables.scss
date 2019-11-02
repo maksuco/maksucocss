@@ -1,7 +1,8 @@
 
 //GRID
 $desktop-breakpoint: 768px !default;
-$container-max: 1300px !default;
+$container: 1300px !default;
+$container-max: 1800px !default;
 $columns: 24 !default;
 
 //BOOTSTRAP
@@ -12,7 +13,7 @@ $container-max-widths: (
   sm: 540px,
   md: $desktop-breakpoint,
   lg: 1000,
-  xl: $container-max
+  xl: $container
 ) !default;
 
 //TYPE

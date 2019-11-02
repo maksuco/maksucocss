@@ -61,6 +61,12 @@ ol, ul {
   padding: 0;
 }
 
+.container-max {
+  width: 100%;
+  max-width: $container-max !important;
+  margin: 0 auto;
+}
+
 .row {
   width: 100%;
 }
@@ -440,8 +446,21 @@ ol, ul {
   transform: translate(-50%, -50%);
 }
 
+
+.top-auto {
+  top: auto;
+}
+.top-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .bottom-auto {
   bottom: auto;
+}
+.bottom-center {
+  bottom: 50%;
+  transform: translateY(-50%);
 }
 
 .left-auto {
@@ -452,25 +471,14 @@ ol, ul {
   transform: translateX(-50%);
 }
 
-.top-auto {
-  top: auto;
-}
-.top-center {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .right-auto {
   right: auto;
 }
-
-.bottom-auto {
-  bottom: auto;
+.right-center {
+  right: 50%;
+  transform: translateX(-50%);
 }
 
-.left-auto {
-  left: auto;
-}
 
 $positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 150, 200, 225, 250, 275, 300);
 @each $row in $positions {

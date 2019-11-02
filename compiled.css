@@ -1487,12 +1487,17 @@ ul {
   padding: 0; }
 
 .container {
-  max-width: 1300px !important;
+  max-width: 1800px !important;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
   position: relative;
   padding: 0; }
+
+.container-max {
+  width: 100%;
+  max-width: 1800px !important;
+  margin: 0 auto; }
 
 .row {
   width: 100%; }
@@ -1820,8 +1825,19 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.top-auto {
+  top: auto; }
+
+.top-center {
+  top: 50%;
+  transform: translateY(-50%); }
+
 .bottom-auto {
   bottom: auto; }
+
+.bottom-center {
+  bottom: 50%;
+  transform: translateY(-50%); }
 
 .left-auto {
   left: auto; }
@@ -1830,21 +1846,12 @@ ul {
   left: 50%;
   transform: translateX(-50%); }
 
-.top-auto {
-  top: auto; }
-
-.top-center {
-  top: 50%;
-  transform: translateY(-50%); }
-
 .right-auto {
   right: auto; }
 
-.bottom-auto {
-  bottom: auto; }
-
-.left-auto {
-  left: auto; }
+.right-center {
+  right: 50%;
+  transform: translateX(-50%); }
 
 .top-0 {
   top: 0px !important; }
