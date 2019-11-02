@@ -1,0 +1,34 @@
+@import 'forms/form-basic';
+@import 'forms/form-clean';
+@import 'forms/form-muted';
+@import 'forms/form-inner';
+@import 'forms/select';
+@import 'forms/checkbox';
+
+
+.form-inline {
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+
+.form-lg {
+  input, textarea, select {
+    //padding: 1rem 10px .6rem 15px;
+    font-size: 1.3rem !important;
+  }
+  label {
+    font-size: 110%;
+  }
+}
+
+.form-sm {
+  input, textarea, select {
+    //padding: 1rem 10px .6rem 15px;
+    font-size: .8rem !important;
+  }
+  label {
+    font-size: 70%;
+  }
+}
+

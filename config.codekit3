@@ -9,14 +9,6 @@
 	],
 "creatorBuild": "31934",
 "files": {
-	"/.npmrc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/.npmrc",
-		"oF": 0
-		},
 	"/backend.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1568,25 +1560,115 @@
 		"oAP": "/fontawesome/webfonts/fa-solid-900.woff2",
 		"oF": 0
 		},
+	"/forms.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/forms.html",
+		"oF": 0
+		},
+	"/front-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/front-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/front.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/front-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/frontend.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/frontend.html",
+		"oF": 0
+		},
 	"/js": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/build/js",
 		"oF": 0
 		},
-	"/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/node_modules",
-		"oF": 0
-		},
-	"/package-lock.json": {
-		"ft": 524288,
+	"/js/axios/dist/axios.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
 		"oA": 1,
-		"oAP": "/package-lock-min.json",
+		"oAP": "/js/axios/dist/axios.min-min.js",
 		"oF": 0,
-		"oO": 0,
-		"oS": 1
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/clipboard/dist/clipboard.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/js/clipboard/dist/clipboard.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/v-tooltip/dist/v-tooltip.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/js/v-tooltip/dist/v-tooltip.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/vee-validate/dist/locale/es.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/js/vee-validate/dist/locale/es-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/vee-validate/dist/vee-validate.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/js/vee-validate/dist/vee-validate.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/vue/dist/vue.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/js/vue/dist/vue.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/package.json": {
 		"ft": 524288,
@@ -1627,14 +1709,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/sample.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/sample.html",
-		"oF": 0
 		},
 	"/scss/badges.scss": {
 		"aP": 0,
@@ -1685,6 +1759,120 @@
 		"oA": 1,
 		"oAP": "/scss/forms.css",
 		"oF": 1,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/checkbox-copy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/scss/forms/checkbox-copy.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/checkbox.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/forms/checkbox.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/form-basic.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/forms/form-basic.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/form-clean.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/forms/form-clean.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/form-inner-floating.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/scss/forms/form-inner-floating.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/form-inner.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/forms/form-inner.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/form-muted.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/forms/form-muted.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/forms.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/scss/forms/forms-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/scss/forms/select.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/forms/select.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},

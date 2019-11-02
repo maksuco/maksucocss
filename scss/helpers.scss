@@ -47,7 +47,7 @@ $paddings: p, pl, pr, pt, pb, py, px;
     }
   }
 }
-//DESKTOP
+//DESKTOP PADDING
 @media (min-width: $desktop-breakpoint) {
   @each $row in $paddings {
     .md-#{$row}-0 {
@@ -86,6 +86,45 @@ $paddings: p, pl, pr, pt, pb, py, px;
   }
 }
 
+//MOBILE PADDING
+@media (max-width: $desktop-breakpoint) {
+  @each $row in $paddings {
+    .sm-#{$row}-0 {
+      @if $row == p { padding: 0;
+      } @else if $row == pl { padding-left: 0;
+      } @else if $row == pr { padding-right: 0;
+      } @else if $row == pt { padding-top: 0;
+      } @else if $row == pb { padding-bottom: 0;
+      } @else if $row == py { padding-top: 0; padding-bottom: 0;
+      } @else if $row == px { padding-left: 0; padding-right: 0;
+      }
+    }
+    .sm-#{$row}-px {
+      @if $row == p { padding: 1px;
+      } @else if $row == pl { padding-left: 1px;
+      } @else if $row == pr { padding-right: 1px;
+      } @else if $row == pt { padding-top: 1px;
+      } @else if $row == pb { padding-bottom: 1px;
+      } @else if $row == py { padding-top: 1px; padding-bottom: 1px;
+      } @else if $row == px { padding-left: 1px; padding-right: 1px;
+      }
+    }
+    @each $size in $sizes {
+      $i: index($sizes, $size);
+      .sm-#{$row}-#{$i} {
+        @if $row == p { padding: #{$size};
+        } @else if $row == pl { padding-left: #{$size};
+        } @else if $row == pr { padding-right: #{$size};
+        } @else if $row == pt { padding-top: #{$size};
+        } @else if $row == pb { padding-bottom: #{$size};
+        } @else if $row == py { padding-top: #{$size}; padding-bottom: #{$size};
+        } @else if $row == px { padding-left: #{$size}; padding-right: #{$size};
+        }
+      }
+    }
+  }
+}
+
 //MARGINS
 .my-auto {
   margin-top: auto;
@@ -94,6 +133,12 @@ $paddings: p, pl, pr, pt, pb, py, px;
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
 }
 $margins: m, ml, mr, mt, mb, my, mx;
 @each $row in $margins {
@@ -131,9 +176,17 @@ $margins: m, ml, mr, mt, mb, my, mx;
       } @else if $row == mx { margin-left: #{$size}; margin-right: #{$size};
       }
     }
+    //Negative
+    .#{$row}--#{$i} {
+      @if $row == ml { margin-left: -#{$size};
+      } @else if $row == mr { margin-right: -#{$size};
+      } @else if $row == mt { margin-top: -#{$size};
+      } @else if $row == mb { margin-bottom: -#{$size};
+      }
+    }
   }
 }
-//DESKTOP
+//DESKTOP MARGIN
 @media (min-width: $desktop-breakpoint) {
   @each $row in $margins {
     .md-#{$row}-0 {
@@ -158,7 +211,7 @@ $margins: m, ml, mr, mt, mb, my, mx;
     }
     @each $size in $sizes {
     $i: index($sizes, $size);
-      .#{$row}-#{$i} {
+      .md-#{$row}-#{$i} {
         @if $row == m { margin: #{$size};
         } @else if $row == ml { margin-left: #{$size};
         } @else if $row == mr { margin-right: #{$size};
@@ -168,12 +221,63 @@ $margins: m, ml, mr, mt, mb, my, mx;
         } @else if $row == mx { margin-left: #{$size}; margin-right: #{$size};
         }
       }
+      //Negative
+      .md-#{$row}--#{$i} {
+        @if $row == ml { margin-left: -#{$size};
+        } @else if $row == mr { margin-right: -#{$size};
+        } @else if $row == mt { margin-top: -#{$size};
+        } @else if $row == mb { margin-bottom: -#{$size};
+        }
+      }
     }
   }
 }
-
-
-
+//MOBILE MARGIN
+@media (max-width: $desktop-breakpoint) {
+  @each $row in $margins {
+    .sm-#{$row}-0 {
+      @if $row == m { margin: 0;
+      } @else if $row == ml { margin-left: 0;
+      } @else if $row == mr { margin-right: 0;
+      } @else if $row == mt { margin-top: 0;
+      } @else if $row == mb { margin-bottom: 0;
+      } @else if $row == my { margin-top: 0; margin-bottom: 0;
+      } @else if $row == mx { margin-left: 0; margin-right: 0;
+      }
+    }
+    .sm-#{$row}-px {
+      @if $row == m { margin: 1px;
+      } @else if $row == ml { margin-left: 1px;
+      } @else if $row == mr { margin-right: 1px;
+      } @else if $row == mt { margin-top: 1px;
+      } @else if $row == mb { margin-bottom: 1px;
+      } @else if $row == my { margin-top: 1px; margin-bottom: 1px;
+      } @else if $row == mx { margin-left: 1px; margin-right: 1px;
+      }
+    }
+    @each $size in $sizes {
+    $i: index($sizes, $size);
+      .sm-#{$row}-#{$i} {
+        @if $row == m { margin: #{$size};
+        } @else if $row == ml { margin-left: #{$size};
+        } @else if $row == mr { margin-right: #{$size};
+        } @else if $row == mt { margin-top: #{$size};
+        } @else if $row == mb { margin-bottom: #{$size};
+        } @else if $row == my { margin-top: #{$size}; margin-bottom: #{$size};
+        } @else if $row == mx { margin-left: #{$size}; margin-right: #{$size};
+        }
+      }
+      //Negative
+      .sm-#{$row}--#{$i} {
+        @if $row == ml { margin-left: -#{$size};
+        } @else if $row == mr { margin-right: -#{$size};
+        } @else if $row == mt { margin-top: -#{$size};
+        } @else if $row == mb { margin-bottom: -#{$size};
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -181,21 +285,53 @@ $margins: m, ml, mr, mt, mb, my, mx;
 .rounded-none {
   border-radius: 0;
 }
-
 .rounded-sm {
   border-radius: 0.125rem;
 }
-
 .rounded {
   border-radius: 0.25rem;
 }
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-rounded-none {
+    border-radius: 0;
+  }
+  .md-rounded-sm {
+    border-radius: 0.125rem;
+  }
+  .md-rounded {
+    border-radius: 0.25rem;
+  }
+  .md-rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .md-rounded-full {
+    border-radius: 9999px;
+  }
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .sm-rounded-none {
+    border-radius: 0;
+  }
+  .sm-rounded-sm {
+    border-radius: 0.125rem;
+  }
+  .sm-rounded {
+    border-radius: 0.25rem;
+  }
+  .sm-rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .sm-rounded-full {
+    border-radius: 9999px;
+  }
 }
 
 .rounded-t-none {

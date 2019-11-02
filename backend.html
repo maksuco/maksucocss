@@ -107,9 +107,9 @@
       <p class="pb-4">For regular tables you can use B4</p>
   
       <div class="table-div-striped">
-          <div class="row head uppercase text-gray-900">
+          <div class="row head uppercase text-gray-900 sm-hidden">
             <div class="col-md-2">Status</div>
-            <div class="col-md-2">Reference</div>
+            <div class="col-md-2">Ref</div>
             <div class="col-md-6 text-left pl-2">Client</div>
             <div class="col-md-4">Amount</div>
             <div class="col-md-4">Recurring</div>
@@ -119,11 +119,11 @@
           </div>
       
           <figure class="row">
-            <div class="col-24 col-md-2">10 <span></span></div>
+            <div class="col-24 col-md-2"><span class="md-hidden">STATUS: </span>10</div>
             <div class="col-24 col-md-2">CC-566</div>
             <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
             <div class="col-8 col-md-4">600,000 COP</div>
-            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-dark btn-sm text-white">Recurring #45</a></div>
+            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-dark btn-xs text-white">Recurring #45</a></div>
             <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
             <div class="col-8 col-md-1"></div>
           </figure>
@@ -133,7 +133,7 @@
             <div class="col-24 col-md-2">CC-566dsds</div>
             <div class="col-24 col-md-6 text-left pl-2">Someone <span class="badge badge-dark">Featured</span></div>
             <div class="col-8 col-md-4">600,000 COP</div>
-            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-green btn-sm">Recurring #45</a><br><small>Este es el nombre</small></div>
+            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-green btn-xs">Recurring #45</a><br><small>Este es el nombre</small></div>
             <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
             <div class="col-8 col-md-1"></div>
           </figure>
@@ -179,20 +179,22 @@
       ©{{date("Y")}} {{__('All Rights Reserved')}} <span class="text-muted"><a href="{{__('/terms-conditions')}}" class="m-l-10 m-r-10">{{__('Terms and Conditions')}}</a>  <a href="#" class="m-l-10"></a></span>
     </section>
 
-  <section class="modal modal-vue">
-  <div class="modal-backdrop"></div>
-    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-right">
-      <div class="modal-content" action="" id="modal_help" method="POST">
-        <div class="modal-header">
-          <h5>Help</h5>
-          <a class="close far fa-times"></a>
+  <section class="modal modal-vue invisible">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div action="" id="modal_help" method="POST" class="modal-content">
+        <div class="modal-header modal-header-inverted"><h4>Help</h4> <a class="close far fa-times"></a></div> 
+        <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+          <pre data-clipboard-target="#code_url" class="code clipboard"><label>URL</label><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+          <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+          <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+          <h5 class="mt-30">OPTIONS</h5> 
+          <h6 class="text-muted mt-3">SEARCH BY SLUG</h6>
+          <small>Just change <code>page/1</code> to <code>page/</code></small>
         </div>
-        <div class="modal-body">
-        <h5 class="mt-30">OPTIONS</h5>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   </main>
 
 

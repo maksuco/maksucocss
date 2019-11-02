@@ -1,0 +1,88 @@
+.form-basic, .form-basic-select {
+  position: relative;
+  margin-bottom: .8rem;
+  label {
+    color: $form-light;
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    font-weight: $font-weight-normal;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+  }
+
+}
+
+.form-basic {
+  input, textarea, select {
+    width: 100%;
+    display: block;
+    outline: none;
+    color: $form-text;
+    background-color: $form-bg;
+    border: $form-border;
+    border-radius: $input-border-radius;
+    box-shadow: transparent;
+    padding: 12px 14px;
+    &:focus {
+        border-color: $primary;
+    }
+  }
+  select {
+    line-height: 1.5rem;
+    height: 3rem;
+  }
+  input, textarea {
+    &::placeholder {
+      color: $light;
+    }
+  }
+  input  {
+   }
+   textarea {
+   }
+}
+
+.form-basic-select {
+  select {
+    width: 100%;
+    display: block;
+    outline: none;
+    color: $form-text;
+    background-color: $form-bg;
+    border: $form-border;
+    border-radius: $input-border-radius;
+    box-shadow: transparent;
+    padding: 12px 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+      border-color: $primary;
+    }
+    &>option{
+      color: $light !important;
+    }
+    &>option:disabled {
+      //color: white;
+    }
+  }
+  &>option{
+    padding-bottom: 1rem;
+  }
+  &:after {
+    content:"\f078";   
+    font-family: "Font Awesome 5 Pro";
+  	font-size: 1rem;
+  	position: absolute;
+  	bottom: 15%;
+  	right: 20px;
+  	color: $form-text;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}

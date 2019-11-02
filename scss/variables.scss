@@ -45,5 +45,15 @@ $btn-padding-y: .6rem !default;
 $btn-padding-x: 1.3rem !default;
 $btn-radius: .4rem !default;
 
+//FORMS
+$form-bg: #ffffff !default;
+$form-text: $body !default;
+$form-light: lighten($body, 22%) !default;
+$form-border: 1px solid lighten($form-text, 78%) !default;
+$input-border-radius: $btn-radius !default;
+//$form-label: ;
+$form-placeholder-color: $gray;
+$form-border: 1px solid $gray;
+
 //BACKEND
 $backend-body-bg-color: #f4f6f8 !default;

@@ -1,0 +1,30 @@
+.form-inner-floating {
+  position: relative;
+  margin-bottom: .3rem;
+  position: relative;
+  margin-bottom: 1rem;
+  input, textarea {
+    width: 100%;
+    color: $form-text;
+    border: $form-border;
+    border-radius: $input-border-radius;
+    background-color: $form-bg;
+    font-size: 1rem !important;
+    line-height: 1.5;
+    padding: $btn-padding-y $btn-padding-y * 1.1);
+  }
+  label {
+    position: absolute;
+    top: 1px;
+    left: 14px;
+    display: block;
+    padding-bottom: 3px;
+    padding-top: 6px;
+    width: calc(100% - 20px);
+    font-size: .7rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $form-light;
+    background: $form-bg;
+  }
+}

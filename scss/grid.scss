@@ -61,6 +61,11 @@ ol, ul {
   padding: 0;
 }
 
+.row {
+  width: 100%;
+}
+
+
 //DISPLAY
 .hidden { display: none !important; }
 .inline       { display: inline !important; }
@@ -126,6 +131,11 @@ ol, ul {
 
 .flex-no-wrap {
   flex-wrap: nowrap;
+}
+
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -419,9 +429,17 @@ ol, ul {
 .left-auto {
   left: auto;
 }
+.left-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .top-auto {
   top: auto;
+}
+.top-center {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .right-auto {

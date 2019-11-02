@@ -1,0 +1,107 @@
+.form-muted {
+  margin-bottom: .8rem;
+  label {
+    color: $form-light;
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+  }
+  select {
+    background-color: $form-bg;
+    border: 1px solid transparent;
+    line-height: 1.5rem;
+    height: 3rem;
+    &:focus {
+        box-shadow: 0 0px 0px 0 $form-bg;
+        border: none !important;
+    }
+  }
+  input, textarea {
+    width: 100%;
+    display: block;
+    outline: none;
+    color: $form-text;
+    background-color: $light;
+    border: 1px solid $light;
+    border-radius: $input-border-radius;
+    box-shadow: transparent;
+    transition: box-shadow .15s ease;
+    &:focus {
+        box-shadow: 0 0px 0px 0 $form-bg;
+        background-color: lighten($form-bg, 5%);
+    }
+    &::placeholder {
+    }
+  }
+  input  {
+    padding: 12px 14px;
+   }
+   textarea {
+    padding: 12px 14px;
+   }
+}
+
+.form-muted-select {
+  margin-bottom: .8rem;
+  position: relative;
+  label {
+    color: $form-light;
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+  }
+  select {
+    background-color: $light;
+    border: none !important;
+    padding: 12px 14px;
+    color: $form-text;
+    line-height: 1.5rem;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+      border: none !important;
+    }
+    &>option{
+      color: $light !important;
+    }
+    &>option:disabled {
+      //color: white;
+    }
+  }
+  &>option{
+    padding-bottom: 1rem;
+  }
+  &:after {
+    content:"\f078";   
+    font-family: "Font Awesome 5 Pro";
+  	font-size: 1.1rem;
+  	position: absolute;
+  	bottom: 15%;
+  	right: 20px;
+  	color: $form-text;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}
+
+
+
+//CHECKBOX
+.custom-control-label::before {
+  background-color: $light !important;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $primary !important;
+}

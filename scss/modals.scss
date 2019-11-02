@@ -1,6 +1,6 @@
 
 
-.modal-vue {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,89 +17,121 @@
   .modal-backdrop {
     position: absolute;
     z-index: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     pointer-events: none;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.86);
   }
   .modal-dialog {
       position: absolute;
-      transform: none;
-      margin-top: -1rem;
-      min-width: 350px !important;
       z-index: 1;
-      &.modal-right {
-          top: 0;
-          bottom: 0;
-          right: 0;
-          margin: 0;
-          max-height: 100% !important;
-      }
-      @media(max-width: map-get($grid-breakpoints, "md")) {
+      transform: none;
+      min-width: 350px !important;
+      max-height: 90%;
+      @media (max-width: $desktop-breakpoint) {
         min-width: 90% !important;
         margin: 0px !important;
       }
   }
   .modal-content {
-      z-index: 2;
-      border-radius: 0px;
-      height: 100% !important;
-      max-height: 100% !important;
-      background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    outline: 0;
+    border-radius: 0px;
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width: 800px;
+    background-color: white;
+    .modal-header,
+    .modal-footer {
+      flex-shrink: 0;
+    }
       .modal-header {
+        display: flex;
+        align-items: flex-start; // so the close btn always stays on the upper right corner
+        justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
         border-radius: 0px;
         padding: 16px 20px 6px 25px;
         border: none;
-        .modal-header-icon {
-          display: block;
-          height: 100%;
-          font-size: 1.9rem;
-          line-height: 1.2;
-          margin-left: -12px;
-          padding-right: 6px;
-        }
-        h5 {
-          text-align: left;
-          width: auto;
-          font-size: 1.9rem;
-          line-height: 1.2;
-          span {
-            font-weight: normal;
-            display: block;
-            font-size: 1rem;
-            opacity: .7;
-          }
-        }
+        text-align: left;
         .close {
-          padding-bottom: .3rem;
+          position: absolute;
+          top: 1.7rem;
+          right: 2rem;
           cursor: pointer;
-          text-shadow: none;
-          line-height: 1.9;
-          font-size: 1.3rem;
-          color: $gray-700;
+          font-size: 1.5rem;
+          color: $gray;
+          &:hover {
+            color: $dark;
+          }
         }
         &.modal-header-inverted {
           background-color: $primary;
           padding-bottom: 13px;
-          .modal-header-icon {
-            color: white;
-          }
-          h5 {
+          color: white;
+          h4 {
             color: white;
           }
           .close {
             color: $light;
-            text-shadow: none;
           }
         }
       }
+      h4 {
+        width: auto;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        font-weight: bold;
+        span {
+          font-weight: normal;
+          display: block;
+          font-size: 1rem;
+          opacity: .7;
+        }
+      }
+      h5 {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+      h6 {
+        font-size: 1.2rem;
+      }
       .modal-body {
-          padding: 12px 24px 12px 25px;
-          text-align: left;
+        overflow-y: auto;
+        position: relative;
+        flex: 1 1 auto;
+        padding: 12px 24px 12px 25px;
+        text-align: left;
       }
       .modal-footer {
-          border: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border: none;
       }
+  }
+}
+
+.modal-dialog-scrollable {
+  display: flex; // IE10/11
+  max-height: calc(100% - 1rem);
+
+  
+
+  .modal-content {
+    max-height: calc(100vh - 1rem); // IE10/11
+    overflow: hidden;
+  }
+
+  .modal-header,
+  .modal-footer {
+    flex-shrink: 0;
+  }
+
+  .modal-body {
+    overflow-y: auto;
   }
 }
 
@@ -107,7 +139,45 @@
     overflow: hidden;
 }
 
-.modal-right_ {
-  justify-content: end;
-  align-items: left;
+.modal-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100% !important;
+}
+
+.modal-right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100% !important;
+}
+
+.modal-full {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-height: 100% !important;
+
+  .modal-content {
+    max-width: 100%;
+    .modal-header {
+      padding: 1.6rem 2rem 1.6rem 2rem !important;
+      h4 {
+        font-size: 2.8rem;
+      }
+      .close {
+        top: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+      }
+    }
+    .modal-body {
+      padding: 1.5rem 2rem 1rem 2rem !important;
+    }
+  }
 }
