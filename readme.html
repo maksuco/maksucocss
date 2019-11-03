@@ -7,16 +7,13 @@
 
 <h1 id="bootwindcssjshelpers">Bootwind CSS/JS Helpers</h1>
 
-<p>The killer feature of <code>markdown-it</code> is very effective support of
-<a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin">syntax plugins</a>.</p>
-
 <hr />
 
 <h1 id="css">CSS</h1>
 
 <h2 id="grid">Grid</h2>
 
-<p>Use bootstrap 4 docs for the grid</p>
+<p>Use <strong><a href="https://getbootstrap.com/docs/4.3/layout/grid/">Bootstrap 4</a></strong> docs for the grid and is divided in 24 columns</p>
 
 <h3 id="containers">Containers</h3>
 
@@ -28,13 +25,16 @@
 
 <h3 id="columns">Columns</h3>
 
-<p>Same as Bootstrap 4</p>
+<p>Same as Bootstrap 4
+<code>.col-auto</code>
+To get them all in a row <code>.col</code> <code>.col-sm</code> <code>.col-md</code> <code>.col-lg</code> <code>.col-xl</code></p>
+
+<p>Or to specify the size of each one
+<code>.col-*</code> <code>.col-sm-*</code> <code>.col-md-*</code> <code>.col-lg-*</code> <code>.col-xl-*</code></p>
 
 <hr />
 
 <h3 id="flex">Flex</h3>
-
-<p>Margins uses <strong>rem</strong> as measures</p>
 
 <p><strong>Center Items Horizontal:</strong> <code>.justify-start</code> <code>.justify-end</code> <code>.justify-center</code> <code>.justify-between</code> <code>.justify-around</code></p>
 
@@ -82,9 +82,9 @@
 <p>Positions uses <strong>px</strong> as measures
 You can use <code>.absolute</code> <code>.relative</code> <code>.fixed</code></p>
 
-<p>For positioning and more <code>.absolute-t</code> <code>.absolute-tl</code> <code>.absolute-tr</code> <code>.absolute-tc</code> witch centers on horizontal</p>
+<p>For absolute you can also <code>.absolute-t</code> <code>.absolute-tl</code> <code>.absolute-tr</code> <code>.absolute-tc</code> witch centers on horizontal</p>
 
-<p>You can use <code>.absolute</code> <code>.absolute-b</code> <code>.absolute-bl</code> <code>.absolute-br</code> <code>.absolute-bc</code> witch centers on horizontal</p>
+<p><code>.absolute-b</code> <code>.absolute-bl</code> <code>.absolute-br</code> <code>.absolute-bc</code> witch centers on horizontal</p>
 
 <p>You can also use <code>.absolute-c</code> witch centers on horizontal and vertical, also for just horizontal <code>.absolute-hc</code> and just vertical <code>.absolute-vc</code></p>
 
@@ -101,11 +101,11 @@ Also <code>.top-auto</code> <code>.top-center</code> <code>.bottom-auto</code> <
 
 <p>You can use <code>.m-</code> <code>.mt-</code> <code>.mb-</code> <code>.ml-</code> <code>.mr-</code>&#8230; and negative margins <code>.m--</code></p>
 
-<p>Also you can target mobile <code>.sm-m-</code> or desktop <code>.md-m-</code> only</p>
+<p>Also you can target mobile <code>.sm-m-*</code> or desktop <code>.md-m-*</code> only</p>
 
 <p>You can use <code>.p-</code> <code>.pt-</code> <code>.pb-</code> <code>.pl-</code> <code>.pr-</code></p>
 
-<p>Also you can target mobile <code>.sm-p-</code> or desktop <code>.md-p-</code> only</p>
+<p>Also you can target mobile <code>.sm-p-*</code> or desktop <code>.md-p-*</code> only</p>
 
 <p><strong>Sizes:</strong> 0.25rem, 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.25rem, 2.5rem, 2.75rem, 3rem, 4rem, 5rem, 6rem, 7rem, 8rem, 9rem, 10rem, 11rem;</p>
 
@@ -194,7 +194,7 @@ Also <code>.top-auto</code> <code>.top-center</code> <code>.bottom-auto</code> <
 
 <p>Use <code>.rounded</code></p>
 
-<p><strong>Sizes:</strong> <code>.rounded-none</code> <code>.rounded-sm</code> <code>.rounded</code> <code>.rounded-lg</code> <code>.rounded-full</code>.</p>
+<p><strong>Sizes:</strong> <code>.rounded-none</code> <code>.rounded-sm</code> <code>.rounded</code> <code>.rounded-lg</code> <code>.rounded-full</code> <code>.rounded-circle</code>.</p>
 
 <p>Also you can target mobile <code>.sm-*</code> or desktop <code>.md-*</code> only</p>
 
@@ -226,12 +226,49 @@ Also <code>.top-auto</code> <code>.top-center</code> <code>.bottom-auto</code> <
 
 <p><code>.zoom</code></p>
 
-<h1 id="samples">Samples</h1>
+<hr />
 
-<pre><code>Sample text here...
+<h1 id="forms">Forms</h1>
+
+<p>Basic: <code>.form-basic</code> <code>.form-basic-select</code>
+Basic: <code>.form-clean</code> <code>.form-clean-select</code>
+Basic: <code>.form-muted</code> <code>.form-muted-select</code>
+Basic: <code>.form-inner</code> <code>.form-inner-select</code></p>
+
+<pre><code>&lt;div class=&quot;form-basic required&quot;&gt;
+  &lt;label for=&quot;text&quot;&gt;Text Field&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;text&quot; placeholder=&quot;Your Text&quot;&gt;
+  &lt;small class=&quot;form-text text-muted&quot;&gt;Something.&lt;/small&gt;
+&lt;/div&gt;
 </code></pre>
 
+<p>Sizes: <code>.form-lg</code> <code>.form-sm</code></p>
+
+<p>Position: <code>.form-inline</code></p>
+
+<h4 id="checkboxesandradios">Checkboxes and Radios</h4>
+
+<p><code>.form-checkbox</code> <code>.form-radio</code> <code>.form-switch</code></p>
+
+<h4 id="selects">Selects</h4>
+
+<p>To show select as button <code>.form-select-btn</code></p>
+
+<h4 id="bigsearchinput">Big Search Input</h4>
+
+<p><code>.big-search</code> with an option of <code>.typeahead</code> to add a delete icon and hide search icon</p>
+
+<pre><code>&lt;form role=&quot;search&quot; method=&quot;post&quot; class=&quot;big-search typeahead form-lg&quot;&gt;
+  &lt;input type=&quot;search&quot; autofocus=&quot;&quot; placeholder=&quot;something goes here&quot; name=&quot;s&quot;&gt;
+  &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+&lt;/form&gt;
+</code></pre>
+
+<hr />
+
 <h2 id="js">JS</h2>
+
+<p>Includes vue, axis and v-validate V2</p>
 
 </body>
 </html>

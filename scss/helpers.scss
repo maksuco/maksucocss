@@ -294,6 +294,9 @@ $margins: m, ml, mr, mt, mb, my, mx;
 .rounded-lg {
   border-radius: 0.5rem;
 }
+.rounded-circle {
+  border-radius: 50%!important;
+}
 .rounded-full {
   border-radius: 9999px;
 }

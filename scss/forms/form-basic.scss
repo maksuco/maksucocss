@@ -22,7 +22,6 @@
     background-color: $form-bg;
     border: $form-border;
     border-radius: $input-border-radius;
-    box-shadow: transparent;
     padding: 12px 14px;
     &:focus {
         border-color: $primary;
@@ -34,7 +33,7 @@
   }
   input, textarea {
     &::placeholder {
-      color: $light;
+      color: $gray;
     }
   }
   input  {
@@ -52,7 +51,6 @@
     background-color: $form-bg;
     border: $form-border;
     border-radius: $input-border-radius;
-    box-shadow: transparent;
     padding: 12px 14px;
     -webkit-appearance: none;
     -moz-appearance: none;

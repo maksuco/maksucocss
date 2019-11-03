@@ -1,13 +1,11 @@
 # Bootwind CSS/JS Helpers
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
 
 
 ---
 # CSS
 
 ## Grid
-Use bootstrap 4 docs for the grid
+Use **[Bootstrap 4](https://getbootstrap.com/docs/4.3/layout/grid/)** docs for the grid and is divided in 24 columns
 
 ### Containers
 You can use `.container-fluid` and `.container` (centered) and  `.container-max` witch is like fluid but with a limit of 1800px
@@ -19,11 +17,16 @@ You can use `.container-fluid` and `.container` (centered) and  `.container-max`
 
 ### Columns
 Same as Bootstrap 4
+`.col-auto`
+To get them all in a row `.col` `.col-sm` `.col-md` `.col-lg` `.col-xl`
+
+Or to specify the size of each one
+`.col-*` `.col-sm-*` `.col-md-*` `.col-lg-*` `.col-xl-*`
+
 
 
 ---
 ### Flex
-Margins uses **rem** as measures
 
 
 **Center Items Horizontal:** `.justify-start` `.justify-end` `.justify-center` `.justify-between` `.justify-around`
@@ -73,9 +76,9 @@ The same works for `.h`
 Positions uses **px** as measures
 You can use `.absolute` `.relative` `.fixed`
 
-For positioning and more `.absolute-t` `.absolute-tl` `.absolute-tr` `.absolute-tc` witch centers on horizontal
+For absolute you can also `.absolute-t` `.absolute-tl` `.absolute-tr` `.absolute-tc` witch centers on horizontal
 
-You can use `.absolute` `.absolute-b` `.absolute-bl` `.absolute-br` `.absolute-bc` witch centers on horizontal
+`.absolute-b` `.absolute-bl` `.absolute-br` `.absolute-bc` witch centers on horizontal
 
 You can also use `.absolute-c` witch centers on horizontal and vertical, also for just horizontal `.absolute-hc` and just vertical  `.absolute-vc`
 
@@ -91,11 +94,11 @@ Margins uses **rem** as measures
 
 You can use `.m-` `.mt-` `.mb-` `.ml-` `.mr-`... and negative margins `.m--`
 
-Also you can target mobile `.sm-m-` or desktop `.md-m-` only
+Also you can target mobile `.sm-m-*` or desktop `.md-m-*` only
 
 You can use `.p-` `.pt-` `.pb-` `.pl-` `.pr-`
 
-Also you can target mobile `.sm-p-` or desktop `.md-p-` only
+Also you can target mobile `.sm-p-*` or desktop `.md-p-*` only
 
 **Sizes:** 0.25rem, 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.25rem, 2.5rem, 2.75rem, 3rem, 4rem, 5rem, 6rem, 7rem, 8rem, 9rem, 10rem, 11rem;
 
@@ -152,7 +155,6 @@ You can use `.badge-dark` or `.badge-light` OR JUST `.badge`,  and then apply `.
 
 
 
-
 ---
 ### Colors
 
@@ -201,7 +203,7 @@ You can use `.badge-dark` or `.badge-light` OR JUST `.badge`,  and then apply `.
 
 Use `.rounded`
 
-**Sizes:** `.rounded-none` `.rounded-sm` `.rounded` `.rounded-lg` `.rounded-full`.
+**Sizes:** `.rounded-none` `.rounded-sm` `.rounded` `.rounded-lg` `.rounded-full` `.rounded-circle`.
 
 Also you can target mobile `.sm-*` or desktop `.md-*` only
 
@@ -223,8 +225,6 @@ Also you can target mobile `.sm-*` or desktop `.md-*` only
 
 
 
-
-
 ---
 ### Icons
 Font awesome is included
@@ -243,12 +243,46 @@ To create layered icons you can use `.icon-layer` with `.icon-badge` `.icon-badg
 
 
 
-# Samples
 
+---
+# Forms
+
+Basic: `.form-basic` `.form-basic-select`
+Basic: `.form-clean` `.form-clean-select`
+Basic: `.form-muted` `.form-muted-select`
+Basic: `.form-inner` `.form-inner-select`
 
 ```
-Sample text here...
+<div class="form-basic required">
+  <label for="text">Text Field</label>
+  <input type="text" id="text" placeholder="Your Text">
+  <small class="form-text text-muted">Something.</small>
+</div>
+```
+
+Sizes: `.form-lg` `.form-sm`
+
+Position: `.form-inline`
+
+#### Checkboxes and Radios
+
+`.form-checkbox`  `.form-radio` `.form-switch`
+
+#### Selects
+
+To show select as button `.form-select-btn`
+
+#### Big Search Input
+
+`.big-search` with an option of `.typeahead` to add a delete icon and hide search icon
+```
+<form role="search" method="post" class="big-search typeahead form-lg">
+  <input type="search" autofocus="" placeholder="something goes here" name="s">
+  <i class="fa fa-search"></i>
+</form>
 ```
 
 
+---
 ## JS
+Includes vue, axis and v-validate V2

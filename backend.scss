@@ -41,7 +41,7 @@ aside.sidebar {
     background-color: rgba($light, .3); 
   }
   .sidebar-panel {
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 10px 15px;
     background: darken($primary, 10%);
     color: rgba($light, .8);
@@ -109,6 +109,9 @@ aside.sidebar {
 		left: -230px;
     &.active {
       left: 0px !important;
+    }
+    .logo {
+      display: none;
     }
   }
 }
