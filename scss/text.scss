@@ -45,7 +45,7 @@ h6 {
 .text-sm {
   font-size: 0.875rem;
 }
-.text-base {
+.text-normal {
   font-size: 1rem;
 }
 .text-lg {
@@ -80,7 +80,7 @@ h6 {
   .md-text-sm {
     font-size: 0.875rem;
   }
-  .md-text-base {
+  .md-text-normal {
     font-size: 1rem;
   }
   .md-text-lg {
@@ -185,34 +185,34 @@ $aligns: left, center, right, justify;
 
 
 //WEIGHT
-.font-light {
+.text-light {
   font-weight: $font-weight-light;
 }
-.font-normal {
+.text-normal {
   font-weight: $font-weight-normal;
 }
-.font-bold {
+.text-bold {
   font-weight: $font-weight-bold;
 }
-.font-black {
-  font-weight: $font-weight-black;
+.text-bolder {
+  font-weight: $font-weight-bolder;
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .md-font-light {
+  .md-text-light {
     font-weight: $font-weight-light;
   }
-  .md-font-normal {
+  .md-text-normal {
     font-weight: $font-weight-normal;
   }
-  .md-font-bold {
+  .md-text-bold {
     font-weight: $font-weight-bold;
   }
-  .md-font-black {
-    font-weight: $font-weight-black;
+  .md-text-black {
+    font-weight: $font-weight-bolder;
   }
 }
 
 small {
-font-size: 80%;
+  font-size: 80%;
 }

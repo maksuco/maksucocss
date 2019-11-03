@@ -1,21 +1,21 @@
-//TEXTS
-.text-dark {
+//TEXTS COLORS
+.color-dark {
   color: $dark;
 }
 
-.text-light {
+.color-light {
   color: $light;
 }
 
-.text-transparent {
+.color-transparent {
   color: transparent;
 }
 
-.text-black {
+.color-black {
   color: #000;
 }
 
-.text-white {
+.color-white {
   color: #fff;
 }
 
@@ -59,35 +59,40 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   } @else if $name == yellow { $color: $yellow;
   } @else if $name == orange { $color: $orange;
   }
-  .text-#{$name} {
+  .color-#{$name} {
     color: $color;
   }
-  .text-#{$name}-100 {
+  .color-#{$name}-100 {
     color: lighten($color, 25%);
   }
-  .text-#{$name}-200 {
+  .color-#{$name}-200 {
     color: lighten($color, 18%);
   }
-  .text-#{$name}-300 {
+  .color-#{$name}-300 {
     color: lighten($color, 10%);
   }
-  .text-#{$name}-400 {
+  .color-#{$name}-400 {
     color: lighten($color, 5%);
   }
-  .text-#{$name}-500 {
+  .color-#{$name}-500 {
     color: $color;
   }
-  .text-#{$name}-600 {
+  .color-#{$name}-600 {
     color: darken($color, 5%);
   }
-  .text-#{$name}-700 {
+  .color-#{$name}-700 {
     color: darken($color, 10%);
   }
-  .text-#{$name}-800 {
+  .color-#{$name}-800 {
     color: darken($color, 15%);
   }
-  .text-#{$name}-900 {
+  .color-#{$name}-900 {
     color: darken($color, 30%);
+  }
+  .hover-text-#{$name} {
+    &:hover {
+      color: $color !important;
+    }
   }
   .bg-#{$name} {
     background-color: $color;
@@ -119,6 +124,11 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   .bg-#{$name}-900 {
     background-color: darken($color, 30%);
   }
+  .hover-bg-#{$name} {
+    &:hover {
+      background-color: $color !important;
+    }
+  }
 }
 @media (min-width: $desktop-breakpoint) {
   @each $name in $colors {
@@ -138,34 +148,34 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
     } @else if $name == yellow { $color: $yellow;
     } @else if $name == orange { $color: $orange;
     }
-    .md-text-#{$name} {
+    .md-color-#{$name} {
       color: $color;
     }
-    .md-text-#{$name}-100 {
+    .md-color-#{$name}-100 {
       color: lighten($color, 25%);
     }
-    .md-text-#{$name}-200 {
+    .md-color-#{$name}-200 {
       color: lighten($color, 18%);
     }
-    .md-text-#{$name}-300 {
+    .md-color-#{$name}-300 {
       color: lighten($color, 10%);
     }
-    .md-text-#{$name}-400 {
+    .md-color-#{$name}-400 {
       color: lighten($color, 5%);
     }
-    .md-text-#{$name}-500 {
+    .md-color-#{$name}-500 {
       color: $color;
     }
-    .md-text-#{$name}-600 {
+    .md-color-#{$name}-600 {
       color: darken($color, 5%);
     }
-    .md-text-#{$name}-700 {
+    .md-color-#{$name}-700 {
       color: darken($color, 10%);
     }
     .md-text-#{$name}-800 {
       color: darken($color, 15%);
     }
-    .md-text-#{$name}-900 {
+    .md-color-#{$name}-900 {
       color: darken($color, 30%);
     }
     .md-bg-#{$name} {
@@ -197,6 +207,11 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
     }
     .md-bg-#{$name}-900 {
       background-color: darken($color, 30%);
+    }
+    .hover-md-bg-#{$name} {
+      &:hover {
+        background-color: $color !important;
+      }
     }
   }
 }

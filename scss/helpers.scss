@@ -591,12 +591,11 @@ $margins: m, ml, mr, mt, mb, my, mx;
 
 //ANIMATIONS
 .zoom { 
-	transition: all .2s ease-in-out; 
-}	 
-.zoom:hover { 
-	transform: scale(1.1); 
+  transition: all .2s ease-in-out;
+  &:hover { 
+    transform: scale(1.1); 
+  }
 }
-
 
 //OBJECT
 
@@ -623,6 +622,11 @@ $margins: m, ml, mr, mt, mb, my, mx;
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .object-bottom {
@@ -663,11 +667,6 @@ $margins: m, ml, mr, mt, mb, my, mx;
 .object-right-top {
   -o-object-position: right top;
      object-position: right top;
-}
-
-.object-top {
-  -o-object-position: top;
-     object-position: top;
 }
 
 
