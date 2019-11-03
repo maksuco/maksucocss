@@ -1,5 +1,6 @@
 # Bootwind CSS/JS Helpers
-
+Remember to add/replace your **variables** before importing, 
+and then **@import 'compiled';**
 
 ---
 # CSS
@@ -252,7 +253,7 @@ Basic: `.form-clean` `.form-clean-select`
 Basic: `.form-muted` `.form-muted-select`
 Basic: `.form-inner` `.form-inner-select`
 
-```
+```html
 <div class="form-basic required">
   <label for="text">Text Field</label>
   <input type="text" id="text" placeholder="Your Text">
@@ -275,7 +276,7 @@ To show select as button `.form-select-btn`
 #### Big Search Input
 
 `.big-search` with an option of `.typeahead` to add a delete icon and hide search icon
-```
+```html
 <form role="search" method="post" class="big-search typeahead form-lg">
   <input type="search" autofocus="" placeholder="something goes here" name="s">
   <i class="fa fa-search"></i>

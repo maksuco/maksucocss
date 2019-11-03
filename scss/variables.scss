@@ -23,6 +23,10 @@ $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: 700 !default;
+$h1-size: 2.5rem !default;
+$h2-size: 2.2rem !default;
+$h3-size: 1.9rem !default;
+$h4-size: 1.6rem !default;
 
 //COLORS
 $primary: #301680;
@@ -33,7 +37,7 @@ $gray: #A0AEC0;
 $blue: #4299E1;
 $indigo: #667EEA;
 $purple: #9F7AEA;
-$green: rgb(29, 161, 57);
+$green: #1da139;
 $teal: #38B2AC;
 $red: #E53E3E;
 $yellow: #ECC94B;
@@ -57,4 +61,4 @@ $form-placeholder-color: $gray;
 $form-border: 1px solid $gray;
 
 //BACKEND
-$backend-body-bg-color: #f4f6f8 !default;
+$backend-bg: #f4f6f8 !default;
