@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/backend.css": {
 		"aP": 1,
 		"bl": 0,
@@ -469,6 +477,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/bootstrap/scss/bootstrap-reboot.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/bootstrap/scss/bootstrap-reboot-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/bootstrap/scss/bootstrap-reboot.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -494,6 +512,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/bootstrap/scss/bootstrap.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/bootstrap/scss/bootstrap-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/bootstrap/scss/bootstrap.scss": {
 		"aP": 0,
@@ -1731,6 +1759,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/boxes.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/boxes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1740,6 +1781,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/charts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/charts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1844,6 +1898,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/forms/form-inner.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/forms/form-invisible.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/forms/form-invisible.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

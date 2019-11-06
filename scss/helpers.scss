@@ -12,17 +12,17 @@ $sizes:0.25rem, 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.25rem, 
 $paddings: p, pl, pr, pt, pb, py, px;
 @each $row in $paddings {
   .#{$row}-0 {
-    @if $row == p { padding: 0;
-    } @else if $row == pl { padding-left: 0;
-    } @else if $row == pr { padding-right: 0;
-    } @else if $row == pt { padding-top: 0;
-    } @else if $row == pb { padding-bottom: 0;
-    } @else if $row == py { padding-top: 0; padding-bottom: 0;
-    } @else if $row == px { padding-left: 0; padding-right: 0;
+    @if $row == p { padding: 0 !important;
+    } @else if $row == pl { padding-left: 0 !important;
+    } @else if $row == pr { padding-right: 0 !important;
+    } @else if $row == pt { padding-top: 0 !important;
+    } @else if $row == pb { padding-bottom: 0 !important;
+    } @else if $row == py { padding-top: 0 !important; padding-bottom: 0 !important;
+    } @else if $row == px { padding-left: 0 !important; padding-right: 0 !important;
     }
   }
   .#{$row}-px {
-    @if $row == p { padding: 1px;
+    @if $row == p { padding: 1px !important;
     } @else if $row == pl { padding-left: 1px;
     } @else if $row == pr { padding-right: 1px;
     } @else if $row == pt { padding-top: 1px;
@@ -36,13 +36,13 @@ $paddings: p, pl, pr, pt, pb, py, px;
   @each $size in $sizes {
   $i: index($sizes, $size);
     .#{$row}-#{$i} {
-      @if $row == p { padding: #{$size};
-      } @else if $row == pl { padding-left: #{$size};
-      } @else if $row == pr { padding-right: #{$size};
-      } @else if $row == pt { padding-top: #{$size};
-      } @else if $row == pb { padding-bottom: #{$size};
-      } @else if $row == py { padding-top: #{$size}; padding-bottom: #{$size};
-      } @else if $row == px { padding-left: #{$size}; padding-right: #{$size};
+      @if $row == p { padding: #{$size} !important;
+      } @else if $row == pl { padding-left: #{$size} !important;
+      } @else if $row == pr { padding-right: #{$size} !important;
+      } @else if $row == pt { padding-top: #{$size} !important;
+      } @else if $row == pb { padding-bottom: #{$size} !important;
+      } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+      } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
       }
     }
   }
@@ -51,35 +51,35 @@ $paddings: p, pl, pr, pt, pb, py, px;
 @media (min-width: $desktop-breakpoint) {
   @each $row in $paddings {
     .md-#{$row}-0 {
-      @if $row == p { padding: 0;
-      } @else if $row == pl { padding-left: 0;
-      } @else if $row == pr { padding-right: 0;
-      } @else if $row == pt { padding-top: 0;
-      } @else if $row == pb { padding-bottom: 0;
-      } @else if $row == py { padding-top: 0; padding-bottom: 0;
-      } @else if $row == px { padding-left: 0; padding-right: 0;
+      @if $row == p { padding: 0 !important;
+      } @else if $row == pl { padding-left: 0 !important;
+      } @else if $row == pr { padding-right: 0 !important;
+      } @else if $row == pt { padding-top: 0 !important;
+      } @else if $row == pb { padding-bottom: 0 !important;
+      } @else if $row == py { padding-top: 0 !important; padding-bottom: 0 !important;
+      } @else if $row == px { padding-left: 0 !important; padding-right: 0 !important;
       }
     }
     .md-#{$row}-px {
-      @if $row == p { padding: 1px;
-      } @else if $row == pl { padding-left: 1px;
-      } @else if $row == pr { padding-right: 1px;
-      } @else if $row == pt { padding-top: 1px;
-      } @else if $row == pb { padding-bottom: 1px;
-      } @else if $row == py { padding-top: 1px; padding-bottom: 1px;
-      } @else if $row == px { padding-left: 1px; padding-right: 1px;
+      @if $row == p { padding: 1px !important;
+      } @else if $row == pl { padding-left: 1px !important;
+      } @else if $row == pr { padding-right: 1px !important;
+      } @else if $row == pt { padding-top: 1px !important;
+      } @else if $row == pb { padding-bottom: 1px !important;
+      } @else if $row == py { padding-top: 1px !important; padding-bottom: 1px !important;
+      } @else if $row == px { padding-left: 1px !important; padding-right: 1px !important;
       }
     }
     @each $size in $sizes {
       $i: index($sizes, $size);
       .md-#{$row}-#{$i} {
-        @if $row == p { padding: #{$size};
-        } @else if $row == pl { padding-left: #{$size};
-        } @else if $row == pr { padding-right: #{$size};
-        } @else if $row == pt { padding-top: #{$size};
-        } @else if $row == pb { padding-bottom: #{$size};
-        } @else if $row == py { padding-top: #{$size}; padding-bottom: #{$size};
-        } @else if $row == px { padding-left: #{$size}; padding-right: #{$size};
+        @if $row == p { padding: #{$size} !important;
+        } @else if $row == pl { padding-left: #{$size} !important;
+        } @else if $row == pr { padding-right: #{$size} !important;
+        } @else if $row == pt { padding-top: #{$size} !important;
+        } @else if $row == pb { padding-bottom: #{$size} !important;
+        } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+        } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
         }
       }
     }
@@ -90,35 +90,35 @@ $paddings: p, pl, pr, pt, pb, py, px;
 @media (max-width: $desktop-breakpoint) {
   @each $row in $paddings {
     .sm-#{$row}-0 {
-      @if $row == p { padding: 0;
-      } @else if $row == pl { padding-left: 0;
-      } @else if $row == pr { padding-right: 0;
-      } @else if $row == pt { padding-top: 0;
-      } @else if $row == pb { padding-bottom: 0;
-      } @else if $row == py { padding-top: 0; padding-bottom: 0;
-      } @else if $row == px { padding-left: 0; padding-right: 0;
+      @if $row == p { padding: 0 !important;
+      } @else if $row == pl { padding-left: 0 !important;
+      } @else if $row == pr { padding-right: 0 !important;
+      } @else if $row == pt { padding-top: 0 !important;
+      } @else if $row == pb { padding-bottom: 0 !important;
+      } @else if $row == py { padding-top: 0 !important; padding-bottom: 0 !important;
+      } @else if $row == px { padding-left: 0 !important; padding-right: 0 !important;
       }
     }
     .sm-#{$row}-px {
-      @if $row == p { padding: 1px;
-      } @else if $row == pl { padding-left: 1px;
-      } @else if $row == pr { padding-right: 1px;
-      } @else if $row == pt { padding-top: 1px;
-      } @else if $row == pb { padding-bottom: 1px;
-      } @else if $row == py { padding-top: 1px; padding-bottom: 1px;
-      } @else if $row == px { padding-left: 1px; padding-right: 1px;
+      @if $row == p { padding: 1px !important;
+      } @else if $row == pl { padding-left: 1px !important;
+      } @else if $row == pr { padding-right: 1px !important;
+      } @else if $row == pt { padding-top: 1px !important;
+      } @else if $row == pb { padding-bottom: 1px !important;
+      } @else if $row == py { padding-top: 1px !important; padding-bottom: 1px !important;
+      } @else if $row == px { padding-left: 1px !important; padding-right: 1px !important;
       }
     }
     @each $size in $sizes {
       $i: index($sizes, $size);
       .sm-#{$row}-#{$i} {
-        @if $row == p { padding: #{$size};
-        } @else if $row == pl { padding-left: #{$size};
-        } @else if $row == pr { padding-right: #{$size};
-        } @else if $row == pt { padding-top: #{$size};
-        } @else if $row == pb { padding-bottom: #{$size};
-        } @else if $row == py { padding-top: #{$size}; padding-bottom: #{$size};
-        } @else if $row == px { padding-left: #{$size}; padding-right: #{$size};
+        @if $row == p { padding: #{$size} !important;
+        } @else if $row == pl { padding-left: #{$size} !important;
+        } @else if $row == pr { padding-right: #{$size} !important;
+        } @else if $row == pt { padding-top: #{$size} !important;
+        } @else if $row == pb { padding-bottom: #{$size} !important;
+        } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+        } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
         }
       }
     }
@@ -143,23 +143,23 @@ $paddings: p, pl, pr, pt, pb, py, px;
 $margins: m, ml, mr, mt, mb, my, mx;
 @each $row in $margins {
   .#{$row}-0 {
-    @if $row == m { margin: 0;
-    } @else if $row == ml { margin-left: 0;
-    } @else if $row == mr { margin-right: 0;
-    } @else if $row == mt { margin-top: 0;
-    } @else if $row == mb { margin-bottom: 0;
-    } @else if $row == my { margin-top: 0; margin-bottom: 0;
-    } @else if $row == mx { margin-left: 0; margin-right: 0;
+    @if $row == m { margin: 0 !important;
+    } @else if $row == ml { margin-left: 0 !important;
+    } @else if $row == mr { margin-right: 0 !important;
+    } @else if $row == mt { margin-top: 0 !important;
+    } @else if $row == mb { margin-bottom: 0 !important;
+    } @else if $row == my { margin-top: 0 !important; margin-bottom: 0 !important;
+    } @else if $row == mx { margin-left: 0 !important; margin-right: 0 !important;
     }
   }
   .#{$row}-px {
-    @if $row == m { margin: 1px;
-    } @else if $row == ml { margin-left: 1px;
-    } @else if $row == mr { margin-right: 1px;
-    } @else if $row == mt { margin-top: 1px;
-    } @else if $row == mb { margin-bottom: 1px;
-    } @else if $row == my { margin-top: 1px; margin-bottom: 1px;
-    } @else if $row == mx { margin-left: 1px; margin-right: 1px;
+    @if $row == m { margin: 1px !important;
+    } @else if $row == ml { margin-left: 1px !important;
+    } @else if $row == mr { margin-right: 1px !important;
+    } @else if $row == mt { margin-top: 1px !important;
+    } @else if $row == mb { margin-bottom: 1px !important;
+    } @else if $row == my { margin-top: 1px !important; margin-bottom: 1px !important;
+    } @else if $row == mx { margin-left: 1px !important; margin-right: 1px !important;
     }
   }
 }
@@ -167,21 +167,21 @@ $margins: m, ml, mr, mt, mb, my, mx;
   @each $size in $sizes {
   $i: index($sizes, $size);
     .#{$row}-#{$i} {
-      @if $row == m { margin: #{$size};
-      } @else if $row == ml { margin-left: #{$size};
-      } @else if $row == mr { margin-right: #{$size};
-      } @else if $row == mt { margin-top: #{$size};
-      } @else if $row == mb { margin-bottom: #{$size};
-      } @else if $row == my { margin-top: #{$size}; margin-bottom: #{$size};
-      } @else if $row == mx { margin-left: #{$size}; margin-right: #{$size};
+      @if $row == m { margin: #{$size} !important;
+      } @else if $row == ml { margin-left: #{$size} !important;
+      } @else if $row == mr { margin-right: #{$size} !important;
+      } @else if $row == mt { margin-top: #{$size} !important;
+      } @else if $row == mb { margin-bottom: #{$size} !important;
+      } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+      } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
       }
     }
     //Negative
     .#{$row}--#{$i} {
-      @if $row == ml { margin-left: -#{$size};
-      } @else if $row == mr { margin-right: -#{$size};
-      } @else if $row == mt { margin-top: -#{$size};
-      } @else if $row == mb { margin-bottom: -#{$size};
+      @if $row == ml { margin-left: -#{$size} !important;
+      } @else if $row == mr { margin-right: -#{$size} !important;
+      } @else if $row == mt { margin-top: -#{$size} !important;
+      } @else if $row == mb { margin-bottom: -#{$size} !important;
       }
     }
   }
@@ -190,43 +190,43 @@ $margins: m, ml, mr, mt, mb, my, mx;
 @media (min-width: $desktop-breakpoint) {
   @each $row in $margins {
     .md-#{$row}-0 {
-      @if $row == m { margin: 0;
+      @if $row == m { margin: 0 !important;
       } @else if $row == ml { margin-left: 0;
       } @else if $row == mr { margin-right: 0;
       } @else if $row == mt { margin-top: 0;
       } @else if $row == mb { margin-bottom: 0;
-      } @else if $row == my { margin-top: 0; margin-bottom: 0;
-      } @else if $row == mx { margin-left: 0; margin-right: 0;
+      } @else if $row == my { margin-top: 0; margin-bottom: 0 !important;
+      } @else if $row == mx { margin-left: 0; margin-right: 0 !important;
       }
     }
     .md-#{$row}-px {
-      @if $row == m { margin: 1px;
-      } @else if $row == ml { margin-left: 1px;
-      } @else if $row == mr { margin-right: 1px;
-      } @else if $row == mt { margin-top: 1px;
-      } @else if $row == mb { margin-bottom: 1px;
-      } @else if $row == my { margin-top: 1px; margin-bottom: 1px;
-      } @else if $row == mx { margin-left: 1px; margin-right: 1px;
+      @if $row == m { margin: 1px !important;
+      } @else if $row == ml { margin-left: 1px !important;
+      } @else if $row == mr { margin-right: 1px !important;
+      } @else if $row == mt { margin-top: 1px !important;
+      } @else if $row == mb { margin-bottom: 1px !important;
+      } @else if $row == my { margin-top: 1px !important; margin-bottom: 1px !important;
+      } @else if $row == mx { margin-left: 1px !important; margin-right: 1px !important;
       }
     }
     @each $size in $sizes {
     $i: index($sizes, $size);
       .md-#{$row}-#{$i} {
-        @if $row == m { margin: #{$size};
-        } @else if $row == ml { margin-left: #{$size};
-        } @else if $row == mr { margin-right: #{$size};
-        } @else if $row == mt { margin-top: #{$size};
-        } @else if $row == mb { margin-bottom: #{$size};
-        } @else if $row == my { margin-top: #{$size}; margin-bottom: #{$size};
-        } @else if $row == mx { margin-left: #{$size}; margin-right: #{$size};
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
         }
       }
       //Negative
       .md-#{$row}--#{$i} {
-        @if $row == ml { margin-left: -#{$size};
-        } @else if $row == mr { margin-right: -#{$size};
-        } @else if $row == mt { margin-top: -#{$size};
-        } @else if $row == mb { margin-bottom: -#{$size};
+        @if $row == ml { margin-left: -#{$size} !important;
+        } @else if $row == mr { margin-right: -#{$size} !important;
+        } @else if $row == mt { margin-top: -#{$size} !important;
+        } @else if $row == mb { margin-bottom: -#{$size} !important;
         }
       }
     }
@@ -236,43 +236,43 @@ $margins: m, ml, mr, mt, mb, my, mx;
 @media (max-width: $desktop-breakpoint) {
   @each $row in $margins {
     .sm-#{$row}-0 {
-      @if $row == m { margin: 0;
-      } @else if $row == ml { margin-left: 0;
-      } @else if $row == mr { margin-right: 0;
-      } @else if $row == mt { margin-top: 0;
-      } @else if $row == mb { margin-bottom: 0;
-      } @else if $row == my { margin-top: 0; margin-bottom: 0;
-      } @else if $row == mx { margin-left: 0; margin-right: 0;
+      @if $row == m { margin: 0 !important;
+      } @else if $row == ml { margin-left: 0 !important;
+      } @else if $row == mr { margin-right: 0 !important;
+      } @else if $row == mt { margin-top: 0 !important;
+      } @else if $row == mb { margin-bottom: 0 !important;
+      } @else if $row == my { margin-top: 0 !important; margin-bottom: 0 !important;
+      } @else if $row == mx { margin-left: 0 !important; margin-right: 0 !important;
       }
     }
     .sm-#{$row}-px {
-      @if $row == m { margin: 1px;
-      } @else if $row == ml { margin-left: 1px;
-      } @else if $row == mr { margin-right: 1px;
-      } @else if $row == mt { margin-top: 1px;
-      } @else if $row == mb { margin-bottom: 1px;
-      } @else if $row == my { margin-top: 1px; margin-bottom: 1px;
-      } @else if $row == mx { margin-left: 1px; margin-right: 1px;
+      @if $row == m { margin: 1px !important;
+      } @else if $row == ml { margin-left: 1px !important;
+      } @else if $row == mr { margin-right: 1px !important;
+      } @else if $row == mt { margin-top: 1px !important;
+      } @else if $row == mb { margin-bottom: 1px !important;
+      } @else if $row == my { margin-top: 1px !important; margin-bottom: 1px !important;
+      } @else if $row == mx { margin-left: 1px !important; margin-right: 1px !important;
       }
     }
     @each $size in $sizes {
     $i: index($sizes, $size);
       .sm-#{$row}-#{$i} {
-        @if $row == m { margin: #{$size};
-        } @else if $row == ml { margin-left: #{$size};
-        } @else if $row == mr { margin-right: #{$size};
-        } @else if $row == mt { margin-top: #{$size};
-        } @else if $row == mb { margin-bottom: #{$size};
-        } @else if $row == my { margin-top: #{$size}; margin-bottom: #{$size};
-        } @else if $row == mx { margin-left: #{$size}; margin-right: #{$size};
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
         }
       }
       //Negative
       .sm-#{$row}--#{$i} {
-        @if $row == ml { margin-left: -#{$size};
-        } @else if $row == mr { margin-right: -#{$size};
-        } @else if $row == mt { margin-top: -#{$size};
-        } @else if $row == mb { margin-bottom: -#{$size};
+        @if $row == ml { margin-left: -#{$size} !important;
+        } @else if $row == mr { margin-right: -#{$size} !important;
+        } @else if $row == mt { margin-top: -#{$size} !important;
+        } @else if $row == mb { margin-bottom: -#{$size} !important;
         }
       }
     }
@@ -282,7 +282,7 @@ $margins: m, ml, mr, mt, mb, my, mx;
 
 
 //RADIUS
-.rounded-none {
+.rounded-none, .rounded-0 {
   border-radius: 0;
 }
 .rounded-sm {
@@ -293,6 +293,9 @@ $margins: m, ml, mr, mt, mb, my, mx;
 }
 .rounded-lg {
   border-radius: 0.5rem;
+}
+.rounded-xl {
+  border-radius: 1rem;
 }
 .rounded-circle {
   border-radius: 50%!important;
@@ -314,6 +317,9 @@ $margins: m, ml, mr, mt, mb, my, mx;
   .md-rounded-lg {
     border-radius: 0.5rem;
   }
+  .md-rounded-xl {
+    border-radius: 1rem;
+  }
   .md-rounded-full {
     border-radius: 9999px;
   }
@@ -331,6 +337,9 @@ $margins: m, ml, mr, mt, mb, my, mx;
   }
   .sm-rounded-lg {
     border-radius: 0.5rem;
+  }
+  .sm-rounded-xl {
+    border-radius: 1rem;
   }
   .sm-rounded-full {
     border-radius: 9999px;
@@ -517,6 +526,28 @@ $margins: m, ml, mr, mt, mb, my, mx;
   border-bottom-left-radius: 9999px;
 }
 
+//BORDERS (border colors in colors.scss)
+.border-0 {
+  border-width: 0;
+}
+.border-none {
+  border: none;
+}
+.border, .border-1 {
+  border-width: 1px;
+}
+.border-2 {
+  border-width: 2px;
+}
+.border-3 {
+  border-width: 3px;
+}
+.border-4 {
+  border-width: 4px;
+}
+
+
+
 
 
 
@@ -596,100 +627,40 @@ $margins: m, ml, mr, mt, mb, my, mx;
 .zoom { 
   transition: all .2s ease-in-out;
   &:hover { 
-    transform: scale(1.1); 
+    transform: scale(1.03); 
   }
 }
 
-//OBJECT
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.object-none {
-  -o-object-fit: none;
-     object-fit: none;
-}
-
-.object-scale-down {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-}
-
-.object-top {
-  -o-object-position: top;
-     object-position: top;
-}
-
-.object-bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
-.object-left {
-  -o-object-position: left;
-     object-position: left;
-}
-
-.object-left-bottom {
-  -o-object-position: left bottom;
-     object-position: left bottom;
-}
-
-.object-left-top {
-  -o-object-position: left top;
-     object-position: left top;
-}
-
-.object-right {
-  -o-object-position: right;
-     object-position: right;
-}
-
-.object-right-bottom {
-  -o-object-position: right bottom;
-     object-position: right bottom;
-}
-
-.object-right-top {
-  -o-object-position: right top;
-     object-position: right top;
-}
 
 
 //OPACITY
 .opacity-0 {
   opacity: 0;
 }
-
 .opacity-25 {
   opacity: 0.25;
 }
-
 .opacity-50 {
   opacity: 0.5;
 }
-
 .opacity-75 {
   opacity: 0.75;
 }
-
 .opacity-100 {
+  opacity: 1;
+}
+.hover-opacity-0 {
+  opacity: 0;
+}
+.hover-opacity-25 {
+  opacity: 0.25;
+}
+.hover-opacity-50 {
+  opacity: 0.5;
+}
+.hover-opacity-75 {
+  opacity: 0.75;
+}
+.hover-opacity-100 {
   opacity: 1;
 }

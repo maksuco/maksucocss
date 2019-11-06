@@ -10,17 +10,20 @@
 <body class="bg-light">
 
   <section class="bg-primary p-10 flex items-baseline">
-    <h1 class="text-white text-5x md-text-7x font-bold w-full">BOOTWIND FORMS</h1>
+    <h1 class="color-white text-5x md-text-7x text-bold w-full">BOOTWIND FORMS</h1>
+    <a href="frontend.html" class="btn btn-white btn-sm rounded-full mr-1">Frontend</a>
+    <a href="backend.html" class="btn btn-sm rounded-full mr-1 color-white">Backend</a>
+    <a href="forms.html" class="btn btn-sm rounded-full mr-1 color-white">Forms</a>
   </section>
 
 
 
 
   <section class="container flex mt-4">
-      <div class="col-20 mx-auto">
+      <div class="col-22 col-md-20 mx-auto">
         <form class="shadow-lg rounded px-8 pt-6 pb-8 mb-4" style="background-color:#f8f9fa;">
   
-        <h1 class="font-bold">Forms Basic</h1>
+        <h1 class="text-bold">Forms Basic</h1>
         <p>Use with .form-basic</p>
   
         <div class="form-basic-select required mt-5">
@@ -36,7 +39,7 @@
         <div class="form-basic required mt-3">
           <label for="email-muted">Text Field</label>
           <input type="text" id="email-muted" placeholder="Your Email">
-          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <small class="color-gray">We'll never share your email with anyone else.</small>
         </div>
         
         <div class="form-basic">
@@ -67,11 +70,58 @@
   </section>
 
 
+
   <section class="container flex mt-4">
-      <div class="col-20 mx-auto">
+    <div class="col-22 col-md-20 mx-auto">
+      <form class="shadow-lg rounded px-8 pt-6 pb-8 mb-4" style="background-color:#f8f9fa;">
+
+      <h1 class="text-bold">Forms Invisible</h1>
+      <p>Use with .form-invisible</p>
+
+      <div class="form-invisible required mt-5">
+        <select class="">
+          <option value="" selected disabled>Choose one</option>
+          <option value="1">United States</option>
+          <option value="2">Colombia</option>
+          <option value="3">France</option>
+        </select>
+      </div>
+      
+      <div class="form-invisible required">
+        <input type="text" id="text_invisible" placeholder="Your Email">
+        <small class="color-gray">We'll never share your email with anyone else.</small>
+      </div>
+      
+      <div class="form-invisible">
+        <input type="text" class="" id="name" placeholder="Name" value="Michael">
+      </div>
+
+      <div class="form-invisible mt-3">
+        <label>Message</label>
+        <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+      </div>
+
+      <h3 class="mt-6">Sizes</h3>
+      <p>Use with .form-sm and .form-lg</p>
+
+      <div class="form-invisible form-sm required mt-3">
+        <input type="text" class="" id="name5" placeholder="SM">
+      </div>
+      <div class="form-invisible form-lg required mt-3">
+        <input type="text" class="" id="name5" placeholder="LG">
+      </div>
+
+    </form>
+      
+  </div>
+</section>
+
+
+  <section class="container flex mt-4">
+      <div class="col-22 col-md-20 mx-auto">
         <form class="shadow-lg rounded px-8 pt-6 pb-8 mb-4" style="background-color:#f8f9fa;">
   
-        <h1 class="font-bold">Forms Clean</h1>
+        <h1 class="text-bold">Forms Clean</h1>
         <p>Use with .form-clean</p>
   
         <div class="form-clean required mt-5">
@@ -87,7 +137,7 @@
         <div class="form-clean required mt-3">
           <label for="email-muted">Text Field</label>
           <input type="text" id="email-muted" placeholder="Your Email">
-          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <small class="color-gray">We'll never share your email with anyone else.</small>
         </div>
         
         <div class="form-clean">
@@ -119,10 +169,10 @@
 
 
   <section class="container flex mt-4">
-    <div class="col-20 mx-auto">
+      <div class="col-22 col-md-20 mx-auto">
       <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
 
-      <h1 class="font-bold">Forms Muted</h1>
+      <h1 class="text-bold">Forms Muted</h1>
       <p>Use with .form-muted</p>
 
       <div class="form-muted-select required mt-5">
@@ -138,7 +188,7 @@
       <div class="form-muted required mt-3">
         <label for="email-muted">Text Field</label>
         <input type="text" id="email-muted" placeholder="Your Email">
-        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
       </div>
       
       <div class="form-muted">
@@ -154,11 +204,11 @@
       <h3 class="mt-6">Sizes</h3>
       <p>Use with .form-sm and .form-lg</p>
 
-      <div class="form-muted form-muted-sm required mt-3">
+      <div class="form-muted form-sm required mt-3">
         <label for="name5">SM</label>
         <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
       </div>
-      <div class="form-muted form-muted-lg required mt-3">
+      <div class="form-muted form-lg required mt-3">
         <label for="name5">LG</label>
         <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
       </div>
@@ -172,10 +222,10 @@
 
 
 <section class="container flex mt-4">
-  <div class="col-20 mx-auto">
+    <div class="col-22 col-md-20 mx-auto">
     <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
 
-    <h1 class="font-bold">Forms Inner</h1>
+    <h1 class="text-bold">Forms Inner</h1>
     <p>Use with .form-inner</p>
 
     <div class="form-inner-select required">
@@ -186,13 +236,13 @@
         <option value="2">Two</option>
         <option value="3">Three</option>
       </select>
-      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <small class="color-gray">We'll never share your email with anyone else.</small>
     </div>
     
     <div class="form-inner required mt-3">
       <input type="text" class="form-control-inner" id="email5" placeholder=" ">
       <label for="email5">Email address</label>
-      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <small class="color-gray">We'll never share your email with anyone else.</small>
     </div>
     
     <div class="form-inner">
@@ -224,7 +274,7 @@
       <div class="form-inner form-inner-inverted mt-3">
           <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
           <label for="name5">Nombre</label>
-          <small class="form-text text-muted">te sabes tu nombre?</small>
+          <small class="color-gray">te sabes tu nombre?</small>
       </div>
     
       <div class="form-inner-select form-inner-inverted required">
@@ -235,13 +285,13 @@
           <option value="3">Three</option>
         </select>
         <label>Select .form-xxx-select</label>
-        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
       </div>
       
       <div class="form-inner form-inner-inverted required mt-3">
         <input type="text" class="form-control-inner" id="email5" placeholder=" ">
         <label for="email5">Email address</label>
-        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
       </div>
     </form>
     
@@ -253,10 +303,10 @@
 
 
 <section class="container flex mt-4">
-    <div class="col-20 mx-auto">
+    <div class="col-22 col-md-20 mx-auto">
       <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
   
-      <h1 class="font-bold">Forms Inner Floating</h1>
+      <h1 class="text-bold">Forms Inner Floating</h1>
       <p>Use with .form-inner-floating</p>
   
       <div class="form-inner-floating-select required">
@@ -267,13 +317,13 @@
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
-        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
       </div>
       
       <div class="form-inner-floating required mt-3">
         <input type="text" class="" id="email5" placeholder=" ">
         <label for="email5">Email address</label>
-        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
       </div>
       
       <div class="form-inner-floating">
@@ -308,10 +358,10 @@
 
 
 <section class="container flex mt-4">
-    <div class="col-20 mx-auto">
+    <div class="col-22 col-md-20 mx-auto">
       <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
   
-      <h1 class="font-bold">Checkboxes and Radios</h1>
+      <h1 class="text-bold">Checkboxes and Radios</h1>
       <p class="mb-5">Use with .form-switch o .form-checkbox, .form-radio</p>
   
       <label for="form-switch">Con .form-switch puedes </label>
@@ -332,7 +382,7 @@
 
       <div class="form-radio form-inline">
         <input type="radio" id="clean3" name="customRadioInline1" class="">
-        <label class="" for="clean3">Or toggle this other custom radio</label>
+        <label class="color-primary-300" for="clean3">Or toggle this other custom radio</label>
       </div>
 
       <h3 class="mt-6">Panels</h3>
@@ -348,13 +398,13 @@
       <figure class="form-panel mt-5">
         <input type="radio" id="plan2" name="panel" value="2">
         <label for="plan2">
-          <b>Advance</b><span>55</span><div>Por un Año</div>
+          <b>Advance</b><span>559</span><div>Por un Año</div>
           <div class="badge badge-dark bg-green text-xs absolute-hc top-5 rounded-none mt--3">Recommended</div>
         </label>
       </figure>
 
 
-      <h1 class="font-bold mt-6">Selects Options</h1>
+      <h1 class="text-bold mt-6">Selects Options</h1>
       <p>Use with .form-select-btn</p>
       <select class="form-select-btn mt-3">
           <option>CURRENCY</option>

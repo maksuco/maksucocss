@@ -1,0 +1,23 @@
+//PROGRESS
+.progress {
+  display: flex;
+  min-height: 1px;
+  height: auto;
+  overflow: hidden;
+  font-size: 1rem;
+  background-color: $progress-bg;
+  border-radius: $btn-radius;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .9rem;
+  color: $light;
+  text-align: center;
+  font-size: 90%;
+  white-space: nowrap;
+  background-color: $primary;
+  //width: attr(data-progressbar) !important;
+}

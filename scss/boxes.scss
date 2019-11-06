@@ -1,0 +1,13 @@
+//ICON BG
+.box-icon {
+  overflow: hidden;
+  i {
+    font-size: 7rem;
+    float: right;
+    margin-top: -40px;
+    margin-right: -40px;
+    opacity: .2;
+    transform: rotate3d(0, 0, 1, 15deg) !important;
+  }
+}
+

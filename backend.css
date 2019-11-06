@@ -63,7 +63,7 @@ aside.sidebar {
     aside.sidebar .sidebar-nav a {
       position: relative;
       padding-left: 20px;
-      color: #dae9f5;
+      color: #dae9f5 !important;
       font-size: 15px;
       font-weight: normal;
       display: block;
@@ -187,7 +187,7 @@ aside.sidebar {
       font-size: .95rem;
       font-weight: light;
       line-height: 1.1;
-      color: #1e2229;
+      color: #151d2e;
       text-transform: capitalize;
       clear: both;
       border-radius: 0.44rem;

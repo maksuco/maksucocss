@@ -38,6 +38,7 @@
   }
   input  {
     padding: 12px 14px;
+    max-width: 600px;
    }
    textarea {
     padding: 12px 14px;
@@ -47,6 +48,7 @@
 .form-muted-select {
   margin-bottom: .8rem;
   position: relative;
+  max-width: 600px;
   label {
     color: $form-light;
     font-size: .8rem;

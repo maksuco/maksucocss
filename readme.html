@@ -8,7 +8,7 @@
 <h1 id="bootwindcssjshelpers">Bootwind CSS/JS Helpers</h1>
 
 <p>Remember to add/replace your <strong>variables</strong> before importing,
-and then <strong>@import &#8216;compiled&#8217;;</strong></p>
+and then <strong>@import &#8216;../node_modules/bootwind/compiled&#8217;;</strong> or what ever you path is</p>
 
 <hr />
 
@@ -126,6 +126,10 @@ Also <code>.top-auto</code> <code>.top-center</code> <code>.bottom-auto</code> <
 
 <p><strong>Transform:</strong> <code>.normal</code> <code>.italic</code> <code>.uppercase</code> <code>.lowercase</code> <code>.capitalize</code> <code>.underline</code> <code>.line-through</code></p>
 
+<p><strong>Line Height:</strong> <code>.line-none</code> <code>.line-10</code> <code>.line-11</code> <code>.line-12</code> <code>.line-13</code> <code>.line-14</code> <code>.line-15</code> <code>.line-16</code> <code>.line-17</code> <code>.line-18</code> <code>.line-19</code> <code>.line-20</code> <code>.line-25</code> <code>.line-30</code></p>
+
+<p><strong>Letter Spacing:</strong> <code>.letter-spacing-xs</code> <code>.letter-spacing-sm</code> <code>.letter-spacing-normal</code> <code>.letter-spacing-lg</code> <code>.letter-spacing-xl</code></p>
+
 <p>With all classes you can also use it with <code>.md-*</code> to target desktop</p>
 
 <hr />
@@ -162,12 +166,16 @@ Also <code>.top-auto</code> <code>.top-center</code> <code>.bottom-auto</code> <
 
 <p><strong>Text:</strong> <code>.color-*</code>, also with variants <code>.color-gray-100</code> to <code>.color-gray-900</code> (variants not available in black, dark and light.)</p>
 
+<p>You can use .hover-color-* like .hover-color-gray</p>
+
 <p><strong>BG:</strong> <code>.bg-*</code>, Available form: primary, secondary, black, white, gray, blue, indigo, purple, red, green, teal, yellow, orange. and also with variants <code>.bg-gray-100</code> to <code>.bg-gray-900</code> (not available in black, dark and light.).
 *-500 is the base color of each variant group</p>
 
+<p>You can use .hover-bg-* like .hover-bg-gray</p>
+
 <p>You can use .bg-gradient-* like .bg-gradient-gray</p>
 
-<p>You can also use it with <code>.md-bg-*</code> <code>.md-color-*</code> to target desktop</p>
+<p>You can also use it with <code>.md-bg-*</code> <code>.md-color-*</code> <code>.md-hover-color-*</code> to target desktop</p>
 
 <hr />
 
@@ -195,11 +203,13 @@ Also <code>.top-auto</code> <code>.top-center</code> <code>.bottom-auto</code> <
 
 <h3 id="bordersandroundedradius">Borders and Rounded/Radius</h3>
 
-<p>Use <code>.rounded</code></p>
-
-<p><strong>Sizes:</strong> <code>.rounded-none</code> <code>.rounded-sm</code> <code>.rounded</code> <code>.rounded-lg</code> <code>.rounded-full</code> <code>.rounded-circle</code>.</p>
+<p><strong>Radius:</strong> <code>.rounded-none</code> <code>.rounded-sm</code> <code>.rounded</code> <code>.rounded-lg</code> <code>.rounded-full</code> <code>.rounded-circle</code>.</p>
 
 <p>Also you can target mobile <code>.sm-*</code> or desktop <code>.md-*</code> only</p>
+
+<p><strong>Borders:</strong> <code>.border-none</code> <code>.border-0</code> <code>.border-1</code> <code>.border-2</code> <code>.border-3</code> <code>.border-4</code>.</p>
+
+<p><strong>Border Colors:</strong> <code>.border-black</code> <code>.border-dark</code> <code>.border-transparent</code> <code>.border-blue</code> <code>.border-teal</code> <code>.border-primary</code> and all the rest.</p>
 
 <hr />
 
@@ -215,19 +225,58 @@ Also <code>.top-auto</code> <code>.top-center</code> <code>.bottom-auto</code> <
 
 <p><code>.opacity-0</code> <code>.opacity-25</code> <code>.opacity-50</code> <code>.opacity-75</code> <code>.opacity-100</code></p>
 
+<p>Also you can target desktop <code>.md-*</code> only</p>
+
+<hr />
+
+<h3 id="list">List</h3>
+
+<p>Use <code>.list</code> or <code>.ul</code> on <ul></p>
+
+<p><strong><li> Margins:</strong> <code>.list-m-none</code> <code>.list-m-5</code> <code>.list-m-10</code> <code>.list-m-11</code> <code>.list-m-12</code> <code>.list-m-13</code> <code>.list-m-14</code> <code>.list-m-15</code> <code>.list-m-20</code>.</p>
+
+<p>For icons use <code>.list-fa</code></p>
+
+<p><strong>Options for <ul>:</strong> <code>.list-fa-check</code> <code>.list-fa-dot</code> <code>.list-fa-user</code> <code>.list-fa-cross</code> <code>.list-fa-plus</code> <code>.list-fa-heart</code> <code>.list-fa-arrow</code></p>
+
+<p><strong>Options for <li>:</strong> <code>.li-fa-check</code> <code>.li-fa-dot</code> <code>.li-fa-user</code> <code>.li-fa-cross</code> <code>.li-fa-plus</code> <code>.li-fa-heart</code> <code>.li-fa-arrow</code></p>
+
+<p>For icon colors you can use <code>.list-fa-gray</code> or to target <li> use <code>.li-fa-*</code></p>
+
 <hr />
 
 <h3 id="icons">Icons</h3>
 
 <p>Font awesome is included</p>
 
-<p>To create layered icons you can use <code>.icon-layer</code> with <code>.icon-badge</code> <code>.icon-badge-primary</code> <code>.icon-badge-orange</code> <code>.icon-calendar</code> and <code>.icon-file</code></p>
+<p>To create layered icons you can use <code>.icon-layer</code> with <code>.icon-badge</code> <code>.icon-badge-primary</code> <code>.icon-badge-orange</code> <code>.icon-calendar</code> and <code>.icon-file</code>, don&#8217;t forget to put data-icon=&#8220;24&#8221;</p>
+
+<p><strong>To create a circle around:</strong></p>
+
+<pre><code>&lt;div class='icon-circle bg-teal-100 p-4'&gt;
+  &lt;i class='fal fa-thumbs-up fa-2x color-teal-700'&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code></pre>
 
 <hr />
 
 <h3 id="animations">Animations</h3>
 
 <p><code>.zoom</code></p>
+
+<hr />
+
+<h1 id="charts">Charts</h1>
+
+<h3 id="progress">Progress</h3>
+
+<p>Use <code>.progress</code> and <code>.progress-bar</code>
+in <code>.progress</code> you can change the color and height of the BG&#8217;s</p>
+
+<pre><code>&lt;div class=&quot;progress block h-1&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
 <hr />
 
@@ -253,6 +302,16 @@ Basic: <code>.form-inner</code> <code>.form-inner-select</code></p>
 
 <p><code>.form-checkbox</code> <code>.form-radio</code> <code>.form-switch</code></p>
 
+<p><strong>Panels:</strong> <code>.form-panel</code></p>
+
+<pre><code class="html">&lt;figure class=&quot;form-panel mt-5&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;plan1&quot; name=&quot;panel&quot; value=&quot;1&quot;&gt;
+  &lt;label for=&quot;plan1&quot;&gt;
+   &lt;b&gt;Basic&lt;/b&gt;&lt;span&gt;5&lt;/span&gt;&lt;div&gt;Por un Año&lt;/div&gt;
+  &lt;/label&gt;
+&lt;/figure&gt;
+</code></pre>
+
 <h4 id="selects">Selects</h4>
 
 <p>To show select as button <code>.form-select-btn</code></p>
@@ -261,8 +320,8 @@ Basic: <code>.form-inner</code> <code>.form-inner-select</code></p>
 
 <p><code>.big-search</code> with an option of <code>.typeahead</code> to add a delete icon and hide search icon</p>
 
-<pre><code class="html">&lt;form role=&quot;search&quot; method=&quot;post&quot; class=&quot;big-search typeahead form-lg&quot;&gt;
-  &lt;input type=&quot;search&quot; autofocus=&quot;&quot; placeholder=&quot;something goes here&quot; name=&quot;s&quot;&gt;
+<pre><code class="html">&lt;form role=&quot;search&quot; method=&quot;&quot; class=&quot;big-search typeahead form-lg&quot;&gt;
+  &lt;input type=&quot;search&quot; autofocus=&quot;&quot; placeholder=&quot;something&quot;&gt;
   &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
 &lt;/form&gt;
 </code></pre>

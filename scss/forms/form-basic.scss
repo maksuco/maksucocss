@@ -37,12 +37,12 @@
     }
   }
   input  {
-   }
-   textarea {
-   }
+    max-width: 600px;
+  }
 }
 
 .form-basic-select {
+  max-width: 600px;
   select {
     width: 100%;
     display: block;

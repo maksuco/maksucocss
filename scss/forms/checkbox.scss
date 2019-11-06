@@ -230,19 +230,13 @@
     font-weight: bold;
     text-align: center;
     text-shadow: none;
-    min-height: 144px;
+    min-height: 142px;
     min-width: 140px;
     padding: 25px 30px 10px 30px;
     margin-right: 10px;
     border: 2px solid #ced4da;
     border-radius: $btn-radius !important;
     transition: all 0.2s ease-in-out;
-    @media (max-width: $desktop-breakpoint) {
-      width: 100%;
-      padding: 7px;
-      min-height: 40px;
-      margin-right: 0px;
-    }
     b {
       font-size: 1.3rem;
     }
@@ -273,5 +267,22 @@
       cursor: pointer;
     }
     
+  }
+  @media (max-width: $desktop-breakpoint) {
+    b {
+      font-size: 1.2rem !important;
+    }
+    label {
+      width: 100%;
+      padding: 1.1rem 1.5rem;
+      min-height: 40px;
+      margin-right: 0px;
+    }
+    span {
+      font-size: 3rem !important;
+      &::after {
+        font-size: .7rem !important;
+      }
+    }
   }
 }

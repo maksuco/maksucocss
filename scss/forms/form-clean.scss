@@ -20,6 +20,7 @@
     font-weight: light;
     padding: 12px 14px;
     transition: box-shadow .15s ease;
+    background-color: white;
     &:focus {
       outline: none;
       border: 1px solid #fff;
@@ -31,6 +32,10 @@
   }
   input, textarea {
     width: 100%;
+  }
+  input {
+    width: 100%;
+    max-width: 600px;
   }
 
 

@@ -14,21 +14,22 @@
       <a href="backend.html" class="btn btn-sm rounded-full mr-1 color-white">Backend</a>
       <a href="forms.html" class="btn btn-sm rounded-full mr-1 color-white">Forms</a>
 
-      <img src="https://miro.medium.com/max/968/1*uLuWzCXfq2rt1t_TkuLB8A.png" alt="" class="img-fluid h-50 ml-auto">
+      <img src="https://miro.medium.com/max/968/1*uLuWzCXfq2rt1t_TkuLB8A.png" alt="" class="img-fluid h-50 ml-auto sm-hidden">
 
           <div class="form-basic form-sm ml-auto mb-0 sm-hidden">
-            <input type="search" id="search" placeholder="Buscar">
+            <input type="search" id="search" placeholder="Buscar" class="p-2">
           </div>
       <a href="frontend.html" class="btn btn-sm rounded-full mr-1 color-white">START</a>
   </nav>
 
 
-  <header class="container-fluid bg-primary p-10 flex flex-wrap content-center h-screen">
-    <h1 class="color-white text-5x md-text-7x text-bold block" style="width: 100% !important;">BOOTWIND SAMPLES</h1>
+  <header class="container-fluid bg-primary p-10 flex flex-wrap content-center items-center h-screen">
+  <section class="container">
+    <h1 class="color-white text-5x md-text-7x text-bold block line-none" style="width: 100% !important;">BOOTWIND SAMPLES</h1>
     <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-white ml-2 sm-hidden">buttons in the middle</span>
     <div class="row">
         <h1 class="color-white text-5x text-bold block" style="width: 100% !important;">Container + Row</h1>
-        <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="self-center text-bold color-white ml-2 sm-hidden">buttons in the middle</span>
+        <a href="#" class="btn btn-secondary bg-transparent border-2 mt-1"> Secondary Button</a>  <span class="self-center text-bold color-white ml-2 sm-hidden">buttons in the middle</span>
     </div>
     <div class="row mt-10">
       <div class="col-24">
@@ -37,37 +38,49 @@
       </div>
     </div>
 
-      <form role="search" method="post" class="big-search typeahead form-lg">
+      <form role="search" method="post" class="big-search typeahead form-lg mt-2">
         <input type="search" autofocus="" placeholder="something goes here" name="s">
         <i class="fa fa-search"></i>
       </form>
+  </section>
   </header>
 
-  <div class="flex bg-light mb-3">
+  <div class="flex bg-light">
       <div class="p-2 bg-gray-500">Flex item</div>
       <div class="p-2 bg-gray-300">Flex item</div>
       <a class="ml-auto p-2 bg-gray-500" style="margin-left: auto!important;">Flex item</a>
     </div>
 
-  <section class="container flex justify-center align-items-start md-my-20">
-      <div class="col-md-12"><img src="https://source.unsplash.com/random" alt="" class="img-fluid"></div> 
-      <div class="col-md-12 box-about bg-center p-6 md-p-13 py-10 md-py-6 md-mt-10 md-ml--10" style="background-color: rgb(240, 240, 240);">
+  <section class="container flex justify-center items-start md-my-20">
+      <div class="col-md-12"><img src="https://source.unsplash.com/random" alt="" class="w-full sm-max-h-400 object-cover object-center"></div> 
+      <div class="col-md-12 bg-center p-10 md-p-13 py-12 md-py-13 md-mt-10 md-ml--10" style="background-color: rgb(240, 240, 240);">
         <h4 class="">Manifesto</h4> 
-        <h2 class="text-bold">Nuestra fórmula no es secreta. Somos el matrimonio entre el amor y la técnica.</h2> 
-        <p class="mt-4">Pero, ¿hablar de amor en una industria que parece más ruda que delicada? Sí.</p> <p class="mb-0">Muy bien lo dijo Gaudí que para hacer las cosas bien, primero el amor.</p> <p class="mb-0">Y nosotros nos lo tomamos personal.</p> 
-        <p class="mb-0">Es por esto que dedicamos muchas horas a pensar, estudiar, desarrollar y confeccionar diferentes caminos que nos llevan a un único objetivo: cuidarte, protegerte y hacerte la vida más cómoda.</p>
+        <h2 class="text-bold line-none text">Nuestra fórmula no es secreta. Somos el matrimonio entre el amor y la técnica.</h2> 
+        <p class="mt-4">Pero, ¿hablar de amor en una industria que parece más ruda que delicada? Sí.</p>
+        <p class="mt-2">Muy bien lo dijo Gaudí que para hacer las cosas bien, primero el amor.</p>
+        <p class="mt-2">Y nosotros nos lo tomamos personal.</p> 
+        <p class="mb-0 mt-2">Es por esto que dedicamos muchas horas a pensar, estudiar, desarrollar y confeccionar diferentes caminos que nos llevan a un único objetivo: cuidarte, protegerte y hacerte la vida más cómoda.</p>
+        <ul class="mt-3 ul">
+          <li>With .ul</li>
+          <li>Number 2</li>
+        </ul>
+
       </div>
     </div>
   </section>
 
   <section class="container bg-light p-4 text-center md-text-left">
-    <h1 class="color-dark text-6x text-bold">H1 Sample</h1>
-    <h2 class="color-dark text-5x text-bold">H2 Sample</h2>
-    <h3 class="color-dark text-4x text-bold">H3 Sample</h3>
-    <h4 class="color-dark text-3x text-bold">H4 Sample</h4>
-    <h5 class="color-dark text-2x text-bold">H5 Sample</h5>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae il assumenda, esse distinctio voluptatum sequi, quibusdam voluptate iusto enim?</p>
-    <p class="text-xs color-gray-400">This is a small text</p>
+    <h1 class="color-dark text-bold">H1 Sample</h1>
+    <h2 class="color-dark text-bold">H2 Sample</h2>
+    <h3 class="color-dark text-bold">H3 Sample</h3>
+    <h4 class="color-dark text-bold">H4 Sample</h4>
+    <h5 class="color-dark text-bold">H5 Sample</h5>
+    <h6 class="color-dark text-bold">H6 Sample</h6>
+    <h2 class="text-xl color-dark text-bold text-3x text-shadow-sm letter-spacing-xs">.shadow-sm</h2>
+    <h2 class="text-xl color-dark text-bold text-3x text-shadow letter-spacing-xs">.shadow</h2>
+    <h2 class="text-xl color-dark text-bold text-3x text-shadow-lg letter-spacing-xs">.shadow-lg</h2>
+    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae il assumenda, esse distinctio voluptatum sequi, quibusdam voluptate iusto enim?</p>
+    <p class="text-xs color-gray-400 mt-2">This is a small text</p>
   </section>
 
 
@@ -126,57 +139,370 @@
   </section>
 
 
-  <section class="container flex flex-wrap bg-light mt-10">
+  <div class="container-max bg-light mt-10">
+  <section class="container flex flex-wrap">
 
-    <div class="block bg-gray-200 color-light p-2 rounded w-full">
+    <div class="block bg-gray-300 color-light p-2 rounded w-full m-2">
       <a href="" class="btn btn-white btn-sm shadow-3d"><i class="fa fa-cross"></i> Sign up</a> Set goals for your business and track your progress toward them
     </div>
-      <figure class="col-24 col-md-7 p-2">
-        <a href="#">
-        <div class="relative bg-white rounded-lg shadow hover:shadow-lg cursor-pointer">
-            <div class="absolute absolute-hc top-10 z-30 bg-primary p-2 px-3 color-white">
-              Absolute child
-            </div>
-            <div class="overflow-hidden">
-                <img class="rounded-t-lg object-cover w-full zoom" style="height: 200px;" src="https://source.unsplash.com/random" alt="Woman paying for a purchase">
-            </div>
-            
-            <div class="mt-1 p-6"><a href="#">
-              <div class="uppercase tracking-wide text-sm color-indigo-600 text-bold">Marketing</div>
-              <a href="#2" class="block mt-1 text-lg leading-tight text-bold color-dark">Finding customers for your new business</a>
-              <p class="mt-2 color-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
-            </div>
-          </div>
-        </a>
+
+      <figure class="col-24 col-md-8 p-2">
+        <div class="relative bg-gradient-purple rounded-xl shadow-lg p-5 bg-no-repeat" style="background-size: 75% 100%;">
+
+          <h2 class="text-xl color-white text-bold text-7x text-shadow-lg letter-spacing-xs">.01</h2>
+          <img src="https://www.pngarts.com/files/2/Shoes-Transparent-Background-PNG.png" alt="" class="img-fluid">
+          <a href="#" class="btn btn-white rounded-full text-bold py-4 float-right">+</a>
+          <p class="color-white text-lg text-bold mt-3">Saturday, Sept 23, 2019</p>
+          <a href="#" class="color-primary text-sm text-bold inline-block">+ <span class="pl-1">ADD to favorites</span></a>
+        
+        </div>
       </figure>
 
-      <figure class="col-24 col-md-10 p-2">
-        <a href="/hope.html">
-        <div class="relative bg-white rounded-lg shadow cursor-pointer flex flex-wrap md-flex-no-wrap">
-            <div class="overflow-hidden w-full md-w-200 rounded-bl-lg rounded-tl-lg">
-                <img class="object-cover h-225 w-full" src="https://source.unsplash.com/random" alt="Woman paying for a purchase">
+
+      <figure class="col-24 col-md-8 p-2">
+        <div class="relative bg-white rounded-lg shadow p-5">
+
+          <h4 class="text-xl color-dark text-bold">Date & Time
+              <span class="icon-layer icon-calendar color-gray-300 float-right text-4x" data-icon="24"><i class="fas fa-calendar"></i></span>
+          </h4>
+          <p class="color-gray text-sm text-bold mt-1">Saturday, Sept 23, 2019</p>
+          <a href="#" class="color-primary text-sm text-bold inline-block mt-3">+ <span class="pl-1">ADD to favorites</span></a>
+          <a href="#" class="btn btn-primary btn-block text-bold mt-3 py-4">Book Now (Free)</a>
+          <a href="#" class="btn btn-light btn-block text-bold mt-2 py-4">Promoter Program</a>
+          <a href="#" class="btn btn-white btn-block text-bold color-gray mt-2">Refunds</a>
+        
+        </div>
+      </figure>
+
+      <figure class="col-24 col-md-8 p-2">
+        <div class="relative bg-white rounded-lg shadow-xl p-6">
+
+          <h4 class="text-2x color-dark text-bold">Messages
+            <span class="form-switch float-right">
+              <input type="checkbox" value="1" name="menu" id="form-switch" checked="">
+            </span>
+          </h4>
+          <p class="color-gray text-sm text-bold mt-3">Please select type of alert</p>
+          <div class="form-checkbox mt-3">
+            <input type="checkbox" class="" id="clean1">
+            <label class="color-dark" for="clean1">Show notification</label>
+          </div>
+
+          <div class="form-checkbox my-3">
+              <input type="checkbox" class="" id="clean2">
+              <label class="color-dark" for="clean2">Show something</label>
             </div>
-            
-            <div class="mt-1 p-6 w-full">
-              <div class="uppercase tracking-wide text-sm color-indigo-600 text-bold">Marketing</div>
-              <a href="#2" class="block mt-1 text-lg leading-tight text-bold color-gray-900 hover:underline">Finding customers for your new business</a>
-              <p class="mt-2 color-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+          
+            <a href="#" class="btn btn-primary btn-xs mt-2">Refunds</a>
+            <a href="#" class="btn btn-light btn-xs mt-2">Help</a>
+        
+        </div>
+      </figure>
+
+
+      <figure class="col-24 col-md-8 p-2">
+        <div class="relative bg-gradient-primary text-light rounded-lg shadow hover:shadow-lg p-5 zoom">
+
+          <h4 class="text-lg color-light text-bold">General Admisión</h4>
+          <p class="color-gray text-sm text-bold mt-2">Sale end on Sept 23, 2019</p>
+
+          <a href="#" class="color-white hover-color-gray text-xl text-bold block mt-1">$180 <span class="pl-1 text-normal color-primary-100">+ $100 Fee</span></a>
+
+          <a href="#" class="btn btn-white btn-block text-bold mt-4"><i class="fas fa-check pr-1"></i> Checkout</a>
+          
+        </div>
+      </figure>
+
+
+      <figure class="col-24 col-md-8 p-2">
+        <div class="relative bg-green-100 text-green rounded-lg shadow p-6">
+
+          <h4 class="text-bold"><i class="fal fa-analytics fa-lg pr-1 color-green"></i> General Admisión</h4>
+
+          <hr class="color-green m6-6 bg-green">
+
+          <div class="row">
+              <div class="col-12 mt-5">
+                <small class="text-xs uppercase color-green block">Power</small>
+                <span class="text-bold text-2x uppercase color-body mt-3">4,86 kw</span>
+              </div>
+              <div class="col-12 mt-5">
+                <small class="text-xs uppercase color-green block">Price</small>
+                <span class="text-bold text-2x uppercase color-body mt-3">$7,200</span>
+              </div>
+              <div class="col-12 mt-5">
+                <small class="text-xs uppercase color-green block">Yearly Output</small>
+                <span class="text-bold text-2x uppercase color-body mt-3">3000 kw</span>
+              </div>
+              <div class="col-12 mt-5">
+                <small class="text-xs uppercase color-green block">Month</small>
+                <span class="text-bold text-2x uppercase color-body mt-3">$56</span>
+              </div>
+          </div>
+          <p class="color-white text-sm text-bold mt-3">Sale end on Sept 23, 2019</p>
+
+          <a href="#" class="btn btn-green btn-block color-white text-bold mt-8 py-4">Contact Reseller</a>
+          
+        </div>
+      </figure>
+
+
+
+
+      <figure class="col-24 col-md-8 p-2">
+          <div class="relative bg-white rounded-lg shadow-xl bg-cover bg-zoom" style="background-image: url(https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80);">
+  
+            <div class="p-8 h-250 flex items-center color-white">
+              <div>
+                  <small class="uppercase color-gray">MONITORING</small>
+                  <h3 class="color-white uppercase mt-1 text-bold">50% off the something special in a title</h3>
+                  <a href="#" class="btn bg-yellow btn-sm mt-3 text-bold">Fashion</a>
+              </div>
+            </div>
+
+            <div class="p-8 py-6 bg-white rounded-b-lg relative">
+
+              <div class="absolute-tr top--40 right-10 z-30 bg-gradient-red p-4 px-5 color-white rounded-lg text-center"><i class="fab fa-facebook-f fa-2x"></i></div>
+
+              <small>From <span class="color-gray">March</span> to <span class="color-gray">December</span></small>
+              <p class="uppercase mt-1">MONITORING</p>
+              <h3 class="color-red text-bold uppercase mt-4">Summer 2019</h3>
+              <small class="mt-4 color-gray-300">Cannot do this in a small with light</small>
+            </div>
+        
+          </div>
+        </figure>
+
+
+      <figure class="col-24 col-md-8 p-2">
+        <div class="relative bg-white rounded-lg shadow-xl">
+
+          <div class="p-4 text-center color-gray-800 bg-gray-200 rounded-tl-lg rounded-tr-lg">
+            MONITORING
+          </div>
+
+          <div class="p-6">
+            <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="img-fluid avatar float-right rounded-circle">
+            <h4 class="text-3x color-dark-600 text-light">11 Orders</h4>
+            <p class="color-gray text-sm text-bold mt-1">Please select type of alert</p>
+            <ul class="color-gray list-mt-5 list-fa list-fa-cross list-fa-red mt-5 mb-5">
+              <li>list-fa list-fa-cross list-fa-red</li>
+              <li class="li-fa-check li-fa-gray">li-fa-check li-fa-gray</li>
+              <li class="li-fa-user li-fa-blue">li-fa-user li-fa-blue</li>
+              <li class="li-fa-dot li-fa-primary">li-fa-dot li-fa-primary</li>
+              <li class="li-fa-arrow li-fa-teal">li-fa-arrow li-fa-teal</li>
+              <li class="li-fa-plus li-fa-orange">li-fa-plus li-fa-orange</li>
+              <li class="li-fa-heart li-fa-red">li-fa-heart li-fa-red</li>
+              <small>You can set the margins manually or with .list-mt-*</small>
+            </ul>
+            <div class="flex items-center justify-between">
+              <a href="#" class="btn btn-primary mt-2">Refunds</a>
+              <a href="#" class="btn btn-red btn-xs mt-2 ml-auto">Delete</a>
             </div>
           </div>
-        </a>
+        
+        </div>
+      </figure>
+
+
+
+      <figure class="col-24 col-md-8 p-2">
+          <div class="relative bg-light rounded-lg shadow-xl">
+  
+            <div class="p-6 py-6 color-dark bg-white rounded-tl-lg rounded-tr-lg">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="avatar w-80 h-80 rounded absolute-tr top-8 right-8">
+              <h3>Hi Michael,</h3>
+              <p class="color-gray">Let's be productive today</p>
+            </div>
+  
+            <div class="p-6 sm-p-2 sm-py-3">
+              <a href="#" class="btn btn-white pr-2 mr-2 border-0">My Task <i class="fas fa-circle color-green pl-2"></i></a>
+              <a href="#" class="btn btn-white bg-gray-100 mr-2 border-0">Projects</a>
+              <a href="#" class="btn btn-white bg-gray-100 mr-2 border-0">Notes</a>
+              <div class="breakline mt-3"></div>
+
+              <div class="row mt-2">
+                  <div class="bg-primary color-white p-6 pb-5 col-24 col-md-11 col-lg-10 rounded-lg mr-2 shadow">
+                    <i class="fas fa-analytics fa-lg color-primary-100 block"></i>
+                    <div class="text-4x mt-4 text-bold line-10">28</div>
+                    <div class="progress block mt-1 h-1">
+                      <div class="progress-bar bg-green" style="width: 70%"></div>
+                    </div>
+                    <div class="color-primary-100 block mt-1">All Task</div>
+                  </div>
+
+                  <div class="bg-white color-dark p-6 pb-5 col-24 col-md-11 col-lg-10 rounded-lg shadow">
+                    <i class="fas fa-analytics fa-lg color-gray-300 block"></i>
+                    <div class="text-4x mt-4 text-bold line-10">38</div>
+                    <div class="progress block mt-1 h-1">
+                      <div class="progress-bar bg-green" role="progressbar" style="width: 30%"></div>
+                    </div>
+                    <div class="color-gray-300 block mt-1">All Task</div>
+                  </div>
+              </div>
+
+              <h5 class="color-dark text-bold pt-4 pb-2 mt-3">My Task</h5>
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="img-fluid avatar rounded-circle mr-1 inline-block">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="img-fluid avatar rounded-circle mr-1 inline-block">
+                
+                <div class="col-24 bg-white shadow rounded mt-4 p-3">
+                  <p class="text-bold color-gray pb-2">Completing the tasks</p>
+                  <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="img-fluid avatar rounded-circle mr-1 w-30 h-30 inline-block">
+                  <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="img-fluid avatar rounded-circle mr-1 w-30 h-30 inline-block">
+                </div>
+            </div>
+          
+          </div>
+        </figure>
+  
+
+      <figure class="col-24 col-md-8 p-2">
+          <a href="#">
+          <div class="relative bg-white rounded-lg shadow overflow-hidden cursor-pointer">
+              <div class="relative">
+                <div class="absolute-br bottom--15 right-10 z-30 bg-primary p-2 px-3 text-sm color-white">Absolute child</div>
+                <img class="rounded-t-lg object-cover w-full" style="height: 200px;" src="https://source.unsplash.com/random" alt="Woman paying for a purchase">
+              </div>
+              
+              <div class="mt-1 p-6">
+                <div class="float-left text-center w-60 h-130 ml--4 pr-3 text-3x color-teal text-bold line-11">78 <small class="block text-xs text-normal">All Task</small></div>
+                <div class="uppercase tracking-wide text-sm color-indigo-600 text-bold">Marketing</div>
+                <a href="#2" class="block mt-1 text-lg text-bold color-dark line-12">Finding customers for your new business</a>
+                <p class="mt-2 color-gray-600">Getting a new business off the ground is a lot of ha find your first customers.</p>
+
+                  <div class="progress block mt-5 h-1">
+                    <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                  </div>
+                  <small class="text-bold color-primary">50%</small>
+                  <div class="progress block mt-5 h-1">
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 70%"></div>
+                  </div>
+                  <small class="text-bold color-green">70% Complete</small>
+
+              </div>
+            </div>
+          </a>
+        </figure>
+
+      <figure class="col-24 col-lg-12 p-2">
+        
+        <div class="row flex bg-white h-225 rounded-lg shadow cursor-pointer">
+
+              <img class="col-8 rounded-bl-lg rounded-tl-lg object-cover w-full h-full object-cover object-center" src="https://source.unsplash.com/random" alt="Woman paying for a purchase">
+          
+          
+          <div class="mt-1 p-6 col-16">
+            <div class="uppercase tracking-wide text-lg color-indigo-600 text-bold">Left Photo</div>
+            <a href="#2" class="block mt-1 text-lg color-gray-900 line-12"><span class="text-bold">Finding customers</span> for your new business</a>
+            <p class="mt-2 color-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="col-24 col-lg-10 p-2">
+          <a href="/hope.html">
+          <div class="relative bg-white rounded-lg shadow cursor-pointer flex flex-wrap md-flex-no-wrap">
+              
+              <div class="mt-1 p-6 w-full">
+                <div class='icon-circle bg-teal-100 p-4'>
+                  <i class='fal fa-thumbs-up fa-2x color-teal-700'></i>
+                </div>
+                
+                <div class="uppercase tracking-wide text-sm color-indigo-600 text-bold mt-2">Progress Bar</div>
+                <a href="#2" class="block mt-1 text-lg text-bold color-gray-900 line-12">Finding customers for your new business</a>
+                <p class="mt-2 color-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                
+                <div class="flex h-90 bg-light p-2 px-3 rounded-xl items-center mt-3">
+                    <div class="float-left p-2 px-3 text-2x color-teal text-bold line-11 text-center">78 <small class="block text-xs text-normal">All Task</small></div>
+                    <div class="hr-vertical bg-gray-200 mx-3"></div>
+                    <div class="float-left p-2 px-3 text-1x color-teal text-bold line-11">Flex container <small class="block text-xs text-normal">All Task</small></div>
+                    <div class="hr-vertical bg-gray-200 mx-3"></div>
+                    <div class="col p-2 px-3 text-1x color-teal text-bold line-11">Flex <small class="block text-xs text-normal">All Task</small></div>
+                  </div>
+                <div class="progress mt-5">
+                  <div class="progress-bar h-20" role="progressbar" style="width: 50%">Progress Bar</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </figure>
+
+      <figure class="col-24 col-md-12 col-lg-10 p-2">
+        <div class="relative bg-white rounded-lg shadow-full cursor-pointer">
+            
+            <div class="row flex p-6 w-full items-center">
+                <img src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="" class="h-80 w-80 rounded-circle object-cover">
+                <div class="col pl-4">
+                  <h5 class="color-primary text-bold">Flex</h5>
+                  <p class="color-gray-700">Building a super BaseCSS</p>
+                  <small class="block text-xs text-normal color-gray">Monday August 28, 2019</small>
+                </div>
+            </div>
+
+            <div class="hr bg-gray-200"></div>
+
+            <div class="flex mt-1 p-6 w-full items-center">
+              <div class="pl-2">
+                <h5 class="color-primary text-bold">Flex no col <span class="badge badge-primary color-primary rounded-0 bg-transparent">09-01</span></h5>
+                <small class="block text-xs text-normal color-gray">Monday August 28, 2019</small>
+              </div>
+              <div class="col text-right">
+                <h5 class="color-primary text-bold">Col <small>usd</small></h5>
+              </div>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="flex block mt-1 p-6 py-2 w-full items-center sm-text-center">
+                <a href="#" class="btn btn-primary sm-btn-sm rounded-0 mr-2">Save</a>
+                <a href="#" class="btn btn-red sm-btn-sm rounded-0 ml-auto">Delete</a>
+            </div>
+
+            <a href="#" class="w-full block bg-primary hover-bg-light text-center p-4 sm-p-3 text-bold text-lg rounded-b-lg letter-spacing-lg color-white">
+              CHECKOUT
+            </a>
+
+          </div>
       </figure>
 
       <figure class="col-md-6 p-2">
-        <a href="/hope.html">
-        <div class="relative color-white rounded-lg shadow cursor-pointer flex text-center overflow-hidden items-center bg-cover bg-center overlay-gradient-black" style="background-image: url(https://source.unsplash.com/random);">
-            <div class="overlay-gradient-black"></div>
-            <div class="my-3 p-6 w-full">
-              <div class="uppercase text-sm color-teal-300 text-bold">Marketing</div>
-              <span class="block mt-1 text-lg leading-tight text-bold color-gray-300">Finding customers for your new business</span>
+        <div class="relative color-white rounded-lg shadow cursor-pointer flex text-center h-200 overflow-hidden zoom">
+          <div class="overlay-gradient-black"><img src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="" class="object-cover h-full w-full"></div>
+            
+            <div class="absolute-c w-full z-10 p-1">
+              <div class="uppercase text-sm color-teal-300 text-bold">OVERLAY GRADIENT</div>
+              <span class="block mt-1 text-lg leading-tight text-bold color-gray-300 line-11">Finding customers for your new business</span>
               <p class="mt-2 color-gray-600">Getting a new business of customers.</p>
             </div>
           </div>
-        </a>
+      </figure>
+  
+
+      <figure class="col-24 col-md-8 col-xl-6 p-2">
+          <div class="relative bg-white rounded-lg shadow p-4">
+              <a href="#" class="absolute-tr z-30 mt-1 mr-1 rounded-circle bg-white p-2 color-dark hover-bg-dark hover-color-light shadow h-40 w-40 text-center"><i class="fas fa-cog fa-lg"></i></a>
+
+              <img class="rounded-circle object-cover w-200 h-200 mx-auto" src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="Woman paying for a purchase">
+              
+              <div class="mt-1 p-2 text-center">
+                <div class="uppercase tracking-wide color-teal text-bold text-lg">Marketing</div>
+                <small class="block mt-1 color-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</small>
+                <a href="#" class="btn btn-primary md-btn-lg bg-transparent color-primary text-bold mt-4"><i class="fas fa-check pr-1"></i> Checkout</a>
+              </div>
+            </div>
+        </figure>
+
+
+      <figure class="col-lg-8 p-2">
+          <div class="relative box-icon bg-purple-900 color-white p-5 rounded-lg">
+              <i class="fal fa-robot color-primary-100"></i>
+              <h5><span class="text-bold">.box-icon</span> with some extra new features</h5>
+              <p class="color-primary-100 mt-2">HELLLOOOOO, let me provide a better experience for your clients</p>
+              <h3 class="color-yellow text-bold uppercase mt-4">Winter 2019</h3>
+              <small class="bg-purple-500 block p-2 color-purple-100 text-center mt-5 opacity-50 rounded">
+                This is a div box with a bg-primary-100
+              </small>
+          </div>
       </figure>
 
       <div class="w-1/2 md:w-1/3 p-2 hidden md:block">
@@ -186,6 +512,7 @@
         <div class="color-gray-700 text-center bg-gray-400 p-2">4</div>
       </div>
     </section>
+  </div>
 
 
 
@@ -206,6 +533,7 @@
     <button type="button" class="btn btn-green m-px">Green Success</button>
     <button type="button" class="btn btn-red m-px">Red Danger</button>
     <button type="button" class="btn btn-orange m-px">Orange Warning</button>
+    <button type="button" class="btn btn-yellow m-px">Yellow</button>
     <button type="button" class="btn btn-light m-px">Light</button>
     <button type="button" class="btn btn-dark m-px">Dark</button>
     <button type="button" class="btn btn-black m-px">Black</button>
@@ -219,8 +547,12 @@
     <h1 class="col-24 pb-4 color-dark text-3x text-bold">Badges <span class="badge badge-danger">Light</span> </h1>
     <div class="col-24">
       <p class="pb-2">Use buttons with first .badge and .badge-dark or .badge-light, then apply your .bg-*</p>
-      <span class="badge color-white bg-primary">Primary</span> <span class="badge badge-dark bg-teal">Teal</span> <span class="badge badge-dark">Dark</span> Sin paragraph
-      <span class="badge color-white bg-secondary badge-sm">Secondary</span> <span class="badge badge-dark bg-orange badge-sm">Orange SM</span> <span class="badge badge-yellow badge-sm">Yellow</span>
+      <span class="badge color-white bg-primary">Primary</span> 
+      <span class="badge badge-dark bg-teal">Teal</span> 
+      <span class="badge badge-dark">Dark</span> Sin paragraph
+      <span class="badge color-white bg-secondary badge-sm">Secondary SM</span> 
+      <span class="badge badge-dark bg-orange badge-sm">Orange SM</span> 
+      <span class="badge badge-yellow badge-sm">Yellow SM</span>
       <h2 class="text-5x mt-3">In a H2 heading  <span class="badge badge-light">Normal</span> From xs <span class="badge badge-light badge-xs">XS</span> to a SM <span class="badge badge-light badge-sm">SM</span> Or even a large one <span class="badge badge-light badge-lg">LG</span> <span class="badge badge-dark bg-primary badge-xl">XL</span> for bigger things</h2>
       <p class="mt-3">In a paragraph  <span class="badge badge-light">Normal</span> From xs <span class="badge badge-light badge-xs">XS</span> to a SM <span class="badge badge-light badge-sm">SM</span> Or even a large one <span class="badge badge-light badge-lg">LG</span> <span class="badge badge-dark bg-primary badge-xl" data-tooltip="some more information and create excellent and something else">XL</span> for bigger things</p>
 
@@ -402,54 +734,6 @@
 
 
 
-  <section class="container my-14">
-    <h1 class="col-24 color-dark text-3x text-bold">Tables with DIV's</h1>
-    <p class="pb-4">For regular tables you can use B4</p>
-
-    <section class="table-div-striped">
-        <div class="flex head uppercase color-gray-900 sm-hidden">
-          <div class="col-md-2">Status</div>
-          <div class="col-md-2">Reference</div>
-          <div class="col-md-6 text-left pl-2">Client</div>
-          <div class="col-md-4">Amount</div>
-          <div class="col-md-4">Recurring</div>
-          <div class="col-md-2">Date</div>
-          <div class="col-md-2">Updated</div>
-          <div class="col-md-1"></div>
-        </div>
-    
-        <figure class="row">
-          <div class="col-24 col-md-2">10 <span></span></div>
-          <div class="col-24 col-md-2">CC-566</div>
-          <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
-          <div class="col-8 col-md-4">600,000 COP</div>
-          <div class="col-8 col-md-4"><a href="http://45" class="btn bg-dark btn-sm color-white">Recurring #45</a></div>
-          <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
-          <div class="col-8 col-md-1"></div>
-        </figure>
-    
-        <figure class="flex">
-          <div class="col-24 col-md-2">1 <span></span></div>
-          <div class="col-24 col-md-2">CC-566dsds</div>
-          <div class="col-24 col-md-6 text-left pl-2">Someone <span class="badge badge-dark">Featured</span></div>
-          <div class="col-8 col-md-4">600,000 COP</div>
-          <div class="col-8 col-md-4"><a href="http://45" class="btn bg-green btn-sm">Recurring #45</a><br><small>Este es el nombre</small></div>
-          <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
-          <div class="col-8 col-md-1"></div>
-        </figure>
-    
-        <figure class="flex">
-          <div class="col-24 col-md-2">10 <span></span></div>
-          <div class="col-24 col-md-2">CC-566</div>
-          <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
-          <div class="col-8 col-md-4">600,000 COP</div>
-          <div class="col-8 col-md-4"><a href="http://45" class="btn bg-primary btn-sm">Recurring #45</a></div>
-          <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
-          <div class="col-8 col-md-1"></div>
-        </figure>
-    </div>
-
-  </section>
 
 
 
@@ -458,13 +742,13 @@
       <p class="pb-2">Webfonts of Font Awesome are used, and you can create this using .icon-layer also with stuff like .icon-badge</p>
       <div class="text-5x">
 
-          <span class="icon-layer icon-badge" data-content="16"><i class="fal fa-envelope"></i></span>
+          <span class="icon-layer icon-badge" data-icon="16"><i class="fal fa-envelope"></i></span>
 
-          <span class="icon-layer icon-badge-orange" data-content="266"><i class="fal fa-address-book"></i></span>
+          <span class="icon-layer icon-badge-orange" data-icon="266"><i class="fal fa-address-book"></i></span>
 
-          <a href="/" class="icon-layer icon-file color-gray-500" data-content="DOCX"><i class="fal fa-file"></i></a>
+          <a href="/" class="icon-layer icon-file color-gray-500" data-icon="DOCX"><i class="fal fa-file"></i></a>
     
-          <span class="icon-layer icon-calendar" data-content="24"><i class="fas fa-calendar"></i></span>
+          <span class="icon-layer icon-calendar" data-icon="24"><i class="fas fa-calendar"></i></span>
       </div>
       
     </section>

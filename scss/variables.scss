@@ -2,7 +2,7 @@
 //GRID
 $desktop-breakpoint: 768px !default;
 $container: 1300px !default;
-$container-max: 1800px !default;
+$container-max: 1860px !default;
 $columns: 24 !default;
 
 //BOOTSTRAP
@@ -23,7 +23,7 @@ $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: 700 !default;
-$h1-size: 2.5rem !default;
+$h1-size: 2.6rem !default;
 $h2-size: 2.2rem !default;
 $h3-size: 1.9rem !default;
 $h4-size: 1.6rem !default;
@@ -31,7 +31,7 @@ $h4-size: 1.6rem !default;
 //COLORS
 $primary: #301680;
 $secondary: #244260;
-$dark: #1e2229;
+$dark: #151d2e;//#1e2229;#314164;
 $light: #edf2f8;
 $gray: #A0AEC0;
 $blue: #4299E1;
@@ -39,9 +39,10 @@ $indigo: #667EEA;
 $purple: #9F7AEA;
 $green: #1da139;
 $teal: #38B2AC;
-$red: #E53E3E;
-$yellow: #ECC94B;
+$red: #ff2400;
+$yellow: #ffeb04;
 $orange: #ff8800;
+$black: #010102;
 $body: $dark;
 $bg: white;
 
@@ -62,3 +63,4 @@ $form-border: 1px solid $gray;
 
 //BACKEND
 $backend-bg: #f4f6f8 !default;
+$backend-aside-links: #dae9f5 !default;

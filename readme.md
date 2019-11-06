@@ -1,6 +1,6 @@
 # Bootwind CSS/JS Helpers
 Remember to add/replace your **variables** before importing, 
-and then **@import 'compiled';**
+and then **@import '../node_modules/bootwind/compiled';** or what ever you path is
 
 ---
 # CSS
@@ -120,6 +120,12 @@ Margins uses **rem** as measures
 
 **Transform:** `.normal` `.italic` `.uppercase` `.lowercase` `.capitalize` `.underline` `.line-through`
 
+
+**Line Height:** `.line-none` `.line-10` `.line-11` `.line-12` `.line-13` `.line-14` `.line-15` `.line-16` `.line-17` `.line-18` `.line-19` `.line-20` `.line-25` `.line-30`
+
+
+**Letter Spacing:** `.letter-spacing-xs` `.letter-spacing-sm` `.letter-spacing-normal` `.letter-spacing-lg` `.letter-spacing-xl`
+
 With all classes you can also use it with  `.md-*` to target desktop
 
 
@@ -163,12 +169,16 @@ You can use `.badge-dark` or `.badge-light` OR JUST `.badge`,  and then apply `.
 
 **Text:** `.color-*`, also with variants `.color-gray-100` to `.color-gray-900` (variants not available in black, dark and light.)
 
+You can use .hover-color-* like .hover-color-gray
+
 **BG:** `.bg-*`, Available form: primary, secondary, black, white, gray, blue, indigo, purple, red, green, teal, yellow, orange. and also with variants `.bg-gray-100` to `.bg-gray-900` (not available in black, dark and light.). 
 *-500 is the base color of each variant group
 
+You can use .hover-bg-* like .hover-bg-gray
+
 You can use .bg-gradient-* like .bg-gradient-gray
 
-You can also use it with `.md-bg-*` `.md-color-*` to target desktop
+You can also use it with `.md-bg-*` `.md-color-*` `.md-hover-color-*` to target desktop
 
 
 
@@ -202,11 +212,14 @@ You can use `.badge-dark` or `.badge-light` OR JUST `.badge`,  and then apply `.
 ---
 ### Borders and Rounded/Radius
 
-Use `.rounded`
-
-**Sizes:** `.rounded-none` `.rounded-sm` `.rounded` `.rounded-lg` `.rounded-full` `.rounded-circle`.
+**Radius:** `.rounded-none` `.rounded-sm` `.rounded` `.rounded-lg` `.rounded-full` `.rounded-circle`.
 
 Also you can target mobile `.sm-*` or desktop `.md-*` only
+
+**Borders:** `.border-none` `.border-0` `.border-1` `.border-2` `.border-3` `.border-4`.
+
+**Border Colors:** `.border-black` `.border-dark` `.border-transparent` `.border-blue` `.border-teal` `.border-primary` and all the rest.
+
 
 
 
@@ -224,14 +237,41 @@ Also you can target mobile `.sm-*` or desktop `.md-*` only
 
 `.opacity-0` `.opacity-25` `.opacity-50` `.opacity-75` `.opacity-100`
 
+Also you can target desktop `.md-*` only
+
+
+
+
+---
+### List
+
+Use `.list` or `.ul` on <ul>
+
+**<li> Margins:** `.list-m-none` `.list-m-5` `.list-m-10` `.list-m-11` `.list-m-12` `.list-m-13` `.list-m-14` `.list-m-15` `.list-m-20`.
+
+For icons use `.list-fa`
+
+**Options for <ul>:** `.list-fa-check` `.list-fa-dot` `.list-fa-user` `.list-fa-cross` `.list-fa-plus` `.list-fa-heart` `.list-fa-arrow`
+
+**Options for <li>:** `.li-fa-check` `.li-fa-dot` `.li-fa-user` `.li-fa-cross` `.li-fa-plus` `.li-fa-heart` `.li-fa-arrow`
+
+For icon colors you can use `.list-fa-gray` or to target <li> use `.li-fa-*`
+
+
 
 
 ---
 ### Icons
 Font awesome is included
 
-To create layered icons you can use `.icon-layer` with `.icon-badge` `.icon-badge-primary` `.icon-badge-orange` `.icon-calendar` and `.icon-file`
+To create layered icons you can use `.icon-layer` with `.icon-badge` `.icon-badge-primary` `.icon-badge-orange` `.icon-calendar` and `.icon-file`, don't forget to put  data-icon="24"
 
+**To create a circle around:**
+```
+<div class='icon-circle bg-teal-100 p-4'>
+  <i class='fal fa-thumbs-up fa-2x color-teal-700'></i>
+</div>
+```
 
 
 
@@ -242,7 +282,18 @@ To create layered icons you can use `.icon-layer` with `.icon-badge` `.icon-badg
 
 
 
+---
+# Charts
 
+### Progress
+
+Use `.progress` and `.progress-bar`
+in `.progress` you can change the color and height of the BG's
+```
+<div class="progress block h-1">
+  <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+</div>
+```
 
 
 ---
@@ -269,6 +320,16 @@ Position: `.form-inline`
 
 `.form-checkbox`  `.form-radio` `.form-switch`
 
+**Panels:** `.form-panel`
+```html
+<figure class="form-panel mt-5">
+  <input type="radio" id="plan1" name="panel" value="1">
+  <label for="plan1">
+   <b>Basic</b><span>5</span><div>Por un Año</div>
+  </label>
+</figure>
+```
+
 #### Selects
 
 To show select as button `.form-select-btn`
@@ -277,8 +338,8 @@ To show select as button `.form-select-btn`
 
 `.big-search` with an option of `.typeahead` to add a delete icon and hide search icon
 ```html
-<form role="search" method="post" class="big-search typeahead form-lg">
-  <input type="search" autofocus="" placeholder="something goes here" name="s">
+<form role="search" method="" class="big-search typeahead form-lg">
+  <input type="search" autofocus="" placeholder="something">
   <i class="fa fa-search"></i>
 </form>
 ```
