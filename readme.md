@@ -180,6 +180,16 @@ You can use .bg-gradient-* like .bg-gradient-gray
 
 You can also use it with `.md-bg-*` `.md-color-*` `.md-hover-color-*` to target desktop
 
+In some basic colors (black, white, light, dark), is possible to add `*-o` to get the same color but with opacity, like `.bg-white-o` 
+
+
+
+---
+### Shadows
+
+**Sizes:** `.shadow`, `.shadow-xs` `.shadow-sm` `.shadow-lg` `.shadow-xl` `.shadow-full` (All around)
+
+**OR with Colors:** You can also add colors `.shadow-primary` or `.shadow-light`, etc..
 
 
 
@@ -216,7 +226,7 @@ You can use `.badge-dark` or `.badge-light` OR JUST `.badge`,  and then apply `.
 
 Also you can target mobile `.sm-*` or desktop `.md-*` only
 
-**Borders:** `.border-none` `.border-0` `.border-1` `.border-2` `.border-3` `.border-4`.
+**Borders:** `.border-none` `.border-0` `.border-1` `.border-2` `.border-3` `.border-4` `.border-t-*` `.border-b-*` `.border-l-*` `.border-r-*`.
 
 **Border Colors:** `.border-black` `.border-dark` `.border-transparent` `.border-blue` `.border-teal` `.border-primary` and all the rest.
 
@@ -238,6 +248,16 @@ Also you can target mobile `.sm-*` or desktop `.md-*` only
 `.opacity-0` `.opacity-25` `.opacity-50` `.opacity-75` `.opacity-100`
 
 Also you can target desktop `.md-*` only
+
+
+
+
+---
+### Filters
+
+`.filters-none` `.filters-blur` `.filters-grayscale` `.filters-contrast` `.filters-saturate` `.filters-sepia`
+
+Also you can use `.hover-filter-*`
 
 
 
@@ -278,7 +298,18 @@ To create layered icons you can use `.icon-layer` with `.icon-badge` `.icon-badg
 ---
 ### Animations
 
-`.zoom`
+`.zoom` `.bg-zoom`
+
+
+
+---
+### Rotations
+
+`.rotation-90` `.rotation-180` `.rotation-270` 
+
+```
+<div class="absolute-tr top-20 right-20 z-10 rotate-270 ">.rotate-270</div>
+```
 
 
 

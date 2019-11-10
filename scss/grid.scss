@@ -14,9 +14,10 @@ body {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   &:hover {
-    color: currentColor !important;
+    text-decoration: none;
+    //color: currentColor !important;
     opacity: .9;
     outline: none !important;
   }
@@ -512,15 +513,31 @@ $positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 
 //WIDTH
 .w-auto { width: auto !important; }
 .w-full { width: 100% !important; }
+.w-two-thirds { width: 75% !important; }
 .w-half { width: 50% !important; }
 .w-third { width: 33.333% !important; }
 .w-fourth { width: 25% !important; }
 .w-screen { width: 100vw !important; }
 .w-fit { width: fit-content !important; }
 .w-unset { width: unset !important; }
+
+
+$percentages: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+@each $row in $percentages {
+  .w-#{$row}p { width: #{$row}% !important; }
+  .h-#{$row}p { height: #{$row}% !important; }
+  .max-w-#{$row}p {
+    max-width: #{$row}% !important;
+  }
+  .max-h-#{$row}p {
+    max-height: #{$row}% !important;
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .md-w-auto { width: auto !important; }
   .md-w-full { width: 100% !important; }
+  .md-w-two-thirds { width: 75% !important; }
   .md-w-half { width: 50% !important; }
   .md-w-third { width: 33.333% !important; }
   .md-w-fourth { width: 25% !important; }
@@ -531,6 +548,7 @@ $positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 
 @media (max-width: $desktop-breakpoint) {
   .sm-w-auto { width: auto !important; }
   .sm-w-full { width: 100% !important; }
+  .sm-w-two-thirds { width: 75% !important; }
   .sm-w-half { width: 50% !important; }
   .sm-w-third { width: 33.333% !important; }
   .sm-w-fourth { width: 25% !important; }
@@ -570,7 +588,7 @@ $positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 
 }
 
 
-$mp: (0, 1, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 150, 200, 225, 250, 275, 300, 325, 350, 375, 400, 450, 500, 600, 700, 800, 900, 1000);
+$mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 150, 200, 225, 250, 275, 300, 325, 350, 375, 400, 450, 500, 600, 700, 800, 900, 1000);
 @each $row in $mp {
 	//GENERAL
 	.w-#{$row} {

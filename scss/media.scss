@@ -78,11 +78,11 @@
 
 //ANIMATION
 .bg-zoom { 
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
   background-size: 100%;
   background-position: center;
   &:hover { 
-    background-size: 110%;
+    background-size: 106%;
   }
 }
 
@@ -165,7 +165,7 @@
 //ICONS
 .icon-circle {
   display: table;
-  padding: .8rem;
+  padding: .8rem .73rem;
   background-color: $light;
   border-radius: 100%;
   width: auto;

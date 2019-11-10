@@ -77,3 +77,19 @@
 
   }
 }
+
+
+
+.table-clean {
+  line-height: 1rem;
+  border-collapse:separate; 
+  border-spacing: 0 1.2rem;
+  tr {
+  }
+  th {
+    font-size: .95rem;
+  }
+  td {
+    vertical-align: middle;
+  }
+}

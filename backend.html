@@ -23,7 +23,7 @@
       <ul class="sidebar-nav">
         <li><a href="frontend.html"><i class="fa fa-tachometer-alt"></i> Frontend</a></li>
         <li><a href="forms.html" class="active"><i class="fa fa-inbox-in"></i> Forms</a></li>
-        <li><a href="/account/maksuco/helpdesk"><i class="fa fa-project-diagram"></i> projects</a></li>
+        <li><a href="boxes.html"><i class="fa fa-project-diagram"></i> Boxes</a></li>
         <li><a href="/account/maksuco/helpdesk"><i class="fa fa-life-ring"></i> helpdesk</a></li>
         <li><a href="/account/maksuco/clients"><i class="fa fa-users"></i> Clients</a></li>
         <li><a href="/account/maksuco/reports"><i class="fa fa-chart-bar"></i> Reports</a></li>
@@ -75,14 +75,266 @@
       <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-secondary ml-2">buttons in the middle</span>
     </header>
 
+    <section class="container flex flex-wrap">
 
-    <section class="container">
-      <a class="btn btn-primary btn-sm mt-1 active" role="tab" data-toggle="tab" href="#new_leads">new</a>
-      <button class="btn btn-xs btn-primary mr-1 shadow">Button XS</button>
-      <button class="btn btn-sm btn-primary mr-1 shadow-lg">Button SM</button>
-      <button class="btn btn btn-primary mr-1">Button Normal</button>
-      <button class="btn btn-lg btn-primary">Button LG</button>
-      <button class="btn btn-xl btn-primary">Button XL</button>
+
+
+
+          <figure class="col-24 col-md-9 p-2">
+              <div class="bg-white shadow-sm p-4">
+
+                <h6 class="uppercase text-bold">GENERAL MANAGER</h6>
+                <p class="mt-1 text-sm color-gray">The general manager controls all staff, payments and settings of the business</p>
+      
+                  <div class="block color-black pt-5">
+                    <img src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="" class="h-50 w-50 rounded-circle object-cover float-left mr-3">
+                    <span class="">Michael Mcswain</span>
+                    <a href="#" class="btn btn-yellow btn-xs text-xs">Change Manager</a>
+                  </div>
+      
+
+                <h6 class="uppercase text-bold mt-12">REGENERATE API</h6>
+                <p class="mt-2 text-xs color-gray">Changing your API can disconnect you from some things, please only use this when your certain your account is compromise.</p>
+                  <div class="form-inner required mt-5">
+                    <label for="manager">API KEY</label>
+                    <input type="text" class="form-control-inner" id="manager" placeholder="">
+                  </div>
+                  <a href="#" class="btn btn-primary btn-xs">Copy</a>
+                  <a href="#" class="btn btn-teal btn-xs">Generate New</a>
+  
+
+                  <h6 class="uppercase text-bold mt-12">LANGUAGES</h6>
+                  <div class="row mt-2 color-gray">
+                    
+                    <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                      <input type="checkbox" class="" name="currencies[]" id="currency_AED" value="AED">
+                      <label class="" for="currency_AED">form-checkbox-sm</label>
+                    </div>
+
+                    <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                      <input type="checkbox" class="" name="currencies[]" id="currency_ZWD" value="ZWD">
+                      <label class="" for="currency_ZWD">ZWD </label>
+                  </div>
+                </div>
+                
+
+
+                  <hr class="bg-gray mb-0">
+  
+                  <div class="flex items-center color-gray mt-2">
+                    <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+                    <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+                  </div>
+  
+              </div>
+            </figure>  
+
+    </section>
+
+    <section class="container mt-6">
+
+      <h6 class="color-gray text-bold">SHORTCUTS</h6>
+      
+      <a href="clients" class="btn btn-primary p-4 mt-1">
+        <i class="fa fa-users fa-2x block opacity-25"></i>
+        <small class="uppercase color-light mt-3">ADD CLIENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-4 mt-1">
+        <i class="fa fa-plus fa-2x block opacity-50 color-gray"></i>
+        <small class="uppercase color-light mt-3">ADD PAYMENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-5 mt-1">
+        <div class="block opacity-50 color-gray text-xl text-bold">ADD</div>
+        <small class="uppercase color-light">PAYMENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-3 mt-1">
+        <i class="fa fa-plus fa-2x block opacity-50 color-gray"></i>
+        <span class="btn btn-gray btn-xs uppercase mt-1 rounded">ADD PAYMENT</span>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-3 pl-4 pr-5 mt-1 h-60 box-icon relative" data-icon="&#xf382">
+        <span class="uppercase text-bold color-light mt-2 block"><i class="fa fa-plus text-xs"></i> ADD CLIENT</span>
+      </a>
+
+    </section>
+
+
+
+
+  <section class="container mt-6 flex">
+
+      <figure class="col-24 col-md-11">
+        <h2 class="mt-3">Invoices</h2>
+        <h5 class="color-gray mt-2">Fusce rutrum pharetra ntum mauris eu sem parturient consectetur egestas.</h5>
+        <button class="btn btn btn-primary mt-5 mb-5">Save</button>
+      </figure>
+        
+      <div class="col-24 col-md-12 offset-md-1">
+
+        <figure class="bg-white shadow-lg rounded">
+        <div class="bg-light-500 color-gray-900 text-bold p-4 flex content-between rounded-t-lg uppercase">Active Invoices</div>
+
+        <div class="flex items-center p-4">
+            <span class="text-bold text-lg bg-gray-900 color-light p-2 py-1 rounded mr-2"><i class="fab fa-instagram"></i></span>
+            XXXXxxxxx <span class="badge badge-light badge-sm bg-blue-100 color-blue-800 ml-3 rounded-full">+80%</span>
+            <i class="fab fa-twitter ml-2"></i>
+            <a href="#" class="btn btn-teal btn-xs ml-auto">Search</a>
+        </div>
+
+        <hr class="bg-gray my-0">
+        
+        <div class="p-4">
+
+            <h6 class="color-gray-900 text-bold">GENERAL MANAGER</h6>
+            <p class="mt-1 text-sm color-gray">The general manager controls all staff, payments and settings of the business</p>
+  
+              <div class="block color-black pt-5">
+                <img src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9" alt="" class="h-50 w-50 rounded-circle object-cover float-left mr-3">
+                <span class="block">Michael Mcswain</span>
+                <a href="#" class="btn btn-yellow btn-xs text-xs">Change Manager</a>
+              </div>
+  
+
+
+
+              <h6 class="uppercase text-bold mt-12">LANGUAGES</h6>
+              <div class="row mt-2 color-gray">
+                
+                <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                  <input type="checkbox" class="" name="currencies[]" id="currency_AED" value="AED">
+                  <label class="" for="currency_AED">form-checkbox-sm</label>
+                </div>
+
+                <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                  <input type="checkbox" class="" name="currencies[]" id="currency_ZWD" value="ZWD">
+                  <label class="" for="currency_ZWD">ZWD </label>
+              </div>
+            </div>
+            
+
+
+              <hr class="bg-gray mb-0">
+
+              <div class="flex items-center color-gray mt-2">
+                <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+                <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+              </div>
+
+          </div>
+
+        </figure>
+
+
+
+        <figure class="mt-5 bg-white shadow-lg rounded p-4">
+            
+    
+    
+                <h6 class="text-bold">API KEY</h6>
+                <p class="mt-2 text-xs color-gray">Changing your API can disconnect you from some things, please only use this when your certain your account is compromise.</p>
+                  
+                <div class="flex">
+                    <div class="form-inner col required mt-5">
+                      <label for="manager">API KEY</label>
+                      <input type="text" class="form-control-inner" id="manager" placeholder="">
+                    </div>
+
+                    <div class="col-1 mt-5"></div>
+    
+                    <div class="form-inner col required mt-5">
+                      <label for="manager">API KEY</label>
+                      <input type="text" class="form-control-inner" id="manager" placeholder="">
+                    </div>
+                </div>
+
+                  <a href="#" class="btn btn-primary btn-xs">Copy</a>
+                  <a href="#" class="btn btn-teal btn-xs">Generate New</a>
+                
+
+                  <div class="form-inner mt-3">
+                    <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+                    <label>Message</label>
+                  </div>
+  
+    
+                  <hr class="bg-gray mb-0">
+    
+                  <div class="flex items-center color-gray mt-2">
+                    <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+                    <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+                  </div>
+    
+    
+            </figure>
+
+
+        </div>
+
+
+  </section>
+
+
+    <section class="container-max mt-6">
+      <div class="container">
+          <ul class="tabs-line text-uppercase mt-20" id="myTab">
+            <button class="tab-link active show" id="home-tab">INVOICES</button>
+            <button class="tab-link" id="about-tab">RECURRING</button>
+            <button class="tab-link" id="about-tab">HELP</button>
+          </ul>
+      </div>
+      <div class="container flex bg-white p-4">
+
+
+        <figure class="col-24 col-md-11 p-4">
+          <h2 class="">Projects</h2>
+          <h5 class="color-gray mt-2">Fusce rutrum pharetra pretium phasellus fringilla taciti elementum mauris eu sem parturient consectetur egestas.</h5>
+          <ul class="tabs-line tabs-vertical text-uppercase mt-5 p-0 md-p-5" id="myTab">
+            <button class="tab-link active show" id="home-tab">INVOICES</button>
+            <button class="tab-link" id="about-tab">RECURRING</button>
+            <button class="tab-link" id="about-tab">HELP</button>
+          </ul>
+          
+          <ul class="tabs-line tabs-vertical tabs-btn text-uppercase mt-5 p-0 md-p-5" id="myTab">
+            <button class="tab-link">INVOICES</button>
+            <button class="tab-link active">RECURRING</button>
+            <button class="tab-link">HELP</button>
+          </ul>
+        </figure>
+        
+        <figure class="col-24 col-md-12 offset-md-1 bg-white shadow-lg rounded">
+          <div class="bg-light-500 color-gray-800 text-bold p-4 flex content-between rounded-t-lg uppercase">
+            Running Projects
+          </div>
+
+          <div class="flex items-center p-4">
+              <span class="text-bold text-lg bg-gray-900 color-light p-2 py-1 rounded mr-2"><i class="fab fa-instagram"></i></span>
+              XXXXxxxxx <span class="badge badge-light badge-sm bg-blue-100 color-blue-800 ml-3 rounded-full">+80%</span>
+              <i class="fab fa-twitter ml-2"></i>
+              <a href="#" class="btn btn-teal btn-xs ml-auto">Search</a>
+          </div>
+
+          <hr class="bg-gray my-0">
+
+          <div class="flex items-center p-4">
+              <span class="text-bold text-lg bg-gray-900 color-light p-3 rounded mr-2"><i class="fab fa-instagram"></i></span>
+              XXXXxxxxx <span class="badge badge-light bg-blue-100 color-blue-800 ml-3 rounded-full">+80%</span>
+              <span class="badge badge-teal badge-sm ml-auto">up 80%</span>
+          </div>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="container mt-6">
+      <a class="btn btn-primary btn-sm mt-20 active" role="tab" data-toggle="tab" href="#new_leads">new</a>
+      <button class="btn btn-xs btn-primary mr-1 shadow">ADD CLIENT XS</button>
+      <button class="btn btn-sm btn-primary mr-1 shadow-lg">ADD CLIENT SM</button>
+      <button class="btn btn btn-primary mr-1"><i class="fa fa-plus opacity-50 color-gray mr-1"></i> ADD CLIENT</button>
+      <button class="btn btn-lg btn-primary"><i class="fa fa-plus opacity-50 color-gray mr-1"></i> ADD CLIENT LG</button>
+      <button class="btn btn-xl btn-primary"><i class="fa fa-plus opacity-50 color-gray mr-1"></i> ADD CLIENT XL</button>
 
       <div class="col-24 p-3 bg-light">Con Container</div>
       <div class="col p-3 bg-gray-700">1 of 2</div>
@@ -198,7 +450,7 @@
   </main>
 
 
-</div>
+</section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
 <script>

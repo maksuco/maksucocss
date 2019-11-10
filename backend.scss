@@ -24,8 +24,20 @@ aside.sidebar {
   top: 0;
   bottom: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, $primary, darken($primary, 20%));
+  background: linear-gradient(to bottom, $backend-aside-bg, $backend-aside-bg_end);
   padding: 20px 0px;
+  .sidebar-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -6px;
+    //overflow-y: scroll !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: auto; //hidding scroll bar
+    padding-bottom: 30px;
+  }
   .logo {
     width: 100%;
     text-align: center;
@@ -43,7 +55,7 @@ aside.sidebar {
   .sidebar-panel {
     margin-top: 8px;
     padding: 10px 15px;
-    background: darken($primary, 10%);
+    background: $backend-aside-bg_end;
     color: rgba($light, .8);
     font-weight: bold;
     line-height: 1.15;
@@ -53,15 +65,6 @@ aside.sidebar {
       color: $gray;
       font-weight: lighter;
     }
-  }
-  .sidebar-content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0px;
-    overflow-y: scroll !important;
-    padding-bottom: 30px;
   }
   .sidebar-nav {
     margin-top: 15px;

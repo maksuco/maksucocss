@@ -12,11 +12,11 @@
 }
 
 .color-black {
-  color: #000000;
+  color: $black;
 }
 
 .color-white {
-  color: #ffffff;
+  color: $white;
 }
 
 //BACKGROUNDS
@@ -33,11 +33,14 @@
 }
 
 .bg-black {
-  background-color: #000;
+  background-color: $black;
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: $white;
+}
+.bg-white-o {
+  background-color: rgba($white, .2) !important;
 }
 
 //BORDER COLORS
@@ -56,6 +59,40 @@
 .border-white {
   border-color: #fff;
 }
+
+//CIRCLES
+
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  min-width: 1rem;
+  min-height: 1rem;
+  vertical-align: middle;
+  background-color: $primary;
+  margin: .3rem;
+  margin-top: 2px;
+  margin-left: 0;
+  border-style: solid;
+  border-width: .3rem;
+  border-color: lighten($primary, 50%);
+  &.text-lg {
+    min-width: 1.4rem;
+    min-height: 1.4rem;
+    border-width: .3rem;
+  }
+  &.text-xl {
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+    border-width: .4rem;
+  }
+  &.text-2x {
+    min-width: 1.7rem;
+    min-height: 1.7rem;
+    border-width: .3rem;
+  }
+}
+
 
 
 $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purple, red, green, teal, yellow, orange;
@@ -80,75 +117,117 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
     color: $color !important;
   }
   .color-#{$name}-100 {
-    color: lighten($color, 25%);
+    color: lighten($color, 25%) !important;
   }
   .color-#{$name}-200 {
-    color: lighten($color, 18%);
+    color: lighten($color, 18%) !important;
   }
   .color-#{$name}-300 {
-    color: lighten($color, 10%);
+    color: lighten($color, 10%) !important;
   }
   .color-#{$name}-400 {
-    color: lighten($color, 5%);
+    color: lighten($color, 5%) !important;
   }
   .color-#{$name}-500 {
-    color: $color;
+    color: $color !important;
   }
   .color-#{$name}-600 {
-    color: darken($color, 5%);
+    color: darken($color, 5%) !important;
   }
   .color-#{$name}-700 {
-    color: darken($color, 10%);
+    color: darken($color, 10%) !important;
   }
   .color-#{$name}-800 {
-    color: darken($color, 15%);
+    color: darken($color, 15%) !important;
   }
   .color-#{$name}-900 {
-    color: darken($color, 30%);
+    color: darken($color, 30%) !important;
   }
   .hover-color-#{$name} {
     &:hover {
       color: $color !important;
     }
   }
+  .color-#{$name}-o {
+    color: rgba($color, .3);
+  }
   .bg-#{$name} {
     background-color: $color !important;
   }
   .bg-#{$name}-100 {
-    background-color: lighten($color, 25%);
+    background-color: lighten($color, 25%) !important;
   }
   .bg-#{$name}-200 {
-    background-color: lighten($color, 18%);
+    background-color: lighten($color, 18%) !important;
   }
   .bg-#{$name}-300 {
-    background-color: lighten($color, 10%);
+    background-color: lighten($color, 10%) !important;
   }
   .bg-#{$name}-400 {
-    background-color: lighten($color, 5%);
+    background-color: lighten($color, 5%) !important;
   }
   .bg-#{$name}-500 {
-    background-color: $color;
+    background-color: $color !important;
   }
   .bg-#{$name}-600 {
-    background-color: darken($color, 5%);
+    background-color: darken($color, 5%) !important;
   }
   .bg-#{$name}-700 {
-    background-color: darken($color, 10%);
+    background-color: darken($color, 10%) !important;
   }
   .bg-#{$name}-800 {
-    background-color: darken($color, 15%);
+    background-color: darken($color, 15%) !important;
   }
   .bg-#{$name}-900 {
-    background-color: darken($color, 30%);
+    background-color: darken($color, 30%) !important;
   }
   .hover-bg-#{$name} {
     &:hover {
       background-color: $color !important;
     }
   }
+  .bg-#{$name}-o {
+    background-color: rgba($color, .4);
+  }
   .border-#{$name} {
     border-color: $color;
   }
+  .border-#{$name}-100 {
+    border-color: lighten($color, 25%);
+  }
+  .border-#{$name}-200 {
+    border-color: lighten($color, 18%);
+  }
+  .border-#{$name}-300 {
+    border-color: lighten($color, 10%);
+  }
+  .border-#{$name}-400 {
+    border-color: lighten($color, 5%);
+  }
+  .border-#{$name}-500 {
+    border-color: $color;
+  }
+  .border-#{$name}-600 {
+    border-color: darken($color, 5%);
+  }
+  .border-#{$name}-700 {
+    border-color: darken($color, 10%);
+  }
+  .border-#{$name}-800 {
+    border-color: darken($color, 15%);
+  }
+  .border-#{$name}-900 {
+    border-color: darken($color, 30%);
+  }
+  .shadow-#{$name} {
+    //horizontal vertical blur spread
+    box-shadow: 0px 8px 25px -5px rgba($color, 0.6);
+  }
+  .circle-#{$name} {
+    background-color: $color;
+    border-color: lighten($color, 50%);
+  }
+  
 }
 @media (min-width: $desktop-breakpoint) {
   @each $name in $colors {
@@ -243,6 +322,16 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
 
 
 
+.hover-bg-noimage {
+  &:hover {
+    background-image: none;
+  }
+}
+.hover-bg-nocolor {
+  &:hover {
+    background-color: transparent;
+  }
+}
 @each $name in $colors {
   $color: $primary;
   @if $name == secondary { $color: $secondary;
@@ -265,6 +354,64 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
     background-color: $color;
     background-image: linear-gradient(120deg, $color 40%, darken($color, 15%) 100%);
   }
+  .bg-gradient-#{$name}-90 {
+    background-color: $color;
+    background-image: linear-gradient(90deg, $color 40%, darken($color, 15%) 100%);
+  }
+  .bg-gradient-#{$name}-180 {
+    background-color: $color;
+    background-image: linear-gradient(180deg, $color 40%, darken($color, 15%) 100%);
+  }
+  .bg-gradient-#{$name}-270 {
+    background-color: $color;
+    background-image: linear-gradient(270deg, $color 40%, darken($color, 15%) 100%);
+  }
+  .bg-gradient-#{$name}-circular {
+    background-color: $color;
+    background-image: radial-gradient($color, darken($color, 15%));
+  }
+
+  //DUAL COLORS
+@each $name2 in $colors {
+  $color2: $primary;
+  @if $name2 == secondary { $color2: $secondary;
+  } @else if $name2 == light { $color2: $light;
+  } @else if $name2 == dark { $color2: $dark;
+  } @else if $name2 == black { $color2: #000000;
+  } @else if $name2 == white { $color2: #ffffff;
+  } @else if $name2 == gray { $color2: $gray;
+  } @else if $name2 == blue { $color2: $blue;
+  } @else if $name2 == indigo { $color2: $indigo;
+  } @else if $name2 == purple { $color2: $purple;
+  } @else if $name2 == red { $color2: $red;
+  } @else if $name2 == green { $color2: $green;
+  } @else if $name2 == teal { $color2: $teal;
+  } @else if $name2 == yellow { $color2: $yellow;
+  } @else if $name2 == orange { $color2: $orange;
+  }
+  @if $name != $name2 {
+    .bg-gradient-#{$name}-#{$name2} {
+      background-color: $color;
+      background-image: linear-gradient(120deg, $color 40%, $color2 100%);
+    }
+    .bg-gradient-#{$name}-#{$name2}-90 {
+      background-color: $color;
+      background-image: linear-gradient(90deg, $color 40%, $color2 100%);
+    }
+    .bg-gradient-#{$name}-#{$name2}-180 {
+      background-color: $color;
+      background-image: linear-gradient(180deg, $color 40%, $color2 100%);
+    }
+    .bg-gradient-#{$name}-#{$name2}-270 {
+      background-color: $color;
+      background-image: linear-gradient(270deg, $color 40%, $color2 100%);
+    }
+    .bg-gradient-#{$name}-#{$name2}-circular {
+      background-color: $color;
+      background-image: radial-gradient($color, $color2);
+    }
+  }
+}
 
   .overlay-gradient-#{$name} {
     &:after {
@@ -337,4 +484,71 @@ $whatsapp: #35B83F;
     &:hover {
         background-color: lighten($whatsapp, 10%)
     }
+}
+
+
+//FILTERS
+.filter-none {
+  filter: none;
+}
+.hover-filter-none {
+  &:hover {
+    filter: none;
+  }
+}
+.filter-grayscale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  &:hover {
+    filter: grayscale(100%);
+  }
+}
+.filter-blur {
+  filter: blur(3px);
+  &:hover {
+    filter: blur(3px);
+  }
+}
+.filter-contrast {
+  filter:contrast(200%);
+  &:hover {
+    filter:contrast(200%);
+  }
+}
+.filter-saturate {
+  filter:saturate(8);
+  &:hover {
+    filter:saturate(8);
+  }
+}
+.filter-sepia {
+  filter:sepia(100%);
+  &:hover {
+    filter:sepia(100%);
+  }
+}
+.hover-filter-grayscale {
+  &:hover {
+    filter: grayscale(100%);
+  }
+}
+.hover-filter-blur {
+  &:hover {
+    filter: blur(4px);
+  }
+}
+.hover-filter-contrast {
+  &:hover {
+    filter:contrast(200%);
+  }
+}
+.hover-filter-saturate {
+  &:hover {
+    filter:saturate(8);
+  }
+}
+.hover-filter-sepia {
+  &:hover {
+    filter:sepia(100%);
+  }
 }

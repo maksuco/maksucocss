@@ -19,6 +19,16 @@ aside.sidebar {
   overflow: hidden;
   background: linear-gradient(to bottom, #301680, #0f0729);
   padding: 20px 0px; }
+  aside.sidebar .sidebar-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -6px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: auto;
+    padding-bottom: 30px; }
   aside.sidebar .logo {
     width: 100%;
     text-align: center; }
@@ -33,7 +43,7 @@ aside.sidebar {
   aside.sidebar .sidebar-panel {
     margin-top: 8px;
     padding: 10px 15px;
-    background: #200f54;
+    background: #0f0729;
     color: rgba(237, 242, 248, 0.8);
     font-weight: bold;
     line-height: 1.15; }
@@ -42,14 +52,6 @@ aside.sidebar {
       font-size: 85%;
       color: #A0AEC0;
       font-weight: lighter; }
-  aside.sidebar .sidebar-content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0px;
-    overflow-y: scroll !important;
-    padding-bottom: 30px; }
   aside.sidebar .sidebar-nav {
     margin-top: 15px;
     font-size: 13px;
@@ -171,7 +173,7 @@ aside.sidebar {
     position: absolute;
     display: block;
     border: none;
-    border-radius: 0.44rem;
+    border-radius: 0.22rem;
     padding: 4px 6px;
     background-color: white;
     box-shadow: rgba(48, 22, 128, 0.1) 0px 5px 20px 0px;
@@ -190,7 +192,7 @@ aside.sidebar {
       color: #151d2e;
       text-transform: capitalize;
       clear: both;
-      border-radius: 0.44rem;
+      border-radius: 0.22rem;
       margin: 2px 0;
       padding: .4rem 1rem; }
       .dropdown-user .dropdown-menu .dropdown-item:hover {

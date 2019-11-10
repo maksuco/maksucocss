@@ -43,13 +43,14 @@ $red: #ff2400;
 $yellow: #ffeb04;
 $orange: #ff8800;
 $black: #010102;
+$white: #ffffff;
 $body: $dark;
 $bg: white;
 
 //BUTTONS
 $btn-padding-y: .6rem !default;
 $btn-padding-x: 1.3rem !default;
-$btn-radius: .4rem !default;
+$btn-radius: .2rem !default;
 
 //FORMS
 $form-bg: #ffffff !default;
@@ -63,4 +64,6 @@ $form-border: 1px solid $gray;
 
 //BACKEND
 $backend-bg: #f4f6f8 !default;
+$backend-aside-bg: $primary !default;
+$backend-aside-bg_end: darken($primary, 20%) !default;
 $backend-aside-links: #dae9f5 !default;

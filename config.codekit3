@@ -1095,6 +1095,14 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/boxes.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/boxes.html",
+		"oF": 0
+		},
 	"/compiled.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1706,6 +1714,17 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/purgecss.config.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/purgecss.config-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
 	"/readme.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -2042,6 +2061,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/tabs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/tabs.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/text.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2067,22 +2099,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/test.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/test.html",
-		"oF": 0
-		},
-	"/vue-simple-suggest.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/vue-simple-suggest.html",
-		"oF": 0
 		}
 	},
 "hooks": [

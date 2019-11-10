@@ -23,12 +23,12 @@ $paddings: p, pl, pr, pt, pb, py, px;
   }
   .#{$row}-px {
     @if $row == p { padding: 1px !important;
-    } @else if $row == pl { padding-left: 1px;
-    } @else if $row == pr { padding-right: 1px;
-    } @else if $row == pt { padding-top: 1px;
-    } @else if $row == pb { padding-bottom: 1px;
-    } @else if $row == py { padding-top: 1px; padding-bottom: 1px;
-    } @else if $row == px { padding-left: 1px; padding-right: 1px;
+    } @else if $row == pl { padding-left: 1px !important;
+    } @else if $row == pr { padding-right: 1px !important;
+    } @else if $row == pt { padding-top: 1px !important;
+    } @else if $row == pb { padding-bottom: 1px !important;
+    } @else if $row == py { padding-top: 1px !important; padding-bottom: 1px !important;
+    } @else if $row == px { padding-left: 1px !important; padding-right: 1px !important;
     }
   }
 }
@@ -127,12 +127,12 @@ $paddings: p, pl, pr, pt, pb, py, px;
 
 //MARGINS
 .my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
 }
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 .ml-auto {
   margin-left: auto !important;
@@ -283,7 +283,7 @@ $margins: m, ml, mr, mt, mb, my, mx;
 
 //RADIUS
 .rounded-none, .rounded-0 {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .rounded-sm {
   border-radius: 0.125rem;
@@ -301,7 +301,7 @@ $margins: m, ml, mr, mt, mb, my, mx;
   border-radius: 50%!important;
 }
 .rounded-full {
-  border-radius: 9999px;
+  border-radius: 9999px !important;
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -527,24 +527,38 @@ $margins: m, ml, mr, mt, mb, my, mx;
 }
 
 //BORDERS (border colors in colors.scss)
-.border-0 {
-  border-width: 0;
-}
+$borders: 0, 1, 2, 3, 4, 5, 6;
 .border-none {
-  border: none;
+  border: none !important;
 }
-.border, .border-1 {
-  border-width: 1px;
+.border-solid {
+  border-style: solid !important;
 }
-.border-2 {
-  border-width: 2px;
+.border-dashed {
+  border-style: dashed !important;
 }
-.border-3 {
-  border-width: 3px;
+.border-dotted {
+  border-style: dotted !important;
 }
-.border-4 {
-  border-width: 4px;
+@each $row in $borders {
+  .border-#{$row} {
+    border-width: #{$row}px !important;
+  }
+  .border-t-#{$row} {
+    border-top-width: #{$row}px !important;
+  }
+  .border-b-#{$row} {
+    border-bottom-width: #{$row}px !important;
+  }
+  .border-l-#{$row} {
+    border-left-width: #{$row}px !important;
+  }
+  .border-r-#{$row} {
+    border-right-width: #{$row}px !important;
+  }
 }
+
+
 
 
 
@@ -663,4 +677,20 @@ $margins: m, ml, mr, mt, mb, my, mx;
 }
 .hover-opacity-100 {
   opacity: 1;
+}
+
+
+//ROTATE
+.rotate-90 {
+  transform-origin: top right;
+  transform: rotate(90deg) translateX(100%);
+  //transform: rotate(90deg)  translateX(100%);
+  //transform-origin: 0 0;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.rotate-270 {
+  transform-origin: top right;
+  transform: rotate(-90deg) translateY(-100%);
 }

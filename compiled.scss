@@ -12,24 +12,27 @@
 //BOOTWIND
 //@import 'reset';
 @import 'scss/grid';
+@import 'scss/forms';
 @import 'scss/tables';
 @import 'scss/buttons';
 @import 'scss/badges';
 @import 'scss/modals';
-@import 'scss/forms';
 @import 'scss/media';
 @import 'scss/styles';
 @import 'scss/text';
 @import 'scss/colors';
 @import 'scss/charts';
 @import 'scss/boxes';
+@import 'scss/tabs';
 @import 'scss/helpers';
 
 
 //ICONS
+/* purgecss start ignore */
 $fa-font-path: "fontawesome/webfonts" !default;
 @import "fontawesome/scss/fontawesome.scss";
 @import "fontawesome/scss/regular.scss";
 @import "fontawesome/scss/solid.scss";
 @import "fontawesome/scss/light.scss";
 @import "fontawesome/scss/brands.scss";
+/* purgecss end ignore */

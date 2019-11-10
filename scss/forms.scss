@@ -6,20 +6,19 @@
 @import 'forms/select';
 @import 'forms/checkbox';
 
-
+//STYLES
 .form-inline {
   display: inline-flex;
   margin-right: 1rem;
 }
 
-
-.form-lg {
+.form-xs {
   input, textarea, select {
-    //padding: 1rem 10px .6rem 15px;
-    font-size: 1.3rem !important;
+    padding: .3rem .4rem .2rem .4rem;
+    font-size: .6rem;
   }
   label {
-    font-size: 110%;
+    font-size: 60%;
   }
 }
 
@@ -30,6 +29,17 @@
   }
   label {
     font-size: 70%;
+  }
+}
+
+
+.form-lg {
+  input, textarea, select {
+    //padding: 1rem 10px .6rem 15px;
+    font-size: 1.3rem !important;
+  }
+  label {
+    font-size: 110%;
   }
 }
 
@@ -76,5 +86,52 @@
         display: none;
       }
     }
+  }
+}
+
+
+
+//SELECT BTN
+.form-select-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: $font-weight-bold;
+  color: #9AA2B5;
+  background-color: $light;
+  line-height: 1;
+  padding: .8rem 1.3rem .8rem 1.2rem;
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
+  &:focus {
+    overflow: none;
+    outline: none !important;
+    font-weight: $font-weight-normal;
+  }
+  &:not(:focus){
+    font-weight: $font-weight-bold;
+
+  }
+  &* {
+    font-weight: $font-weight-normal;
+  }
+  &>option{
+    font-weight: $font-weight-normal;
+  }
+  &option:checked {
+  }
+  &option {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    padding: 20px;
   }
 }

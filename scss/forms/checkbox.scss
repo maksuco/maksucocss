@@ -104,6 +104,22 @@
 
 
 
+.form-checkbox-xs, .form-radio-xs {
+  font-size: 0.75rem;
+  label {
+    padding-top: .25rem;
+  }
+}
+
+
+.form-checkbox-sm, .form-radio-sm {
+  font-size: 0.875rem;
+  label {
+    padding-top: .14rem;
+  }
+}
+
+
 //SWITCH
 .form-switch {
   width: 46px;
