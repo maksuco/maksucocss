@@ -413,19 +413,6 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
       background-color: $color;
       background-image: radial-gradient($color, $color2);
     }
-    //DIAGONAL
-    .bg-diagonal-#{$name}-#{$name2} {
-      display: block;
-      height: 70px;
-      width: 100%;
-      background-image: linear-gradient(177deg, $color 50%, $color2 51%);
-    }
-    .bg-diagonal-#{$name}-#{$name2}-inverse {
-      display: block;
-      height: 70px;
-      width: 100%;
-      background-image: linear-gradient(-177deg, $color 51%, $color2 50%);
-    }
   }
 }
 
@@ -615,3 +602,21 @@ $whatsapp: #35B83F;
 .bg-blend-saturation {background-blend-mode: saturation;}
 .bg-blend-color {background-blend-mode: color;}
 .bg-blend-luminosity {background-blend-mode: luminosity;}
+
+.bg-diagonal {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-top: -60px;
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.bg-diagonal-inverse {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-top: -60px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}

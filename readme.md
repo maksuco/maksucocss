@@ -184,12 +184,12 @@ In some basic colors (black, white, light, dark), is possible to add `*-o` to ge
 
 
 ---
-### BG Diagonal Colors
+### BG Diagonal 
 
-**Colors:** `.bg-diagonal-*-*` similar to `.bg-diagonal-dark-white` or you can use `.bg-diagonal-*-*-inverse`
+**Clip:** `.bg-diagonal` or you can use `.bg-diagonal-inverse`
 
 ```
-<div class="bg-diagonal-white-light"></div>
+<div class="bg-light bg-diagonal"></div>
 ```
 
 
@@ -289,7 +289,7 @@ Remember bg-blend only works on same element, it's not photoshop, for that you u
 ---
 ### List
 
-Use `.list` or `.ul` on <ul>
+Use `.list` or `.ul` on `<ul>`
 
 **<li> Margins:** `.list-m-none` `.list-m-5` `.list-m-10` `.list-m-11` `.list-m-12` `.list-m-13` `.list-m-14` `.list-m-15` `.list-m-20`.
 
