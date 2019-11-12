@@ -5,7 +5,7 @@ body {
   max-width: 100% !important;
   padding-left: 2rem;
   padding-right: 2rem; }
-  @media (max-width: 768px) {
+  @media (max-width: 1168px) {
     .container {
       padding-left: 1rem;
       padding-right: 1rem; } }
@@ -84,6 +84,37 @@ aside.sidebar {
     font-size: .8rem;
     line-height: 1;
     letter-spacing: .06rem; }
+  @media (min-width: 768px) and (max-width: 1168px) {
+    aside.sidebar {
+      width: 98px; }
+      aside.sidebar .logo {
+        display: none; }
+      aside.sidebar .sidebar-panel {
+        display: none; }
+      aside.sidebar .sidebar-nav {
+        width: 96px;
+        margin: 0;
+        padding: .3rem .6rem; }
+        aside.sidebar .sidebar-nav li {
+          line-height: 1rem;
+          font-weight: bold;
+          padding-bottom: .3rem; }
+          aside.sidebar .sidebar-nav li a {
+            text-align: center;
+            padding: .3rem .4rem .2rem .4rem;
+            font-size: .5rem;
+            text-transform: uppercase;
+            border: 1px solid #301680;
+            border-radius: .5rem; }
+          aside.sidebar .sidebar-nav li i {
+            display: block;
+            font-size: 1.3rem;
+            padding: 0;
+            margin: 0 auto; }
+      aside.sidebar h5 {
+        text-align: center;
+        padding: .8rem 0 .4rem 0 !important;
+        letter-spacing: -.02rem; } }
   @media (max-width: 768px) {
     aside.sidebar {
       transition: all .25s ease-out;
@@ -234,6 +265,11 @@ main {
         padding: 0.25rem 0.5rem;
         font-size: 1.2rem;
         vertical-align: middle; }
+  @media (min-width: 768px) and (max-width: 1168px) {
+    main {
+      margin-left: 100px; }
+      main header {
+        padding: 1.5rem 1rem 2rem 1rem; } }
   @media (max-width: 768px) {
     main {
       margin-left: 0px; }

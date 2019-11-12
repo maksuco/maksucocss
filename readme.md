@@ -183,13 +183,23 @@ You can also use it with `.md-bg-*` `.md-color-*` `.md-hover-color-*` to target 
 In some basic colors (black, white, light, dark), is possible to add `*-o` to get the same color but with opacity, like `.bg-white-o` 
 
 
+---
+### BG Diagonal Colors
+
+**Colors:** `.bg-diagonal-*-*` similar to `.bg-diagonal-dark-white` or you can use `.bg-diagonal-*-*-inverse`
+
+```
+<div class="bg-diagonal-white-light"></div>
+```
+
+
 
 ---
 ### Shadows
 
 **Sizes:** `.shadow`, `.shadow-xs` `.shadow-sm` `.shadow-lg` `.shadow-xl` `.shadow-full` (All around)
 
-**OR with Colors:** You can also add colors `.shadow-primary` or `.shadow-light`, etc..
+**OR with Colors:** You can also add colors `.shadow-primary` or `.shadow-light`, etc.. and `.shadow-blue-full` for a all around shadow
 
 
 
@@ -258,6 +268,20 @@ Also you can target desktop `.md-*` only
 `.filters-none` `.filters-blur` `.filters-grayscale` `.filters-contrast` `.filters-saturate` `.filters-sepia`
 
 Also you can use `.hover-filter-*`
+
+[Examples](https://alligator.io/css/css-filter-examples/)
+
+
+
+
+---
+### Blend Effects
+
+`.blend-*` and  `.bg-blend-*` like `.blend-overlay` `.bg-blend-hue`
+
+Remember bg-blend only works on same element, it's not photoshop, for that you use .blend-*
+
+[Examples](https://alligator.io/css/exploring-blend-modes/)
 
 
 

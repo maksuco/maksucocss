@@ -63,6 +63,7 @@ $form-placeholder-color: $gray;
 $form-border: 1px solid $gray;
 
 //BACKEND
+$backend-breakpoint: 1168px !default;
 $backend-bg: #f4f6f8 !default;
 $backend-aside-bg: $primary !default;
 $backend-aside-bg_end: darken($primary, 20%) !default;

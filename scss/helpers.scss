@@ -611,7 +611,9 @@ $borders: 0, 1, 2, 3, 4, 5, 6;
 //SCROLL
 .scroll-y, .scroll-x {
 	-webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 	&::-webkit-scrollbar {
+    display: none;
 	}
 }
 .scroll-y {
@@ -620,6 +622,7 @@ $borders: 0, 1, 2, 3, 4, 5, 6;
 	height: 100%;
 }
 .scroll-x {
+  display: block;
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
@@ -677,6 +680,24 @@ $borders: 0, 1, 2, 3, 4, 5, 6;
 }
 .hover-opacity-100 {
   opacity: 1;
+}
+
+.hover-show {
+  //display: none;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+    //display: block;
+  }
+}
+
+.hover-hidden {
+  //display: none;
+  opacity: 1;
+  &:hover {
+    opacity: 0;
+    //display: block;
+  }
 }
 
 
