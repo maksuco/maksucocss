@@ -29,23 +29,23 @@ $h3-size: 1.9rem !default;
 $h4-size: 1.6rem !default;
 
 //COLORS
-$primary: #301680;
-$secondary: #244260;
-$dark: #151d2e;//#1e2229;#314164;
-$light: #edf2f8;
-$gray: #A0AEC0;
-$blue: #4299E1;
-$indigo: #667EEA;
-$purple: #9F7AEA;
-$green: #1da139;
-$teal: #38B2AC;
-$red: #ff2400;
-$yellow: #ffeb04;
-$orange: #ff8800;
-$black: #010102;
-$white: #ffffff;
-$body: $dark;
-$bg: white;
+$primary: #3B2098 !default;
+$secondary: #112741 !default;
+$dark: #151d2e !default;//#1e2229;#314164;
+$light: #edf2f8 !default;
+$gray: #A0AEC0 !default;
+$blue: #4299E1 !default;
+$indigo: #667EEA !default;
+$purple: #9F7AEA !default;
+$green: #1da139 !default;
+$teal: #38B2AC !default;
+$red: #ff2400 !default;
+$yellow: #ffeb04 !default;
+$orange: #ff8800 !default;
+$black: #010102 !default;
+$white: #ffffff !default;
+$body: $dark !default;
+$bg: white !default;
 
 //BUTTONS
 $btn-padding-y: .6rem !default;
@@ -59,8 +59,8 @@ $form-light: lighten($body, 22%) !default;
 $form-border: 1px solid lighten($form-text, 30%) !default;
 $input-border-radius: $btn-radius !default;
 //$form-label: ;
-$form-placeholder-color: $gray;
-$form-border: 1px solid $gray;
+$form-placeholder-color: $gray !default;
+$form-border: 1px solid $gray !default;
 
 //BACKEND
 $backend-breakpoint: 1168px !default;

@@ -77,7 +77,7 @@ aside.sidebar {
         width: 100%; }
       aside.sidebar .sidebar-nav li a:hover {
         opacity: .8;
-        background: #301680; }
+        background: #3B2098; }
       aside.sidebar .sidebar-nav li .active {
         cursor: default;
         color: white !important;
@@ -226,7 +226,7 @@ aside.sidebar {
     border-radius: 0.22rem;
     padding: 4px 6px;
     background-color: white;
-    box-shadow: rgba(48, 22, 128, 0.1) 0px 5px 20px 0px;
+    box-shadow: rgba(59, 32, 152, 0.1) 0px 5px 20px 0px;
     margin-right: -2px !important;
     top: 40px !important;
     min-width: 11rem;
@@ -249,7 +249,7 @@ aside.sidebar {
         background-color: #edf2f8; }
       .dropdown-user .dropdown-menu .dropdown-item:active {
         color: #edf2f8;
-        background-color: #301680; }
+        background-color: #3B2098; }
     .dropdown-user .dropdown-menu::before {
       content: "";
       border-left: 10px solid transparent;

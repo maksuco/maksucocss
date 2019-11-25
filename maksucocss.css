@@ -12,8 +12,8 @@
   --white: #ffffff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #301680;
-  --secondary: #244260;
+  --primary: #3B2098;
+  --secondary: #112741;
   --success: #1da139;
   --info: #17a2b8;
   --warning: #ffeb04;
@@ -139,10 +139,10 @@ sup {
   top: -.5em; }
 
 a {
-  color: #301680;
+  color: #3B2098;
   text-decoration: none; }
   a:hover {
-    color: #180b3f;
+    color: #221359;
     text-decoration: underline; }
 
 a:not([href]), a:not([href]):hover {
@@ -1229,36 +1229,36 @@ main {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #c5bedb; }
+  background-color: #c8c1e2; }
 
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: #9386bd; }
+  border-color: #998bc9; }
 
 .table-hover .table-primary:hover {
-  background-color: #b6aed2; }
+  background-color: #b9b0da; }
   .table-hover .table-primary:hover > td,
   .table-hover .table-primary:hover > th {
-    background-color: #b6aed2; }
+    background-color: #b9b0da; }
 
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #c2cad2; }
+  background-color: #bcc3ca; }
 
 .table-secondary th,
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: #8d9dac; }
+  border-color: #838f9c; }
 
 .table-hover .table-secondary:hover {
-  background-color: #b3bdc7; }
+  background-color: #aeb6bf; }
   .table-hover .table-secondary:hover > td,
   .table-hover .table-secondary:hover > th {
-    background-color: #b3bdc7; }
+    background-color: #aeb6bf; }
 
 .table-success,
 .table-success > th,
@@ -4775,13 +4775,13 @@ ul {
   outline: none;
   color: #151d2e;
   background-color: #ffffff;
-  border: 1px solid #A0AEC0;
+  border: 1px solid #455f97;
   border-radius: 0.2rem;
   padding: 12px 14px;
   -moz-appearance: none;
   -webkit-appearance: none; }
   .form-basic input:focus, .form-basic textarea:focus, .form-basic select:focus {
-    border-color: #301680; }
+    border-color: #3B2098; }
 
 .form-basic select {
   line-height: 1.5rem;
@@ -4801,7 +4801,7 @@ ul {
     outline: none;
     color: #151d2e;
     background-color: #ffffff;
-    border: 1px solid #A0AEC0;
+    border: 1px solid #455f97;
     border-radius: 0.2rem;
     padding: 12px 14px;
     -webkit-appearance: none;
@@ -4811,7 +4811,7 @@ ul {
       display: none; }
     .form-basic-select select:focus {
       outline: none;
-      border-color: #301680; }
+      border-color: #3B2098; }
     .form-basic-select select > option {
       color: #edf2f8 !important; }
   .form-basic-select > option {
@@ -5030,7 +5030,7 @@ ul {
   background-color: #edf2f8 !important; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #301680 !important; }
+  background-color: #3B2098 !important; }
 
 .form-inner {
   position: relative;
@@ -5038,7 +5038,7 @@ ul {
   .form-inner input, .form-inner textarea {
     width: 100%;
     color: #151d2e;
-    border: 1px solid #A0AEC0;
+    border: 1px solid #455f97;
     border-radius: 0.2rem;
     font-size: .95rem;
     line-height: 1.5;
@@ -5073,7 +5073,7 @@ ul {
   .form-inner-select select {
     color: #151d2e;
     background-color: #ffffff;
-    border: 1px solid #A0AEC0;
+    border: 1px solid #455f97;
     border-radius: 0.2rem;
     width: 100%;
     padding: 21px 10px 6px 15px;
@@ -5171,16 +5171,16 @@ ul {
     opacity: 0; }
   .form-checkbox input:checked ~ label::before, .form-radio input:checked ~ label::before {
     color: #fff;
-    border-color: #301680;
-    background-color: #301680; }
+    border-color: #3B2098;
+    background-color: #3B2098; }
   .form-checkbox input:focus ~ label::before, .form-radio input:focus ~ label::before {
     box-shadow: 0 0 0 0.2rem rgba(65, 30, 171, 0.25); }
   .form-checkbox input:focus:not(:checked) ~ label::before, .form-radio input:focus:not(:checked) ~ label::before {
-    border-color: #724ee1; }
+    border-color: #8970e1; }
   .form-checkbox input:not(:disabled):active ~ label::before, .form-radio input:not(:disabled):active ~ label::before {
     color: #fff;
-    background-color: #724ee1;
-    border-color: #724ee1; }
+    background-color: #8970e1;
+    border-color: #8970e1; }
   .form-checkbox input:disabled ~ label, .form-radio input:disabled ~ label {
     color: #a5adb6; }
   .form-checkbox input:disabled ~ label::before, .form-radio input:disabled ~ label::before {
@@ -5188,14 +5188,14 @@ ul {
   .form-checkbox input:checked ~ label::after, .form-radio input:checked ~ label::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
   .form-checkbox input:indeterminate ~ label::before, .form-radio input:indeterminate ~ label::before {
-    border-color: #301680;
-    background-color: #301680; }
+    border-color: #3B2098;
+    background-color: #3B2098; }
   .form-checkbox input:indeterminate ~ label::after, .form-radio input:indeterminate ~ label::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e"); }
   .form-checkbox input:disabled:checked ~ label::before, .form-radio input:disabled:checked ~ label::before {
-    background-color: rgba(48, 22, 128, 0.5); }
+    background-color: rgba(59, 32, 152, 0.5); }
   .form-checkbox input:disabled:indeterminate ~ label::before, .form-radio input:disabled:indeterminate ~ label::before {
-    background-color: rgba(48, 22, 128, 0.5); }
+    background-color: rgba(59, 32, 152, 0.5); }
   .form-checkbox label, .form-radio label {
     position: relative;
     margin-bottom: 0;
@@ -5229,7 +5229,7 @@ ul {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); }
 
 .form-radio input:disabled:checked ~ label::before {
-  background-color: rgba(48, 22, 128, 0.5); }
+  background-color: rgba(59, 32, 152, 0.5); }
 
 .form-radio input:not(:checked) ~ label::before {
   background-color: #edf2f8;
@@ -5324,7 +5324,7 @@ ul {
   transition-duration: 300ms; }
 
 .form-switch input[type="checkbox"]:checked {
-  background: #301680; }
+  background: #3B2098; }
 
 .form-switch input[type="checkbox"]:checked:before {
   -webkit-transform: scale(0);
@@ -5347,8 +5347,8 @@ ul {
     border: 0;
     overflow: hidden; }
     .form-panel input:checked + label {
-      background-color: #301680;
-      border-color: #301680;
+      background-color: #3B2098;
+      border-color: #3B2098;
       color: white !important;
       box-shadow: none; }
   .form-panel label {
@@ -5570,7 +5570,7 @@ input[type=number]::-webkit-outer-spin-button {
       background-color: rgba(255, 255, 255, 0.6); }
     .table-div-striped figure:hover {
       color: #edf2f8;
-      background-color: #301680; }
+      background-color: #3B2098; }
       .table-div-striped figure:hover .text-primary {
         color: white; }
       .table-div-striped figure:hover .bg-primary, .table-div-striped figure:hover .badge-primary {
@@ -5666,21 +5666,21 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn-primary {
   color: white;
-  background-color: #301680;
-  border-color: #301680; }
+  background-color: #3B2098;
+  border-color: #3B2098; }
   .btn-primary:hover {
     color: white !important;
-    background: #200f54;
-    border-color: #200f54; }
+    background: #2b176e;
+    border-color: #2b176e; }
 
 .btn-secondary {
   color: white;
-  background-color: #244260;
-  border-color: #244260; }
+  background-color: #112741;
+  border-color: #112741; }
   .btn-secondary:hover {
     color: white !important;
-    background: #16293b;
-    border-color: #16293b; }
+    background: #060f19;
+    border-color: #060f19; }
 
 .btn-dark {
   color: white;
@@ -5836,8 +5836,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .badge-primary {
   color: #edf2f8;
-  border-color: #301680;
-  background-color: #301680; }
+  border-color: #3B2098;
+  background-color: #3B2098; }
 
 .badge-dark {
   color: #edf2f8;
@@ -5910,7 +5910,7 @@ input[type=number]::-webkit-outer-spin-button {
         .modal .modal-content .modal-header .close:hover {
           color: #151d2e; }
       .modal .modal-content .modal-header.modal-header-inverted {
-        background-color: #301680;
+        background-color: #3B2098;
         padding-bottom: 13px;
         color: white; }
         .modal .modal-content .modal-header.modal-header-inverted h4 {
@@ -6146,7 +6146,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 2px 4px 1.5px 4px; }
 
 .icon-badge-primary::before {
-  background-color: #301680;
+  background-color: #3B2098;
   content: attr(data-icon);
   position: absolute;
   top: -2px;
@@ -6211,7 +6211,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 0;
   height: 0;
   line-height: 0;
-  border-top: 5px solid #301680;
+  border-top: 5px solid #3B2098;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: transparent;
@@ -6220,7 +6220,7 @@ input[type=number]::-webkit-outer-spin-button {
 *[data-tooltip]::after {
   overflow: hidden !important;
   content: attr(data-tooltip);
-  background-color: #301680;
+  background-color: #3B2098;
   color: red;
   text-align: center;
   font-size: .8rem;
@@ -6272,6 +6272,24 @@ hr, .hr {
   width: 1px;
   height: 100%;
   background: #edf2f8; }
+
+.title-line {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px; }
+  .title-line:before, .title-line:after {
+    content: '';
+    color: #ccc !important;
+    background-color: #A0AEC0 !important;
+    border-top: 2px solid;
+    border-color: #edf2f8 !important;
+    margin: 0 30px 0 50px;
+    flex: 1 0 30px; }
+  .title-line:after {
+    margin: 0 50px 0 30px; }
 
 .shadow, .shadow:hover {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important; }
@@ -6809,16 +6827,16 @@ smaller {
   content: "\f138" !important; }
 
 .list-fa-primary li:before {
-  color: #301680; }
+  color: #3B2098; }
 
 .li-fa-primary:before {
-  color: #301680 !important; }
+  color: #3B2098 !important; }
 
 .list-fa-secondary li:before {
-  color: #244260; }
+  color: #112741; }
 
 .li-fa-secondary:before {
-  color: #244260 !important; }
+  color: #112741 !important; }
 
 .list-fa-light li:before {
   color: #edf2f8; }
@@ -6992,13 +7010,13 @@ smaller {
   min-width: 1rem;
   min-height: 1rem;
   vertical-align: middle;
-  background-color: #301680;
+  background-color: #3B2098;
   margin: .3rem;
   margin-top: 2px;
   margin-left: 0;
   border-style: solid;
   border-width: .3rem;
-  border-color: #b8a5f0; }
+  border-color: #cfc4f3; }
   .circle.text-lg {
     min-width: 1.4rem;
     min-height: 1.4rem;
@@ -7013,246 +7031,246 @@ smaller {
     border-width: .3rem; }
 
 .color-primary {
-  color: #301680 !important; }
+  color: #3B2098 !important; }
 
 .color-primary-100 {
-  color: #6139dd !important; }
+  color: #785bdc !important; }
 
 .color-primary-200 {
-  color: #4d23ce !important; }
+  color: #603ed6 !important; }
 
 .color-primary-300 {
-  color: #401dac !important; }
+  color: #4b29c2 !important; }
 
 .color-primary-400 {
-  color: #381a96 !important; }
+  color: #4324ad !important; }
 
 .color-primary-500 {
-  color: #301680 !important; }
+  color: #3B2098 !important; }
 
 .color-primary-600 {
-  color: #28126a !important; }
+  color: #331c83 !important; }
 
 .color-primary-700 {
-  color: #200f54 !important; }
+  color: #2b176e !important; }
 
 .color-primary-800 {
-  color: #180b3f !important; }
+  color: #221359 !important; }
 
 .color-primary-900 {
-  color: black !important; }
+  color: #0a051a !important; }
 
 .hover-color-primary:hover {
-  color: #301680 !important; }
+  color: #3B2098 !important; }
 
 .color-primary-o {
-  color: rgba(48, 22, 128, 0.3); }
+  color: rgba(59, 32, 152, 0.3); }
 
 .bg-primary {
-  background-color: #301680 !important; }
+  background-color: #3B2098 !important; }
 
 .bg-primary-100 {
-  background-color: #6139dd !important; }
+  background-color: #785bdc !important; }
 
 .bg-primary-200 {
-  background-color: #4d23ce !important; }
+  background-color: #603ed6 !important; }
 
 .bg-primary-300 {
-  background-color: #401dac !important; }
+  background-color: #4b29c2 !important; }
 
 .bg-primary-400 {
-  background-color: #381a96 !important; }
+  background-color: #4324ad !important; }
 
 .bg-primary-500 {
-  background-color: #301680 !important; }
+  background-color: #3B2098 !important; }
 
 .bg-primary-600 {
-  background-color: #28126a !important; }
+  background-color: #331c83 !important; }
 
 .bg-primary-700 {
-  background-color: #200f54 !important; }
+  background-color: #2b176e !important; }
 
 .bg-primary-800 {
-  background-color: #180b3f !important; }
+  background-color: #221359 !important; }
 
 .bg-primary-900 {
-  background-color: black !important; }
+  background-color: #0a051a !important; }
 
 .hover-bg-primary:hover {
-  background-color: #301680 !important; }
+  background-color: #3B2098 !important; }
 
 .bg-primary-o {
-  background-color: rgba(48, 22, 128, 0.5); }
+  background-color: rgba(59, 32, 152, 0.5); }
 
 .border-primary {
-  border-color: #301680; }
+  border-color: #3B2098; }
 
 .border-primary-100 {
-  border-color: #6139dd; }
+  border-color: #785bdc; }
 
 .border-primary-200 {
-  border-color: #4d23ce; }
+  border-color: #603ed6; }
 
 .border-primary-300 {
-  border-color: #401dac; }
+  border-color: #4b29c2; }
 
 .border-primary-400 {
-  border-color: #381a96; }
+  border-color: #4324ad; }
 
 .border-primary-500 {
-  border-color: #301680; }
+  border-color: #3B2098; }
 
 .border-primary-600 {
-  border-color: #28126a; }
+  border-color: #331c83; }
 
 .border-primary-700 {
-  border-color: #200f54; }
+  border-color: #2b176e; }
 
 .border-primary-800 {
-  border-color: #180b3f; }
+  border-color: #221359; }
 
 .border-primary-900 {
-  border-color: black; }
+  border-color: #0a051a; }
 
 .shadow-primary {
-  box-shadow: 0px 8px 25px -5px rgba(48, 22, 128, 0.6); }
+  box-shadow: 0px 8px 25px -5px rgba(59, 32, 152, 0.6); }
 
 .hover-bg-primary:hover {
-  background-color: #301680 !important; }
+  background-color: #3B2098 !important; }
 
 .shadow-primary-full {
-  box-shadow: 0px 6px 28px 0px rgba(48, 22, 128, 0.2); }
+  box-shadow: 0px 6px 28px 0px rgba(59, 32, 152, 0.2); }
 
 .hover-shadow-primary:hover {
-  box-shadow: 0px 8px 25px -5px rgba(48, 22, 128, 0.6); }
+  box-shadow: 0px 8px 25px -5px rgba(59, 32, 152, 0.6); }
 
 .hover-shadow-primary-full:hover {
-  box-shadow: 0px 6px 28px 0px rgba(48, 22, 128, 0.2); }
+  box-shadow: 0px 6px 28px 0px rgba(59, 32, 152, 0.2); }
 
 .circle-primary {
-  background-color: #301680;
-  border-color: #b8a5f0; }
+  background-color: #3B2098;
+  border-color: #cfc4f3; }
 
 .color-secondary {
-  color: #244260 !important; }
+  color: #112741 !important; }
 
 .color-secondary-100 {
-  color: #4982bb !important; }
+  color: #2b64a6 !important; }
 
 .color-secondary-200 {
-  color: #3d70a3 !important; }
+  color: #24538a !important; }
 
 .color-secondary-300 {
-  color: #325c85 !important; }
+  color: #1c3f69 !important; }
 
 .color-secondary-400 {
-  color: #2b4f73 !important; }
+  color: #163355 !important; }
 
 .color-secondary-500 {
-  color: #244260 !important; }
+  color: #112741 !important; }
 
 .color-secondary-600 {
-  color: #1d354d !important; }
+  color: #0c1b2d !important; }
 
 .color-secondary-700 {
-  color: #16293b !important; }
+  color: #060f19 !important; }
 
 .color-secondary-800 {
-  color: #0f1c28 !important; }
+  color: #010304 !important; }
 
 .color-secondary-900 {
   color: black !important; }
 
 .hover-color-secondary:hover {
-  color: #244260 !important; }
+  color: #112741 !important; }
 
 .color-secondary-o {
-  color: rgba(36, 66, 96, 0.3); }
+  color: rgba(17, 39, 65, 0.3); }
 
 .bg-secondary {
-  background-color: #244260 !important; }
+  background-color: #112741 !important; }
 
 .bg-secondary-100 {
-  background-color: #4982bb !important; }
+  background-color: #2b64a6 !important; }
 
 .bg-secondary-200 {
-  background-color: #3d70a3 !important; }
+  background-color: #24538a !important; }
 
 .bg-secondary-300 {
-  background-color: #325c85 !important; }
+  background-color: #1c3f69 !important; }
 
 .bg-secondary-400 {
-  background-color: #2b4f73 !important; }
+  background-color: #163355 !important; }
 
 .bg-secondary-500 {
-  background-color: #244260 !important; }
+  background-color: #112741 !important; }
 
 .bg-secondary-600 {
-  background-color: #1d354d !important; }
+  background-color: #0c1b2d !important; }
 
 .bg-secondary-700 {
-  background-color: #16293b !important; }
+  background-color: #060f19 !important; }
 
 .bg-secondary-800 {
-  background-color: #0f1c28 !important; }
+  background-color: #010304 !important; }
 
 .bg-secondary-900 {
   background-color: black !important; }
 
 .hover-bg-secondary:hover {
-  background-color: #244260 !important; }
+  background-color: #112741 !important; }
 
 .bg-secondary-o {
-  background-color: rgba(36, 66, 96, 0.5); }
+  background-color: rgba(17, 39, 65, 0.5); }
 
 .border-secondary {
-  border-color: #244260; }
+  border-color: #112741; }
 
 .border-secondary-100 {
-  border-color: #4982bb; }
+  border-color: #2b64a6; }
 
 .border-secondary-200 {
-  border-color: #3d70a3; }
+  border-color: #24538a; }
 
 .border-secondary-300 {
-  border-color: #325c85; }
+  border-color: #1c3f69; }
 
 .border-secondary-400 {
-  border-color: #2b4f73; }
+  border-color: #163355; }
 
 .border-secondary-500 {
-  border-color: #244260; }
+  border-color: #112741; }
 
 .border-secondary-600 {
-  border-color: #1d354d; }
+  border-color: #0c1b2d; }
 
 .border-secondary-700 {
-  border-color: #16293b; }
+  border-color: #060f19; }
 
 .border-secondary-800 {
-  border-color: #0f1c28; }
+  border-color: #010304; }
 
 .border-secondary-900 {
   border-color: black; }
 
 .shadow-secondary {
-  box-shadow: 0px 8px 25px -5px rgba(36, 66, 96, 0.6); }
+  box-shadow: 0px 8px 25px -5px rgba(17, 39, 65, 0.6); }
 
 .hover-bg-secondary:hover {
-  background-color: #244260 !important; }
+  background-color: #112741 !important; }
 
 .shadow-secondary-full {
-  box-shadow: 0px 6px 28px 0px rgba(36, 66, 96, 0.2); }
+  box-shadow: 0px 6px 28px 0px rgba(17, 39, 65, 0.2); }
 
 .hover-shadow-secondary:hover {
-  box-shadow: 0px 8px 25px -5px rgba(36, 66, 96, 0.6); }
+  box-shadow: 0px 8px 25px -5px rgba(17, 39, 65, 0.6); }
 
 .hover-shadow-secondary-full:hover {
-  box-shadow: 0px 6px 28px 0px rgba(36, 66, 96, 0.2); }
+  box-shadow: 0px 6px 28px 0px rgba(17, 39, 65, 0.2); }
 
 .circle-secondary {
-  background-color: #244260;
-  border-color: #a6c2dd; }
+  background-color: #112741;
+  border-color: #76a4db; }
 
 .color-light {
   color: #edf2f8 !important; }
@@ -8829,93 +8847,93 @@ smaller {
 
 @media (min-width: 768px) {
   .md-color-primary {
-    color: #301680; }
+    color: #3B2098; }
   .md-color-primary-100 {
-    color: #6139dd; }
+    color: #785bdc; }
   .md-color-primary-200 {
-    color: #4d23ce; }
+    color: #603ed6; }
   .md-color-primary-300 {
-    color: #401dac; }
+    color: #4b29c2; }
   .md-color-primary-400 {
-    color: #381a96; }
+    color: #4324ad; }
   .md-color-primary-500 {
-    color: #301680; }
+    color: #3B2098; }
   .md-color-primary-600 {
-    color: #28126a; }
+    color: #331c83; }
   .md-color-primary-700 {
-    color: #200f54; }
+    color: #2b176e; }
   .md-text-primary-800 {
-    color: #180b3f; }
+    color: #221359; }
   .md-color-primary-900 {
-    color: black; }
+    color: #0a051a; }
   .md-hover-color-primary:hover {
-    color: #301680 !important; }
+    color: #3B2098 !important; }
   .md-bg-primary {
-    background-color: #301680; }
+    background-color: #3B2098; }
   .md-bg-primary-100 {
-    background-color: #6139dd; }
+    background-color: #785bdc; }
   .md-bg-primary-200 {
-    background-color: #4d23ce; }
+    background-color: #603ed6; }
   .md-bg-primary-300 {
-    background-color: #401dac; }
+    background-color: #4b29c2; }
   .md-bg-primary-400 {
-    background-color: #381a96; }
+    background-color: #4324ad; }
   .md-bg-primary-500 {
-    background-color: #301680; }
+    background-color: #3B2098; }
   .md-bg-primary-600 {
-    background-color: #28126a; }
+    background-color: #331c83; }
   .md-bg-primary-700 {
-    background-color: #200f54; }
+    background-color: #2b176e; }
   .md-bg-primary-800 {
-    background-color: #180b3f; }
+    background-color: #221359; }
   .md-bg-primary-900 {
-    background-color: black; }
+    background-color: #0a051a; }
   .md-hover-bg-primary:hover {
-    background-color: #301680 !important; }
+    background-color: #3B2098 !important; }
   .md-color-secondary {
-    color: #244260; }
+    color: #112741; }
   .md-color-secondary-100 {
-    color: #4982bb; }
+    color: #2b64a6; }
   .md-color-secondary-200 {
-    color: #3d70a3; }
+    color: #24538a; }
   .md-color-secondary-300 {
-    color: #325c85; }
+    color: #1c3f69; }
   .md-color-secondary-400 {
-    color: #2b4f73; }
+    color: #163355; }
   .md-color-secondary-500 {
-    color: #244260; }
+    color: #112741; }
   .md-color-secondary-600 {
-    color: #1d354d; }
+    color: #0c1b2d; }
   .md-color-secondary-700 {
-    color: #16293b; }
+    color: #060f19; }
   .md-text-secondary-800 {
-    color: #0f1c28; }
+    color: #010304; }
   .md-color-secondary-900 {
     color: black; }
   .md-hover-color-secondary:hover {
-    color: #244260 !important; }
+    color: #112741 !important; }
   .md-bg-secondary {
-    background-color: #244260; }
+    background-color: #112741; }
   .md-bg-secondary-100 {
-    background-color: #4982bb; }
+    background-color: #2b64a6; }
   .md-bg-secondary-200 {
-    background-color: #3d70a3; }
+    background-color: #24538a; }
   .md-bg-secondary-300 {
-    background-color: #325c85; }
+    background-color: #1c3f69; }
   .md-bg-secondary-400 {
-    background-color: #2b4f73; }
+    background-color: #163355; }
   .md-bg-secondary-500 {
-    background-color: #244260; }
+    background-color: #112741; }
   .md-bg-secondary-600 {
-    background-color: #1d354d; }
+    background-color: #0c1b2d; }
   .md-bg-secondary-700 {
-    background-color: #16293b; }
+    background-color: #060f19; }
   .md-bg-secondary-800 {
-    background-color: #0f1c28; }
+    background-color: #010304; }
   .md-bg-secondary-900 {
     background-color: black; }
   .md-hover-bg-secondary:hover {
-    background-color: #244260 !important; }
+    background-color: #112741 !important; }
   .md-color-light {
     color: #edf2f8; }
   .md-color-light-100 {
@@ -9496,312 +9514,312 @@ smaller {
   background-color: transparent; }
 
 .bg-gradient-primary {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #180b3f 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #221359 100%); }
 
 .bg-gradient-primary-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #180b3f 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #221359 100%); }
 
 .bg-gradient-primary-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #180b3f 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #221359 100%); }
 
 .bg-gradient-primary-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #180b3f 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #221359 100%); }
 
 .bg-gradient-primary-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #180b3f); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #221359); }
 
 .bg-gradient-primary-transparent {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #301680 40%, rgba(48, 22, 128, 0) 100%); }
+  background-image: linear-gradient(180deg, #3B2098 40%, rgba(59, 32, 152, 0) 100%); }
 
 .bg-gradient-transparent-primary {
   background-color: transparent;
-  background-image: linear-gradient(180deg, rgba(48, 22, 128, 0) 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, rgba(59, 32, 152, 0) 40%, #3B2098 100%); }
 
 .bg-gradient-primary-secondary {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #244260 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #112741 100%); }
 
 .bg-gradient-primary-secondary-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #244260 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #112741 100%); }
 
 .bg-gradient-primary-secondary-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #244260 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #112741 100%); }
 
 .bg-gradient-primary-secondary-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #244260 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #112741 100%); }
 
 .bg-gradient-primary-secondary-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #244260); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #112741); }
 
 .bg-gradient-primary-light {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #edf2f8 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #edf2f8 100%); }
 
 .bg-gradient-primary-light-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #edf2f8 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #edf2f8 100%); }
 
 .bg-gradient-primary-light-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #edf2f8 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #edf2f8 100%); }
 
 .bg-gradient-primary-light-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #edf2f8 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #edf2f8 100%); }
 
 .bg-gradient-primary-light-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #edf2f8); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #edf2f8); }
 
 .bg-gradient-primary-dark {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #151d2e 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #151d2e 100%); }
 
 .bg-gradient-primary-dark-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #151d2e 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #151d2e 100%); }
 
 .bg-gradient-primary-dark-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #151d2e 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #151d2e 100%); }
 
 .bg-gradient-primary-dark-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #151d2e 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #151d2e 100%); }
 
 .bg-gradient-primary-dark-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #151d2e); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #151d2e); }
 
 .bg-gradient-primary-black {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #000000 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #000000 100%); }
 
 .bg-gradient-primary-black-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #000000 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #000000 100%); }
 
 .bg-gradient-primary-black-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #000000 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #000000 100%); }
 
 .bg-gradient-primary-black-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #000000 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #000000 100%); }
 
 .bg-gradient-primary-black-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #000000); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #000000); }
 
 .bg-gradient-primary-white {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #ffffff 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #ffffff 100%); }
 
 .bg-gradient-primary-white-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #ffffff 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #ffffff 100%); }
 
 .bg-gradient-primary-white-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #ffffff 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #ffffff 100%); }
 
 .bg-gradient-primary-white-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #ffffff 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #ffffff 100%); }
 
 .bg-gradient-primary-white-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #ffffff); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #ffffff); }
 
 .bg-gradient-primary-gray {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #A0AEC0 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #A0AEC0 100%); }
 
 .bg-gradient-primary-gray-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #A0AEC0 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #A0AEC0 100%); }
 
 .bg-gradient-primary-gray-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #A0AEC0 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #A0AEC0 100%); }
 
 .bg-gradient-primary-gray-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #A0AEC0 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #A0AEC0 100%); }
 
 .bg-gradient-primary-gray-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #A0AEC0); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #A0AEC0); }
 
 .bg-gradient-primary-blue {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #4299E1 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #4299E1 100%); }
 
 .bg-gradient-primary-blue-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #4299E1 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #4299E1 100%); }
 
 .bg-gradient-primary-blue-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #4299E1 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #4299E1 100%); }
 
 .bg-gradient-primary-blue-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #4299E1 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #4299E1 100%); }
 
 .bg-gradient-primary-blue-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #4299E1); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #4299E1); }
 
 .bg-gradient-primary-indigo {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #667EEA 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #667EEA 100%); }
 
 .bg-gradient-primary-indigo-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #667EEA 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #667EEA 100%); }
 
 .bg-gradient-primary-indigo-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #667EEA 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #667EEA 100%); }
 
 .bg-gradient-primary-indigo-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #667EEA 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #667EEA 100%); }
 
 .bg-gradient-primary-indigo-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #667EEA); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #667EEA); }
 
 .bg-gradient-primary-purple {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #9F7AEA 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #9F7AEA 100%); }
 
 .bg-gradient-primary-purple-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #9F7AEA 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #9F7AEA 100%); }
 
 .bg-gradient-primary-purple-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #9F7AEA 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #9F7AEA 100%); }
 
 .bg-gradient-primary-purple-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #9F7AEA 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #9F7AEA 100%); }
 
 .bg-gradient-primary-purple-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #9F7AEA); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #9F7AEA); }
 
 .bg-gradient-primary-red {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #ff2400 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #ff2400 100%); }
 
 .bg-gradient-primary-red-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #ff2400 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #ff2400 100%); }
 
 .bg-gradient-primary-red-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #ff2400 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #ff2400 100%); }
 
 .bg-gradient-primary-red-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #ff2400 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #ff2400 100%); }
 
 .bg-gradient-primary-red-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #ff2400); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #ff2400); }
 
 .bg-gradient-primary-green {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #1da139 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #1da139 100%); }
 
 .bg-gradient-primary-green-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #1da139 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #1da139 100%); }
 
 .bg-gradient-primary-green-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #1da139 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #1da139 100%); }
 
 .bg-gradient-primary-green-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #1da139 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #1da139 100%); }
 
 .bg-gradient-primary-green-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #1da139); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #1da139); }
 
 .bg-gradient-primary-teal {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #38B2AC 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #38B2AC 100%); }
 
 .bg-gradient-primary-teal-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #38B2AC 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #38B2AC 100%); }
 
 .bg-gradient-primary-teal-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #38B2AC 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #38B2AC 100%); }
 
 .bg-gradient-primary-teal-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #38B2AC 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #38B2AC 100%); }
 
 .bg-gradient-primary-teal-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #38B2AC); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #38B2AC); }
 
 .bg-gradient-primary-yellow {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #ffeb04 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #ffeb04 100%); }
 
 .bg-gradient-primary-yellow-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #ffeb04 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #ffeb04 100%); }
 
 .bg-gradient-primary-yellow-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #ffeb04 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #ffeb04 100%); }
 
 .bg-gradient-primary-yellow-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #ffeb04 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #ffeb04 100%); }
 
 .bg-gradient-primary-yellow-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #ffeb04); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #ffeb04); }
 
 .bg-gradient-primary-orange {
-  background-color: #301680;
-  background-image: linear-gradient(120deg, #301680 40%, #ff8800 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(120deg, #3B2098 40%, #ff8800 100%); }
 
 .bg-gradient-primary-orange-90 {
-  background-color: #301680;
-  background-image: linear-gradient(90deg, #301680 40%, #ff8800 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(90deg, #3B2098 40%, #ff8800 100%); }
 
 .bg-gradient-primary-orange-180 {
-  background-color: #301680;
-  background-image: linear-gradient(180deg, #301680 40%, #ff8800 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(180deg, #3B2098 40%, #ff8800 100%); }
 
 .bg-gradient-primary-orange-270 {
-  background-color: #301680;
-  background-image: linear-gradient(270deg, #301680 40%, #ff8800 100%); }
+  background-color: #3B2098;
+  background-image: linear-gradient(270deg, #3B2098 40%, #ff8800 100%); }
 
 .bg-gradient-primary-orange-circular {
-  background-color: #301680;
-  background-image: radial-gradient(#301680, #ff8800); }
+  background-color: #3B2098;
+  background-image: radial-gradient(#3B2098, #ff8800); }
 
 .overlay-gradient-primary:after {
   display: block;
@@ -9812,8 +9830,8 @@ smaller {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(48, 22, 128, 0.4);
-  background-image: linear-gradient(120deg, rgba(48, 22, 128, 0.4) 30%, rgba(48, 22, 128, 0.2) 100%); }
+  background-color: rgba(59, 32, 152, 0.4);
+  background-image: linear-gradient(120deg, rgba(59, 32, 152, 0.4) 30%, rgba(59, 32, 152, 0.2) 100%); }
 
 .overlay-primary:after {
   display: block;
@@ -9824,7 +9842,7 @@ smaller {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(48, 22, 128, 0.4); }
+  background-color: rgba(59, 32, 152, 0.4); }
 
 .hover-overlay-primary:hover:after {
   display: block;
@@ -9835,315 +9853,315 @@ smaller {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(48, 22, 128, 0.4); }
+  background-color: rgba(59, 32, 152, 0.4); }
 
 .bg-gradient-secondary {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #0f1c28 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #010304 100%); }
 
 .bg-gradient-secondary-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #0f1c28 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #010304 100%); }
 
 .bg-gradient-secondary-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #0f1c28 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #010304 100%); }
 
 .bg-gradient-secondary-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #0f1c28 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #010304 100%); }
 
 .bg-gradient-secondary-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #0f1c28); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #010304); }
 
 .bg-gradient-secondary-transparent {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #244260 40%, rgba(36, 66, 96, 0) 100%); }
+  background-image: linear-gradient(180deg, #112741 40%, rgba(17, 39, 65, 0) 100%); }
 
 .bg-gradient-transparent-secondary {
   background-color: transparent;
-  background-image: linear-gradient(180deg, rgba(36, 66, 96, 0) 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, rgba(17, 39, 65, 0) 40%, #112741 100%); }
 
 .bg-gradient-secondary-primary {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #301680 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #3B2098 100%); }
 
 .bg-gradient-secondary-primary-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #301680 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #3B2098 100%); }
 
 .bg-gradient-secondary-primary-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #301680 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #3B2098 100%); }
 
 .bg-gradient-secondary-primary-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #301680 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #3B2098 100%); }
 
 .bg-gradient-secondary-primary-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #301680); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #3B2098); }
 
 .bg-gradient-secondary-light {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #edf2f8 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #edf2f8 100%); }
 
 .bg-gradient-secondary-light-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #edf2f8 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #edf2f8 100%); }
 
 .bg-gradient-secondary-light-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #edf2f8 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #edf2f8 100%); }
 
 .bg-gradient-secondary-light-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #edf2f8 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #edf2f8 100%); }
 
 .bg-gradient-secondary-light-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #edf2f8); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #edf2f8); }
 
 .bg-gradient-secondary-dark {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #151d2e 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #151d2e 100%); }
 
 .bg-gradient-secondary-dark-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #151d2e 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #151d2e 100%); }
 
 .bg-gradient-secondary-dark-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #151d2e 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #151d2e 100%); }
 
 .bg-gradient-secondary-dark-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #151d2e 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #151d2e 100%); }
 
 .bg-gradient-secondary-dark-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #151d2e); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #151d2e); }
 
 .bg-gradient-secondary-black {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #000000 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #000000 100%); }
 
 .bg-gradient-secondary-black-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #000000 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #000000 100%); }
 
 .bg-gradient-secondary-black-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #000000 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #000000 100%); }
 
 .bg-gradient-secondary-black-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #000000 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #000000 100%); }
 
 .bg-gradient-secondary-black-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #000000); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #000000); }
 
 .bg-gradient-secondary-white {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #ffffff 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #ffffff 100%); }
 
 .bg-gradient-secondary-white-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #ffffff 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #ffffff 100%); }
 
 .bg-gradient-secondary-white-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #ffffff 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #ffffff 100%); }
 
 .bg-gradient-secondary-white-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #ffffff 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #ffffff 100%); }
 
 .bg-gradient-secondary-white-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #ffffff); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #ffffff); }
 
 .bg-gradient-secondary-gray {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #A0AEC0 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #A0AEC0 100%); }
 
 .bg-gradient-secondary-gray-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #A0AEC0 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #A0AEC0 100%); }
 
 .bg-gradient-secondary-gray-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #A0AEC0 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #A0AEC0 100%); }
 
 .bg-gradient-secondary-gray-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #A0AEC0 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #A0AEC0 100%); }
 
 .bg-gradient-secondary-gray-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #A0AEC0); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #A0AEC0); }
 
 .bg-gradient-secondary-blue {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #4299E1 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #4299E1 100%); }
 
 .bg-gradient-secondary-blue-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #4299E1 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #4299E1 100%); }
 
 .bg-gradient-secondary-blue-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #4299E1 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #4299E1 100%); }
 
 .bg-gradient-secondary-blue-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #4299E1 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #4299E1 100%); }
 
 .bg-gradient-secondary-blue-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #4299E1); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #4299E1); }
 
 .bg-gradient-secondary-indigo {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #667EEA 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #667EEA 100%); }
 
 .bg-gradient-secondary-indigo-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #667EEA 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #667EEA 100%); }
 
 .bg-gradient-secondary-indigo-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #667EEA 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #667EEA 100%); }
 
 .bg-gradient-secondary-indigo-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #667EEA 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #667EEA 100%); }
 
 .bg-gradient-secondary-indigo-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #667EEA); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #667EEA); }
 
 .bg-gradient-secondary-purple {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #9F7AEA 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #9F7AEA 100%); }
 
 .bg-gradient-secondary-purple-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #9F7AEA 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #9F7AEA 100%); }
 
 .bg-gradient-secondary-purple-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #9F7AEA 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #9F7AEA 100%); }
 
 .bg-gradient-secondary-purple-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #9F7AEA 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #9F7AEA 100%); }
 
 .bg-gradient-secondary-purple-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #9F7AEA); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #9F7AEA); }
 
 .bg-gradient-secondary-red {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #ff2400 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #ff2400 100%); }
 
 .bg-gradient-secondary-red-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #ff2400 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #ff2400 100%); }
 
 .bg-gradient-secondary-red-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #ff2400 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #ff2400 100%); }
 
 .bg-gradient-secondary-red-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #ff2400 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #ff2400 100%); }
 
 .bg-gradient-secondary-red-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #ff2400); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #ff2400); }
 
 .bg-gradient-secondary-green {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #1da139 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #1da139 100%); }
 
 .bg-gradient-secondary-green-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #1da139 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #1da139 100%); }
 
 .bg-gradient-secondary-green-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #1da139 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #1da139 100%); }
 
 .bg-gradient-secondary-green-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #1da139 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #1da139 100%); }
 
 .bg-gradient-secondary-green-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #1da139); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #1da139); }
 
 .bg-gradient-secondary-teal {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #38B2AC 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #38B2AC 100%); }
 
 .bg-gradient-secondary-teal-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #38B2AC 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #38B2AC 100%); }
 
 .bg-gradient-secondary-teal-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #38B2AC 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #38B2AC 100%); }
 
 .bg-gradient-secondary-teal-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #38B2AC 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #38B2AC 100%); }
 
 .bg-gradient-secondary-teal-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #38B2AC); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #38B2AC); }
 
 .bg-gradient-secondary-yellow {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #ffeb04 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #ffeb04 100%); }
 
 .bg-gradient-secondary-yellow-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #ffeb04 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #ffeb04 100%); }
 
 .bg-gradient-secondary-yellow-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #ffeb04 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #ffeb04 100%); }
 
 .bg-gradient-secondary-yellow-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #ffeb04 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #ffeb04 100%); }
 
 .bg-gradient-secondary-yellow-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #ffeb04); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #ffeb04); }
 
 .bg-gradient-secondary-orange {
-  background-color: #244260;
-  background-image: linear-gradient(120deg, #244260 40%, #ff8800 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(120deg, #112741 40%, #ff8800 100%); }
 
 .bg-gradient-secondary-orange-90 {
-  background-color: #244260;
-  background-image: linear-gradient(90deg, #244260 40%, #ff8800 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(90deg, #112741 40%, #ff8800 100%); }
 
 .bg-gradient-secondary-orange-180 {
-  background-color: #244260;
-  background-image: linear-gradient(180deg, #244260 40%, #ff8800 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(180deg, #112741 40%, #ff8800 100%); }
 
 .bg-gradient-secondary-orange-270 {
-  background-color: #244260;
-  background-image: linear-gradient(270deg, #244260 40%, #ff8800 100%); }
+  background-color: #112741;
+  background-image: linear-gradient(270deg, #112741 40%, #ff8800 100%); }
 
 .bg-gradient-secondary-orange-circular {
-  background-color: #244260;
-  background-image: radial-gradient(#244260, #ff8800); }
+  background-color: #112741;
+  background-image: radial-gradient(#112741, #ff8800); }
 
 .overlay-gradient-secondary:after {
   display: block;
@@ -10154,8 +10172,8 @@ smaller {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(36, 66, 96, 0.4);
-  background-image: linear-gradient(120deg, rgba(36, 66, 96, 0.4) 30%, rgba(36, 66, 96, 0.2) 100%); }
+  background-color: rgba(17, 39, 65, 0.4);
+  background-image: linear-gradient(120deg, rgba(17, 39, 65, 0.4) 30%, rgba(17, 39, 65, 0.2) 100%); }
 
 .overlay-secondary:after {
   display: block;
@@ -10166,7 +10184,7 @@ smaller {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(36, 66, 96, 0.4); }
+  background-color: rgba(17, 39, 65, 0.4); }
 
 .hover-overlay-secondary:hover:after {
   display: block;
@@ -10177,7 +10195,7 @@ smaller {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(36, 66, 96, 0.4); }
+  background-color: rgba(17, 39, 65, 0.4); }
 
 .bg-gradient-light {
   background-color: #edf2f8;
@@ -10209,43 +10227,43 @@ smaller {
 
 .bg-gradient-light-primary {
   background-color: #edf2f8;
-  background-image: linear-gradient(120deg, #edf2f8 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #edf2f8 40%, #3B2098 100%); }
 
 .bg-gradient-light-primary-90 {
   background-color: #edf2f8;
-  background-image: linear-gradient(90deg, #edf2f8 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #edf2f8 40%, #3B2098 100%); }
 
 .bg-gradient-light-primary-180 {
   background-color: #edf2f8;
-  background-image: linear-gradient(180deg, #edf2f8 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #edf2f8 40%, #3B2098 100%); }
 
 .bg-gradient-light-primary-270 {
   background-color: #edf2f8;
-  background-image: linear-gradient(270deg, #edf2f8 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #edf2f8 40%, #3B2098 100%); }
 
 .bg-gradient-light-primary-circular {
   background-color: #edf2f8;
-  background-image: radial-gradient(#edf2f8, #301680); }
+  background-image: radial-gradient(#edf2f8, #3B2098); }
 
 .bg-gradient-light-secondary {
   background-color: #edf2f8;
-  background-image: linear-gradient(120deg, #edf2f8 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #edf2f8 40%, #112741 100%); }
 
 .bg-gradient-light-secondary-90 {
   background-color: #edf2f8;
-  background-image: linear-gradient(90deg, #edf2f8 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #edf2f8 40%, #112741 100%); }
 
 .bg-gradient-light-secondary-180 {
   background-color: #edf2f8;
-  background-image: linear-gradient(180deg, #edf2f8 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #edf2f8 40%, #112741 100%); }
 
 .bg-gradient-light-secondary-270 {
   background-color: #edf2f8;
-  background-image: linear-gradient(270deg, #edf2f8 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #edf2f8 40%, #112741 100%); }
 
 .bg-gradient-light-secondary-circular {
   background-color: #edf2f8;
-  background-image: radial-gradient(#edf2f8, #244260); }
+  background-image: radial-gradient(#edf2f8, #112741); }
 
 .bg-gradient-light-dark {
   background-color: #edf2f8;
@@ -10551,43 +10569,43 @@ smaller {
 
 .bg-gradient-dark-primary {
   background-color: #151d2e;
-  background-image: linear-gradient(120deg, #151d2e 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #151d2e 40%, #3B2098 100%); }
 
 .bg-gradient-dark-primary-90 {
   background-color: #151d2e;
-  background-image: linear-gradient(90deg, #151d2e 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #151d2e 40%, #3B2098 100%); }
 
 .bg-gradient-dark-primary-180 {
   background-color: #151d2e;
-  background-image: linear-gradient(180deg, #151d2e 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #151d2e 40%, #3B2098 100%); }
 
 .bg-gradient-dark-primary-270 {
   background-color: #151d2e;
-  background-image: linear-gradient(270deg, #151d2e 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #151d2e 40%, #3B2098 100%); }
 
 .bg-gradient-dark-primary-circular {
   background-color: #151d2e;
-  background-image: radial-gradient(#151d2e, #301680); }
+  background-image: radial-gradient(#151d2e, #3B2098); }
 
 .bg-gradient-dark-secondary {
   background-color: #151d2e;
-  background-image: linear-gradient(120deg, #151d2e 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #151d2e 40%, #112741 100%); }
 
 .bg-gradient-dark-secondary-90 {
   background-color: #151d2e;
-  background-image: linear-gradient(90deg, #151d2e 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #151d2e 40%, #112741 100%); }
 
 .bg-gradient-dark-secondary-180 {
   background-color: #151d2e;
-  background-image: linear-gradient(180deg, #151d2e 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #151d2e 40%, #112741 100%); }
 
 .bg-gradient-dark-secondary-270 {
   background-color: #151d2e;
-  background-image: linear-gradient(270deg, #151d2e 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #151d2e 40%, #112741 100%); }
 
 .bg-gradient-dark-secondary-circular {
   background-color: #151d2e;
-  background-image: radial-gradient(#151d2e, #244260); }
+  background-image: radial-gradient(#151d2e, #112741); }
 
 .bg-gradient-dark-light {
   background-color: #151d2e;
@@ -10893,43 +10911,43 @@ smaller {
 
 .bg-gradient-black-primary {
   background-color: #000000;
-  background-image: linear-gradient(120deg, #000000 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #000000 40%, #3B2098 100%); }
 
 .bg-gradient-black-primary-90 {
   background-color: #000000;
-  background-image: linear-gradient(90deg, #000000 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #000000 40%, #3B2098 100%); }
 
 .bg-gradient-black-primary-180 {
   background-color: #000000;
-  background-image: linear-gradient(180deg, #000000 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #000000 40%, #3B2098 100%); }
 
 .bg-gradient-black-primary-270 {
   background-color: #000000;
-  background-image: linear-gradient(270deg, #000000 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #000000 40%, #3B2098 100%); }
 
 .bg-gradient-black-primary-circular {
   background-color: #000000;
-  background-image: radial-gradient(#000000, #301680); }
+  background-image: radial-gradient(#000000, #3B2098); }
 
 .bg-gradient-black-secondary {
   background-color: #000000;
-  background-image: linear-gradient(120deg, #000000 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #000000 40%, #112741 100%); }
 
 .bg-gradient-black-secondary-90 {
   background-color: #000000;
-  background-image: linear-gradient(90deg, #000000 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #000000 40%, #112741 100%); }
 
 .bg-gradient-black-secondary-180 {
   background-color: #000000;
-  background-image: linear-gradient(180deg, #000000 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #000000 40%, #112741 100%); }
 
 .bg-gradient-black-secondary-270 {
   background-color: #000000;
-  background-image: linear-gradient(270deg, #000000 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #000000 40%, #112741 100%); }
 
 .bg-gradient-black-secondary-circular {
   background-color: #000000;
-  background-image: radial-gradient(#000000, #244260); }
+  background-image: radial-gradient(#000000, #112741); }
 
 .bg-gradient-black-light {
   background-color: #000000;
@@ -11235,43 +11253,43 @@ smaller {
 
 .bg-gradient-white-primary {
   background-color: #ffffff;
-  background-image: linear-gradient(120deg, #ffffff 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #ffffff 40%, #3B2098 100%); }
 
 .bg-gradient-white-primary-90 {
   background-color: #ffffff;
-  background-image: linear-gradient(90deg, #ffffff 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #ffffff 40%, #3B2098 100%); }
 
 .bg-gradient-white-primary-180 {
   background-color: #ffffff;
-  background-image: linear-gradient(180deg, #ffffff 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #ffffff 40%, #3B2098 100%); }
 
 .bg-gradient-white-primary-270 {
   background-color: #ffffff;
-  background-image: linear-gradient(270deg, #ffffff 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #ffffff 40%, #3B2098 100%); }
 
 .bg-gradient-white-primary-circular {
   background-color: #ffffff;
-  background-image: radial-gradient(#ffffff, #301680); }
+  background-image: radial-gradient(#ffffff, #3B2098); }
 
 .bg-gradient-white-secondary {
   background-color: #ffffff;
-  background-image: linear-gradient(120deg, #ffffff 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #ffffff 40%, #112741 100%); }
 
 .bg-gradient-white-secondary-90 {
   background-color: #ffffff;
-  background-image: linear-gradient(90deg, #ffffff 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #ffffff 40%, #112741 100%); }
 
 .bg-gradient-white-secondary-180 {
   background-color: #ffffff;
-  background-image: linear-gradient(180deg, #ffffff 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #ffffff 40%, #112741 100%); }
 
 .bg-gradient-white-secondary-270 {
   background-color: #ffffff;
-  background-image: linear-gradient(270deg, #ffffff 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #ffffff 40%, #112741 100%); }
 
 .bg-gradient-white-secondary-circular {
   background-color: #ffffff;
-  background-image: radial-gradient(#ffffff, #244260); }
+  background-image: radial-gradient(#ffffff, #112741); }
 
 .bg-gradient-white-light {
   background-color: #ffffff;
@@ -11577,43 +11595,43 @@ smaller {
 
 .bg-gradient-gray-primary {
   background-color: #A0AEC0;
-  background-image: linear-gradient(120deg, #A0AEC0 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #A0AEC0 40%, #3B2098 100%); }
 
 .bg-gradient-gray-primary-90 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(90deg, #A0AEC0 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #A0AEC0 40%, #3B2098 100%); }
 
 .bg-gradient-gray-primary-180 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(180deg, #A0AEC0 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #A0AEC0 40%, #3B2098 100%); }
 
 .bg-gradient-gray-primary-270 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(270deg, #A0AEC0 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #A0AEC0 40%, #3B2098 100%); }
 
 .bg-gradient-gray-primary-circular {
   background-color: #A0AEC0;
-  background-image: radial-gradient(#A0AEC0, #301680); }
+  background-image: radial-gradient(#A0AEC0, #3B2098); }
 
 .bg-gradient-gray-secondary {
   background-color: #A0AEC0;
-  background-image: linear-gradient(120deg, #A0AEC0 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #A0AEC0 40%, #112741 100%); }
 
 .bg-gradient-gray-secondary-90 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(90deg, #A0AEC0 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #A0AEC0 40%, #112741 100%); }
 
 .bg-gradient-gray-secondary-180 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(180deg, #A0AEC0 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #A0AEC0 40%, #112741 100%); }
 
 .bg-gradient-gray-secondary-270 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(270deg, #A0AEC0 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #A0AEC0 40%, #112741 100%); }
 
 .bg-gradient-gray-secondary-circular {
   background-color: #A0AEC0;
-  background-image: radial-gradient(#A0AEC0, #244260); }
+  background-image: radial-gradient(#A0AEC0, #112741); }
 
 .bg-gradient-gray-light {
   background-color: #A0AEC0;
@@ -11919,43 +11937,43 @@ smaller {
 
 .bg-gradient-blue-primary {
   background-color: #4299E1;
-  background-image: linear-gradient(120deg, #4299E1 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #4299E1 40%, #3B2098 100%); }
 
 .bg-gradient-blue-primary-90 {
   background-color: #4299E1;
-  background-image: linear-gradient(90deg, #4299E1 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #4299E1 40%, #3B2098 100%); }
 
 .bg-gradient-blue-primary-180 {
   background-color: #4299E1;
-  background-image: linear-gradient(180deg, #4299E1 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #4299E1 40%, #3B2098 100%); }
 
 .bg-gradient-blue-primary-270 {
   background-color: #4299E1;
-  background-image: linear-gradient(270deg, #4299E1 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #4299E1 40%, #3B2098 100%); }
 
 .bg-gradient-blue-primary-circular {
   background-color: #4299E1;
-  background-image: radial-gradient(#4299E1, #301680); }
+  background-image: radial-gradient(#4299E1, #3B2098); }
 
 .bg-gradient-blue-secondary {
   background-color: #4299E1;
-  background-image: linear-gradient(120deg, #4299E1 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #4299E1 40%, #112741 100%); }
 
 .bg-gradient-blue-secondary-90 {
   background-color: #4299E1;
-  background-image: linear-gradient(90deg, #4299E1 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #4299E1 40%, #112741 100%); }
 
 .bg-gradient-blue-secondary-180 {
   background-color: #4299E1;
-  background-image: linear-gradient(180deg, #4299E1 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #4299E1 40%, #112741 100%); }
 
 .bg-gradient-blue-secondary-270 {
   background-color: #4299E1;
-  background-image: linear-gradient(270deg, #4299E1 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #4299E1 40%, #112741 100%); }
 
 .bg-gradient-blue-secondary-circular {
   background-color: #4299E1;
-  background-image: radial-gradient(#4299E1, #244260); }
+  background-image: radial-gradient(#4299E1, #112741); }
 
 .bg-gradient-blue-light {
   background-color: #4299E1;
@@ -12261,43 +12279,43 @@ smaller {
 
 .bg-gradient-indigo-primary {
   background-color: #667EEA;
-  background-image: linear-gradient(120deg, #667EEA 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #667EEA 40%, #3B2098 100%); }
 
 .bg-gradient-indigo-primary-90 {
   background-color: #667EEA;
-  background-image: linear-gradient(90deg, #667EEA 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #667EEA 40%, #3B2098 100%); }
 
 .bg-gradient-indigo-primary-180 {
   background-color: #667EEA;
-  background-image: linear-gradient(180deg, #667EEA 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #667EEA 40%, #3B2098 100%); }
 
 .bg-gradient-indigo-primary-270 {
   background-color: #667EEA;
-  background-image: linear-gradient(270deg, #667EEA 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #667EEA 40%, #3B2098 100%); }
 
 .bg-gradient-indigo-primary-circular {
   background-color: #667EEA;
-  background-image: radial-gradient(#667EEA, #301680); }
+  background-image: radial-gradient(#667EEA, #3B2098); }
 
 .bg-gradient-indigo-secondary {
   background-color: #667EEA;
-  background-image: linear-gradient(120deg, #667EEA 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #667EEA 40%, #112741 100%); }
 
 .bg-gradient-indigo-secondary-90 {
   background-color: #667EEA;
-  background-image: linear-gradient(90deg, #667EEA 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #667EEA 40%, #112741 100%); }
 
 .bg-gradient-indigo-secondary-180 {
   background-color: #667EEA;
-  background-image: linear-gradient(180deg, #667EEA 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #667EEA 40%, #112741 100%); }
 
 .bg-gradient-indigo-secondary-270 {
   background-color: #667EEA;
-  background-image: linear-gradient(270deg, #667EEA 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #667EEA 40%, #112741 100%); }
 
 .bg-gradient-indigo-secondary-circular {
   background-color: #667EEA;
-  background-image: radial-gradient(#667EEA, #244260); }
+  background-image: radial-gradient(#667EEA, #112741); }
 
 .bg-gradient-indigo-light {
   background-color: #667EEA;
@@ -12603,43 +12621,43 @@ smaller {
 
 .bg-gradient-purple-primary {
   background-color: #9F7AEA;
-  background-image: linear-gradient(120deg, #9F7AEA 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #9F7AEA 40%, #3B2098 100%); }
 
 .bg-gradient-purple-primary-90 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(90deg, #9F7AEA 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #9F7AEA 40%, #3B2098 100%); }
 
 .bg-gradient-purple-primary-180 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(180deg, #9F7AEA 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #9F7AEA 40%, #3B2098 100%); }
 
 .bg-gradient-purple-primary-270 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(270deg, #9F7AEA 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #9F7AEA 40%, #3B2098 100%); }
 
 .bg-gradient-purple-primary-circular {
   background-color: #9F7AEA;
-  background-image: radial-gradient(#9F7AEA, #301680); }
+  background-image: radial-gradient(#9F7AEA, #3B2098); }
 
 .bg-gradient-purple-secondary {
   background-color: #9F7AEA;
-  background-image: linear-gradient(120deg, #9F7AEA 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #9F7AEA 40%, #112741 100%); }
 
 .bg-gradient-purple-secondary-90 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(90deg, #9F7AEA 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #9F7AEA 40%, #112741 100%); }
 
 .bg-gradient-purple-secondary-180 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(180deg, #9F7AEA 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #9F7AEA 40%, #112741 100%); }
 
 .bg-gradient-purple-secondary-270 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(270deg, #9F7AEA 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #9F7AEA 40%, #112741 100%); }
 
 .bg-gradient-purple-secondary-circular {
   background-color: #9F7AEA;
-  background-image: radial-gradient(#9F7AEA, #244260); }
+  background-image: radial-gradient(#9F7AEA, #112741); }
 
 .bg-gradient-purple-light {
   background-color: #9F7AEA;
@@ -12945,43 +12963,43 @@ smaller {
 
 .bg-gradient-red-primary {
   background-color: #ff2400;
-  background-image: linear-gradient(120deg, #ff2400 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #ff2400 40%, #3B2098 100%); }
 
 .bg-gradient-red-primary-90 {
   background-color: #ff2400;
-  background-image: linear-gradient(90deg, #ff2400 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #ff2400 40%, #3B2098 100%); }
 
 .bg-gradient-red-primary-180 {
   background-color: #ff2400;
-  background-image: linear-gradient(180deg, #ff2400 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #ff2400 40%, #3B2098 100%); }
 
 .bg-gradient-red-primary-270 {
   background-color: #ff2400;
-  background-image: linear-gradient(270deg, #ff2400 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #ff2400 40%, #3B2098 100%); }
 
 .bg-gradient-red-primary-circular {
   background-color: #ff2400;
-  background-image: radial-gradient(#ff2400, #301680); }
+  background-image: radial-gradient(#ff2400, #3B2098); }
 
 .bg-gradient-red-secondary {
   background-color: #ff2400;
-  background-image: linear-gradient(120deg, #ff2400 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #ff2400 40%, #112741 100%); }
 
 .bg-gradient-red-secondary-90 {
   background-color: #ff2400;
-  background-image: linear-gradient(90deg, #ff2400 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #ff2400 40%, #112741 100%); }
 
 .bg-gradient-red-secondary-180 {
   background-color: #ff2400;
-  background-image: linear-gradient(180deg, #ff2400 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #ff2400 40%, #112741 100%); }
 
 .bg-gradient-red-secondary-270 {
   background-color: #ff2400;
-  background-image: linear-gradient(270deg, #ff2400 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #ff2400 40%, #112741 100%); }
 
 .bg-gradient-red-secondary-circular {
   background-color: #ff2400;
-  background-image: radial-gradient(#ff2400, #244260); }
+  background-image: radial-gradient(#ff2400, #112741); }
 
 .bg-gradient-red-light {
   background-color: #ff2400;
@@ -13287,43 +13305,43 @@ smaller {
 
 .bg-gradient-green-primary {
   background-color: #1da139;
-  background-image: linear-gradient(120deg, #1da139 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #1da139 40%, #3B2098 100%); }
 
 .bg-gradient-green-primary-90 {
   background-color: #1da139;
-  background-image: linear-gradient(90deg, #1da139 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #1da139 40%, #3B2098 100%); }
 
 .bg-gradient-green-primary-180 {
   background-color: #1da139;
-  background-image: linear-gradient(180deg, #1da139 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #1da139 40%, #3B2098 100%); }
 
 .bg-gradient-green-primary-270 {
   background-color: #1da139;
-  background-image: linear-gradient(270deg, #1da139 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #1da139 40%, #3B2098 100%); }
 
 .bg-gradient-green-primary-circular {
   background-color: #1da139;
-  background-image: radial-gradient(#1da139, #301680); }
+  background-image: radial-gradient(#1da139, #3B2098); }
 
 .bg-gradient-green-secondary {
   background-color: #1da139;
-  background-image: linear-gradient(120deg, #1da139 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #1da139 40%, #112741 100%); }
 
 .bg-gradient-green-secondary-90 {
   background-color: #1da139;
-  background-image: linear-gradient(90deg, #1da139 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #1da139 40%, #112741 100%); }
 
 .bg-gradient-green-secondary-180 {
   background-color: #1da139;
-  background-image: linear-gradient(180deg, #1da139 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #1da139 40%, #112741 100%); }
 
 .bg-gradient-green-secondary-270 {
   background-color: #1da139;
-  background-image: linear-gradient(270deg, #1da139 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #1da139 40%, #112741 100%); }
 
 .bg-gradient-green-secondary-circular {
   background-color: #1da139;
-  background-image: radial-gradient(#1da139, #244260); }
+  background-image: radial-gradient(#1da139, #112741); }
 
 .bg-gradient-green-light {
   background-color: #1da139;
@@ -13629,43 +13647,43 @@ smaller {
 
 .bg-gradient-teal-primary {
   background-color: #38B2AC;
-  background-image: linear-gradient(120deg, #38B2AC 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #38B2AC 40%, #3B2098 100%); }
 
 .bg-gradient-teal-primary-90 {
   background-color: #38B2AC;
-  background-image: linear-gradient(90deg, #38B2AC 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #38B2AC 40%, #3B2098 100%); }
 
 .bg-gradient-teal-primary-180 {
   background-color: #38B2AC;
-  background-image: linear-gradient(180deg, #38B2AC 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #38B2AC 40%, #3B2098 100%); }
 
 .bg-gradient-teal-primary-270 {
   background-color: #38B2AC;
-  background-image: linear-gradient(270deg, #38B2AC 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #38B2AC 40%, #3B2098 100%); }
 
 .bg-gradient-teal-primary-circular {
   background-color: #38B2AC;
-  background-image: radial-gradient(#38B2AC, #301680); }
+  background-image: radial-gradient(#38B2AC, #3B2098); }
 
 .bg-gradient-teal-secondary {
   background-color: #38B2AC;
-  background-image: linear-gradient(120deg, #38B2AC 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #38B2AC 40%, #112741 100%); }
 
 .bg-gradient-teal-secondary-90 {
   background-color: #38B2AC;
-  background-image: linear-gradient(90deg, #38B2AC 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #38B2AC 40%, #112741 100%); }
 
 .bg-gradient-teal-secondary-180 {
   background-color: #38B2AC;
-  background-image: linear-gradient(180deg, #38B2AC 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #38B2AC 40%, #112741 100%); }
 
 .bg-gradient-teal-secondary-270 {
   background-color: #38B2AC;
-  background-image: linear-gradient(270deg, #38B2AC 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #38B2AC 40%, #112741 100%); }
 
 .bg-gradient-teal-secondary-circular {
   background-color: #38B2AC;
-  background-image: radial-gradient(#38B2AC, #244260); }
+  background-image: radial-gradient(#38B2AC, #112741); }
 
 .bg-gradient-teal-light {
   background-color: #38B2AC;
@@ -13971,43 +13989,43 @@ smaller {
 
 .bg-gradient-yellow-primary {
   background-color: #ffeb04;
-  background-image: linear-gradient(120deg, #ffeb04 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #ffeb04 40%, #3B2098 100%); }
 
 .bg-gradient-yellow-primary-90 {
   background-color: #ffeb04;
-  background-image: linear-gradient(90deg, #ffeb04 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #ffeb04 40%, #3B2098 100%); }
 
 .bg-gradient-yellow-primary-180 {
   background-color: #ffeb04;
-  background-image: linear-gradient(180deg, #ffeb04 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #ffeb04 40%, #3B2098 100%); }
 
 .bg-gradient-yellow-primary-270 {
   background-color: #ffeb04;
-  background-image: linear-gradient(270deg, #ffeb04 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #ffeb04 40%, #3B2098 100%); }
 
 .bg-gradient-yellow-primary-circular {
   background-color: #ffeb04;
-  background-image: radial-gradient(#ffeb04, #301680); }
+  background-image: radial-gradient(#ffeb04, #3B2098); }
 
 .bg-gradient-yellow-secondary {
   background-color: #ffeb04;
-  background-image: linear-gradient(120deg, #ffeb04 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #ffeb04 40%, #112741 100%); }
 
 .bg-gradient-yellow-secondary-90 {
   background-color: #ffeb04;
-  background-image: linear-gradient(90deg, #ffeb04 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #ffeb04 40%, #112741 100%); }
 
 .bg-gradient-yellow-secondary-180 {
   background-color: #ffeb04;
-  background-image: linear-gradient(180deg, #ffeb04 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #ffeb04 40%, #112741 100%); }
 
 .bg-gradient-yellow-secondary-270 {
   background-color: #ffeb04;
-  background-image: linear-gradient(270deg, #ffeb04 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #ffeb04 40%, #112741 100%); }
 
 .bg-gradient-yellow-secondary-circular {
   background-color: #ffeb04;
-  background-image: radial-gradient(#ffeb04, #244260); }
+  background-image: radial-gradient(#ffeb04, #112741); }
 
 .bg-gradient-yellow-light {
   background-color: #ffeb04;
@@ -14313,43 +14331,43 @@ smaller {
 
 .bg-gradient-orange-primary {
   background-color: #ff8800;
-  background-image: linear-gradient(120deg, #ff8800 40%, #301680 100%); }
+  background-image: linear-gradient(120deg, #ff8800 40%, #3B2098 100%); }
 
 .bg-gradient-orange-primary-90 {
   background-color: #ff8800;
-  background-image: linear-gradient(90deg, #ff8800 40%, #301680 100%); }
+  background-image: linear-gradient(90deg, #ff8800 40%, #3B2098 100%); }
 
 .bg-gradient-orange-primary-180 {
   background-color: #ff8800;
-  background-image: linear-gradient(180deg, #ff8800 40%, #301680 100%); }
+  background-image: linear-gradient(180deg, #ff8800 40%, #3B2098 100%); }
 
 .bg-gradient-orange-primary-270 {
   background-color: #ff8800;
-  background-image: linear-gradient(270deg, #ff8800 40%, #301680 100%); }
+  background-image: linear-gradient(270deg, #ff8800 40%, #3B2098 100%); }
 
 .bg-gradient-orange-primary-circular {
   background-color: #ff8800;
-  background-image: radial-gradient(#ff8800, #301680); }
+  background-image: radial-gradient(#ff8800, #3B2098); }
 
 .bg-gradient-orange-secondary {
   background-color: #ff8800;
-  background-image: linear-gradient(120deg, #ff8800 40%, #244260 100%); }
+  background-image: linear-gradient(120deg, #ff8800 40%, #112741 100%); }
 
 .bg-gradient-orange-secondary-90 {
   background-color: #ff8800;
-  background-image: linear-gradient(90deg, #ff8800 40%, #244260 100%); }
+  background-image: linear-gradient(90deg, #ff8800 40%, #112741 100%); }
 
 .bg-gradient-orange-secondary-180 {
   background-color: #ff8800;
-  background-image: linear-gradient(180deg, #ff8800 40%, #244260 100%); }
+  background-image: linear-gradient(180deg, #ff8800 40%, #112741 100%); }
 
 .bg-gradient-orange-secondary-270 {
   background-color: #ff8800;
-  background-image: linear-gradient(270deg, #ff8800 40%, #244260 100%); }
+  background-image: linear-gradient(270deg, #ff8800 40%, #112741 100%); }
 
 .bg-gradient-orange-secondary-circular {
   background-color: #ff8800;
-  background-image: radial-gradient(#ff8800, #244260); }
+  background-image: radial-gradient(#ff8800, #112741); }
 
 .bg-gradient-orange-light {
   background-color: #ff8800;
@@ -14822,7 +14840,7 @@ smaller {
     text-align: center;
     font-size: 90%;
     white-space: nowrap;
-    background-color: #301680; }
+    background-color: #3B2098; }
 
 .progress-bar-vertical {
   display: flex;
@@ -14840,7 +14858,7 @@ smaller {
     -webkit-transition: height 0.6s ease;
     -o-transition: height 0.6s ease;
     transition: height 0.6s ease;
-    background-color: #301680; }
+    background-color: #3B2098; }
 
 .box-icon {
   overflow: hidden; }
@@ -14899,9 +14917,9 @@ smaller {
       color: #151d2e; }
     .tabs-line .tab-link.active {
       cursor: default;
-      color: #301680;
+      color: #3B2098;
       background-color: transparent;
-      border-bottom: 4px solid #301680; }
+      border-bottom: 4px solid #3B2098; }
 
 .tabs-vertical {
   border-bottom: none; }
@@ -14918,7 +14936,7 @@ smaller {
       padding-left: 1rem;
       margin-bottom: .5rem; }
       .tabs-vertical .tab-link.active {
-        border-left: 4px solid #301680;
+        border-left: 4px solid #3B2098;
         border-bottom: none; } }
 
 .tabs-btn .tab-link {
@@ -14932,7 +14950,7 @@ smaller {
     color: #edf2f8;
     border-left: none;
     border-bottom: none;
-    background-color: #301680; }
+    background-color: #3B2098; }
 
 .py-auto {
   padding-top: auto;

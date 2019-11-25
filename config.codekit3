@@ -1103,29 +1103,6 @@
 		"oAP": "/boxes.html",
 		"oF": 0
 		},
-	"/compiled.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/compiled-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/compiled.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/compiled.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/fontawesome/scss/_animated.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1705,6 +1682,29 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/maksucocss.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/maksucocss-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/maksucocss.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/maksucocss.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/package.json": {
 		"ft": 524288,
