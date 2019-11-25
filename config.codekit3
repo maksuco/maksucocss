@@ -1626,12 +1626,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/frontend.html": {
+	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/frontend.html",
+		"oAP": "/index.html",
 		"oF": 0
 		},
 	"/js": {
@@ -1947,16 +1947,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/scss/forms/forms.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/scss/forms/forms-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/scss/forms/select.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2005,6 +1995,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/helpers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/masonry.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/scss/masonry.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2107,7 +2110,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 594017849.58181596,
-	"displayValue": "bootwind",
+	"displayValue": "MaksucoCSS",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-glace",
 	"iconImageWasSetByUser": 0

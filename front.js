@@ -134,6 +134,10 @@ Vue.mixin({
       var buttons = document.querySelector('.'+target_element);
       button.classList.add("disabled");
       button.classList.add("opacity-1");
+    },
+    handleFileChange(e) {
+      // Whenever the file changes, emit the 'input' event with the file data.
+      //this.$emit('input', e.target.files[0])
     }
   }
 })

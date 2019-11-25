@@ -21,6 +21,8 @@
     padding: 12px 14px;
     transition: box-shadow .15s ease;
     background-color: white;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     &:focus {
       outline: none;
       border: 1px solid #fff;

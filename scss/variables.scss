@@ -56,7 +56,7 @@ $btn-radius: .2rem !default;
 $form-bg: #ffffff !default;
 $form-text: $body !default;
 $form-light: lighten($body, 22%) !default;
-$form-border: 1px solid lighten($form-text, 78%) !default;
+$form-border: 1px solid lighten($form-text, 30%) !default;
 $input-border-radius: $btn-radius !default;
 //$form-label: ;
 $form-placeholder-color: $gray;
@@ -65,6 +65,5 @@ $form-border: 1px solid $gray;
 //BACKEND
 $backend-breakpoint: 1168px !default;
 $backend-bg: #f4f6f8 !default;
-$backend-aside-bg: $primary !default;
-$backend-aside-bg_end: darken($primary, 20%) !default;
 $backend-aside-links: #dae9f5 !default;
+$backend-aside-links-hover: $primary !default;

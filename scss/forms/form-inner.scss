@@ -10,6 +10,8 @@
     font-size: .95rem;
     line-height: 1.5;
     padding: 21px 10px 6px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     //box-shadow: $box-shadow;
     &::placeholder {
       color: $form-light;
@@ -21,7 +23,7 @@
     &:focus {
       outline: none;
       //background-color: darken($form-bg, 1%);
-      border-color: darken($form-bg, 3%);
+      border-color: lighten($form-text, 3%);
     }
   }
   label {

@@ -1,4 +1,4 @@
-# Bootwind CSS/JS Helpers
+# MaksucoCSS CSS/JS Helpers
 Remember to add/replace your **variables** before importing, 
 and then **@import '../node_modules/bootwind/compiled';** or what ever you path is
 
@@ -143,7 +143,7 @@ Use `.btn`
 
 **.btn:** Use `.btn` combine with `.btn-*` with variants
 
-You can use `.btn-dark` or `.btn-light` OR JUST `.btn`,  and then apply `.bg-*` and `.text-*` or even `.bg-gradient-*`
+You can use `.btn-dark` or `.btn-light` OR JUST `.btn`,  and then apply `.bg-*` and `.text-*` or even `.bg-gradient-*` or `.bg-gradient-transparent-*` (also invert the colors)
 
 
 
@@ -171,7 +171,7 @@ You can use `.badge-dark` or `.badge-light` OR JUST `.badge`,  and then apply `.
 
 You can use .hover-color-* like .hover-color-gray
 
-**BG:** `.bg-*`, Available form: primary, secondary, black, white, gray, blue, indigo, purple, red, green, teal, yellow, orange. and also with variants `.bg-gray-100` to `.bg-gray-900` (not available in black, dark and light.). 
+**BG:** `.bg-*`, Available for: primary, secondary, black, white, gray, blue, indigo, purple, red, green, teal, yellow, orange. and also with variants `.bg-gray-100` to `.bg-gray-900` (not available in black, dark and light.). 
 *-500 is the base color of each variant group
 
 You can use .hover-bg-* like .hover-bg-gray
@@ -181,6 +181,8 @@ You can use .bg-gradient-* like .bg-gradient-gray
 You can also use it with `.md-bg-*` `.md-color-*` `.md-hover-color-*` to target desktop
 
 In some basic colors (black, white, light, dark), is possible to add `*-o` to get the same color but with opacity, like `.bg-white-o` 
+
+**BG Gradient:** `.bg-gradient-*-*`, like `.bg-gradient-gray-teal`. or `.bg-gradient` + `.bg-gradient-circular` with just sets a darker surround
 
 
 ---
@@ -291,15 +293,15 @@ Remember bg-blend only works on same element, it's not photoshop, for that you u
 
 Use `.list` or `.ul` on `<ul>`
 
-**<li> Margins:** `.list-m-none` `.list-m-5` `.list-m-10` `.list-m-11` `.list-m-12` `.list-m-13` `.list-m-14` `.list-m-15` `.list-m-20`.
+**li Margins:** `.list-m-none` `.list-m-5` `.list-m-10` `.list-m-11` `.list-m-12` `.list-m-13` `.list-m-14` `.list-m-15` `.list-m-20`.
 
 For icons use `.list-fa`
 
-**Options for <ul>:** `.list-fa-check` `.list-fa-dot` `.list-fa-user` `.list-fa-cross` `.list-fa-plus` `.list-fa-heart` `.list-fa-arrow`
+**Options for ul:** `.list-fa-check` `.list-fa-dot` `.list-fa-user` `.list-fa-cross` `.list-fa-plus` `.list-fa-heart` `.list-fa-arrow`
 
-**Options for <li>:** `.li-fa-check` `.li-fa-dot` `.li-fa-user` `.li-fa-cross` `.li-fa-plus` `.li-fa-heart` `.li-fa-arrow`
+**Options for li:** `.li-fa-check` `.li-fa-dot` `.li-fa-user` `.li-fa-cross` `.li-fa-plus` `.li-fa-heart` `.li-fa-arrow`
 
-For icon colors you can use `.list-fa-gray` or to target <li> use `.li-fa-*`
+For icon colors you can use `.list-fa-gray` or to target `<li>` use `.li-fa-*`
 
 
 

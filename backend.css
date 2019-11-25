@@ -17,21 +17,26 @@ aside.sidebar {
   top: 0;
   bottom: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, #301680, #0f0729);
+  line-height: 1.1;
   padding: 20px 0px; }
   aside.sidebar .sidebar-content {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: -6px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    right: -0px;
+    padding-bottom: 30px;
     overflow: auto;
-    padding-bottom: 30px; }
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; }
+    aside.sidebar .sidebar-content::-webkit-scrollbar {
+      display: none; }
   aside.sidebar .logo {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: .5rem;
+    display: block; }
     aside.sidebar .logo img {
       width: 100%;
       max-width: 90%;
@@ -41,12 +46,9 @@ aside.sidebar {
     height: 1px;
     background-color: rgba(237, 242, 248, 0.3); }
   aside.sidebar .sidebar-panel {
-    margin-top: 8px;
     padding: 10px 15px;
-    background: #0f0729;
     color: rgba(237, 242, 248, 0.8);
-    font-weight: bold;
-    line-height: 1.15; }
+    font-weight: bold; }
     aside.sidebar .sidebar-panel span {
       display: block;
       font-size: 85%;
@@ -56,27 +58,38 @@ aside.sidebar {
     margin-top: 15px;
     font-size: 13px;
     list-style: none;
-    line-height: 36px;
     width: 100%;
-    padding-left: 0px; }
-    aside.sidebar .sidebar-nav li i {
-      width: 27px;
-      padding-right: 10px; }
-    aside.sidebar .sidebar-nav a {
-      position: relative;
-      padding-left: 20px;
-      color: #dae9f5 !important;
-      font-size: 15px;
-      font-weight: normal;
-      display: block;
-      text-decoration: none;
-      width: 100%; }
-    aside.sidebar .sidebar-nav a:hover {
-      background: #301680; }
-    aside.sidebar .sidebar-nav .active {
-      cursor: default;
-      color: #724ee1 !important;
-      background: transparent !important; }
+    padding-left: 0px;
+    vertical-align: middle; }
+    aside.sidebar .sidebar-nav li {
+      margin-top: .1rem;
+      margin-bottom: .1rem; }
+      aside.sidebar .sidebar-nav li a {
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        position: relative;
+        padding-left: 20px;
+        color: #dae9f5 !important;
+        font-size: .96rem;
+        font-weight: normal;
+        display: block;
+        text-decoration: none;
+        width: 100%; }
+      aside.sidebar .sidebar-nav li a:hover {
+        opacity: .8;
+        background: #301680; }
+      aside.sidebar .sidebar-nav li .active {
+        cursor: default;
+        color: white !important;
+        background: transparent !important; }
+      aside.sidebar .sidebar-nav li i {
+        width: 27px;
+        padding-right: 10px; }
+      aside.sidebar .sidebar-nav li .badge {
+        margin-right: 10px;
+        line-height: 1; }
+        aside.sidebar .sidebar-nav li .badge.badge-sm.float-right, aside.sidebar .sidebar-nav li .badge.badge-xs.float-right {
+          margin-top: .1rem; }
   aside.sidebar h5 {
     text-transform: uppercase;
     color: #677694;
@@ -104,13 +117,15 @@ aside.sidebar {
             padding: .3rem .4rem .2rem .4rem;
             font-size: .5rem;
             text-transform: uppercase;
-            border: 1px solid #301680;
+            border: 1px solid rgba(218, 233, 245, 0.2);
             border-radius: .5rem; }
           aside.sidebar .sidebar-nav li i {
             display: block;
             font-size: 1.3rem;
             padding: 0;
             margin: 0 auto; }
+          aside.sidebar .sidebar-nav li .badge {
+            display: none; }
       aside.sidebar h5 {
         text-align: center;
         padding: .8rem 0 .4rem 0 !important;
@@ -128,8 +143,8 @@ aside.sidebar {
   display: inline-flex !important;
   position: absolute;
   z-index: 999;
-  right: 15px;
-  top: 10px;
+  right: 12px;
+  top: 8px;
   text-align: right;
   background: #edf2f8;
   padding: 5px 6px;
@@ -147,9 +162,6 @@ aside.sidebar {
       margin-top: 12.5px;
       margin-left: 1.5px;
       color: #A0AEC0; }
-  @media (max-width: 768px) {
-    .topnav .sidemenu_toggler {
-      display: block; } }
   .topnav .search {
     outline: none !important;
     border: none;
@@ -188,6 +200,13 @@ aside.sidebar {
       top: 16px;
       left: 163px;
       color: #A0AEC0; }
+
+@media screen and (max-width: 768px) {
+  .topnav {
+    right: 6px !important;
+    top: 6px; }
+    .topnav .sidemenu_toggler {
+      display: block; } }
 
 .dropdown-user {
   outline: none !important; }
@@ -267,7 +286,7 @@ main {
         vertical-align: middle; }
   @media (min-width: 768px) and (max-width: 1168px) {
     main {
-      margin-left: 100px; }
+      margin-left: 98px; }
       main header {
         padding: 1.5rem 1rem 2rem 1rem; } }
   @media (max-width: 768px) {

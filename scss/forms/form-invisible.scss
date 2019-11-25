@@ -24,6 +24,7 @@
     border-radius: none;
     border-bottom: 2px solid transparent;
     padding: 4px 10px 0px 0px;
+    padding-left: 0px !important;
     background-color: transparent;
     position: relative;
     display: block;
@@ -34,7 +35,7 @@
       outline: none;
       //border-bottom: 2px solid $light;
       &::placeholder {
-        padding-left: .3rem;
+        //padding-left: .1rem;
       }
     }
     &::placeholder {

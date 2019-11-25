@@ -24,23 +24,30 @@ aside.sidebar {
   top: 0;
   bottom: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, $backend-aside-bg, $backend-aside-bg_end);
+  line-height: 1.1;
+  //background: linear-gradient(to bottom, $backend-aside-bg, $backend-aside-bg_end); set in page
   padding: 20px 0px;
   .sidebar-content {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: -6px;
-    //overflow-y: scroll !important;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow: auto; //hidding scroll bar
+    right: -0px;
     padding-bottom: 30px;
+
+    overflow: auto; //hidding scroll bar
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .logo {
     width: 100%;
     text-align: center;
+    padding-bottom: .5rem;
+    display: block;
     img {
       width: 100%;
       max-width: 90%;
@@ -53,12 +60,10 @@ aside.sidebar {
     background-color: rgba($light, .3); 
   }
   .sidebar-panel {
-    margin-top: 8px;
     padding: 10px 15px;
-    background: $backend-aside-bg_end;
+    //background: $backend-aside-bg_end;
     color: rgba($light, .8);
     font-weight: bold;
-    line-height: 1.15;
     span {
       display: block;
       font-size: 85%;
@@ -70,32 +75,45 @@ aside.sidebar {
     margin-top: 15px;
     font-size: 13px;
     list-style: none;
-    line-height: 36px;
     width: 100%;
     padding-left: 0px;
+    vertical-align: middle;
     li {
+      margin-top: .1rem;
+      margin-bottom: .1rem;
+      a {
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        position: relative;
+        padding-left: 20px;
+        color: $backend-aside-links !important;
+        font-size: .96rem;
+        font-weight: normal;
+        display: block;
+        text-decoration: none;
+        width: 100%; 
+      }
+      a:hover {
+        opacity: .8;
+        background: $backend-aside-links-hover;
+      }
+      .active {
+        cursor: default;
+        color: lighten($backend-aside-links, 30%) !important;
+        background: transparent !important;
+      }
       i {
         width: 27px;
         padding-right: 10px;
       }
-    }
-    a {
-      position: relative;
-      padding-left: 20px;
-      color: $backend-aside-links !important;
-      font-size: 15px;
-      font-weight: normal;
-      display: block;
-      text-decoration: none;
-      width: 100%; 
-    }
-    a:hover {
-      background: $primary;
-    }
-    .active {
-      cursor: default;
-      color: lighten($primary, 30%) !important;
-      background: transparent !important;
+      .badge {
+        //margin-top: .76rem;
+        margin-right: 10px;
+        line-height: 1;
+        &.badge-sm.float-right, &.badge-xs.float-right {
+          margin-top: .1rem;
+        }
+      }
     }
   }
   h5 {
@@ -128,7 +146,7 @@ aside.sidebar {
           padding: .3rem .4rem .2rem .4rem;
           font-size: .5rem;
           text-transform: uppercase;
-          border: 1px solid $primary;
+          border: 1px solid rgba($backend-aside-links, .2);
           border-radius: .5rem;
         }
         i {
@@ -136,6 +154,9 @@ aside.sidebar {
           font-size: 1.3rem;
           padding: 0;
           margin: 0 auto;
+        }
+        .badge {
+          display: none;
         }
       }
     }
@@ -163,7 +184,7 @@ aside.sidebar {
   display: inline-flex !important;
   position: absolute;
   z-index: 999;
-  right: 15px; top: 10px;
+  right: 12px; top: 8px;
   text-align: right;
   background: $light;
   padding: 5px 6px;
@@ -181,11 +202,6 @@ aside.sidebar {
       margin-top: 12.5px;
       margin-left: 1.5px;
       color: $gray;
-    }
-  }
-  @media (max-width: $desktop-breakpoint) {
-    .sidemenu_toggler {
-      display: block;
     }
   }
   
@@ -238,6 +254,15 @@ aside.sidebar {
   }
 }
 
+@media screen and (max-width: $desktop-breakpoint) {
+  .topnav {
+    right: 6px !important;
+    top: 6px;
+    .sidemenu_toggler {
+      display: block;
+    }
+  }
+}
 
 .dropdown-user {
   outline: none !important; 
@@ -332,7 +357,7 @@ main {
 
   //MEDIUM Version Icons
   @media (min-width: $desktop-breakpoint) and (max-width: $backend-breakpoint) {
-    margin-left: 100px;
+    margin-left: 98px;
     header {
       padding: 1.5rem 1rem 2rem 1rem;
     }

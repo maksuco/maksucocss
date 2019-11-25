@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>BootWind FORMS</title>
+  <title>MaksucoCSS FORMS</title>
   <link href="compiled.css" rel="stylesheet">
 </head>
 <body class="bg-light">
 
   <section class="bg-primary p-10 flex items-baseline">
-    <h1 class="color-white text-5x md-text-7x text-bold w-full">BOOTWIND FORMS</h1>
-    <a href="frontend.html" class="btn btn-white btn-sm rounded-full mr-1">Frontend</a>
+    <h1 class="color-white text-5x md-text-7x text-bold w-full">MaksucoCSS FORMS</h1>
+    <a href="index.html" class="btn btn-white btn-sm rounded-full mr-1">Frontend</a>
     <a href="backend.html" class="btn btn-sm rounded-full mr-1 color-white">Backend</a>
     <a href="boxes.html" class="btn btn-sm rounded-full mr-1 color-white">Boxes</a>
   </section>
@@ -20,8 +20,8 @@
 
 
   <section class="container flex mt-4">
-      <div class="col-22 col-md-20 mx-auto">
-        <form class="shadow-lg rounded px-8 pt-6 pb-8 mb-4" style="background-color:#f8f9fa;">
+      <div class="col-23 col-md-20 mx-auto">
+        <form class="shadow-lg rounded px-8 pt-6 pb-8 sm-p-4 mb-4" style="background-color:#f8f9fa;">
   
         <h1 class="text-bold">Forms Basic</h1>
         <p>Use with .form-basic</p>
@@ -55,6 +55,10 @@
         <h3 class="mt-6">Sizes</h3>
         <p>Use with .form-sm and .form-lg</p>
   
+        <div class="form-basic form-xs required mt-3">
+          <label for="namebasicxs">XS</label>
+          <input type="text" class="" id="namebasicxs" placeholder="Pon tu nombre aqui">
+        </div>
         <div class="form-basic form-sm required mt-3">
           <label for="name5">SM</label>
           <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
@@ -72,8 +76,8 @@
 
 
   <section class="container flex mt-4">
-    <div class="col-22 col-md-20 mx-auto">
-      <form class="shadow-lg rounded px-8 pt-6 pb-8 mb-4" style="background-color:#f8f9fa;">
+    <div class="col-md-20 mx-auto">
+      <form class="shadow-lg rounded p-8 pt-6 sm-p-4 mb-4" style="background-color:#f8f9fa;">
 
       <h1 class="text-bold">Forms Invisible</h1>
       <p>Use with .form-invisible</p>
@@ -118,8 +122,8 @@
 
 
   <section class="container flex mt-4">
-      <div class="col-22 col-md-20 mx-auto">
-        <form class="shadow-lg rounded px-8 pt-6 pb-8 mb-4" style="background-color:#f8f9fa;">
+      <div class="col-23 col-md-20 mx-auto">
+        <form class="shadow-lg rounded px-8 pt-6 pb-8 sm-p-4 mb-4" style="background-color:#f8f9fa;">
   
         <h1 class="text-bold">Forms Clean</h1>
         <p>Use with .form-clean</p>
@@ -153,6 +157,10 @@
         <h3 class="mt-6">Sizes</h3>
         <p>Use with .form-clean-sm and .form-clean-lg</p>
   
+        <div class="form-clean form-xs required mt-3">
+          <label for="namecleanxs">XS</label>
+          <input type="text" class="" id="namecleanxs" placeholder="Pon tu nombre aqui">
+        </div>
         <div class="form-clean form-sm required mt-3">
           <label for="name5">SM</label>
           <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
@@ -169,8 +177,8 @@
 
 
   <section class="container flex mt-4">
-      <div class="col-22 col-md-20 mx-auto">
-      <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
+    <div class="col-23 col-md-20 mx-auto">
+    <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 sm-p-4 mb-4">
 
       <h1 class="text-bold">Forms Muted</h1>
       <p>Use with .form-muted</p>
@@ -204,6 +212,10 @@
       <h3 class="mt-6">Sizes</h3>
       <p>Use with .form-sm and .form-lg</p>
 
+      <div class="form-muted form-xs required mt-3">
+        <label for="name5">XS</label>
+        <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+      </div>
       <div class="form-muted form-sm required mt-3">
         <label for="name5">SM</label>
         <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
@@ -222,8 +234,8 @@
 
 
 <section class="container flex mt-4">
-    <div class="col-22 col-md-20 mx-auto">
-    <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
+    <div class="col-23 col-md-20 mx-auto">
+    <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 sm-p-4 mb-4">
 
     <h1 class="text-bold">Forms Inner</h1>
     <p>Use with .form-inner</p>
@@ -355,8 +367,6 @@
 
 
 
-
-
 <section class="container flex mt-4">
     <div class="col-22 col-md-20 mx-auto">
       <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
@@ -404,9 +414,9 @@
       </figure>
 
 
-      <h1 class="text-bold mt-6">Selects Options</h1>
+      <h2 class="text-bold mt-6">Selects Options</h2>
       <p>Use with .form-select-btn</p>
-      <select class="form-select-btn mt-3">
+      <select class="form-select-btn btn btn-light color-gray mt-3">
           <option>CURRENCY</option>
           <option disabled>This is a native</option>
           <option>Ap</option>
@@ -414,6 +424,28 @@
           <option>Grapes</option>
           <option>Oranges</option>
       </select>
+
+
+      <h2 class="text-bold mt-6">ADD / Substract</h2>
+
+      <button class="btn btn-white" onclick="changePageQty(-1)">-</button>
+      <input id="numPaginas" type="text" name="paginas" value="1" class="btn bg-light-200 w-50 text-center px-1">
+      <button class="btn btn-white" onclick="changePageQty(-1)">+</button>
+
+      <div class="form-muted mt-3 flex">
+        <button class="btn btn-white mr-1" onclick="changePageQty(-1)">-</button>
+        <input id="numPaginas" type="text" name="paginas" value="1" class="w-50 text-center px-1" readonly="">
+        <button class="btn btn-white ml-1" onclick="changePageQty(-1)">+</button>
+      </div>
+
+
+      <h2 class="text-bold mt-6">File Input</h2>
+      <label for="file_upload0" class="custom-file-upload">
+        <input type="file" id="file_upload"> <span><i class="fa fa-file-upload"></i> Choose a file</span>
+      </label>
+      <label for="file_upload0" class="custom-file-upload bg-indigo color-white">
+        <input type="file" id="file_upload"> <span><i class="fa fa-file-upload"></i> Choose a file</span>
+      </label>
   
     </form>
       
