@@ -212,8 +212,6 @@ In some basic colors (black, white, light, dark), is possible to add `*-o` to ge
 
 **Position:** `.bg-c` `.bg-t` `.bg-b` `.bg-l` `.bg-r` `.bg-tl`, `.bg-tr` `.bg-tc` `.bg-bl` `.bg-br` `.bg-bc`
 
-You can use `.badge-dark` or `.badge-light` OR JUST `.badge`,  and then apply `.bg-*` and `.text-*` or even `.bg-gradient-*`
-
 
 
 ---
