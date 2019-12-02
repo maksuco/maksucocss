@@ -539,6 +539,16 @@ $percentages: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
   .max-h-#{$row}p {
     max-height: #{$row}% !important;
   }
+  @media (min-width: $desktop-breakpoint) {
+    .md-w-#{$row}p { width: #{$row}% !important; }
+    .md-h-#{$row}p { height: #{$row}% !important; }
+    .md-max-w-#{$row}p {
+      max-width: #{$row}% !important;
+    }
+    .md-max-h-#{$row}p {
+      max-height: #{$row}% !important;
+    }
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {

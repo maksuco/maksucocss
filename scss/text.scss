@@ -359,19 +359,25 @@ smaller {
 
 //LETTER SPACING
 .letter-spacing-xs {
-  letter-spacing: -0.05em;
+  letter-spacing: -0.05em !important;
 }
 .letter-spacing-sm {
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025em !important;
 }
 .letter-spacing-normal {
-  letter-spacing: 0;
+  letter-spacing: 0 !important;
 }
 .letter-spacing-lg {
-  letter-spacing: 0.025em;
+  letter-spacing: 0.025em !important;
 }
 .letter-spacing-xl {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05em !important;
+}
+.letter-spacing-2x {
+  letter-spacing: 0.1em !important;
+}
+.letter-spacing-3x {
+  letter-spacing: 0.2em !important;
 }
 
 
@@ -574,7 +580,7 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
 
 
 //LIST WITH LINES
-.ul-lines {
+.ul-lines, .ul-clean {
   list-style-type: none;
   li {
     display: flex;
@@ -592,6 +598,14 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
     }
     &:hover {
       color: $gray;
+    }
+  }
+}
+.ul-clean {
+  li {
+    border-top: 0 $gray solid;
+    &:last-child {
+      border-bottom: 0 $gray solid;
     }
   }
 }

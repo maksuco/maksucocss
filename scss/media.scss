@@ -76,6 +76,10 @@
   background-size: contain;
 }
 
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 //ANIMATION
 .bg-zoom { 
   transition: all .3s ease-in-out;
