@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!--
   <nav class="container flex fixed bg-primary color-white p-3 uppercase left-center items-center z-50 md-mt-5 md-rounded-full md-px-8">
     <div id="navbar" class="flex items-center">
       <a href="frontend.html" class="btn btn-white btn-sm rounded-full mr-1">Frontend</a>
@@ -18,15 +19,41 @@
 
       <img src="https://miro.medium.com/max/968/1*uLuWzCXfq2rt1t_TkuLB8A.png" alt="" class="img-fluid h-50 ml-auto sm-hidden">
 
-          <div class="form-basic form-sm ml-auto mb-0 sm-hidden">
-            <input type="search" id="search" placeholder="Buscar" class="p-2">
-          </div>
+      <div class="form-basic form-sm ml-auto mb-0 sm-hidden">
+        <input type="search" id="search" placeholder="Buscar" class="p-2">
+      </div>
       <a href="frontend.html" class="btn btn-sm rounded-full mr-1 color-white">START</a>
+    </div>
+  </nav>
+  -->
+
+
+  <nav class="container flex absolute bg-primary color-white p-3 uppercase left-center items-center z-50 md-mt-5 md-px-0">
+    <div id="navbar" class="flex items-center sm-hidden">
+      <img src="https://miro.medium.com/max/968/1*uLuWzCXfq2rt1t_TkuLB8A.png" alt="" class="img-fluid h-50 mr-5">
+        <a href="frontend.html" class="btn btn-white btn-sm rounded-full mr-1">Frontend</a>
+        <a href="backend.html" class="btn btn-sm rounded-full mr-1 color-white">Backend</a>
+        <a href="forms.html" class="btn btn-sm rounded-full mr-1 color-white">Forms</a>
+        <a href="readme.html" class="btn btn-sm rounded-full mr-1 color-white">Docs</a>
+    </div>
+    <div class="toggler absolute-tr color-white bg-primary" v-on:click="open_nav()"><i class="far fa-bars fa-lg" v-if="!nav"></i><i class="far fa-times fa-lg" v-if="nav"></i></div>
+    <div class="open-full open-slide bg-dark py-10 text-3x text-bold" v-bind:class="{ active: nav}">
+      <a href="frontend.html" class="btn btn-white rounded-full">Frontend</a>
+      <a href="backend.html" class="rounded-full color-white">Backend</a>
+      <a href="forms.html" class="btn rounded-full color-white">Forms</a>
+      <a href="readme.html" class="btn rounded-full color-white">Docs</a>
+      <div class="social text-center mt-5">
+        <p class="color-white block text-xs text-light uppercase my-1">Siguenos en</p>
+        <a href="#" class="color-white inline-block mx-1"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="color-white inline-block mx-1"><i class="fab fa-instagram"></i></a>
+        <p class="color-white block text-xs text-light uppercase my-2">Registrate a nuestro</p>
+        <a href="#" class="btn btn-sm btn-dark mt-1">Newsletter</a>
+      </div>
     </div>
   </nav>
 
 
-  <header class="container-fluid bg-primary p-10 flex flex-wrap content-center items-center h-screen">
+  <header class="container-fluid bg-primary p-4 md-p-10 flex flex-wrap content-center items-center h-screen">
   <section class="container">
     <h1 class="color-white text-5x md-text-7x text-bold block line-none" style="width: 100% !important;">MaksucoCSS SAMPLES</h1>
     <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-white ml-2 sm-hidden">buttons in the middle</span>
@@ -58,7 +85,7 @@
 
   <section class="container flex justify-center items-start md-my-20">
       <div class="col-md-12"><img src="https://source.unsplash.com/random" alt="" class="w-full sm-max-h-400 object-cover object-center"></div> 
-      <div class="col-md-12 bg-center p-10 md-p-13 py-12 md-py-13 md-mt-10 md-ml--10" style="background-color: rgb(240, 240, 240);">
+      <div class="col-md-12 bg-center p-5 md-p-13 py-12 md-py-13 md-mt-10 md-ml--10" style="background-color: rgb(240, 240, 240);">
         <h4 class="">Manifesto</h4> 
         <h2 class="text-bold line-10 text">Nuestra fórmula no es secreta. Somos el matrimonio entre el amor y la técnica.</h2> 
         <p class="mt-4">Pero, ¿hablar de amor en una industria que parece más ruda que delicada? Sí.</p>
@@ -69,7 +96,6 @@
           <li>With .ul</li>
           <li>Number 2</li>
         </ul>
-
       </div>
     </div>
   </section>
@@ -417,8 +443,25 @@
       
     </section>
     
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
-
+var nav = new Vue({
+  el: 'nav',
+  data: {
+    nav: false,
+  },
+  methods: {
+    open_nav() {
+      if(this.nav == false){
+        this.nav = true;
+        document.querySelector("body").classList.add("body-fix");
+      } else {
+        this.nav = false;
+        document.querySelector("body").classList.remove("body-fix");
+      }
+    }
+  }
+})
 </script>
 </body>
 </html>

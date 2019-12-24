@@ -23,9 +23,15 @@
 .bg-dark {
   background-color: $dark;
 }
+.bg-dark-o {
+  background-color: rgba($dark, .2) !important;
+}
 
 .bg-light {
   background-color: $light;
+}
+.bg-light-o {
+  background-color: rgba($light, .2) !important;
 }
 
 .bg-transparent {
@@ -34,6 +40,9 @@
 
 .bg-black {
   background-color: $black;
+}
+.bg-black-o {
+  background-color: rgba($black, .2) !important;
 }
 
 .bg-white {
@@ -200,6 +209,9 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   .bg-#{$name}-o {
     background-color: rgba($color, .5);
   }
+  .bg-#{$name}-o-7 {
+    background-color: rgba($color, .7);
+  }
   .border-#{$name} {
     border-color: $color;
   }
@@ -233,6 +245,15 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   .shadow-#{$name} {
     //horizontal vertical blur spread
     box-shadow: 0px 8px 25px -5px rgba($color, 0.6);
+  }
+  .shadow-radar-#{$name} {
+    box-shadow: 0px 0px 1px 2.8rem rgba($color, 0.09), 0px 0px 1px 1.1rem rgba($color, 0.15);
+  }
+  .shadow-radar-#{$name}-sm {
+    box-shadow: 0px 0px 1px 1.6rem rgba($color, 0.09), 0px 0px 1px .7rem rgba($color, 0.12);
+  }
+  .shadow-radar-#{$name}-lg {
+    box-shadow: 0px 0px 1px 4rem rgba($color, 0.09), 0px 0px 1px 1.8rem rgba($color, 0.14), 0px 0px 1px 2.1rem rgba($color, 0.03);
   }
   .hover-bg-#{$name} {
     &:hover {
@@ -496,6 +517,14 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   }
 }
 
+.hover-overlay-none {
+  &:hover {
+    &:after {
+      display: none !important;
+    }
+  }
+}
+
 
 //SOCIAL
 $facebook: #3b57a1;
@@ -606,36 +635,6 @@ $whatsapp: #35B83F;
   }
 }
 
-//BLEND MODES
-.blend-normal {mix-blend-mode: normal;}
-.blend-multiply {mix-blend-mode: multiply;}
-.blend-screen {mix-blend-mode: screen;}
-.blend-overlay {mix-blend-mode: overlay;}
-.blend-darken {mix-blend-mode: darken;}
-.blend-lighten {mix-blend-mode: lighten;}
-.blend-color-dodge {mix-blend-mode: color-dodge;}
-.blend-color-burn {mix-blend-mode: color-burn;}
-.blend-difference {mix-blend-mode: difference;}
-.blend-exclusion {mix-blend-mode: exclusion;}
-.blend-hue {mix-blend-mode: hue;}
-.blend-saturation {mix-blend-mode: saturation;}
-.blend-color {mix-blend-mode: color;}
-.blend-luminosity {mix-blend-mode: luminosity;}
-
-.bg-blend-normal {background-blend-mode: normal;}
-.bg-blend-multiply {background-blend-mode: multiply;}
-.bg-blend-screen {background-blend-mode: screen;}
-.bg-blend-overlay {background-blend-mode: overlay;}
-.bg-blend-darken {background-blend-mode: darken;}
-.bg-blend-lighten {background-blend-mode: lighten;}
-.bg-blend-color-dodge {background-blend-mode: color-dodge;}
-.bg-blend-color-burn {background-blend-mode: color-burn;}
-.bg-blend-difference {background-blend-mode: difference;}
-.bg-blend-exclusion {background-blend-mode: exclusion;}
-.bg-blend-hue {background-blend-mode: hue;}
-.bg-blend-saturation {background-blend-mode: saturation;}
-.bg-blend-color {background-blend-mode: color;}
-.bg-blend-luminosity {background-blend-mode: luminosity;}
 
 .bg-diagonal {
   display: block;
@@ -653,4 +652,22 @@ $whatsapp: #35B83F;
   margin-top: -60px;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
   clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+
+//BLEND MODES
+$blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, difference, exclusion, hue, saturation, color, luminosity;
+@each $blend in $blends {
+  .blend-#{$blend} {mix-blend-mode: $blend;}
+  .hover-blend-#{$blend} {
+    &:hover {
+      mix-blend-mode: $blend !important;
+    }
+  }
+  .bg-blend-#{$blend} {background-blend-mode: $blend;}
+  .hover-bg-blend-#{$blend} {
+    &:hover {
+      background-blend-mode: $blend !important;
+    }
+  }
 }

@@ -709,7 +709,29 @@ $margins: m, ml, mr, mt, mb, my, mx;
 }
 
 //BORDERS (border colors in colors.scss)
-$borders: 0, 1, 2, 3, 4, 5, 6;
+$borders: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+@each $row in $borders {
+  .border-#{$row} {
+    border-style: solid;
+    border-width: #{$row}px !important;
+  }
+  .border-t-#{$row} {
+    border-style: solid;
+    border-top-width: #{$row}px !important;
+  }
+  .border-b-#{$row} {
+    border-style: solid;
+    border-bottom-width: #{$row}px !important;
+  }
+  .border-l-#{$row} {
+    border-style: solid;
+    border-left-width: #{$row}px !important;
+  }
+  .border-r-#{$row} {
+    border-style: solid;
+    border-right-width: #{$row}px !important;
+  }
+}
 .border-none {
   border: none !important;
 }
@@ -721,23 +743,6 @@ $borders: 0, 1, 2, 3, 4, 5, 6;
 }
 .border-dotted {
   border-style: dotted !important;
-}
-@each $row in $borders {
-  .border-#{$row} {
-    border-width: #{$row}px !important;
-  }
-  .border-t-#{$row} {
-    border-top-width: #{$row}px !important;
-  }
-  .border-b-#{$row} {
-    border-bottom-width: #{$row}px !important;
-  }
-  .border-l-#{$row} {
-    border-left-width: #{$row}px !important;
-  }
-  .border-r-#{$row} {
-    border-right-width: #{$row}px !important;
-  }
 }
 
 

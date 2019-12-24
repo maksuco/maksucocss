@@ -66,6 +66,17 @@ hr, .hr {
   border-bottom-style: solid;
   border-bottom-width: 4px;
 }
+.shadow-soft {
+  box-shadow:
+  4px 1px 1px rgba(0,0,0,0.04), 
+  4px 2px 2px rgba(0,0,0,0.04), 
+  4px 4px 4px rgba(0,0,0,0.04), 
+  4px 6px 8px rgba(0,0,0,0.04),
+  3px 3px 9px 0 rgba(12, 12, 12, 0.3),
+  -2px -2px 2px 0 rgba(255, 255, 255, 0.3),
+  -4px -4px 5px 0 rgba(255, 255, 255, 0.5)
+  ;
+}
 .shadow-dual, .shadow-dual:hover	{
   //box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px -6px -2px rgba(255, 255, 255, 0.05);
 }
