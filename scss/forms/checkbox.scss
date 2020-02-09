@@ -237,7 +237,7 @@
     }
   }
   label {
-    float: left;
+    //float: left;
     position: relative;
     display: inline-block;
     color: $dark;
@@ -310,6 +310,7 @@
 //RADIO BTN
 .form-radio-btn {
   position: relative;
+  display: inline-block;
   input {
     position: absolute !important;
     clip: rect(0, 0, 0, 0);

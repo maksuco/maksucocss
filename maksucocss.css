@@ -6676,7 +6676,6 @@ smaller {
       color: white !important;
       box-shadow: none; }
   .form-panel label {
-    float: left;
     position: relative;
     display: inline-block;
     color: #151d2e;
@@ -6730,7 +6729,8 @@ smaller {
         font-size: .7rem !important; } }
 
 .form-radio-btn {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
   .form-radio-btn input {
     position: absolute !important;
     clip: rect(0, 0, 0, 0);
