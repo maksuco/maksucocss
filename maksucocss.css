@@ -6742,7 +6742,6 @@ smaller {
       background-color: #3B2098;
       color: white !important; }
   .form-radio-btn label {
-    float: left;
     position: relative;
     display: inline-block;
     text-align: center;
