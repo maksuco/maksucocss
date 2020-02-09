@@ -18,6 +18,7 @@ $container-max-widths: (
 
 //TYPE
 $font-family: "Metropolis" !default;
+$heading-font-family: $font-family !default;
 $font-base: 16px !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -27,6 +28,9 @@ $h1-size: 2.6rem !default;
 $h2-size: 2.2rem !default;
 $h3-size: 1.9rem !default;
 $h4-size: 1.6rem !default;
+$paragraph-weight: $font-weight-normal !default;
+$heading-weight: $font-weight-bold !default;
+$heading-line-height: 1.1 !default;
 
 //COLORS
 $primary: #3B2098 !default;
@@ -62,8 +66,18 @@ $input-border-radius: $btn-radius !default;
 $form-placeholder-color: $gray !default;
 $form-border: 1px solid $gray !default;
 
+//DROPDOWNS
+$dropdown-radius: .2rem !default;
+$dropdown-font-size: .9rem !default;
+$dropdown-top: 2.5rem !default;
+
+//ANIMATION
+$animation-px: 1rem !default;
+$animation-duration: .5s !default;
+
 //BACKEND
 $backend-breakpoint: 1168px !default;
 $backend-bg: #f4f6f8 !default;
 $backend-aside-links: #dae9f5 !default;
-$backend-aside-links-hover: $primary !default;
+$backend-aside-links-hover: transparent !default;
+$backend-aside-links-padding: .4rem !default;

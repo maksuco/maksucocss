@@ -65,8 +65,8 @@ aside.sidebar {
       margin-top: .1rem;
       margin-bottom: .1rem; }
       aside.sidebar .sidebar-nav li a {
-        padding-top: .7rem;
-        padding-bottom: .7rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
         position: relative;
         padding-left: 20px;
         color: #dae9f5 !important;
@@ -77,7 +77,7 @@ aside.sidebar {
         width: 100%; }
       aside.sidebar .sidebar-nav li a:hover {
         opacity: .8;
-        background: #3B2098; }
+        background: transparent; }
       aside.sidebar .sidebar-nav li .active {
         cursor: default;
         color: white !important;

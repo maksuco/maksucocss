@@ -82,8 +82,8 @@ aside.sidebar {
       margin-top: .1rem;
       margin-bottom: .1rem;
       a {
-        padding-top: .7rem;
-        padding-bottom: .7rem;
+        padding-top: $backend-aside-links-padding;
+        padding-bottom: $backend-aside-links-padding;
         position: relative;
         padding-left: 20px;
         color: $backend-aside-links !important;

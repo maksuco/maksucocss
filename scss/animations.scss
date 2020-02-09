@@ -1,0 +1,105 @@
+//SLIDES
+.animation-slide-left {
+  animation: $animation-duration ease-in-out 0s 1 slideLeft;
+}
+.animation-slide-right {
+  animation: $animation-duration ease-in-out 0s 1 slideRight;
+}
+.animation-slide-top {
+  animation: $animation-duration ease-in-out 0s 1 slideTop;
+}
+.animation-slide-bottom {
+  animation: $animation-duration ease-in-out 0s 1 slideBottom;
+}
+.animation-slide-bottom {
+  animation: $animation-duration ease-in-out 0s 1 slideBottom;
+}
+//SLIDE AND FADE
+.animation-fade-slide-left {
+  animation: $animation-duration ease-in-out 0s 1 slideLeft;
+}
+.animation-fade-slide-right {
+  animation: $animation-duration ease-in-out 0s 1 slideRight;
+}
+.animation-fade-slide-top {
+  animation: $animation-duration ease-in-out 0s 1 fadeSlideTop;
+}
+.animation-fade-slide-bottom {
+  animation: $animation-duration ease-in-out 0s 1 slideBottom;
+}
+.animation-fade-slide-bottom {
+  animation: $animation-duration ease-in-out 0s 1 slideBottom;
+}
+
+//FADE
+.animation-fade-in {
+  animation: $animation-duration ease-in-out 0s 1 fade;
+}
+.animation-fade-out {
+  animation: $animation-duration ease-in-out 0s 1 fadeOut;
+}
+
+
+//KEYFRAMES
+@keyframes slideLeft {
+  0% {
+    transform: translateX($animation-px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-$animation-px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(-$animation-px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-$animation-px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+//SLIDE AND FADE
+@keyframes fadeSlideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-$animation-px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//FADE
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

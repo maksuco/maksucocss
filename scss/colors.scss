@@ -34,7 +34,7 @@
   background-color: rgba($light, .2) !important;
 }
 
-.bg-transparent {
+.bg-transparent, .bg-none {
   background-color: transparent;
 }
 
@@ -255,11 +255,6 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   .shadow-radar-#{$name}-lg {
     box-shadow: 0px 0px 1px 4rem rgba($color, 0.09), 0px 0px 1px 1.8rem rgba($color, 0.14), 0px 0px 1px 2.1rem rgba($color, 0.03);
   }
-  .hover-bg-#{$name} {
-    &:hover {
-      background-color: $color !important;
-    }
-  }
   .shadow-#{$name}-full {
     box-shadow: 0px 6px 28px 0px rgba($color, 0.2);
   }
@@ -420,14 +415,22 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
     background-color: $color;
     background-image: radial-gradient($color, darken($color, 15%));
   }
-    .bg-gradient-#{$name}-transparent {
-      background-color: transparent;
-      background-image: linear-gradient(180deg, $color 40%, rgba($color, 0%) 100%);
-    }
-		.bg-gradient-transparent-#{$name} {
-      background-color: transparent;
-      background-image: linear-gradient(180deg, rgba($color, 0%) 40%, $color 100%);
-    }
+  .bg-gradient-#{$name}-transparent {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, $color 40%, rgba($color, 0%) 100%);
+  }
+  .bg-gradient-transparent-#{$name} {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba($color, 0%) 40%, $color 100%);
+  }
+
+
+  //BG FROSTED BLUR
+  .bg-frosted-#{$name} {
+    background-color: rgba($color, 0.17);
+    -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+    backdrop-filter: blur(8px); /* Chrome and Opera */
+  }
 
   //DUAL COLORS
 @each $name2 in $colors {
@@ -671,3 +674,23 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
     }
   }
 }
+
+
+  //BG FROSTED BLUR
+  .bg-frosted-sm {
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px); /* Safari 9+ */
+    backdrop-filter: blur(4px); /* Chrome and Opera */
+  }
+
+  .bg-frosted {
+    background-color: rgba(255, 255, 255, 0.17);
+    -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+    backdrop-filter: blur(8px); /* Chrome and Opera */
+  }
+
+  .bg-frosted-lg {
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(15px); /* Safari 9+ */
+    backdrop-filter: blur(15px); /* Chrome and Opera */
+  }

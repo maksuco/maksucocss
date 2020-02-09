@@ -1,8 +1,12 @@
 //REBOOT
+html {
+  scroll-behavior: smooth;
+}
 html, body {
   min-height: 100%;
   margin: 0;
   padding: 0;
+  font-size: $font-base;
 }
 
 body {
@@ -14,22 +18,18 @@ body {
 }
 
 a {
+  color: $body;
   text-decoration: none;
   &:hover {
     text-decoration: none;
     //color: currentColor !important;
-    opacity: .9;
+    opacity: .98;
     outline: none !important;
   }
 }
 
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {
   margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 img, svg, video, canvas, audio, iframe, embed, object {
@@ -294,6 +294,36 @@ ol, ul {
   align-content: space-around;
 }
 
+
+$orders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+@each $order in $orders {
+  .order-#{$order} {
+    -webkit-box-ordinal-group: #{$order + 1};
+            order: #{$order};
+  }
+  @media (max-width: $desktop-breakpoint) {
+    .sm-order-#{$order} {
+      -webkit-box-ordinal-group: #{$order + 1};
+              order: #{$order};
+    }
+  }
+}
+
+.order-first {
+  -webkit-box-ordinal-group: -9998;
+          order: -9999;
+}
+
+.order-last {
+  -webkit-box-ordinal-group: 10000;
+          order: 9999;
+}
+
+.order-none {
+  -webkit-box-ordinal-group: 1;
+          order: 0;
+}
+
 .flex-1 {
   -webkit-box-flex: 1;
           flex: 1 1 0%;
@@ -514,6 +544,19 @@ $positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 
     .md-right-#{$row} {
       right: #{$row}px !important;
     }
+    //NEGATIVE
+    .md-top--#{$row} {
+      top: -#{$row}px !important;
+    }
+    .md-bottom--#{$row} {
+      bottom: -#{$row}px !important;
+    }
+    .md-left--#{$row} {
+      left: -#{$row}px !important;
+    }
+    .md-right--#{$row} {
+      right: -#{$row}px !important;
+    }
   }
 }
 
@@ -605,7 +648,7 @@ $percentages: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
 }
 
 
-$mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 150, 200, 225, 250, 275, 300, 325, 350, 375, 400, 450, 500, 600, 700, 800, 900, 1000);
+$mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 225, 250, 275, 300, 325, 350, 375, 400, 450, 500, 600, 700, 800, 900, 1000);
 @each $row in $mp {
 	//GENERAL
 	.w-#{$row} {
@@ -694,3 +737,11 @@ $mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 
 .cursor-all-scroll {cursor: all-scroll;}
 .cursor-zoom-in {cursor: zoom-in;}
 .cursor-zoom-out {cursor: zoom-out;}
+
+.disabled {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  opacity: .8;
+}

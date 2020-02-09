@@ -1,13 +1,17 @@
 //GENERAL
 p {
+  font-weight: $paragraph-weight;
   line-height: 1.2;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
+  font-family: $heading-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: inherit;
+  font-weight: $heading-weight;
+  line-height: $heading-line-height;
   margin: 0px;
   padding: 0px;
-  padding-bottom: 1px;
 }
 
 h1 {
@@ -89,18 +93,21 @@ h6 {
   font-size: 2.25rem;
 }
 .text-5x {
-  font-size: 3rem;
+  font-size: 2.65rem;
 }
 .text-6x {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .text-7x {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .text-8x {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .text-9x {
+  font-size: 6rem;
+}
+.text-10x {
   font-size: 7rem;
 }
 
@@ -131,18 +138,21 @@ h6 {
     font-size: 2.25rem;
   }
   .md-text-5x {
-    font-size: 3rem;
+    font-size: 2.65rem;
   }
   .md-text-6x {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .md-text-7x {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .md-text-8x {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .md-text-9x {
+    font-size: 6rem;
+  }
+  .md-text-10x {
     font-size: 7rem;
   }
 }
@@ -386,7 +396,7 @@ smaller {
 .ul {
   list-style-type: disc;
   li {
-    margin-left: 1.2rem;
+    //margin-left: 1.2rem;
     display: flex;
     align-items: center;
   }
@@ -626,7 +636,8 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
 
 //CIRCLES
 .text-circle {
-  padding: .6rem;
+  padding: .4rem;
+  line-height: 100%;
   display: table-cell;
   text-align: center;
   vertical-align: middle;

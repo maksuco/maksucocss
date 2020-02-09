@@ -421,6 +421,11 @@ $margins: m, ml, mr, mt, mb, my, mx;
   border-bottom-left-radius: 0.5rem;
 }
 
+.rounded-b-xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
 .rounded-l-lg {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -716,19 +721,19 @@ $borders: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
     border-width: #{$row}px !important;
   }
   .border-t-#{$row} {
-    border-style: solid;
+    border-top-style: solid;
     border-top-width: #{$row}px !important;
   }
   .border-b-#{$row} {
-    border-style: solid;
+    border-bottom-style: solid;
     border-bottom-width: #{$row}px !important;
   }
   .border-l-#{$row} {
-    border-style: solid;
+    border-left-style: solid;
     border-left-width: #{$row}px !important;
   }
   .border-r-#{$row} {
-    border-style: solid;
+    border-right-style: solid;
     border-right-width: #{$row}px !important;
   }
 }
