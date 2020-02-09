@@ -5390,7 +5390,7 @@ ul {
   cursor: pointer; }
 
 .cursor-event-none {
-  pointer-events: none; }
+  pointer-events: none !important; }
 
 .cursor-copy {
   cursor: copy; }
@@ -5402,7 +5402,7 @@ ul {
   cursor: all-scroll; }
 
 .cursor-none {
-  cursor: none; }
+  cursor: none !important; }
 
 .cursor-not-allowed {
   cursor: not-allowed; }
@@ -5429,6 +5429,11 @@ ul {
   user-select: none;
   pointer-events: none;
   opacity: .8; }
+
+.select-none {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none; }
 
 p {
   font-weight: 400;
