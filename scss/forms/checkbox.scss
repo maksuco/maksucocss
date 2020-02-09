@@ -302,3 +302,41 @@
     }
   }
 }
+
+
+
+
+
+//RADIO BTN
+.form-radio-btn {
+  position: relative;
+  input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+    &:checked + label {
+      background-color: $primary;
+      color: white !important;
+    }
+  }
+  label {
+    float: left;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      cursor: pointer;
+    }
+    
+  }
+  @media (max-width: $desktop-breakpoint) {
+    label {
+      padding: 1.1rem 1.5rem;
+    }
+  }
+}
