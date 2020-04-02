@@ -1103,6 +1103,45 @@
 		"oAP": "/boxes.html",
 		"oF": 0
 		},
+	"/docs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs.html",
+		"oF": 0
+		},
+	"/emails.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/emails-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/emails.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/emails.html",
+		"oF": 0
+		},
+	"/emails.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/emails.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/fontawesome/scss/_animated.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1596,7 +1635,7 @@
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/front-min.js",
 		"oF": 0,
@@ -1706,6 +1745,31 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/masonry.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/masonry.html",
+		"oF": 0
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/node_modules/highlight.js/lib/highlight.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/highlight.js/lib/highlight-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/package.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -1724,14 +1788,6 @@
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
-		},
-	"/readme.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/readme.html",
-		"oF": 0
 		},
 	"/readme.md": {
 		"cB": 0,
@@ -1830,6 +1886,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/code.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/code.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/colors.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1839,6 +1908,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/docs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/docs.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2032,7 +2114,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/scss/masonry.css",
 		"oF": 0,
 		"oS": 0,
@@ -2047,6 +2129,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/media.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/modals-copy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/scss/modals-copy.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2141,6 +2236,14 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/yarn.lock": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/yarn.lock",
+		"oF": 0
 		}
 	},
 "hooks": [

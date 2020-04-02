@@ -534,8 +534,14 @@ $facebook: #3b57a1;
 $twitter: #4aa0eb;
 $google: #D93D2C;
 $whatsapp: #35B83F;
+$instagram: #e4405f;
 .facebook {
     color: $facebook;
+}
+.hover-facebook {
+  &:hover {
+    color: $facebook;
+  }
 }
 .bg-facebook {
     background-color: $facebook;
@@ -546,6 +552,11 @@ $whatsapp: #35B83F;
 .twitter {
     color: $twitter;
 }
+.hover-twitter {
+  &:hover {
+    color: $twitter;
+  }
+}
 .bg-twitter {
     background-color: $twitter;
     &:hover {
@@ -554,6 +565,11 @@ $whatsapp: #35B83F;
 }
 .google {
     color: $google;
+}
+.hover-google {
+  &:hover {
+    color: $google;
+  }
 }
 .bg-google {
     background-color: $google;
@@ -564,10 +580,29 @@ $whatsapp: #35B83F;
 .whatsapp {
     color: $whatsapp;
 }
+.hover-whatsapp {
+  &:hover {
+    color: $whatsapp;
+  }
+}
 .bg-whatsapp {
     background-color: $whatsapp;
     &:hover {
         background-color: lighten($whatsapp, 10%)
+    }
+}
+.instagram {
+    color: $instagram;
+}
+.hover-instagram {
+  &:hover {
+    color: $instagram;
+  }
+}
+.bg-instagram {
+    background-color: $instagram;
+    &:hover {
+        background-color: lighten($instagram, 10%)
     }
 }
 

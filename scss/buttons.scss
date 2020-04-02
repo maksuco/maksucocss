@@ -106,6 +106,10 @@
     background: darken($primary, 10%);
     border-color: darken($primary, 10%);
   }
+  &:disabled{
+    background: lighten($primary, 60%);
+    border-color: lighten($primary, 60%);
+  }
 }
 
 .btn-secondary {
@@ -116,6 +120,10 @@
     color: white !important;
     background: darken($secondary, 10%);
     border-color: darken($secondary, 10%);
+  }
+  &:disabled{
+    background: lighten($secondary, 40%);
+    border-color: lighten($secondary, 40%);
   }
 }
 
@@ -128,16 +136,24 @@
     background: lighten($dark, 10%);
     border-color: lighten($dark, 10%);
   }
+  &:disabled{
+    background: lighten($dark, 40%);
+    border-color: lighten($dark, 40%);
+  }
 }
 
 .btn-black {
   color: white;
-  background-color: #000000;
-  border-color: #000000;
+  background-color: $black;
+  border-color: $black;
   &:hover {
     color: white;
-    background: lighten(#000000, 6%);
-    border-color: lighten(#000000, 6%);
+    background: lighten($black, 6%);
+    border-color: lighten($black, 6%);
+  }
+  &:disabled{
+    background: lighten($black, 40%);
+    border-color: lighten($black, 40%);
   }
 }
 
@@ -150,6 +166,10 @@
     background: lighten( $gray, 6%);
     border-color: lighten( $gray, 6%);
   }
+  &:disabled{
+    background: lighten($gray, 40%);
+    border-color: lighten($gray, 40%);
+  }
 }
 
 .btn-white {
@@ -158,6 +178,10 @@
   border-color: white;
   &:hover {
     color: $body;
+    background: $light;
+    border-color: $light;
+  }
+  &:disabled{
     background: $light;
     border-color: $light;
   }
@@ -172,6 +196,10 @@
     background: darken($light, 10%);
     border-color: darken($light, 10%);
   }
+  &:disabled{
+    background: darken($light, 10%);
+    border-color: darken($light, 10%);
+  }
 }
 
 .btn-blue {
@@ -182,6 +210,10 @@
     color: white;
     background: darken($blue, 10%);
     border-color: darken($blue, 10%);
+  }
+  &:disabled{
+    background: lighten($blue, 40%);
+    border-color: lighten($blue, 40%);
   }
 }
 
@@ -194,6 +226,10 @@
     background: darken($teal, 10%);
     border-color: darken($teal, 10%);
   }
+  &:disabled{
+    background: lighten($teal, 40%);
+    border-color: lighten($teal, 40%);
+  }
 }
 
 .btn-indigo {
@@ -204,6 +240,10 @@
     color: white;
     background: darken($indigo, 10%);
     border-color: darken($indigo, 10%);
+  }
+  &:disabled{
+    background: lighten($indigo, 40%);
+    border-color: lighten($indigo, 40%);
   }
 }
 
@@ -216,6 +256,10 @@
     background: darken($purple, 10%);
     border-color: darken($purple, 10%);
   }
+  &:disabled{
+    background: lighten($purple, 40%);
+    border-color: lighten($purple, 40%);
+  }
 }
 
 .btn-green {
@@ -226,6 +270,10 @@
     color: white;
     background: darken($green, 10%);
     border-color: darken($green, 10%);
+  }
+  &:disabled{
+    background: lighten($green, 40%);
+    border-color: lighten($green, 40%);
   }
 }
 
@@ -238,6 +286,10 @@
     background: darken($red, 10%);
     border-color: darken($red, 10%);
   }
+  &:disabled{
+    background: lighten($red, 40%);
+    border-color: lighten($red, 40%);
+  }
 }
 
 .btn-orange {
@@ -249,6 +301,10 @@
     background: darken($orange, 10%);
     border-color: darken($orange, 10%);
   }
+  &:disabled{
+    background: lighten($orange, 40%);
+    border-color: lighten($orange, 40%);
+  }
 }
 
 .btn-yellow {
@@ -259,5 +315,9 @@
     color: $body;
     background: darken($yellow, 10%);
     border-color: darken($yellow, 10%);
+  }
+  &:disabled{
+    background: lighten($yellow, 40%);
+    border-color: lighten($yellow, 40%);
   }
 }

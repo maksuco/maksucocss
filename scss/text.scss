@@ -1,7 +1,7 @@
 //GENERAL
 p {
   font-weight: $paragraph-weight;
-  line-height: 1.2;
+  line-height: $paragraph-line-height;
 }
 
 
@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: inherit;
   font-weight: $heading-weight;
+  letter-spacing: $heading-letter-spacing;
   line-height: $heading-line-height;
   margin: 0px;
   padding: 0px;
@@ -46,7 +47,7 @@ h6 {
     font-size: $h4-size;
   }
   h5 {
-    font-size: 1.2rem; //standard
+    font-size: $h5-size; //standard
   }
   h6 {
     font-size: 1.05rem; //standard
@@ -617,6 +618,12 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
     &:last-child {
       border-bottom: 0 $gray solid;
     }
+  }
+}
+.ul-horizontal {
+  list-style-type: none;
+  li {
+    float: left;
   }
 }
 

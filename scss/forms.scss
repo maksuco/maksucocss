@@ -170,3 +170,9 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100%;
   }
 }
+
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill, input:-webkit-autofill-strong-password {
+  background-color: $form-bg !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}

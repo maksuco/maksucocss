@@ -402,4 +402,4 @@ To show select as button `.form-select-btn`
 
 ---
 ## JS
-Includes vue, axis and v-validate V2
+Includes vue, axis and v-validate V2# maksucocss

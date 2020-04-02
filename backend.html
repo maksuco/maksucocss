@@ -84,7 +84,7 @@
       <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-secondary ml-2">buttons in the middle</span>
     </header>
 
-    <section class="container flex flex-wrap">
+    <section class="container flex flex-wrap" id="app">
 
 
 
@@ -373,7 +373,7 @@
       <h1 class="col-24 color-dark text-3x text-bold">Tables with DIV's</h1>
       <p class="pb-4">For regular tables you can use B4</p>
   
-      <div class="table-div-striped">
+      <small class="table-div-striped">
           <div class="row head uppercase color-gray-900 sm-hidden">
             <div class="col-md-2">Status</div>
             <div class="col-md-2">Ref</div>
@@ -387,11 +387,11 @@
       
           <figure class="row">
             <div class="col-24 col-md-2"><span class="md-hidden">STATUS: </span>10</div>
-            <div class="col-24 col-md-2">CC-566</div>
-            <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
+            <div class="col-24 col-md-2"><span class="md-hidden">REF: </span>CC-566</div>
+            <div class="col-24 col-md-6 text-left pl-2"><span class="md-hidden text-bold color-gray">CLIENT: </span>This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
             <div class="col-8 col-md-4">600,000 COP</div>
             <div class="col-8 col-md-4"><a href="http://45" class="btn bg-dark btn-xs color-white">Recurring #45</a></div>
-            <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+            <small class="col-8 col-md-2 text-center">July 18, 2019 12:00 AM</small>
             <div class="col-8 col-md-1"></div>
           </figure>
       
@@ -401,7 +401,7 @@
             <div class="col-24 col-md-6 text-left pl-2">Someone <span class="badge badge-dark">Featured</span></div>
             <div class="col-8 col-md-4">600,000 COP</div>
             <div class="col-8 col-md-4"><a href="http://45" class="btn bg-green btn-xs">Recurring #45</a><br><small>Este es el nombre</small></div>
-            <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+            <small class="col-8 col-md-2 text-center">July 18, 2019 12:00 AM</small>
             <div class="col-8 col-md-1"></div>
           </figure>
       
@@ -411,13 +411,17 @@
             <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
             <div class="col-8 col-md-4">600,000 COP</div>
             <div class="col-8 col-md-4"><a href="http://45" class="btn bg-primary color-white btn-sm">Recurring #45</a></div>
-            <div class="col-8 col-md-2">July 18, 2019 12:00 AM</div>
+            <small class="col-8 col-md-2 text-center">July 18, 2019 12:00 AM</small>
             <div class="col-8 col-md-1"></div>
           </figure>
       </div>
     </section>
 
     <section class="container my-14">
+      <button type="button" v-on:click="showModal('modal_center')" class="btn btn-primary">Modal center</button>
+      <button type="button" v-on:click="showModal('modal_left')" class="btn btn-primary">Modal left</button>
+      <button type="button" v-on:click="showModal('modal_right')" class="btn btn-primary">Modal Right</button>
+      <button type="button" v-on:click="showModal('modal_full')" class="btn btn-primary">Modal full</button>
         <h1 class="col-24 color-dark text-3x text-bold">Buttons</h1>
         <p class="pb-4">Use buttons with first .btn and then .btn-*</p>
         <button class="btn btn-xs btn-primary mr-1 shadow">Button XS</button>
@@ -442,31 +446,107 @@
       </section>
 
     <section class="footer">
-      ©{{date("Y")}} {{__('All Rights Reserved')}} <span class="color-gray-400"><a href="{{__('/terms-conditions')}}" class="m-l-10 m-r-10">{{__('Terms and Conditions')}}</a>  <a href="#" class="m-l-10"></a></span>
+      2009 fdsfdsfdsfsdfsd
     </section>
 
-  <section class="modal modal-vue invisible">
-    <div class="modal-backdrop"></div>
-    <div class="modal-dialog">
-      <div action="" id="modal_help" method="POST" class="modal-content">
-        <div class="modal-header modal-header-inverted"><h4>Help</h4> <a class="close far fa-times"></a></div> 
-        <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
-          <pre data-clipboard-target="#code_url" class="code clipboard"><label>URL</label><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
-          <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
-          <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
-          <h5 class="mt-30">OPTIONS</h5> 
-          <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
-          <small>Just change <code>page/1</code> to <code>page/</code></small>
+    <section class="modal modal-vue modal-right md-modal-left" v-if="modal_right">
+      <div class="modal-backdrop" v-on:click="closeModal('modal_right')"></div>
+      <div class="modal-dialog">
+        <div action="" id="modal_right" method="POST" class="modal-content">
+          <div class="modal-header modal-header-inverted"><h4>Help</h4> <a class="close far fa-times" v-on:click="closeModal('modal_right')"></a></div> 
+          <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+            <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+            <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+            <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+  
+            <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+  
+            <h5 class="mt-30">OPTIONS</h5> 
+            <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+            <small>Just change <code>page/1</code> to <code>page/</code></small>
+          </div>
+          </div>
         </div>
-        </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="modal modal-vue modal-left md-modal-right" v-if="modal_left">
+        <div class="modal-backdrop" v-on:click="closeModal('modal_left')"></div>
+        <div class="modal-dialog">
+          <div action="" id="modal_left" method="POST" class="modal-content">
+            <div class="modal-header"><h4>Header</h4> <a class="close far fa-times" v-on:click="closeModal('modal_left')"></a></div> 
+            <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+    
+              <pre class="code-window clipboard mt-5"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+    
+              <h5 class="mt-10">OPTIONS</h5> 
+              <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+              <small>Just change <code>page/1</code> to <code>page/</code></small>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="modal modal-vue modal-full" v-if="modal_full">
+          <div class="modal-backdrop" v-on:click="closeModal('modal_full')"></div>
+          <div class="modal-dialog">
+            <div action="" id="modal_full" method="POST" class="modal-content">
+              <div class="modal-header modal-header-inverted"><h4>Header Inverted</h4> <a class="close far fa-times" v-on:click="closeModal('modal_full')"></a></div> 
+              <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+                <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+                <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+                <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+      
+                <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+      
+                <h5 class="mt-30">OPTIONS</h5> 
+                <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+                <small>Just change <code>page/1</code> to <code>page/</code></small>
+              </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="modal modal-vue modal-full" v-if="modal_center">
+            <div class="modal-backdrop" v-on:click="closeModal('modal_center')"></div>
+            <div class="modal-dialog">
+              <form action="" id="modal_center" method="POST" class="modal-content">
+                <div class="modal-header modal-header-inverted"><h4>Add new Collections dasjhk dh dhskj hdkjsa </h4> <a class="close far fa-times" v-on:click="closeModal('modal_center')"></a></div> 
+                <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+                  <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+                  <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+                  <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+        
+                  <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre> 
+                  <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+                  <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+                  <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+        
+                  <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre> 
+                  <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+                  <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+                  <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+        
+                  <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+        
+                  <h5 class="mt-30">OPTIONS</h5> 
+                  <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+                  <small>Just change <code>page/1</code> to <code>page/</code></small>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </form>
+              </div>
+            </section>
+
   </main>
 
 
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="front-min.js"></script>
 <script>
 //NAV VUE
 var navVue = new Vue({
@@ -493,6 +573,18 @@ var navVue = new Vue({
   components: {
   }
 });
+
+//NAV VUE
+var app = new Vue({
+  el: '#app',
+  data: {
+    modal_left: false,
+    modal_right: false,
+    modal_full: false,
+    modal_center: false
+  }
+});
+
 </script>
 </body>
 </html>

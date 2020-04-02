@@ -9,6 +9,13 @@
     font-weight: $font-weight-normal;
     letter-spacing: 0.3;
     text-transform: uppercase;
+    .btn {
+      border: none !important;
+      font-size: .6rem !important;
+      padding: 0.1rem 0.4rem !important;
+      line-height: 1;
+      margin-top: -1px;
+    }
   }
 
 }

@@ -752,6 +752,9 @@ $borders: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 
 
 
+.hover-border-0 {
+  border-width: 0px !important;
+}
 
 
 
@@ -859,19 +862,34 @@ $borders: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
   opacity: 1;
 }
 .hover-opacity-0 {
-  opacity: 0;
+  transition: background .5s ease-in-out;
+  &:hover {
+    opacity: 0;
+  }
 }
 .hover-opacity-25 {
-  opacity: 0.25;
+  transition: background .5s ease-in-out;
+  &:hover {
+    opacity: 0.25;
+  }
 }
 .hover-opacity-50 {
-  opacity: 0.5;
+  transition: background .5s ease-in-out;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 .hover-opacity-75 {
-  opacity: 0.75;
+  transition: background .5s ease-in-out;
+  &:hover {
+    opacity: 0.75;
+  }
 }
 .hover-opacity-100 {
-  opacity: 1;
+  transition: background .5s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .hover-show {

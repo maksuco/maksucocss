@@ -20,7 +20,7 @@ body {
 aside.sidebar {
   position: fixed;
   z-index: 9;
-  width: 230px;
+  width: $backend-sidebar;
   top: 0;
   bottom: 0;
   overflow: hidden;
@@ -82,11 +82,11 @@ aside.sidebar {
       margin-top: .1rem;
       margin-bottom: .1rem;
       a {
-        padding-top: $backend-aside-links-padding;
-        padding-bottom: $backend-aside-links-padding;
+        padding-top: $backend-sidebar-links-padding;
+        padding-bottom: $backend-sidebar-links-padding;
         position: relative;
         padding-left: 20px;
-        color: $backend-aside-links !important;
+        color: $backend-sidebar-links !important;
         font-size: .96rem;
         font-weight: normal;
         display: block;
@@ -95,11 +95,11 @@ aside.sidebar {
       }
       a:hover {
         opacity: .8;
-        background: $backend-aside-links-hover;
+        background: $backend-sidebar-links-hover;
       }
       .active {
         cursor: default;
-        color: lighten($backend-aside-links, 30%) !important;
+        color: lighten($backend-sidebar-links, 30%) !important;
         background: transparent !important;
       }
       i {
@@ -146,7 +146,7 @@ aside.sidebar {
           padding: .3rem .4rem .2rem .4rem;
           font-size: .5rem;
           text-transform: uppercase;
-          border: 1px solid rgba($backend-aside-links, .2);
+          border: 1px solid rgba($backend-sidebar-links, .1);
           border-radius: .5rem;
         }
         i {
@@ -169,7 +169,7 @@ aside.sidebar {
   //mobile version
   @media (max-width: $desktop-breakpoint) {
 		transition: all .25s ease-out;
-		left: -230px;
+		left: -$backend-sidebar-margin;
     &.active {
       left: 0px !important;
     }
@@ -333,7 +333,7 @@ main {
   flex-basis: 0;
   flex-grow: 1;
   
-	margin-left: 230px;
+	margin-left: $backend-sidebar-margin;
 	overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 

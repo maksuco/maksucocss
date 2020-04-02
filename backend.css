@@ -13,7 +13,7 @@ body {
 aside.sidebar {
   position: fixed;
   z-index: 9;
-  width: 230px;
+  width: 220px;
   top: 0;
   bottom: 0;
   overflow: hidden;
@@ -65,8 +65,8 @@ aside.sidebar {
       margin-top: .1rem;
       margin-bottom: .1rem; }
       aside.sidebar .sidebar-nav li a {
-        padding-top: 0.4rem;
-        padding-bottom: 0.4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         position: relative;
         padding-left: 20px;
         color: #dae9f5 !important;
@@ -117,7 +117,7 @@ aside.sidebar {
             padding: .3rem .4rem .2rem .4rem;
             font-size: .5rem;
             text-transform: uppercase;
-            border: 1px solid rgba(218, 233, 245, 0.2);
+            border: 1px solid rgba(218, 233, 245, 0.1);
             border-radius: .5rem; }
           aside.sidebar .sidebar-nav li i {
             display: block;
@@ -133,7 +133,7 @@ aside.sidebar {
   @media (max-width: 768px) {
     aside.sidebar {
       transition: all .25s ease-out;
-      left: -230px; }
+      left: -220px; }
       aside.sidebar.active {
         left: 0px !important; }
       aside.sidebar .logo {
@@ -266,7 +266,7 @@ main {
   min-height: 100% !important;
   flex-basis: 0;
   flex-grow: 1;
-  margin-left: 230px;
+  margin-left: 220px;
   overflow-y: scroll;
   /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch; }

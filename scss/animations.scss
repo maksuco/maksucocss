@@ -103,3 +103,92 @@
     opacity: 0;
   }
 }
+
+//JUST CLIP
+@keyframes clip {
+  0% {
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes fadeClip {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+//SLIDE FADE AND CLIP
+@keyframes fadeSlideRightClip {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes fadeSlideLeftClip {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes fadeSlideTopClip {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes fadeSlideBottomClip {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+//FOR MIXIN USE @include clipSquare; OR @include clipSquare(100%,100%);
+// 0%   { left: 100px; @include clipSquare(100%,100%); }
+@mixin clipSquare($x: 30%, $y: 70%) {
+  -webkit-clip-path: polygon($x $x, $y $x, $y $y, $x $y);
+  clip-path: polygon($x $x, $y $x, $y $y, $x $y);
+}
