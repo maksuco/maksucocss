@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MaksucoCSS FRONT</title>
+  <link href="assets/maksucocss.css" rel="stylesheet">
+</head>
+<body>
+
+  <!--
+  <nav class="container flex fixed bg-primary color-white p-3 uppercase left-center items-center z-50 md-mt-5 md-rounded-full md-px-8">
+    <div id="navbar" class="flex items-center">
+      <a href="frontend.html" class="btn btn-white btn-sm rounded-full mr-1">Frontend</a>
+      <a href="backend.html" class="btn btn-sm rounded-full mr-1 color-white">Backend</a>
+      <a href="forms.html" class="btn btn-sm rounded-full mr-1 color-white">Forms</a>
+      <a href="readme.html" class="btn btn-sm rounded-full mr-1 color-white">Docs</a>
+
+      <img src="https://miro.medium.com/max/968/1*uLuWzCXfq2rt1t_TkuLB8A.png" alt="" class="img-fluid h-50 ml-auto sm-hidden">
+
+      <div class="form-basic form-sm ml-auto mb-0 sm-hidden">
+        <input type="search" id="search" placeholder="Buscar" class="p-2">
+      </div>
+      <a href="frontend.html" class="btn btn-sm rounded-full mr-1 color-white">START</a>
+    </div>
+  </nav>
+  -->
+
+
+  <nav class="container flex absolute bg-primary color-white p-3 uppercase left-center items-center z-50 md-mt-5 md-px-0">
+    <div id="navbar" class="flex items-center sm-hidden">
+      <img src="https://miro.medium.com/max/968/1*uLuWzCXfq2rt1t_TkuLB8A.png" alt="" class="img-fluid h-50 mr-5">
+        <a href="frontend.html" class="btn btn-white btn-sm rounded-full mr-1">Frontend</a>
+        <a href="backend.html" class="btn btn-sm rounded-full mr-1 color-white">Backend</a>
+        <a href="forms.html" class="btn btn-sm rounded-full mr-1 color-white">Forms</a>
+        <a href="readme.html" class="btn btn-sm rounded-full mr-1 color-white">Docs</a>
+    </div>
+    <div class="toggler absolute-tr color-white bg-primary" v-on:click="open_nav()"><i class="far fa-bars fa-lg" v-if="!nav"></i><i class="far fa-times fa-lg" v-if="nav"></i>sss</div>
+    <div class="open-full open-slide bg-dark py-10 text-3x text-bold" v-bind:class="{ active: nav}">
+      <a href="frontend.html" class="btn btn-white rounded-full">Frontend</a>
+      <a href="backend.html" class="rounded-full color-white">Backend</a>
+      <a href="forms.html" class="btn rounded-full color-white">Forms</a>
+      <a href="readme.html" class="btn rounded-full color-white">Docs</a>
+      <div class="social text-center mt-5">
+        <p class="color-white block text-xs text-light uppercase my-1">Siguenos en</p>
+        <a href="#" class="color-white inline-block mx-1"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="color-white inline-block mx-1"><i class="fab fa-instagram"></i></a>
+        <p class="color-white block text-xs text-light uppercase my-2">Registrate a nuestro</p>
+        <a href="#" class="btn btn-sm btn-dark mt-1">Newsletter</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="container-fluid bg-primary p-4 md-p-10 flex flex-wrap content-center items-center h-screen">
+  <section class="container">
+    <h1 class="color-white text-5x md-text-7x text-bold block line-none" style="width: 100% !important;">MaksucoCSS SAMPLES</h1>
+    <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-white ml-2 sm-hidden">buttons in the middle</span>
+    <div class="row">
+        <h1 class="color-white text-5x text-bold block" style="width: 100% !important;">Container + Row</h1>
+        <a href="#" class="btn btn-secondary bg-transparent border-2 mt-1"> Secondary Button</a>  <span class="self-center text-bold color-white ml-2 sm-hidden">buttons in the middle</span>
+    </div>
+    <div class="row mt-10">
+      <div class="col-24">
+        <h1 class="color-white text-4x text-bold block" style="width: 100% !important;">Container + Row + Col</h1>
+        <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-white ml-2 sm-hidden">buttons in the middle</span>
+      </div>
+    </div>
+
+      <form role="search" method="post" class="big-search typeahead form-lg mt-2">
+        <input type="search" autofocus="" placeholder="something goes here" name="s">
+        <i class="fa fa-search"></i>
+      </form>
+  </section>
+  </header>
+
+  <div class=" bg-light bg-diagonal h-80 mt--16"></div>
+
+  <div class="flex bg-light">
+      <div class="p-2 bg-gray-500">Flex item</div>
+      <div class="p-2 bg-gray-300">Flex item</div>
+      <a class="ml-auto p-2 bg-gray-500" style="margin-left: auto!important;">Flex item</a>
+    </div>
+
+  <section class="container flex justify-center items-start md-my-20">
+      <div class="col-md-12"><img src="https://source.unsplash.com/random" alt="" class="w-full sm-max-h-400 object-cover object-center"></div> 
+      <figure class="col-md-12 bg-center p-5 md-p-13 py-12 md-py-13 md-mt-10 md-ml--10" style="background-color: rgb(240, 240, 240);">
+        <h4 class="">Manifesto</h4> 
+        <h2 class="text-bold line-10 text">Nuestra fórmula no es secreta. Somos el matrimonio entre el amor y la técnica.</h2> 
+        <p class="mt-4">Pero, ¿hablar de amor en una industria que parece más ruda que delicada? Sí.</p>
+        <p class="mt-2">Muy bien lo dijo Gaudí que para hacer las cosas bien, primero el amor.</p>
+        <p class="mt-2">Y nosotros nos lo tomamos personal.</p> 
+        <p class="mb-0 mt-2">Es por esto que dedicamos muchas horas a pensar, estudiar, desarrollar y confeccionar diferentes caminos que nos llevan a un único objetivo: cuidarte, protegerte y hacerte la vida más cómoda.</p>
+        <ul class="mt-3 ul">
+          <li>With .ul</li>
+          <li>Number 2</li>
+        </ul>
+
+        <figure tabindex="0" class="dropdown-toggle relative" @mouseover="nav_dropdown = true" @mouseleave="nav_dropdown = false" @click="nav_dropdown = !nav_dropdown">
+          <a class="dropdown-toggle">
+            <img src="https://s.gravatar.com/avatar/807f4be95506954f8cacf642a03375cd?d=https://s3.amazonaws.com/cscontact/users/avatar.png" class="">
+          </a>
+          <div class="dropdown-caret-right"></div>
+          <div class="dropdown-menu-right" v-if="nav_dropdown">
+            <a href="/user/dashboard" class="dropdown-item">Start</a>
+            <a href="/user/profile" class="dropdown-item">Profile</a>
+            <a href="/user/accounts" class="dropdown-item">your_business</a>
+            <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka drt dadsa<br><small class="color-gray">Somethinsg</small> </a>
+            <a href="/logout" class="dropdown-item">Logout</a>
+            <a href="/user/profile" class="dropdown-item dropdown-item-row">logout_all</a>
+          </div>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-light bg-diagonal-inverse"></div>
+  <section class="container bg-light p-4 text-center md-text-left">
+    <h1 class="color-dark text-bold">H1 Sample</h1>
+    <h2 class="color-dark text-bold">H2 Sample</h2>
+    <h3 class="color-dark text-bold">H3 Sample</h3>
+    <h4 class="color-dark text-bold">H4 Sample</h4>
+    <h5 class="color-dark text-bold">H5 Sample</h5>
+    <h6 class="color-dark text-bold">H6 Sample</h6>
+    <h2 class="text-xl color-dark text-bold text-3x text-shadow-sm letter-spacing-xs">.shadow-sm</h2>
+    <h2 class="text-xl color-dark text-bold text-3x text-shadow letter-spacing-xs">.shadow</h2>
+    <h2 class="text-xl color-dark text-bold text-3x text-shadow-lg letter-spacing-xs">.shadow-lg</h2>
+    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae il assumenda, esse distinctio voluptatum sequi, quibusdam voluptate iusto enim?</p>
+    <p class="text-xs color-gray-400 mt-2">This is a small text</p>
+  </section>
+
+
+  <section class="container flex flex-col md-flex-row bg-gray-200">
+    <div class="color-gray-700 text-center bg-gray-400 p-3 m-1">1</div>
+    <div class="color-gray-700 text-center bg-gray-400 p-3 m-1">2</div>
+    <div class="color-gray-700 text-center bg-gray-400 p-3 m-1">3</div>
+  </section>
+
+
+  <section class="container flex mt-4">
+      <div class="col-24">
+        <div class="bg-light p-10">24</div>
+      </div>
+  </section>
+
+
+  <section class="container flex flex-wrap mt-10 items-center">
+    <figure class="col-24 col-md-12 text-center">
+      <div class="bg-primary-100 p-10">12</div>
+    </figure>
+    <figure class="col-6 text-center">
+      <div class="bg-gray-100 p-10">6</div>
+    </figure>
+    <figure class="col-3 text-center invisible"></figure>
+    <figure class="col-3 text-center align-items-center">
+      <div class="bg-gray-200 align-self-center">3</div>
+    </figure>
+  </section>
+
+  <section class="container flex mt-10">
+    <div class="col-auto p-3 bg-gray-700">1 of 2</div>
+    <div class="col-auto p-3 bg-gray-400">
+      2 of 2
+    </div>
+    <div class="col-auto p-3 bg-gray-500">
+      1 of 3
+    </div>
+    <div class="col-12 md-col-8 p-3 bg-gray-600">
+      2 of 3
+    </div>
+    <div class="col-12 md-col-8 p-3 bg-gray-700">
+      3 of 3
+    </div>
+  </section>
+
+
+  <section class="container flex mt-20 z-30">
+      <div class="col-4 bg-light p-3" style="border: 0px solid #1e2229">4</div>
+      <div class="col-4 bg-light p-3 bg-red" style="border: 0px solid #1e2229">and if the text is longer than the container</div>
+      <div class="col-4 bg-light p-3" style="border: 0px solid #1e2229">4</div>
+      <div class="col-4 bg-light p-3" style="border: 0px solid #1e2229">4</div>
+      <div class="col-4 bg-light p-3" style="border: 0px solid #1e2229">4</div>
+      <div class="col-4 bg-light p-3" style="border: 0px solid #1e2229">4</div>
+      <div class="col-4 bg-light p-3" style="border: 0px solid #1e2229">4</div>
+  </section>
+
+
+  <div class="container-max mt-10">
+  <section class="container flex flex-wrap">
+
+    <div class="block bg-gray-300 color-light p-2 rounded w-full m-2">
+      <a href="" class="btn btn-white btn-sm shadow-3d"><i class="fa fa-cross"></i> Sign up</a> Set goals for your business and track your progress toward them
+    </div>
+
+
+    <figure class="col-lg-8 p-2">
+      <div class="relative bg-white py-7 px-6 rounded-lg bg-contain bg-no-repeat bg-br shadow-full" style="background-image: url(http://www.pngmart.com/files/8/Jackie-Chan-PNG-Transparent-Background.png);">
+        <h5><span class="text-bold">Jackie</span> Chan</h5>
+        <p class="color-gray mt-1">Creative Director</p>
+        <h5 class="color-yellow text-bold uppercase mt-4">xxx@maksuco.com</h5>
+      </div>
+    </figure>
+
+      <div class="w-1/2 md:w-1/3 p-2 hidden md:block">
+        <div class="color-gray-700 text-center bg-gray-400 p-2">3</div>
+      </div>
+      <div class="w-1/2 md:w-1/3 p-2">
+        <div class="color-gray-700 text-center bg-gray-400 p-2">4</div>
+      </div>
+    </section>
+  </div>
+
+
+  <section class="container my-14">
+    <h1 class="col-24color-dark text-3x text-bold">Buttons</h1>
+    <p class="pb-4">Use buttons with first .btn and then .btn-*</p>
+    <button class="btn btn-xs btn-primary mr-1 shadow">Button XS</button>
+    <button class="btn btn-sm btn-primary mr-1 shadow-lg">Button SM</button>
+    <button class="btn btn btn-primary mr-1">Button Normal</button>
+    <button class="btn btn-lg btn-primary">Button LG</button>
+    <button class="btn btn-xl btn-primary">Button XL</button>
+    <hr class="my-5">
+    <button type="button" class="btn btn-primary rounded-full m-1px">Primary rounded-full</button>
+    <button type="button" class="btn btn-secondary m-1px">Secondary</button>
+    <button type="button" class="btn btn-blue m-1px">Blue Info</button>
+    <button type="button" class="btn btn-purple m-1px">Purple</button>
+    <button type="button" class="btn btn-indigo m-1px">Indigo</button>
+    <button type="button" class="btn btn-green m-1px">Green Success</button>
+    <button type="button" class="btn btn-red m-1px">Red Danger</button>
+    <button type="button" class="btn btn-orange m-1px">Orange Warning</button>
+    <button type="button" class="btn btn-yellow m-1px">Yellow</button>
+    <button type="button" class="btn btn-light m-1px">Light</button>
+    <button type="button" class="btn btn-dark m-1px">Dark</button>
+    <button type="button" class="btn btn-black m-1px">Black</button>
+    <button type="button" class="btn btn-white m-1px">White</button>
+    <button type="button" class="btn m-1px">just btn</button>
+    <button type="button" class="btn btn-primary rounded-full color-primary bg-transparent m-1px">Primary rounded-full</button>
+  </section>
+
+
+
+  <section class="container my-14 sm-p-2">
+    <h1 class="col-24 pb-4 color-dark text-3x text-bold">Badges <span class="badge badge-danger">Light</span> </h1>
+    <div class="col-24">
+      <p class="pb-2">Use buttons with first .badge and .badge-dark or .badge-light, then apply your .bg-*</p>
+      <span class="badge color-white bg-primary">Primary</span> 
+      <span class="badge badge-dark bg-teal">Teal</span> 
+      <span class="badge badge-dark">Dark</span> Sin paragraph
+      <span class="badge color-white bg-secondary badge-sm">Secondary SM</span> 
+      <span class="badge badge-dark bg-orange badge-sm">Orange SM</span> 
+      <span class="badge badge-yellow badge-sm">Yellow SM</span>
+      <h2 class="text-5x mt-3">In a H2 heading  <span class="badge badge-light">Normal</span> From xs <span class="badge badge-light badge-xs">XS</span> to a SM <span class="badge badge-light badge-sm">SM</span> Or even a large one <span class="badge badge-light badge-lg">LG</span> <span class="badge badge-dark bg-primary badge-xl">XL</span> for bigger things</h2>
+      <p class="mt-3">In a paragraph  <span class="badge badge-light">Normal</span> From xs <span class="badge badge-light badge-xs">XS</span> to a SM <span class="badge badge-light badge-sm">SM</span> Or even a large one <span class="badge badge-light badge-lg">LG</span> <span class="badge badge-dark bg-primary badge-xl" data-tooltip="some more information and create excellent and something else">XL</span> for bigger things</p>
+      </div>
+    </section>
+
+
+  <section class="container flex my-10 mt-15">
+    <h1 class="col-24 pb-4 color-dark text-3x text-bold">Basic Colors & Shadows</h1>
+    <div class="bg-dark color-light p-10 rounded mr-2 shadow-3d">.bg-dark<br>.color-light .shadow-3D</div>
+    <div class="bg-light color-dark p-10 rounded mr-2 shadow">light<br>Shadow</div>
+    <div class="bg-black color-white p-10 rounded mr-2 shadow-md">.bg-black<br>.color-white .shadow-md</div>
+    <div class="bg-white color-black p-10 rounded mr-2 shadow-lg">white<br>Shadow-LG</div>
+    <div class="bg-primary bg-gradient-primary color-white p-10 rounded mr-2 shadow-xl">Gradient Primary<br>Shadow-XL</div>
+    <div class="bg-red bg-gradient-red color-white p-10 rounded mr-2 shadow-2x">Gradient Red<br>Shadow-2X</div>
+    <div class="bg-gradient-blue-indigo color-white p-10 rounded mr-2 shadow-indigo">bg-gradient-blue-indigo<br>shadow-indigo</div>
+    <div class="bg-indigo bg-gradient-circle color-white p-10 rounded mr-2 shadow-blue">bg-indigo<br>bg-gradient-circle over any color</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-light">Light</span></h1>
+    <div class="bg-light-100 color-dark p-10 rounded m-1">100</div>
+    <div class="bg-light-200 color-dark p-10 rounded m-1">200</div>
+    <div class="bg-light-300 color-dark p-10 rounded m-1">300</div>
+    <div class="bg-light-400 color-dark p-10 rounded m-1">400</div>
+    <div class="bg-light-500 color-dark p-10 rounded m-1">500</div>
+    <div class="bg-light-600 color-dark p-10 rounded m-1">600</div>
+    <div class="bg-light-700 color-dark p-10 rounded m-1">700</div>
+    <div class="bg-light-800 color-dark p-10 rounded m-1">800</div>
+    <div class="bg-light-900 color-dark p-10 rounded m-1">900</div>
+    <div class="bg-gradient-light color-dark p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-gray">Gray</span></h1>
+    <div class="bg-gray-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-gray-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-gray-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-gray-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-gray-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-gray-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-gray-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-gray-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-gray-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-gray color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-primary">Primary</span></h1>
+    <div class="bg-primary-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-primary-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-primary-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-primary-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-primary-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-primary-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-primary-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-primary-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-primary-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-primary color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-secondary">Secondary</span></h1>
+    <div class="bg-secondary-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-secondary-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-secondary-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-secondary-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-secondary-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-secondary-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-secondary-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-secondary-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-secondary-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-secondary color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-blue">Blue</span></h1>
+    <div class="bg-blue-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-blue-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-blue-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-blue-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-blue-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-blue-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-blue-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-blue-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-blue-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-blue color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-indigo">Indigo</span></h1>
+    <div class="bg-indigo-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-indigo-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-indigo-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-indigo-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-indigo-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-indigo-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-indigo-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-indigo-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-indigo-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-indigo color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-purple">Purple</span></h1>
+    <div class="bg-purple-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-purple-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-purple-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-purple-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-purple-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-purple-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-purple-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-purple-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-purple-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-purple color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-green">Green</span></h1>
+    <div class="bg-green-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-green-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-green-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-green-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-green-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-green-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-green-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-green-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-green-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-green color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-teal">Teal</span></h1>
+    <div class="bg-teal-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-teal-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-teal-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-teal-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-teal-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-teal-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-teal-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-teal-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-teal-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-teal color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-red">Red</span></h1>
+    <div class="bg-red-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-red-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-red-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-red-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-red-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-red-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-red-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-red-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-red-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-red color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-orange">Orange</span></h1>
+    <div class="bg-orange-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-orange-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-orange-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-orange-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-orange-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-orange-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-orange-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-orange-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-orange-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-orange color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+  <section class="container flex my-10">
+    <h1 class="col-24 pb-4 color-light text-3x text-bold">Color: <span class="color-yellow">Yellow</span></h1>
+    <div class="bg-yellow-100 color-white p-10 rounded m-1">100</div>
+    <div class="bg-yellow-200 color-white p-10 rounded m-1">200</div>
+    <div class="bg-yellow-300 color-white p-10 rounded m-1">300</div>
+    <div class="bg-yellow-400 color-white p-10 rounded m-1">400</div>
+    <div class="bg-yellow-500 color-white p-10 rounded m-1">500</div>
+    <div class="bg-yellow-600 color-white p-10 rounded m-1">600</div>
+    <div class="bg-yellow-700 color-white p-10 rounded m-1">700</div>
+    <div class="bg-yellow-800 color-white p-10 rounded m-1">800</div>
+    <div class="bg-yellow-900 color-white p-10 rounded m-1">900</div>
+    <div class="bg-gradient-yellow color-white p-10 rounded m-1">Gradient</div>
+  </section>
+
+
+
+
+
+
+
+  <section class="container my-14">
+      <h1 class="col-24color-dark text-3x text-bold">Icons</h1>
+      <p class="pb-2">Webfonts of Font Awesome are used, and you can create this using .icon-layer also with stuff like .icon-badge</p>
+      <div class="text-5x">
+
+          <span class="icon-layer icon-badge" data-icon="16"><i class="fal fa-envelope"></i></span>
+
+          <span class="icon-layer icon-badge-orange" data-icon="266"><i class="fal fa-address-book"></i></span>
+
+          <a href="/" class="icon-layer icon-file color-gray-500" data-icon="DOCX"><i class="fal fa-file"></i></a>
+    
+          <span class="icon-layer icon-calendar" data-icon="24"><i class="fas fa-calendar"></i></span>
+      </div>
+      
+    </section>
+    
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+var nav = new Vue({
+  el: 'nav',
+  data: {
+    nav: false,
+  },
+  methods: {
+    open_nav() {
+      if(this.nav == false){
+        this.nav = true;
+        document.querySelector("body").classList.add("body-fix");
+      } else {
+        this.nav = false;
+        document.querySelector("body").classList.remove("body-fix");
+      }
+    }
+  }
+})
+</script>
+</body>
+</html>

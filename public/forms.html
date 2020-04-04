@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MaksucoCSS FORMS</title>
+  <link href="assets/maksucocss.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <section class="bg-primary p-10 flex items-baseline">
+    <h1 class="color-white text-5x md-text-7x text-bold w-full">MaksucoCSS FORMS</h1>
+    <a href="index.html" class="btn btn-white btn-sm rounded-full mr-1">Frontend</a>
+    <a href="backend.html" class="btn btn-sm rounded-full mr-1 color-white">Backend</a>
+  </section>
+
+
+
+
+  <section class="container flex mt-4">
+      <div class="col-23 col-md-20 mx-auto">
+        <form class="shadow-lg rounded px-8 pt-6 pb-8 sm-p-4 mb-4" style="background-color:#f8f9fa;">
+  
+        <h1 class="text-bold">Forms Basic</h1>
+        <p>Use with .form-basic</p>
+  
+        <div class="form-basic-select required mt-5">
+          <label>Select .form-basic-select</label><br>
+          <select class="">
+            <option value="" selected disabled>Choose one</option>
+            <option value="1">United States</option>
+            <option value="2">Colombia</option>
+            <option value="3">France</option>
+          </select>
+        </div>
+        
+        <div class="form-basic required mt-3">
+          <label for="email-muted">Text Field  <button class="btn btn-primary ml-1">CHECK</button></label>
+          <input type="text" id="email-muted" placeholder="Your Email">
+          <small class="color-gray">We'll never share your email with anyone else.</small>
+        </div>
+        
+        <div class="form-basic">
+          <label for="password">Password</label>
+          <input type="password" class="" id="password" placeholder="Password" disabled readonly>
+        </div>
+  
+        <div class="form-basic mt-3">
+          <label>Message</label>
+          <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+        </div>
+  
+        <h3 class="mt-6">Sizes</h3>
+        <p>Use with .form-sm and .form-lg</p>
+  
+        <div class="form-basic form-xs required mt-3">
+          <label for="namebasicxs">XS</label>
+          <input type="text" class="" id="namebasicxs" placeholder="Pon tu nombre aqui">
+        </div>
+        <div class="form-basic form-sm required mt-3">
+          <label for="name5">SM</label>
+          <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+        </div>
+        <div class="form-basic form-lg required mt-3">
+          <label for="name5">LG</label>
+          <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+        </div>
+  
+      </form>
+        
+    </div>
+  </section>
+
+
+
+  <section class="container flex mt-4">
+    <div class="col-md-20 mx-auto">
+      <form class="shadow-lg rounded p-8 pt-6 sm-p-4 mb-4" style="background-color:#f8f9fa;">
+
+      <h1 class="text-bold">Forms Invisible</h1>
+      <p>Use with .form-invisible</p>
+
+      <div class="form-invisible required mt-5">
+        <select class="">
+          <option value="" selected disabled>Choose one</option>
+          <option value="1">United States</option>
+          <option value="2">Colombia</option>
+          <option value="3">France</option>
+        </select>
+      </div>
+      
+      <div class="form-invisible required">
+        <input type="text" id="text_invisible" placeholder="Your Email">
+        <small class="color-gray">We'll never share your email with anyone else.</small>
+      </div>
+      
+      <div class="form-invisible">
+        <input type="text" class="" id="name" placeholder="Name" value="Michael">
+      </div>
+
+      <div class="form-invisible mt-3">
+        <label>Message</label>
+        <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+      </div>
+
+      <h3 class="mt-6">Sizes</h3>
+      <p>Use with .form-sm and .form-lg</p>
+
+      <div class="form-invisible form-sm required mt-3">
+        <input type="text" class="" id="name5" placeholder="SM">
+      </div>
+      <div class="form-invisible form-lg required mt-3">
+        <input type="text" class="" id="name5" placeholder="LG">
+      </div>
+
+    </form>
+      
+  </div>
+</section>
+
+
+  <section class="container flex mt-4">
+      <div class="col-23 col-md-20 mx-auto">
+        <form class="shadow-lg rounded px-8 pt-6 pb-8 sm-p-4 mb-4" style="background-color:#f8f9fa;">
+  
+        <h1 class="text-bold">Forms Clean</h1>
+        <p>Use with .form-clean</p>
+  
+        <div class="form-clean required mt-5">
+          <label>Select .form-clean</label><br>
+          <select class="">
+            <option value="" selected disabled>Choose one</option>
+            <option value="1">United States</option>
+            <option value="2">Colombia</option>
+            <option value="3">France</option>
+          </select>
+        </div>
+        
+        <div class="form-clean required mt-3">
+          <label for="email-muted">Text Field <button class="btn btn-light ml-1">UPLOAD</button></label>
+          <input type="text" id="email-muted" placeholder="Your Email">
+          <small class="color-gray">We'll never share your email with anyone else.</small>
+        </div>
+        
+        <div class="form-clean">
+          <label for="password">Password</label>
+          <input type="password" class="" id="password" placeholder="Password" disabled readonly>
+        </div>
+  
+        <div class="form-clean mt-3">
+          <label>Message</label>
+          <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+        </div>
+  
+        <h3 class="mt-6">Sizes</h3>
+        <p>Use with .form-clean-sm and .form-clean-lg</p>
+  
+        <div class="form-clean form-xs required mt-3">
+          <label for="namecleanxs">XS</label>
+          <input type="text" class="" id="namecleanxs" placeholder="Pon tu nombre aqui">
+        </div>
+        <div class="form-clean form-sm required mt-3">
+          <label for="name5">SM</label>
+          <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+        </div>
+        <div class="form-clean form-lg required mt-3">
+          <label for="name5">LG</label>
+          <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+        </div>
+  
+      </form>
+        
+    </div>
+  </section>
+
+
+  <section class="container flex mt-4">
+    <div class="col-23 col-md-20 mx-auto">
+    <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 sm-p-4 mb-4">
+
+      <h1 class="text-bold">Forms Muted</h1>
+      <p>Use with .form-muted</p>
+
+      <div class="form-muted-select required mt-5">
+        <label>Select .form-muted-select</label>
+        <select class="">
+          <option value="" selected disabled>Choose one</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      
+      <div class="form-muted required mt-3">
+        <label for="email-muted">Text Field <button class="btn btn-light ml-1">UPLOAD</button></label>
+        <input type="text" id="email-muted" placeholder="Your Email">
+        <small class="color-gray">We'll never share your email with anyone else.</small>
+      </div>
+      
+      <div class="form-muted">
+        <label for="password">Password</label>
+        <input type="password" class="" id="password" placeholder="Password" disabled readonly>
+      </div>
+
+      <div class="form-muted mt-3">
+        <label>Message</label>
+        <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+      </div>
+
+      <h3 class="mt-6">Sizes</h3>
+      <p>Use with .form-sm and .form-lg</p>
+
+      <div class="form-muted form-xs required mt-3">
+        <label for="name5">XS</label>
+        <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+      </div>
+      <div class="form-muted form-sm required mt-3">
+        <label for="name5">SM</label>
+        <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+      </div>
+      <div class="form-muted form-lg required mt-3">
+        <label for="name5">LG</label>
+        <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+      </div>
+
+
+      </form>
+      
+  </div>
+</section>
+
+
+
+<section class="container flex mt-4">
+    <div class="col-23 col-md-20 mx-auto">
+    <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 sm-p-4 mb-4">
+
+    <h1 class="text-bold">Forms Inner</h1>
+    <p>Use with .form-inner</p>
+
+    <div class="form-inner-select required">
+      <label>Select .form-inner-select</label>
+      <select class="">
+        <option value="" selected disabled>Choose one</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <small class="color-gray">We'll never share your email with anyone else.</small>
+    </div>
+    
+    <div class="form-inner required mt-3">
+      <label for="email5">Email address <button class="btn btn-light ml-1">UPLOAD</button></label>
+      <input type="text" class="form-control-inner" id="email5" placeholder=" ">
+      <small class="color-gray">We'll never share your email with anyone else.</small>
+    </div>
+    
+    <div class="form-inner">
+      <input type="password" class="" id="password" placeholder="Password" disabled readonly>
+      <label for="password">Password</label>
+    </div>
+
+    <div class="form-inner mt-3">
+      <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+      <label>Message</label>
+    </div>
+
+    <h3 class="mt-6">Sizes</h3>
+    <p>Use with .form-inner-sm and .form-inner-lg</p>
+
+    <div class="form-inner form-inner-sm required mt-3">
+      <label for="name5">SM <button class="btn btn-primary ml-1">CHECK</button></label>
+      <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+    </div>
+    <div class="form-inner form-inner-lg required mt-3">
+      <label for="name5">LG <span class="btn bg-green color-white ml-1">APPROVED</span></label>
+      <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+    </div>
+
+
+    <h3 class="mt-6">Inverted</h3>
+    <p>Use with .form-inner-inverted</p>
+
+      <div class="form-inner form-inner-inverted mt-3">
+          <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+          <label for="name5">Nombre</label>
+          <small class="color-gray">te sabes tu nombre?</small>
+      </div>
+    
+      <div class="form-inner-select form-inner-inverted required">
+        <select class="">
+          <option value="" selected disabled>Choose one</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <label>Select .form-xxx-select</label>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
+      </div>
+      
+      <div class="form-inner form-inner-inverted required mt-3">
+        <input type="text" class="form-control-inner" id="email5" placeholder=" ">
+        <label for="email5">Email address</label>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
+      </div>
+    </form>
+    
+</div>
+</section>
+
+
+
+
+
+<section class="container flex mt-4">
+    <div class="col-22 col-md-20 mx-auto">
+      <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
+  
+      <h1 class="text-bold">Forms Inner Floating</h1>
+      <p>Use with .form-inner-floating</p>
+  
+      <div class="form-inner-floating-select required">
+        <label>Select .form-inner-floating-select</label>
+        <select class="">
+          <option value="" selected disabled>Choose one</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
+      </div>
+      
+      <div class="form-inner-floating required mt-3">
+        <input type="text" class="" id="email5" placeholder=" ">
+        <label for="email5">Email address</label>
+        <small class="color-gray">We'll never share your email with anyone else.</small>
+      </div>
+      
+      <div class="form-inner-floating">
+        <input type="password" class="" id="password" placeholder="Password" disabled readonly>
+        <label for="password">Password</label>
+      </div>
+  
+      <div class="form-inner-floating mt-3">
+        <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+        <label>Message</label>
+      </div>
+  
+      <h3 class="mt-6">Sizes</h3>
+      <p>Use with .form-inner-sm and .form-inner-lg</p>
+  
+      <div class="form-inner-floating form-inner-sm required mt-3">
+        <label for="name5">SM</label>
+        <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+      </div>
+      <div class="form-inner-floating form-inner-lg required mt-3">
+        <label for="name5">LG</label>
+        <input type="text" class="" id="name5" placeholder="Pon tu nombre aqui">
+      </div>
+  
+      </form>
+      
+  </div>
+  </section>
+
+
+
+<section class="container flex mt-4">
+    <div class="col-22 col-md-20 mx-auto">
+      <form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
+  
+      <h1 class="text-bold">Checkboxes and Radios</h1>
+      <p class="mb-5">Use with .form-switch o .form-checkbox, .form-radio</p>
+  
+      <label for="form-switch">Con .form-switch puedes </label>
+      <span class="form-switch">
+        <input type="checkbox" value="1" name="menu" id="form-switch" checked>
+      </span>
+      <label for="form-switch">Activar menu en este restaurante</label>
+
+      <div class="form-checkbox">
+        <input type="checkbox" class="" id="clean1">
+        <label class="" for="clean1">Check this custom checkbox</label>
+      </div>
+
+      <div class="form-radio form-inline">
+        <input type="radio" id="clean2" name="customRadioInline1" class="">
+        <label class="" for="clean2">Toggle this custom radio</label>
+      </div>
+
+      <div class="form-radio form-inline">
+        <input type="radio" id="clean3" name="customRadioInline1" class="">
+        <label class="color-primary-300" for="clean3">Or toggle this other custom radio</label>
+      </div>
+
+      <div class="breakline"></div>
+
+      <figure class="form-radio-btn mt-5">
+        <input type="radio" id="option1" name="radiobutton" value="1" checked>
+        <label class="btn btn-dark" for="option1">Whit .form-radio-btn 1</label>
+      </figure>
+
+      <figure class="form-radio-btn mt-5">
+        <input type="radio" id="option2" name="radiobutton" value="2">
+        <label class="btn btn-dark" for="option2">Something 2</label>
+      </figure>
+
+      <h3 class="mt-6">Panels</h3>
+      <p>Use with .form-inner-sm and .form-inner-lg</p>
+
+      <figure class="form-panel mt-5">
+        <input type="radio" id="plan1" name="panel" value="1">
+        <label for="plan1">
+          <b>Basic</b><span>5</span><div>Por un Año</div>
+        </label>
+      </figure>
+
+      <figure class="form-panel mt-5">
+        <input type="radio" id="plan2" name="panel" value="2">
+        <label for="plan2">
+          <b>Advance</b><span>559</span><div>Por un Año</div>
+          <div class="badge badge-dark bg-green text-xs absolute-hc top-5 rounded-none mt--3">Recommended</div>
+        </label>
+      </figure>
+
+
+      <h2 class="text-bold mt-6">Selects Options</h2>
+      <p>Use with .form-select-btn</p>
+      <select class="form-select-btn btn btn-light color-gray mt-3">
+          <option>CURRENCY</option>
+          <option disabled>This is a native</option>
+          <option>Ap</option>
+          <option>Bananas</option>
+          <option>Grapes</option>
+          <option>Oranges</option>
+      </select>
+
+
+      <h2 class="text-bold mt-6">ADD / Substract</h2>
+
+      <button class="btn btn-white" onclick="changePageQty(-1)">-</button>
+      <input id="numPaginas" type="text" name="paginas" value="1" class="btn bg-light-200 w-50 text-center px-1">
+      <button class="btn btn-white" onclick="changePageQty(-1)">+</button>
+
+      <div class="form-muted mt-3 flex">
+        <button class="btn btn-white mr-1" onclick="changePageQty(-1)">-</button>
+        <input id="numPaginas" type="text" name="paginas" value="1" class="w-50 text-center px-1" readonly="">
+        <button class="btn btn-white ml-1" onclick="changePageQty(-1)">+</button>
+      </div>
+
+
+      <h2 class="text-bold mt-6">File Input</h2>
+      <label for="file_upload0" class="custom-file-upload">
+        <input type="file" id="file_upload"> <span><i class="fa fa-file-upload"></i> Choose a file</span>
+      </label>
+      <label for="file_upload0" class="custom-file-upload bg-indigo color-white">
+        <input type="file" id="file_upload"> <span><i class="fa fa-file-upload"></i> Choose a file</span>
+      </label>
+  
+    </form>
+      
+  </div>
+  </section>
+
+
+
+
+    
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MaksucoCSS ADMIN BACKEND</title>
+  <link href="assets/maksucocss.css" rel="stylesheet">
+  <link href="assets/backend.css" rel="stylesheet">
+</head>
+<body>
+<section class="container-max">
+
+  <div id="navVue">
+  <aside class="sidebar bg-gradient-primary">
+    <div class="sidebar-content">
+      <a href="/" class="logo">
+        <img src="https://cscontact.com/assets/img/logo-white.png" alt="back_home" class="">
+      </a>
+      <div class="sidebar-panel bg-primary-800">
+        Maksuco <span>Michael McSwain</span>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="index.html"><i class="fa fa-tachometer-alt"></i> Frontend <span class="badge badge-xs bg-yellow color-orange ml-1">16/24</span></a></li>
+        <li><a href="forms.html" class="active"><i class="fa fa-inbox-in"></i> Forms</a></li>
+        <li><a href="boxes.html"><i class="fa fa-project-diagram"></i> Boxes</a></li>
+        <li><a href="/account/maksuco/helpdesk"><i class="fa fa-life-ring"></i> helpdesk</a></li>
+        <li><a href="/account/maksuco/clients"><i class="fa fa-users"></i> Clients</a></li>
+        <li><a href="/account/maksuco/reports"><i class="fa fa-chart-bar"></i> Reports</a></li>
+        <li><a href="/account/maksuco/settings"><i class="fa fa-cog fa-fw"></i> Settings <span class="badge bg-orange float-right">16/24</span></a></li>
+        <li><a href="/account/maksuco/templates"><i class="fa fa-edit"></i> Templates</a></li>
+        <h5>user</h5>
+        <li><a href="/user/profile" class="nav-templates"><i class="fa fa-sitemap"></i> Empresas</a></li>
+        <li><a href="/user/profile" class="nav-templates"><i class="fa fa-user"></i> Profile</a></li>
+        <hr>
+        <li><a href="/help/inbox"><i class="fas fa-question-circle"></i> Help</a></li>
+        <li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+      </ul>
+      <ul class="sidebar-nav bg-primary-600 pb-4">
+        <h5>user</h5>
+        <li><a href="frontend.html"><i class="fa fa-tachometer-alt"></i> Frontend <span class="badge badge-xs bg-yellow float-right">16/24</span></a></li>
+        <li><a href="forms.html" class="active"><i class="fa fa-inbox-in"></i> Forms</a></li>
+        <li><a href="boxes.html"><i class="fa fa-project-diagram"></i> Boxes</a></li>
+      </ul>
+      <div class="block p-3 text-center m-2 mt-4 bg-primary-100 color-light rounded-lg opacity-50">
+        Maksuco <span>Michael McSwain</span>
+      </div> 
+    </div>
+  </aside>
+
+
+  <section class="topnav">
+    <div class="prefetch">
+      <input type="search" class="search" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false">
+      <i class="fas fa-spinner fa-spin search-spinner"></i>
+    </div>
+
+    <div class="sidemenu_toggler">
+      <a class="" v-on:click="navSidebar"><i class="fa fa-lg" v-bind:class="navSidebarIcon"></i></a>
+    </div>
+
+    <div tabindex="0" class="dropdown-user" @mouseover="nav_dropdown = true" @mouseleave="nav_dropdown = false" @click="nav_dropdown = !nav_dropdown">
+      <a class="dropdown-toggle">
+        <img src="https://s.gravatar.com/avatar/807f4be95506954f8cacf642a03375cd?d=https://s3.amazonaws.com/cscontact/users/avatar.png" class="">
+      </a>
+      <div class="dropdown-menu" v-if="nav_dropdown">
+        <a href="/user/dashboard" class="dropdown-item">Start</a>
+        <a href="/user/profile" class="dropdown-item">Profile</a>
+        <a href="/user/accounts" class="dropdown-item">your_business</a>
+        <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka drt</a>
+        <a href="/logout" class="dropdown-item">Logout</a>
+        <a href="/user/profile" class="dropdown-item">logout_all</a>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <main id="app">
+
+    <header class="bg-white">
+      <h1 class="color-dark text-bold w-full">BACKEND
+        <button type="button" class="btn btn-primary ml-1 px-4"><i class="fas fa-plus"></i></button>
+      </h1>
+      <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-secondary ml-2">buttons in the middle</span>
+    </header>
+
+    <section class="container flex flex-wrap" id="app">
+
+
+
+
+          <figure class="col-24 col-md-9 p-2">
+              <div class="bg-white shadow-sm p-4">
+
+                <h6 class="uppercase text-bold">GENERAL MANAGER</h6>
+                <p class="mt-1 text-sm color-gray">The general manager controls all staff, payments and settings of the business</p>
+      
+                  <div class="block color-black pt-5">
+                    <img src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="" class="h-50 w-50 rounded-circle object-cover float-left mr-3">
+                    <span class="">Michael Mcswain</span>
+                    <a href="#" class="btn btn-yellow btn-xs text-xs">Change Manager</a>
+                  </div>
+      
+
+                <h6 class="uppercase text-bold mt-12">REGENERATE API</h6>
+                <p class="mt-2 text-xs color-gray">Changing your API can disconnect you from some things, please only use this when your certain your account is compromise.</p>
+                  <div class="form-inner required mt-5">
+                    <label for="manager">API KEY</label>
+                    <input type="text" class="form-control-inner" id="manager" placeholder="">
+                  </div>
+                  <a href="#" class="btn btn-primary btn-xs">Copy</a>
+                  <a href="#" class="btn btn-teal btn-xs">Generate New</a>
+  
+
+                  <h6 class="uppercase text-bold mt-12">LANGUAGES</h6>
+                  <div class="row mt-2 color-gray">
+                    
+                    <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                      <input type="checkbox" class="" name="currencies[]" id="currency_AED" value="AED">
+                      <label class="" for="currency_AED">form-checkbox-sm</label>
+                    </div>
+
+                    <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                      <input type="checkbox" class="" name="currencies[]" id="currency_ZWD" value="ZWD">
+                      <label class="" for="currency_ZWD">ZWD </label>
+                  </div>
+                </div>
+                
+
+
+                  <hr class="bg-gray mb-0">
+  
+                  <div class="flex items-center color-gray mt-2">
+                    <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+                    <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+                  </div>
+  
+              </div>
+            </figure>  
+
+    </section>
+
+    <section class="container mt-6">
+
+      <h6 class="color-gray text-bold">SHORTCUTS</h6>
+      
+      <a href="clients" class="btn btn-primary p-4 mt-1">
+        <i class="fa fa-users fa-2x block opacity-25"></i>
+        <small class="uppercase color-light mt-3">ADD CLIENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-4 mt-1">
+        <i class="fa fa-plus fa-2x block opacity-50 color-gray"></i>
+        <small class="uppercase color-light mt-3">ADD PAYMENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-5 mt-1">
+        <div class="block opacity-50 color-gray text-xl text-bold">ADD</div>
+        <small class="uppercase color-light">PAYMENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-3 mt-1">
+        <i class="fa fa-plus fa-2x block opacity-50 color-gray"></i>
+        <span class="btn btn-gray btn-xs uppercase mt-1 rounded">ADD PAYMENT</span>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-3 pl-4 pr-5 mt-1 h-60 box-icon relative" data-icon="&#xf382">
+        <span class="uppercase text-bold color-light mt-2 block"><i class="fa fa-plus text-xs"></i> ADD CLIENT</span>
+      </a>
+
+    </section>
+
+
+
+
+  <section class="container mt-6 flex">
+
+      <figure class="col-24 col-md-11">
+        <h2 class="mt-3">Invoices</h2>
+        <h5 class="color-gray mt-2">Fusce rutrum pharetra ntum mauris eu sem parturient consectetur egestas.</h5>
+        <button class="btn btn btn-primary mt-5 mb-5">Save</button>
+      </figure>
+        
+      <div class="col-24 col-md-12 offset-md-1">
+
+        <figure class="bg-white shadow-lg rounded">
+        <div class="bg-light-500 color-gray-900 text-bold p-4 flex content-between rounded-t-lg uppercase">Active Invoices</div>
+
+        <div class="flex items-center p-4">
+            <span class="text-bold text-lg bg-gray-900 color-light p-2 py-1 rounded mr-2"><i class="fab fa-instagram"></i></span>
+            XXXXxxxxx <span class="badge badge-light badge-sm bg-blue-100 color-blue-800 ml-3 rounded-full">+80%</span>
+            <i class="fab fa-twitter ml-2"></i>
+            <a href="#" class="btn btn-teal btn-xs ml-auto">Search</a>
+        </div>
+
+        <hr class="bg-gray my-0">
+        
+        <div class="p-4">
+
+            <h6 class="color-gray-900 text-bold">GENERAL MANAGER</h6>
+            <p class="mt-1 text-sm color-gray">The general manager controls all staff, payments and settings of the business</p>
+  
+              <div class="block color-black pt-5">
+                <img src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9" alt="" class="h-50 w-50 rounded-circle object-cover float-left mr-3">
+                <span class="block">Michael Mcswain</span>
+                <a href="#" class="btn btn-yellow btn-xs text-xs">Change Manager</a>
+              </div>
+  
+
+
+
+              <h6 class="uppercase text-bold mt-12">LANGUAGES</h6>
+              <div class="row mt-2 color-gray">
+                
+                <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                  <input type="checkbox" class="" name="currencies[]" id="currency_AED" value="AED">
+                  <label class="" for="currency_AED">form-checkbox-sm</label>
+                </div>
+
+                <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                  <input type="checkbox" class="" name="currencies[]" id="currency_ZWD" value="ZWD">
+                  <label class="" for="currency_ZWD">ZWD </label>
+              </div>
+            </div>
+            
+
+
+              <hr class="bg-gray mb-0">
+
+              <div class="flex items-center color-gray mt-2">
+                <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+                <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+              </div>
+
+          </div>
+
+        </figure>
+
+
+
+        <figure class="mt-5 bg-white shadow-lg rounded p-4">
+            
+    
+    
+                <h6 class="text-bold">API KEY</h6>
+                <p class="mt-2 text-xs color-gray">Changing your API can disconnect you from some things, please only use this when your certain your account is compromise.</p>
+                  
+                <div class="flex">
+                    <div class="form-inner col required mt-5">
+                      <label for="manager">API KEY</label>
+                      <input type="text" class="form-control-inner" id="manager" placeholder="">
+                    </div>
+
+                    <div class="col-1 mt-5"></div>
+    
+                    <div class="form-inner col required mt-5">
+                      <label for="manager">API KEY</label>
+                      <input type="text" class="form-control-inner" id="manager" placeholder="">
+                    </div>
+                </div>
+
+                  <a href="#" class="btn btn-primary btn-xs">Copy</a>
+                  <a href="#" class="btn btn-teal btn-xs">Generate New</a>
+                
+
+                  <div class="form-inner mt-3">
+                    <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+                    <label>Message</label>
+                  </div>
+  
+    
+                  <hr class="bg-gray mb-0">
+    
+                  <div class="flex items-center color-gray mt-2">
+                    <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+                    <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+                  </div>
+    
+    
+            </figure>
+
+
+        </div>
+
+
+  </section>
+
+
+    <section class="container-max mt-6">
+      <div class="container">
+        <div class="scroll-x">
+          <ul class="tabs-line text-uppercase mt-20" id="myTab">
+            <button class="tab-link active show" id="home-tab">INVOICES</button>
+            <button class="tab-link" id="about-tab">RECURRING</button>
+            <button class="tab-link" id="about-tab">HELP</button>
+            <button class="tab-link" id="about-tab">HELP</button>
+            <button class="tab-link" id="about-tab">HELP</button>
+            <button class="tab-link" id="about-tab">HELP</button>
+          </ul>
+        </div>
+      </div>
+      <div class="container flex bg-white p-4">
+
+
+        <figure class="col-24 col-md-11 p-4">
+          <h2 class="">Projects</h2>
+          <h5 class="color-gray mt-2">Fusce rutrum pharetra pretium phasellus fringilla taciti elementum mauris eu sem parturient consectetur egestas.</h5>
+          
+          <ul class="tabs-line tabs-vertical text-uppercase mt-5 p-0 md-p-5" id="myTab">
+            <button class="tab-link active show" id="home-tab">INVOICES</button>
+            <button class="tab-link" id="about-tab">RECURRING</button>
+            <button class="tab-link" id="about-tab">HELP</button>
+          </ul>
+          
+          <ul class="tabs-line tabs-vertical tabs-btn text-uppercase mt-5 p-0 md-p-5" id="myTab">
+            <button class="tab-link">INVOICES</button>
+            <button class="tab-link active">RECURRING</button>
+            <button class="tab-link">HELP</button>
+          </ul>
+        </figure>
+        
+        <figure class="col-24 col-md-12 offset-md-1 bg-white shadow-lg rounded">
+          <div class="bg-light-500 color-gray-800 text-bold p-4 flex content-between rounded-t-lg uppercase">
+            Running Projects
+          </div>
+
+          <div class="flex items-center p-4">
+              <span class="text-bold text-lg bg-gray-900 color-light p-2 py-1 rounded mr-2"><i class="fab fa-instagram"></i></span>
+              XXXXxxxxx <span class="badge badge-light badge-sm bg-blue-100 color-blue-800 ml-3 rounded-full">+80%</span>
+              <i class="fab fa-twitter ml-2"></i>
+              <a href="#" class="btn btn-teal btn-xs ml-auto">Search</a>
+          </div>
+
+          <hr class="bg-gray my-0">
+
+          <div class="flex items-center p-4">
+              <span class="text-bold text-lg bg-gray-900 color-light p-3 rounded mr-2"><i class="fab fa-instagram"></i></span>
+              XXXXxxxxx <span class="badge badge-light bg-blue-100 color-blue-800 ml-3 rounded-full">+80%</span>
+              <span class="badge badge-teal badge-sm ml-auto">up 80%</span>
+          </div>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="container mt-6">
+      <a class="btn btn-primary btn-sm mt-20 active" role="tab" data-toggle="tab" href="#new_leads">new</a>
+      <button class="btn btn-xs btn-primary mr-1 shadow">ADD CLIENT XS</button>
+      <button class="btn btn-sm btn-primary mr-1 shadow-lg">ADD CLIENT SM</button>
+      <button class="btn btn btn-primary mr-1"><i class="fa fa-plus opacity-50 color-gray mr-1"></i> ADD CLIENT</button>
+      <button class="btn btn-lg btn-primary"><i class="fa fa-plus opacity-50 color-gray mr-1"></i> ADD CLIENT LG</button>
+      <button class="btn btn-xl btn-primary"><i class="fa fa-plus opacity-50 color-gray mr-1"></i> ADD CLIENT XL</button>
+
+      <div class="col-24 p-3 bg-light">Con Container</div>
+      <div class="col p-3 bg-gray-700">1 of 2</div>
+      <div class="col p-3 bg-gray-400">2 of 2</div>
+      <div class="col-auto p-3 bg-gray-500">1 of 3</div>
+      <div class="col-12 md-col-8 p-3 bg-gray-600">12</div>
+      <div class="col-24 p-3 bg-gray-700">24 Complete</div>
+    </section>
+
+    <section class="row flex mt-10">
+      <div class="col-24 p-3 bg-light">Con Row</div>
+      <div class="col-auto p-3 bg-gray-700">1 of 2</div>
+      <div class="col-auto p-3 bg-gray-400">2 of 2</div>
+      <div class="col-auto p-3 bg-gray-500">1 of 3</div>
+      <div class="col-12 md-col-8 p-3 bg-gray-600">2 of 3</div>
+      <div class="col-24 p-3 bg-gray-700">24 Complete</div>
+    </section>
+
+
+    <section class="container my-14">
+      <h1 class="col-24 color-dark text-3x text-bold">Tables with DIV's</h1>
+      <p class="pb-4">For regular tables you can use B4</p>
+  
+      <small class="table-div-striped">
+          <div class="row head uppercase color-gray-900 sm-hidden">
+            <div class="col-md-2">Status</div>
+            <div class="col-md-2">Ref</div>
+            <div class="col-md-6 text-left pl-2">Client</div>
+            <div class="col-md-4">Amount</div>
+            <div class="col-md-4">Recurring</div>
+            <div class="col-md-2">Date</div>
+            <div class="col-md-2">Updated</div>
+            <div class="col-md-1"></div>
+          </div>
+      
+          <figure class="row">
+            <div class="col-24 col-md-2"><span class="md-hidden">STATUS: </span>10</div>
+            <div class="col-24 col-md-2"><span class="md-hidden">REF: </span>CC-566</div>
+            <div class="col-24 col-md-6 text-left pl-2"><span class="md-hidden text-bold color-gray">CLIENT: </span>This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
+            <div class="col-8 col-md-4">600,000 COP</div>
+            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-dark btn-xs color-white">Recurring #45</a></div>
+            <small class="col-8 col-md-2 text-center">July 18, 2019 12:00 AM</small>
+            <div class="col-8 col-md-1"></div>
+          </figure>
+      
+          <figure class="row">
+            <div class="col-24 col-md-2">1 <span></span></div>
+            <div class="col-24 col-md-2">CC-566dsds</div>
+            <div class="col-24 col-md-6 text-left pl-2">Someone <span class="badge badge-dark">Featured</span></div>
+            <div class="col-8 col-md-4">600,000 COP</div>
+            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-green btn-xs">Recurring #45</a><br><small>Este es el nombre</small></div>
+            <small class="col-8 col-md-2 text-center">July 18, 2019 12:00 AM</small>
+            <div class="col-8 col-md-1"></div>
+          </figure>
+      
+          <figure class="row">
+            <div class="col-24 col-md-2">10 <span></span></div>
+            <div class="col-24 col-md-2">CC-566</div>
+            <div class="col-24 col-md-6 text-left pl-2"> This is the first Pratik 1 <span class="badge badge-dark">Featured</span></div>
+            <div class="col-8 col-md-4">600,000 COP</div>
+            <div class="col-8 col-md-4"><a href="http://45" class="btn bg-primary color-white btn-sm">Recurring #45</a></div>
+            <small class="col-8 col-md-2 text-center">July 18, 2019 12:00 AM</small>
+            <div class="col-8 col-md-1"></div>
+          </figure>
+      </div>
+    </section>
+
+    <section class="container my-14">
+      <button type="button" v-on:click="showModal('modal_center')" class="btn btn-primary">Modal center</button>
+      <button type="button" v-on:click="showModal('modal_left')" class="btn btn-primary">Modal left</button>
+      <button type="button" v-on:click="showModal('modal_right')" class="btn btn-primary">Modal Right</button>
+      <button type="button" v-on:click="showModal('modal_full')" class="btn btn-primary">Modal full</button>
+        <h1 class="col-24 color-dark text-3x text-bold">Buttons</h1>
+        <p class="pb-4">Use buttons with first .btn and then .btn-*</p>
+        <button class="btn btn-xs btn-primary mr-1 shadow">Button XS</button>
+        <button class="btn btn-sm btn-primary mr-1 shadow-lg">Button SM</button>
+        <button class="btn btn btn-primary mr-1">Button Normal</button>
+        <button class="btn btn-lg btn-primary">Button LG</button>
+        <button class="btn btn-xl btn-primary">Button XL</button>
+        <hr class="my-5">
+        <button type="button" class="btn btn-primary rounded-full m-1px">Primary</button>
+        <button type="button" class="btn btn-secondary m-1px">Secondary</button>
+        <button type="button" class="btn btn-blue m-1px">Blue Info</button>
+        <button type="button" class="btn btn-purple m-1px">Purple</button>
+        <button type="button" class="btn btn-indigo m-1px">Indigo</button>
+        <button type="button" class="btn btn-green m-1px">Green Success</button>
+        <button type="button" class="btn btn-red m-1px">Red Danger</button>
+        <button type="button" class="btn btn-orange m-1px">Orange Warning</button>
+        <button type="button" class="btn btn-light m-1px">Light</button>
+        <button type="button" class="btn btn-dark m-1px">Dark</button>
+        <button type="button" class="btn btn-black m-1px">Black</button>
+        <button type="button" class="btn btn-white m-1px">White</button>
+        <button type="button" class="btn m-1px">just btn</button>
+      </section>
+
+    <section class="footer">
+      2009 fdsfdsfdsfsdfsd
+    </section>
+
+    <section class="modal modal-vue modal-right md-modal-left" v-if="modal_right">
+      <div class="modal-backdrop" v-on:click="closeModal('modal_right')"></div>
+      <div class="modal-dialog">
+        <div action="" id="modal_right" method="POST" class="modal-content">
+          <div class="modal-header modal-header-inverted"><h4>Help</h4> <a class="close far fa-times" v-on:click="closeModal('modal_right')"></a></div> 
+          <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+            <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+            <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+            <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+  
+            <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+  
+            <h5 class="mt-30">OPTIONS</h5> 
+            <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+            <small>Just change <code>page/1</code> to <code>page/</code></small>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="modal modal-vue modal-left md-modal-right" v-if="modal_left">
+        <div class="modal-backdrop" v-on:click="closeModal('modal_left')"></div>
+        <div class="modal-dialog">
+          <div action="" id="modal_left" method="POST" class="modal-content">
+            <div class="modal-header"><h4>Header</h4> <a class="close far fa-times" v-on:click="closeModal('modal_left')"></a></div> 
+            <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+    
+              <pre class="code-window clipboard mt-5"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+    
+              <h5 class="mt-10">OPTIONS</h5> 
+              <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+              <small>Just change <code>page/1</code> to <code>page/</code></small>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="modal modal-vue modal-full" v-if="modal_full">
+          <div class="modal-backdrop" v-on:click="closeModal('modal_full')"></div>
+          <div class="modal-dialog">
+            <div action="" id="modal_full" method="POST" class="modal-content">
+              <div class="modal-header modal-header-inverted"><h4>Header Inverted</h4> <a class="close far fa-times" v-on:click="closeModal('modal_full')"></a></div> 
+              <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+                <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+                <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+                <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+      
+                <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+      
+                <h5 class="mt-30">OPTIONS</h5> 
+                <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+                <small>Just change <code>page/1</code> to <code>page/</code></small>
+              </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="modal modal-vue modal-full" v-if="modal_center">
+            <div class="modal-backdrop" v-on:click="closeModal('modal_center')"></div>
+            <div class="modal-dialog">
+              <form action="" id="modal_center" method="POST" class="modal-content">
+                <div class="modal-header modal-header-inverted"><h4>Add new Collections dasjhk dh dhskj hdkjsa </h4> <a class="close far fa-times" v-on:click="closeModal('modal_center')"></a></div> 
+                <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+                  <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+                  <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+                  <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+        
+                  <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre> 
+                  <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+                  <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+                  <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+        
+                  <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre> 
+                  <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
+                  <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
+                  <pre data-clipboard-target="#code_vue" class="code clipboard"><label>VUE</label><code id="code_vue">axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response =&gt; (this.page = response))}</code></pre> 
+        
+                  <pre class="code-window clipboard"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+        
+                  <h5 class="mt-30">OPTIONS</h5> 
+                  <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+                  <small>Just change <code>page/1</code> to <code>page/</code></small>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </form>
+              </div>
+            </section>
+
+  </main>
+
+
+</section>
+
+<script src="assets/front-min.js"></script>
+<script>
+//NAV VUE
+var navVue = new Vue({
+  el: '#navVue',
+  data: {
+    nav_dropdown: false,
+    navSidebarIcon: 'fa-bars'
+  },
+  methods: {
+    navDropdown() {
+      document.querySelector(".dropdown-menu").classList.toggle("show");
+    },
+    navDropdownFocusOut() {
+      document.querySelector(".dropdown-menu").classList.remove("show");
+    },
+    navSidebar() {
+      document.querySelector(".sidebar").classList.toggle("active");
+      //document.querySelector(".sidebar-before").classList.toggle("show");
+      this.navSidebarIcon = (this.navSidebarIcon == "fa-bars")? "fa-times" : "fa-bars";
+    }
+  },
+  watch: {
+  },
+  components: {
+  }
+});
+
+//NAV VUE
+var app = new Vue({
+  el: '#app',
+  data: {
+    modal_left: false,
+    modal_right: false,
+    modal_full: false,
+    modal_center: false
+  }
+});
+
+</script>
+</body>
+</html>

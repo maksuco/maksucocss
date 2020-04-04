@@ -1,0 +1,111 @@
+
+//GRID
+$desktop-breakpoint: 768px !default;
+$container: 1300px !default;
+$container-max: 1860px !default;
+$columns: 24 !default;
+$container-sm-px: 0.5rem !default; //0 !default;
+
+//BOOTSTRAP
+$grid-columns: $columns !default;
+$grid-gutter-width: 0px !default;
+//$line-height-base: 1.2 !default;
+$container-max-widths: (
+  sm: 540px,
+  md: $desktop-breakpoint,
+  lg: 1000,
+  xl: $container
+) !default;
+
+//COLORS
+$primary: #3B2098 !default;
+$secondary: #112741 !default;
+$dark: #151d2e !default;//#1e2229;#314164;
+$light: #edf2f8 !default;
+$gray: #A0AEC0 !default;
+$blue: #4299E1 !default;
+$indigo: #667EEA !default;
+$purple: #9F7AEA !default;
+$green: #1da139 !default;
+$teal: #38B2AC !default;
+$red: #ff2400 !default;
+$yellow: #ffeb04 !default;
+$orange: #ff8800 !default;
+$black: #010102 !default;
+$white: #ffffff !default;
+$body: $dark !default;
+$bg: white !default;
+
+//TYPE
+$font-family: "-apple-system" !default;
+$heading-font-family: $font-family !default;
+$font-base: 16px !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 700 !default;
+$font-letter-spacing: 0.025em !default;
+$h1-size: 2.6rem !default;
+$h2-size: 2.2rem !default;
+$h3-size: 1.9rem !default;
+$h4-size: 1.6rem !default;
+$h5-size: 1.2rem !default;
+$paragraph-weight: $font-weight-light !default;
+$paragraph-line-height: 1.2 !default;
+$heading-weight: $font-weight-bold !default;
+$heading-line-height: 1.1 !default;
+$heading-letter-spacing: $font-letter-spacing !default;
+
+//BUTTONS
+$btn-padding-y: .6rem !default;
+$btn-padding-x: 1.3rem !default;
+$btn-radius: .2rem !default;
+
+//FORMS
+$form-bg: #ffffff !default;
+$form-text: $body !default;
+$form-light: lighten($body, 22%) !default;
+$form-border: 1px solid lighten($form-text, 30%) !default;
+$input-border-radius: $btn-radius !default;
+//$form-label: ;
+$form-placeholder-color: $gray !default;
+$form-border: 1px solid $gray !default;
+$form-padding: 21px 10px 6px 15px !default;
+
+//DROPDOWNS
+$dropdown-radius: .5rem !default;
+$dropdown-font-size: .9rem !default;
+$dropdown-top: 2.5rem !default;
+
+//ANIMATION
+$animation-px: 1rem !default;
+$animation-duration: .5s !default;
+
+//BACKEND
+$backend-sidebar: 220px !default;
+$backend-sidebar-margin: $backend-sidebar !default;
+$backend-breakpoint: 1168px !default;
+$backend-bg: #f4f6f8 !default;
+$backend-sidebar-links: #dae9f5 !default;
+$backend-sidebar-links-hover: transparent !default;
+$backend-sidebar-links-padding: .5rem !default;
+
+//MODAL
+$modal-bg: $dark;
+
+//CODE
+$code-bg: #1d2730 !default; //lighten($primary, 60%) !default; //#333333
+$code-color: #8ca0b8 !default; //$primary; //#a3c67a
+$code-label: white; //#ddd
+
+
+//EMAIL
+$email-bg: $light;
+
+$email-container-bg: transparent;
+$email-container-padding: 10px;
+
+$email-content-bg: $white;
+$email-content-padding: 40px;
+
+$email-text-align: left;
