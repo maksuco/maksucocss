@@ -35,5 +35,5 @@
               "...",
               "php artisan vendor:publish --tag=maksucocss --force"
         ]
-    },
+    }
 }
