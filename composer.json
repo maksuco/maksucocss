@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Maksuco\\BizAuth\\MaksucoCSSServiceProvider"
+                "Maksuco\\MaksucoCSS\\MaksucoCSSServiceProvider"
             ]
         }
     }
