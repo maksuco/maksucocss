@@ -17,20 +17,18 @@ class MaksucoCSSServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
-      if(config('maksucocss.publish_path') !== null) {
+      if(config('maksucocss.publish_path') == null) {
         $this->publishes([
-          __DIR__ . '/src/config.php' => config_path('maksucocss.php'),
+          __DIR__ . '/config.php' => config_path('maksucocss.php'),
         ]);
       }
 
       $publish_path = config('maksucocss.publish_path') ?? 'maksucocss/';
 
       $this->publishes([
-        __DIR__ . '/public/assets/fontawesome/' => public_path($publish_path.'fontawesome'),
-        __DIR__ . '/public/assets/packages/' => public_path($publish_path.'packages'),
+        dirname(__DIR__, 1) . '/public/assets/fontawesome/' => public_path($publish_path.'fontawesome'),
+        dirname(__DIR__, 1) . '/public/assets/packages/' => public_path($publish_path.'packages'),
       ]);
-      
     }
 
 
