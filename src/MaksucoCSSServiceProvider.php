@@ -28,7 +28,7 @@ class MaksucoCSSServiceProvider extends ServiceProvider
       $this->publishes([
         dirname(__DIR__, 1) . '/public/assets/fontawesome/' => public_path($publish_path.'fontawesome'),
         dirname(__DIR__, 1) . '/public/assets/packages/' => public_path($publish_path.'packages'),
-      ]);
+      ], 'maksucocss');
     }
 
 
