@@ -28,12 +28,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-              "...",
-              "php artisan vendor:publish --tag=maksucocss --force"
+            "php artisan vendor:publish --tag=maksucocss --force"
         ],
         "post-update-cmd": [
-              "...",
-              "php artisan vendor:publish --tag=maksucocss --force"
+            "php artisan vendor:publish --tag=maksucocss --force"
         ]
     }
 }
