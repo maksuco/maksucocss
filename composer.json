@@ -20,5 +20,10 @@
         }
     },
     "extra": {
+        "laravel": {
+            "providers": [
+                "Maksuco\\BizAuth\\MaksucoCSSServiceProvider"
+            ]
+        }
     }
 }
