@@ -15,6 +15,9 @@
     "require": {
     },
     "autoload": {
+        "psr-4": {
+            "Maksuco\\MaksucoCSS\\": "src"
+        },
     },
     "extra": {
     }

@@ -6573,12 +6573,12 @@
 		"oAP": "/src/config.php",
 		"oF": 0
 		},
-	"/src/MaksucoCSSProvider.php": {
+	"/src/MaksucoCSSServiceProvider.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/src/MaksucoCSSProvider.php",
+		"oAP": "/src/MaksucoCSSServiceProvider.php",
 		"oF": 0
 		}
 	},

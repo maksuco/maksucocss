@@ -4,7 +4,7 @@ namespace Maksuco\MaksucoCSS;
 
 use Illuminate\Support\ServiceProvider;
 
-class MaksucoCSSProvider extends ServiceProvider
+class MaksucoCSSServiceProvider extends ServiceProvider
 {
 
     protected $listen = [
