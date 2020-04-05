@@ -28,10 +28,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php artisan vendor:publish --provider='Maksuco\MaksucoCSS\MaksucoCSSServiceProvider'"
+              "php artisan vendor:publish --tag=maksucocss --force"
         ],
         "post-update-cmd": [
-            "php artisan vendor:publish --provider='Maksuco\MaksucoCSS\MaksucoCSSServiceProvider'"
+              "php artisan vendor:publish --tag=maksucocss --force"
         ]
     }
 }
