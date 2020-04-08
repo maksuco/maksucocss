@@ -21,6 +21,7 @@ body {
 a {
   color: $body;
   text-decoration: none;
+  cursor: pointer;
   &:hover {
     text-decoration: none;
     //color: currentColor !important;

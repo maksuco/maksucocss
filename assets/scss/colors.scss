@@ -1,56 +1,20 @@
 //TEXTS COLORS
-.color-dark {
-  color: $dark;
-}
-
-.color-light {
-  color: $light;
-}
 
 .color-transparent {
   color: transparent;
 }
 
-.color-black {
-  color: $black;
-}
-
-.color-white {
-  color: $white;
-}
-
 //BACKGROUNDS
-.bg-dark {
-  background-color: $dark;
-}
-.bg-dark-o {
-  background-color: rgba($dark, .2) !important;
-}
-
-.bg-light {
-  background-color: $light;
-}
-.bg-light-o {
-  background-color: rgba($light, .2) !important;
-}
 
 .bg-transparent, .bg-none {
   background-color: transparent;
 }
-
-.bg-black {
-  background-color: $black;
-}
-.bg-black-o {
-  background-color: rgba($black, .2) !important;
+.hover-bg-transparent, .hover-bg-none {
+  &:hover {
+    background-color: transparent !important;
+  }
 }
 
-.bg-white {
-  background-color: $white;
-}
-.bg-white-o {
-  background-color: rgba($white, .2) !important;
-}
 //GOES ON TOP OF COLOR
 .bg-gradient {
   background-image: linear-gradient(120deg, transparent 40%, rgba(#000000, .25) 100%);

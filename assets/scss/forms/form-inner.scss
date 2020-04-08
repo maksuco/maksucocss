@@ -6,7 +6,7 @@
     width: 100%;
     color: $form-text;
     border: $form-border;
-    border-radius: $input-border-radius;
+    border-radius: $input-radius;
     font-size: .95rem;
     line-height: 1.5;
     padding: $form-padding;
@@ -47,6 +47,21 @@
       margin-top: -1px;
     }
   }
+  @if $input-radius = 9999px or $input-radius = 'full'  {
+    input, textarea {
+      padding-left: 25px;
+    }
+    label {
+      left: 25px;
+      width: calc(100% - 50px);
+    }
+  }
+
+  @if $input-radius = 9999px or $input-radius = 'full'  {
+    small {
+      padding-left: 25px;
+    }
+  }
 }
 
 
@@ -58,7 +73,7 @@
     color: $form-text;
     background-color: $form-bg;
     border: $form-border;
-    border-radius: $input-border-radius;
+    border-radius: $input-radius;
     width: 100%;
     padding: $form-padding;
     font-size: .95rem !important;
@@ -93,6 +108,15 @@
       font-size: .5rem;
     }
   }
+  @if $input-radius = 9999px or $input-radius = 'full'  {
+    select {
+      padding-left: 25px;
+    }
+    label {
+      left: 25px;
+      width: calc(100% - 50px);
+    }
+  }
 }
 
 .form-inner.required, .form-inner-select.required {
@@ -105,6 +129,9 @@
     width: 1rem;
     top: 4px;
     right: .5rem;
+    @if $input-radius = 9999px or $input-radius = 'full'  {
+      right: .7rem;
+    }
     
   }
 }

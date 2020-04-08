@@ -107,8 +107,7 @@
     border-color: darken($primary, 10%);
   }
   &:disabled{
-    background: lighten($primary, 60%);
-    border-color: lighten($primary, 60%);
+    opacity: .7;
   }
 }
 
@@ -122,8 +121,7 @@
     border-color: darken($secondary, 10%);
   }
   &:disabled{
-    background: lighten($secondary, 40%);
-    border-color: lighten($secondary, 40%);
+    opacity: .7;
   }
 }
 
@@ -137,8 +135,7 @@
     border-color: lighten($dark, 10%);
   }
   &:disabled{
-    background: lighten($dark, 40%);
-    border-color: lighten($dark, 40%);
+    opacity: .7;
   }
 }
 
@@ -152,8 +149,7 @@
     border-color: lighten($black, 6%);
   }
   &:disabled{
-    background: lighten($black, 40%);
-    border-color: lighten($black, 40%);
+    opacity: .7;
   }
 }
 
@@ -167,8 +163,7 @@
     border-color: lighten( $gray, 6%);
   }
   &:disabled{
-    background: lighten($gray, 40%);
-    border-color: lighten($gray, 40%);
+    opacity: .7;
   }
 }
 
@@ -182,8 +177,9 @@
     border-color: $light;
   }
   &:disabled{
-    background: $light;
-    border-color: $light;
+    opacity: .7;
+    // background: $light;
+    // border-color: $light;
   }
 }
 
@@ -197,8 +193,9 @@
     border-color: darken($light, 10%);
   }
   &:disabled{
-    background: darken($light, 10%);
-    border-color: darken($light, 10%);
+    opacity: .7;
+    // background: darken($light, 10%);
+    // border-color: darken($light, 10%);
   }
 }
 
@@ -212,8 +209,9 @@
     border-color: darken($blue, 10%);
   }
   &:disabled{
-    background: lighten($blue, 40%);
-    border-color: lighten($blue, 40%);
+    opacity: .7;
+    // background: lighten($blue, 40%);
+    // border-color: lighten($blue, 40%);
   }
 }
 
@@ -227,8 +225,9 @@
     border-color: darken($teal, 10%);
   }
   &:disabled{
-    background: lighten($teal, 40%);
-    border-color: lighten($teal, 40%);
+    opacity: .7;
+    // background: lighten($teal, 40%);
+    // border-color: lighten($teal, 40%);
   }
 }
 
@@ -242,8 +241,9 @@
     border-color: darken($indigo, 10%);
   }
   &:disabled{
-    background: lighten($indigo, 40%);
-    border-color: lighten($indigo, 40%);
+    opacity: .7;
+    // background: lighten($indigo, 40%);
+    // border-color: lighten($indigo, 40%);
   }
 }
 
@@ -257,8 +257,9 @@
     border-color: darken($purple, 10%);
   }
   &:disabled{
-    background: lighten($purple, 40%);
-    border-color: lighten($purple, 40%);
+    opacity: .7;
+    // background: lighten($purple, 40%);
+    // border-color: lighten($purple, 40%);
   }
 }
 
@@ -272,8 +273,9 @@
     border-color: darken($green, 10%);
   }
   &:disabled{
-    background: lighten($green, 40%);
-    border-color: lighten($green, 40%);
+    opacity: .7;
+    // background: lighten($green, 40%);
+    // border-color: lighten($green, 40%);
   }
 }
 
@@ -287,8 +289,9 @@
     border-color: darken($red, 10%);
   }
   &:disabled{
-    background: lighten($red, 40%);
-    border-color: lighten($red, 40%);
+    opacity: .7;
+    // background: lighten($red, 40%);
+    // border-color: lighten($red, 40%);
   }
 }
 
@@ -302,8 +305,9 @@
     border-color: darken($orange, 10%);
   }
   &:disabled{
-    background: lighten($orange, 40%);
-    border-color: lighten($orange, 40%);
+    opacity: .7;
+    // background: lighten($orange, 40%);
+    // border-color: lighten($orange, 40%);
   }
 }
 
@@ -317,7 +321,8 @@
     border-color: darken($yellow, 10%);
   }
   &:disabled{
-    background: lighten($yellow, 40%);
-    border-color: lighten($yellow, 40%);
+    opacity: .7;
+    // background: lighten($yellow, 40%);
+    // border-color: lighten($yellow, 40%);
   }
 }

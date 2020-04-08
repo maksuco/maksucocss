@@ -104,8 +104,10 @@
           <div class="dropdown-caret-right"></div>
           <div class="dropdown-menu-right" v-if="nav_dropdown">
             <a href="/user/dashboard" class="dropdown-item">Start</a>
-            <a href="/user/profile" class="dropdown-item">Profile</a>
-            <a href="/user/accounts" class="dropdown-item">your_business</a>
+            <div class="form-muted form-sm mt-1 px-2">
+              <input type="text" id="email-muted" class=" rounded-lg" placeholder="Your Email">
+            </div>
+            <div class="dropdown-item hover-bg-transparent">Profile <a href="/something-else" class="badge badge-light badge-sm ml-3">SEE ALL</a></div>
             <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka drt dadsa<br><small class="color-gray">Somethinsg</small> </a>
             <a href="/logout" class="dropdown-item">Logout</a>
             <a href="/user/profile" class="dropdown-item dropdown-item-row">logout_all</a>
