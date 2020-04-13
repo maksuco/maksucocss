@@ -5,30 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MaksucoCSS ADMIN BACKEND</title>
+  <link href="assets/fontawesome/fontawesome.css" rel="stylesheet">
   <link href="assets/maksucocss.css" rel="stylesheet">
   <link href="assets/backend.css" rel="stylesheet">
 </head>
 <body>
-<section class="container-max">
+<main class="container-max">
 
   <div id="navVue">
   <aside class="sidebar bg-gradient-primary">
     <div class="sidebar-content">
       <a href="/" class="logo">
-        <img src="https://cscontact.com/assets/img/logo-white.png" alt="back_home" class="">
+        <img src="assets/img/logo.png" alt="back_home" class="">
       </a>
       <div class="sidebar-panel bg-primary-800">
         Maksuco <span>Michael McSwain</span>
       </div>
       <ul class="sidebar-nav">
-        <li><a href="index.html"><i class="fa fa-tachometer-alt"></i> Frontend <span class="badge badge-xs bg-yellow color-orange ml-1">16/24</span></a></li>
+        <li><a href="index.html"><i class="fa fa-tachometer-alt"></i> Frontend <span class="badge badge-xs bg-orange color-yellow ml-1">16/24</span></a></li>
         <li><a href="forms.html" class="active"><i class="fa fa-inbox-in"></i> Forms</a></li>
         <li><a href="boxes.html"><i class="fa fa-project-diagram"></i> Boxes</a></li>
-        <li><a href="/account/maksuco/helpdesk"><i class="fa fa-life-ring"></i> helpdesk</a></li>
-        <li><a href="/account/maksuco/clients"><i class="fa fa-users"></i> Clients</a></li>
-        <li><a href="/account/maksuco/reports"><i class="fa fa-chart-bar"></i> Reports</a></li>
         <li><a href="/account/maksuco/settings"><i class="fa fa-cog fa-fw"></i> Settings <span class="badge bg-orange float-right">16/24</span></a></li>
-        <li><a href="/account/maksuco/templates"><i class="fa fa-edit"></i> Templates</a></li>
         <h5>user</h5>
         <li><a href="/user/profile" class="nav-templates"><i class="fa fa-sitemap"></i> Empresas</a></li>
         <li><a href="/user/profile" class="nav-templates"><i class="fa fa-user"></i> Profile</a></li>
@@ -40,7 +37,6 @@
         <h5>user</h5>
         <li><a href="frontend.html"><i class="fa fa-tachometer-alt"></i> Frontend <span class="badge badge-xs bg-yellow float-right">16/24</span></a></li>
         <li><a href="forms.html" class="active"><i class="fa fa-inbox-in"></i> Forms</a></li>
-        <li><a href="boxes.html"><i class="fa fa-project-diagram"></i> Boxes</a></li>
       </ul>
       <div class="block p-3 text-center m-2 mt-4 bg-primary-100 color-light rounded-lg opacity-50">
         Maksuco <span>Michael McSwain</span>
@@ -59,23 +55,26 @@
       <a class="" v-on:click="navSidebar"><i class="fa fa-lg" v-bind:class="navSidebarIcon"></i></a>
     </div>
 
-    <div tabindex="0" class="dropdown-user" @mouseover="nav_dropdown = true" @mouseleave="nav_dropdown = false" @click="nav_dropdown = !nav_dropdown">
+    <div tabindex="0" class="dropdown-user" @mouseover="nav_dropdown = true" @mouseleave="nav_dropdown = false">
       <a class="dropdown-toggle">
         <img src="https://s.gravatar.com/avatar/807f4be95506954f8cacf642a03375cd?d=https://s3.amazonaws.com/cscontact/users/avatar.png" class="">
       </a>
-      <div class="dropdown-menu" v-if="nav_dropdown">
+      <div class="dropdown-caret-right" v-if="nav_dropdown"></div>
+      <div class="dropdown-menu-right" v-if="nav_dropdown">
         <a href="/user/dashboard" class="dropdown-item">Start</a>
-        <a href="/user/profile" class="dropdown-item">Profile</a>
-        <a href="/user/accounts" class="dropdown-item">your_business</a>
-        <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka drt</a>
+        <div class="form-muted form-sm mt-1 px-2">
+          <input type="text" id="email-muted" class=" rounded-lg" placeholder="Your Email">
+        </div>
+        <div class="dropdown-item hover-bg-transparent">Profile <a href="/something-else" class="badge badge-light badge-sm ml-3">SEE ALL</a></div>
+        <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka drt dadsa<br><small class="color-gray">Somethinsg</small> </a>
         <a href="/logout" class="dropdown-item">Logout</a>
-        <a href="/user/profile" class="dropdown-item">logout_all</a>
+        <a href="/user/profile" class="dropdown-item dropdown-item-row">logout_all</a>
       </div>
     </div>
   </section>
   </div>
 
-  <main id="app">
+  <article id="app">
 
     <header class="bg-white">
       <h1 class="color-dark text-bold w-full">BACKEND
@@ -85,9 +84,6 @@
     </header>
 
     <section class="container flex flex-wrap" id="app">
-
-
-
 
           <figure class="col-24 col-md-9 p-2">
               <div class="bg-white shadow-sm p-4">
@@ -283,7 +279,7 @@
         </div>
 
 
-  </section>
+    </section>
 
 
     <section class="container-max mt-6">
@@ -373,7 +369,7 @@
       <h1 class="col-24 color-dark text-3x text-bold">Tables with DIV's</h1>
       <p class="pb-4">For regular tables you can use B4</p>
   
-      <small class="table-div-striped">
+      <div class="table-div-striped">
           <div class="row head uppercase color-gray-900 sm-hidden">
             <div class="col-md-2">Status</div>
             <div class="col-md-2">Ref</div>
@@ -453,7 +449,7 @@
       <div class="modal-backdrop" v-on:click="closeModal('modal_right')"></div>
       <div class="modal-dialog">
         <div action="" id="modal_right" method="POST" class="modal-content">
-          <div class="modal-header modal-header-inverted"><h4>Help</h4> <a class="close far fa-times" v-on:click="closeModal('modal_right')"></a></div> 
+          <div class="modal-header modal-header-inverted"><h4>Help</h4> <i class="close far fa-times" v-on:click="closeModal('modal_right')"></i></div> 
           <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
             <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
             <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
@@ -473,7 +469,7 @@
         <div class="modal-backdrop" v-on:click="closeModal('modal_left')"></div>
         <div class="modal-dialog">
           <div action="" id="modal_left" method="POST" class="modal-content">
-            <div class="modal-header"><h4>Header</h4> <a class="close far fa-times" v-on:click="closeModal('modal_left')"></a></div> 
+            <div class="modal-header"><h4>Header</h4> <i class="close far fa-times" v-on:click="closeModal('modal_left')"></i></div> 
             <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
     
               <pre class="code-window clipboard mt-5"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
@@ -490,7 +486,7 @@
           <div class="modal-backdrop" v-on:click="closeModal('modal_full')"></div>
           <div class="modal-dialog">
             <div action="" id="modal_full" method="POST" class="modal-content">
-              <div class="modal-header modal-header-inverted"><h4>Header Inverted</h4> <a class="close far fa-times" v-on:click="closeModal('modal_full')"></a></div> 
+              <div class="modal-header modal-header-inverted"><h4>Header Inverted</h4> <i class="close far fa-times" v-on:click="closeModal('modal_full')"></i></div> 
               <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
                 <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
                 <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
@@ -507,11 +503,11 @@
           </section>
 
 
-          <section class="modal modal-vue modal-full" v-if="modal_center">
+          <section class="modal modal-vue" v-if="modal_center">
             <div class="modal-backdrop" v-on:click="closeModal('modal_center')"></div>
             <div class="modal-dialog">
               <form action="" id="modal_center" method="POST" class="modal-content">
-                <div class="modal-header modal-header-inverted"><h4>Add new Collections dasjhk dh dhskj hdkjsa </h4> <a class="close far fa-times" v-on:click="closeModal('modal_center')"></a></div> 
+                <div class="modal-header modal-header-inverted"><h4>Add new Collections dasjhk dh dhskj hdkjsa </h4> <i class="close far fa-times" v-on:click="closeModal('modal_center')"></i></div> 
                 <div class="modal-body"><p>Use the following url to acccess the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
                   <pre data-clipboard-target="#code_url" class="code clipboard mt-5"><code id="code_url">https://api.webcms.dev/1.jkljkl/page/1</code></pre> 
                   <pre data-clipboard-target="#code_php" class="code clipboard"><label>PHP</label><code id="code_php">$page = json_decode(file_get_contents('https://api.webcms.dev/1.jkljkl/page/1'));</code></pre> 
@@ -534,17 +530,17 @@
                   <small>Just change <code>page/1</code> to <code>page/</code></small>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary mr-2" v-on:click="closeModal('modal_center')">Close</button>
                   <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
                 </form>
               </div>
             </section>
 
-  </main>
+  </article>
 
 
-</section>
+</main>
 
 <script src="assets/front-min.js"></script>
 <script>

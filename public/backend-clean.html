@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MaksucoCSS ADMIN BACKEND</title>
+  <link href="assets/fontawesome/fontawesome.css" rel="stylesheet">
+  <link href="assets/maksucocss.css" rel="stylesheet">
+  <link href="assets/backend.css" rel="stylesheet">
+</head>
+<body>
+  
+<main class="container">
+
+  <div id="navVue">
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <a href="/" class="logo mt-4">
+        <img src="assets/img/logo.png" alt="back_home" class="">
+      </a>
+      <ul class="sidebar-nav">
+        <li><a href="index.html"><i class="fa fa-tachometer-alt"></i> Frontend <span class="badge badge-xs bg-orange color-yellow ml-1">16/24</span></a></li>
+        <li><a href="forms.html" class="active"><i class="fa fa-inbox-in"></i> Forms</a></li>
+        <li><a href="boxes.html"><i class="fa fa-project-diagram"></i> Boxes</a></li>
+        <li><a href="/account/maksuco/settings"><i class="fa fa-cog fa-fw"></i> Settings <span class="badge bg-orange float-right">16/24</span></a></li>
+        <li><a href="/help/inbox"><i class="fas fa-question-circle"></i> Help</a></li>
+        <li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+      </ul>
+      <div class="block p-3 text-center m-2 mt-10 bg-primary-100 color-light rounded-lg opacity-50">
+        Maksuco <span>Michael McSwain</span>
+      </div> 
+    </div>
+  </aside>
+
+
+  <section class="topnav">
+    <div class="prefetch">
+      <input type="search" class="search" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false">
+      <i class="fas fa-spinner fa-spin search-spinner"></i>
+    </div>
+
+    <div class="sidemenu_toggler">
+      <a class="" v-on:click="navSidebar"><i class="fa fa-lg" v-bind:class="navSidebarIcon"></i></a>
+    </div>
+
+    <div tabindex="0" class="dropdown-user" @mouseover="nav_dropdown = true" @mouseleave="nav_dropdown = false" @click="nav_dropdown = !nav_dropdown">
+      <a class="dropdown-toggle">
+        <img src="https://s.gravatar.com/avatar/807f4be95506954f8cacf642a03375cd?d=https://s3.amazonaws.com/cscontact/users/avatar.png" class="">
+      </a>
+      <div class="dropdown-menu-right" v-if="nav_dropdown">
+        <a href="/user/dashboard" class="dropdown-item">Start</a>
+        <div class="dropdown-item hover-bg-transparent">Profile <a href="/something-else" class="badge badge-light badge-sm ml-3">SEE ALL</a></div>
+        <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka drt dadsa<br><small class="color-gray">Somethinsg</small> </a>
+        <a href="/logout" class="dropdown-item">Logout</a>
+        <a href="/user/profile" class="dropdown-item dropdown-item-row">logout_all</a>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <article id="app" class="bg-backend">
+
+    <header>
+      <h1 class="color-dark text-bold w-full">BACKEND
+        <button type="button" class="btn btn-primary ml-1 px-4"><i class="fas fa-plus"></i></button>
+
+        <div class="inline relative" @mouseover="options_dropdown = true" @mouseleave="options_dropdown = false" @click="options_dropdown = !options_dropdown">
+          <button type="button" class="btn btn-primary ml-1 px-3"><i class="far fa-ellipsis-h"></i></button>
+          <div class="dropdown-caret-right" v-if="options_dropdown"></div>
+          <div class="dropdown-menu-right font-light min-w-200" v-if="options_dropdown">
+            <a href="/user/dashboard" class="dropdown-item">Duplicate</a>
+            <div class="dropdown-item hover-bg-transparent">Client <a href="/something-else" class="badge badge-light badge-sm ml-1">SEE</a> <a href="/something-else" class="badge badge-light badge-sm ml-1">DETAILS</a></div>
+            <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka<br><small class="color-gray">Somethinsg</small> </a>
+            <a href="/user/profile" class="dropdown-item dropdown-item-row"><i class="fas fa-plus mr-2"></i> Add new</a>
+          </div>
+        </div>
+
+      </h1>
+      <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-secondary ml-2">buttons in the middle</span>
+    </header>
+
+    <section class="container flex flex-wrap">
+
+      <figure class="col-24 col-md-9 p-2">
+          <div class="bg-white shadow-sm p-4">
+
+            <h6 class="uppercase text-bold">GENERAL MANAGER</h6>
+            <p class="mt-1 text-sm color-gray">The general manager controls all staff, payments and settings of the business</p>
+
+              <div class="block color-black pt-5">
+                <img src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" alt="" class="h-50 w-50 rounded-circle object-cover float-left mr-3">
+                <span class="">Michael Mcswain</span>
+                <a href="#" class="btn btn-yellow btn-xs text-xs">Change Manager</a>
+              </div>
+
+
+            <h6 class="uppercase text-bold mt-12">REGENERATE API</h6>
+            <p class="mt-2 text-xs color-gray">Changing your API can disconnect you from some things, please only use this when your certain your account is compromise.</p>
+              <div class="form-inner required mt-5">
+                <label for="manager">API KEY</label>
+                <input type="text" class="form-control-inner" id="manager" placeholder="">
+              </div>
+              <a href="#" class="btn btn-primary btn-xs">Copy</a>
+              <a href="#" class="btn btn-teal btn-xs">Generate New</a>
+
+
+              <h6 class="uppercase text-bold mt-12">LANGUAGES</h6>
+              <div class="row mt-2 color-gray">
+                
+                <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                  <input type="checkbox" class="" name="currencies[]" id="currency_AED" value="AED">
+                  <label class="" for="currency_AED">form-checkbox-sm</label>
+                </div>
+
+                <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                  <input type="checkbox" class="" name="currencies[]" id="currency_ZWD" value="ZWD">
+                  <label class="" for="currency_ZWD">ZWD </label>
+              </div>
+            </div>
+            
+
+
+              <hr class="bg-gray mb-0">
+
+              <div class="flex items-center color-gray mt-2">
+                <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+                <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+              </div>
+
+          </div>
+        </figure>  
+
+    </section>
+
+    <section class="container mt-6">
+
+      <h6 class="color-gray text-bold">SHORTCUTS</h6>
+      
+      <a href="clients" class="btn btn-primary p-4 mt-1">
+        <i class="fa fa-users fa-2x block opacity-25"></i>
+        <small class="uppercase color-light mt-3">ADD CLIENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-4 mt-1">
+        <i class="fa fa-plus fa-2x block opacity-50 color-gray"></i>
+        <small class="uppercase color-light mt-3">ADD PAYMENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-5 mt-1">
+        <div class="block opacity-50 color-gray text-xl text-bold">ADD</div>
+        <small class="uppercase color-light">PAYMENT</small>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-3 mt-1">
+        <i class="fa fa-plus fa-2x block opacity-50 color-gray"></i>
+        <span class="btn btn-gray btn-xs uppercase mt-1 rounded">ADD PAYMENT</span>
+      </a>
+      
+      <a href="clients" class="btn bg-dark-400 p-3 pl-4 pr-5 mt-1 h-60 box-icon relative" data-icon="&#xf382">
+        <span class="uppercase text-bold color-light mt-2 block"><i class="fa fa-plus text-xs"></i> ADD CLIENT</span>
+      </a>
+
+    </section>
+
+
+    <footer>
+      2020 fdsfdsfdsfsdfsd
+    </footer>
+
+
+  </article>
+</main>
+
+<script src="assets/front-min.js"></script>
+<script>
+//NAV VUE
+var navVue = new Vue({
+  el: '#navVue',
+  data: {
+    nav_dropdown: false,
+    navSidebarIcon: 'fa-bars'
+  },
+  methods: {
+    navDropdown() {
+      document.querySelector(".dropdown-menu").classList.toggle("show");
+    },
+    navDropdownFocusOut() {
+      document.querySelector(".dropdown-menu").classList.remove("show");
+    },
+    navSidebar() {
+      document.querySelector(".sidebar").classList.toggle("active");
+      //document.querySelector(".sidebar-before").classList.toggle("show");
+      this.navSidebarIcon = (this.navSidebarIcon == "fa-bars")? "fa-times" : "fa-bars";
+    }
+  },
+  watch: {
+  },
+  components: {
+  }
+});
+
+//NAV VUE
+var app = new Vue({
+  el: '#app',
+  data: {
+    modal_left: false,
+    modal_right: false,
+    modal_full: false,
+    modal_center: false,
+    options_dropdown: false
+  }
+});
+
+</script>
+</body>
+</html>

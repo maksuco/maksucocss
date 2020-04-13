@@ -1566,6 +1566,29 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/public/assets/fontawesome/fontawesome.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/assets/fontawesome/fontawesome-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/assets/fontawesome/fontawesome.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/assets/fontawesome/fontawesome.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/public/assets/fontawesome/scss/_animated.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1742,7 +1765,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/fontawesome/scss/brands.css",
 		"oF": 0,
 		"oS": 0,
@@ -1768,7 +1791,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/fontawesome/scss/fontawesome.css",
 		"oF": 0,
 		"oS": 0,
@@ -1781,7 +1804,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/fontawesome/scss/light.css",
 		"oF": 0,
 		"oS": 0,
@@ -1794,7 +1817,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/fontawesome/scss/regular.css",
 		"oF": 0,
 		"oS": 0,
@@ -1807,7 +1830,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/fontawesome/scss/solid.css",
 		"oF": 0,
 		"oS": 0,
@@ -2046,6 +2069,17 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/public/assets/img/logo.png": {
+		"ft": 32768,
+		"iS": 6973,
+		"oA": 0,
+		"oAP": "/public/assets/img/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/public/assets/maksucocss.css": {
 		"aP": 1,
@@ -6465,6 +6499,14 @@
 		"oF": 0,
 		"rC": 0,
 		"tEC": 0
+		},
+	"/public/backend-clean.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/backend-clean.html",
+		"oF": 0
 		},
 	"/public/backend.html": {
 		"cB": 0,

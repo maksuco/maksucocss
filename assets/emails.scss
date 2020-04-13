@@ -80,7 +80,7 @@ p {
   margin: 0;
 }
 
-.table-grid {
+.table-grid, .table-grid-clean {
   thead {
     color: $gray;
     font-weight: $font-weight-bold;
@@ -90,7 +90,7 @@ p {
     background-color: $light;
     border-radius: $btn-radius;
     tr {
-    padding: $email-content-padding;
+      padding: $email-content-padding;
       padding-bottom: 2rem;
       border-bottom: 1px solid darken($light, 2%);
     }
@@ -98,6 +98,25 @@ p {
   tfoot {
     padding-top: 3rem;
     color: darken($gray, 25%);
+  }
+}
+
+.table-grid-clean {
+  padding: $email-content-padding;
+  thead {
+    background-color: $light;
+    border-radius: $btn-radius;
+  }
+  tbody {
+    background-color: transparent;
+    border-radius: none;
+    tr {
+      border-bottom: none;
+    }
+  }
+  tfoot {
+    color: $gray;
+    font-weight: $font-weight-bold;
   }
 }
 
@@ -112,11 +131,15 @@ p {
 }
 
 .email-logo {
+  display: block;
+  width: 100%;
   padding: 1rem $email-content-padding;
   text-align: $email-text-align;
 }
 
 .email-subject {
+  display: block;
+  width: 100%;
   padding: 2rem $email-content-padding;
   text-align: $email-text-align;
 }

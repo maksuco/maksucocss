@@ -10,6 +10,7 @@
 
 .dropdown-menu, .dropdown-menu-center, .dropdown-menu-right {
   position: absolute;
+  z-index: 9999;
   display: block; //none
   border: none;
   border-radius: $dropdown-radius * 1.1;
@@ -21,11 +22,12 @@
   overflow: hidden;
 
   .dropdown-item {
+    color: $body;
     display: block;
     font-size: $dropdown-font-size;
-    font-weight: light;
+    font-weight: $font-weight-normal;
     line-height: 1.1;
-    color: $body;
+    letter-spacing: 0.4px !important;
     text-transform: capitalize;
     clear: both;
     border-radius: $dropdown-radius * 1.1;
@@ -69,10 +71,10 @@
 //CARET ARROW
 .dropdown-caret, .dropdown-caret-center, .dropdown-caret-right {
   position: absolute;
-  top: calc(#{$dropdown-top} - 9px) !important;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #FFFFFF;
+  top: calc(#{$dropdown-top} - 6px) !important;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #FFFFFF;
 }
 .dropdown-caret {
   left: 15px;

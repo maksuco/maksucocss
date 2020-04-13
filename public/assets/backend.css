@@ -1,24 +1,40 @@
 body {
-  background-color: #f4f6f8; }
+  background: linear-gradient(90deg, white 30%, #f8fafc 70%); }
+
+main {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden; }
+  main.rounded-full {
+    border-radius: 40px !important; }
 
 .container {
-  max-width: 100% !important;
   padding-left: 2rem;
   padding-right: 2rem; }
   @media (max-width: 1168px) {
     .container {
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+      padding-left: .2rem;
+      padding-right: .2rem; } }
+
+.bg-backend {
+  background-color: #f8fafc; }
+
+.m-backend {
+  margin: 18.75px; }
+
+.p-backend {
+  padding: 18.75px; }
 
 aside.sidebar {
   position: fixed;
   z-index: 9;
-  width: 220px;
+  width: 250px;
   top: 0;
   bottom: 0;
   overflow: hidden;
   line-height: 1.1;
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  background-color: white; }
   aside.sidebar .sidebar-content {
     position: absolute;
     top: 0;
@@ -35,43 +51,45 @@ aside.sidebar {
   aside.sidebar .logo {
     width: 100%;
     text-align: center;
-    padding-bottom: .5rem;
+    padding: 28.125px 18.75px 18.75px 18.75px;
     display: block; }
     aside.sidebar .logo img {
+      margin: 0 auto;
       width: 100%;
-      max-width: 90%;
+      max-width: 96%;
       max-height: 100px; }
   aside.sidebar hr {
     border: 0;
     height: 1px;
     background-color: rgba(237, 242, 248, 0.3); }
   aside.sidebar .sidebar-panel {
-    padding: 10px 15px;
-    color: rgba(237, 242, 248, 0.8);
-    font-weight: bold; }
+    padding: 10px 0px 10px 30.75px;
+    color: #326076;
+    font-weight: 700; }
     aside.sidebar .sidebar-panel span {
       display: block;
       font-size: 85%;
-      color: #A0AEC0;
-      font-weight: lighter; }
+      color: #224252;
+      font-weight: 300; }
   aside.sidebar .sidebar-nav {
     margin-top: 15px;
     font-size: 13px;
     list-style: none;
     width: 100%;
-    padding-left: 0px;
+    padding: 0px 18.75px;
     vertical-align: middle; }
     aside.sidebar .sidebar-nav li {
+      display: block;
       margin-top: .1rem;
       margin-bottom: .1rem; }
       aside.sidebar .sidebar-nav li a {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
         position: relative;
-        padding-left: 20px;
-        color: #dae9f5 !important;
+        padding-left: 12px;
+        color: #2a5164 !important;
         font-size: .96rem;
-        font-weight: normal;
+        font-weight: 400;
         display: block;
         text-decoration: none;
         width: 100%; }
@@ -80,7 +98,7 @@ aside.sidebar {
         background: transparent; }
       aside.sidebar .sidebar-nav li .active {
         cursor: default;
-        color: white !important;
+        color: rgba(42, 81, 100, 0.5) !important;
         background: transparent !important; }
       aside.sidebar .sidebar-nav li i {
         width: 27px;
@@ -93,7 +111,7 @@ aside.sidebar {
   aside.sidebar h5 {
     text-transform: uppercase;
     color: #677694;
-    padding: 20px 0px 2px 14px !important;
+    padding: 20px 0px 2px 12px !important;
     font-size: .8rem;
     line-height: 1;
     letter-spacing: .06rem; }
@@ -110,14 +128,14 @@ aside.sidebar {
         padding: .3rem .6rem; }
         aside.sidebar .sidebar-nav li {
           line-height: 1rem;
-          font-weight: bold;
+          font-weight: 700;
           padding-bottom: .3rem; }
           aside.sidebar .sidebar-nav li a {
             text-align: center;
             padding: .3rem .4rem .2rem .4rem;
             font-size: .5rem;
             text-transform: uppercase;
-            border: 1px solid rgba(218, 233, 245, 0.1);
+            border: 1px solid rgba(42, 81, 100, 0.1);
             border-radius: .5rem; }
           aside.sidebar .sidebar-nav li i {
             display: block;
@@ -133,7 +151,7 @@ aside.sidebar {
   @media (max-width: 768px) {
     aside.sidebar {
       transition: all .25s ease-out;
-      left: -220px; }
+      left: -250px; }
       aside.sidebar.active {
         left: 0px !important; }
       aside.sidebar .logo {
@@ -219,83 +237,45 @@ aside.sidebar {
       height: 40px; }
   .dropdown-user .dropdown-toggle::after {
     display: none; }
-  .dropdown-user .dropdown-menu {
-    position: absolute;
-    display: block;
-    border: none;
-    border-radius: 0.22rem;
-    padding: 4px 6px;
-    background-color: white;
-    box-shadow: rgba(59, 32, 152, 0.1) 0px 5px 20px 0px;
-    margin-right: -2px !important;
-    top: 40px !important;
-    min-width: 11rem;
-    text-align: left;
-    right: 0;
-    left: auto; }
-    .dropdown-user .dropdown-menu .dropdown-item {
-      display: block;
-      width: 100%;
-      font-size: .95rem;
-      font-weight: light;
-      line-height: 1.1;
-      color: #151d2e;
-      text-transform: capitalize;
-      clear: both;
-      border-radius: 0.22rem;
-      margin: 2px 0;
-      padding: .4rem 1rem; }
-      .dropdown-user .dropdown-menu .dropdown-item:hover {
-        background-color: #edf2f8; }
-      .dropdown-user .dropdown-menu .dropdown-item:active {
-        color: #edf2f8;
-        background-color: #3B2098; }
-    .dropdown-user .dropdown-menu::before {
-      content: "";
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #FFFFFF;
-      position: absolute;
-      top: -9px;
-      right: 15px; }
 
-main {
+article {
   position: relative;
   width: auto;
   max-width: 100%;
-  min-height: 100% !important;
+  min-height: 100vh !important;
   flex-basis: 0;
   flex-grow: 1;
-  margin-left: 220px;
+  background-color: #f8fafc;
+  margin-left: 250px;
   overflow-y: scroll;
   /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch; }
-  main header {
+  article header {
     padding: 1.5rem 2rem 2rem 2rem;
     align-items: baseline; }
-    main header h1 {
+    article header h1 {
       display: block;
       width: 100%;
       font-size: 3.2rem;
       line-height: 1.1;
       letter-spacing: -1.2px; }
-      main header h1 .btn {
+      article header h1 .btn {
         margin-top: -.4rem;
         padding: 0.25rem 0.5rem;
         font-size: 1.2rem;
         vertical-align: middle; }
   @media (min-width: 768px) and (max-width: 1168px) {
-    main {
+    article {
       margin-left: 98px; }
-      main header {
+      article header {
         padding: 1.5rem 1rem 2rem 1rem; } }
   @media (max-width: 768px) {
-    main {
+    article {
       margin-left: 0px; }
-      main header {
+      article header {
         text-align: center;
         padding: 1.5rem 1rem; }
-        main header h1 {
+        article header h1 {
           padding-top: 50px;
           font-size: 2.5rem; } }
 
@@ -307,8 +287,15 @@ main {
   .breadcrumbs a {
     color: #edf2f8; }
 
-.footer {
-  margin-left: 1rem !important;
+footer {
   margin-top: 20px;
   font-size: .8rem;
-  opacity: .5; }
+  opacity: .5;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (max-width: 1168px) {
+    footer {
+      padding-left: 1rem;
+      padding-right: 1rem; } }

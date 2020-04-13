@@ -1,17 +1,35 @@
 @import 'scss/variables';
 
 body {
-  background-color: $backend-bg;
+  background: linear-gradient(90deg, $backend-sidebar-bg 30%, $backend-bg 70%);
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  &.rounded-full {
+    border-radius: 40px !important;
+  }
 }
 
 .container {
-  max-width: 100% !important;
   padding-left: 2rem;
   padding-right: 2rem;
   @media (max-width: $backend-breakpoint) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
   }
+}
+
+.bg-backend {
+  background-color: $backend-bg;
+}
+.m-backend {
+  margin: $backend-sidebar-padding;
+}
+.p-backend {
+  padding: $backend-sidebar-padding;
 }
 
 
@@ -25,8 +43,8 @@ aside.sidebar {
   bottom: 0;
   overflow: hidden;
   line-height: 1.1;
-  //background: linear-gradient(to bottom, $backend-aside-bg, $backend-aside-bg_end); set in page
   padding: 20px 0px;
+  background-color: $backend-sidebar-bg;
   .sidebar-content {
     position: absolute;
     top: 0;
@@ -46,11 +64,12 @@ aside.sidebar {
   .logo {
     width: 100%;
     text-align: center;
-    padding-bottom: .5rem;
+    padding: ($backend-sidebar-padding * 1.5) $backend-sidebar-padding $backend-sidebar-padding $backend-sidebar-padding;
     display: block;
     img {
+      margin: 0 auto;
       width: 100%;
-      max-width: 90%;
+      max-width: 96%;
       max-height: 100px;
     }
   }
@@ -60,15 +79,14 @@ aside.sidebar {
     background-color: rgba($light, .3); 
   }
   .sidebar-panel {
-    padding: 10px 15px;
-    //background: $backend-aside-bg_end;
-    color: rgba($light, .8);
-    font-weight: bold;
+    padding: 10px 0px 10px ($backend-sidebar-padding + 12);
+    color: lighten($backend-sidebar-links, 5%);
+    font-weight: $font-weight-bold;
     span {
       display: block;
       font-size: 85%;
-      color: $gray;
-      font-weight: lighter;
+      color: darken($backend-sidebar-links, 5%);
+      font-weight: $font-weight-light;
     }
   }
   .sidebar-nav {
@@ -76,19 +94,20 @@ aside.sidebar {
     font-size: 13px;
     list-style: none;
     width: 100%;
-    padding-left: 0px;
+    padding: 0px $backend-sidebar-padding;
     vertical-align: middle;
     li {
+      display: block;
       margin-top: .1rem;
       margin-bottom: .1rem;
       a {
-        padding-top: $backend-sidebar-links-padding;
-        padding-bottom: $backend-sidebar-links-padding;
+        padding-top: $backend-sidebar-links-padding-tb;
+        padding-bottom: $backend-sidebar-links-padding-tb;
         position: relative;
-        padding-left: 20px;
+        padding-left: 12px;
         color: $backend-sidebar-links !important;
         font-size: .96rem;
-        font-weight: normal;
+        font-weight: $font-weight-normal;
         display: block;
         text-decoration: none;
         width: 100%; 
@@ -99,7 +118,7 @@ aside.sidebar {
       }
       .active {
         cursor: default;
-        color: lighten($backend-sidebar-links, 30%) !important;
+        color: rgba($backend-sidebar-links, .5) !important;
         background: transparent !important;
       }
       i {
@@ -119,7 +138,7 @@ aside.sidebar {
   h5 {
     text-transform: uppercase;
     color: #677694;
-    padding: 20px 0px 2px 14px !important;
+    padding: 20px 0px 2px 12px !important;
     font-size: .8rem;
     line-height: 1;
     letter-spacing: .06rem;
@@ -139,7 +158,7 @@ aside.sidebar {
       padding: .3rem .6rem;
       li {
         line-height: 1rem;
-        font-weight: bold;
+        font-weight: $font-weight-bold;
         padding-bottom: .3rem;
         a {
           text-align: center;
@@ -169,7 +188,7 @@ aside.sidebar {
   //mobile version
   @media (max-width: $desktop-breakpoint) {
 		transition: all .25s ease-out;
-		left: -$backend-sidebar-margin;
+		left: -$backend-article-margin;
     &.active {
       left: 0px !important;
     }
@@ -278,62 +297,19 @@ aside.sidebar {
   .dropdown-toggle::after {
     display:none
   }
-  .dropdown-menu {
-    position: absolute;
-    display: block; //none
-    border: none;
-    border-radius: $btn-radius * 1.1;
-    padding: 4px 6px;
-    background-color: white;
-    box-shadow: rgba($primary, 0.1) 0px 5px 20px 0px;
-    margin-right: -2px !important;
-    top: 40px !important;
-    min-width: 11rem;
-    text-align: left;
-    right: 0;
-    left: auto;
-    .dropdown-item {
-      display: block;
-      width: 100%;
-      font-size: .95rem;
-      font-weight: light;
-      line-height: 1.1;
-      color: $body;
-      text-transform: capitalize;
-      clear: both;
-      border-radius: $btn-radius * 1.1;
-      margin: 2px 0;
-      padding: .4rem 1rem;
-      &:hover {
-        background-color: $light;
-      }
-      &:active {
-        color: $light;
-        background-color: $primary;
-      }
-    }
-    &::before {
-      content: "";
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #FFFFFF;
-      position: absolute;
-      top: -9px;
-      right: 15px;
-    }
-  }
 }
 
 
-main {
+article {
   position: relative;
   width: auto;
   max-width: 100%;
-  min-height: 100% !important;
+  min-height: 100vh !important;
   flex-basis: 0;
   flex-grow: 1;
+  background-color: $backend-bg;
   
-	margin-left: $backend-sidebar-margin;
+	margin-left: $backend-article-margin;
 	overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 
@@ -389,9 +365,16 @@ main {
 }
 
 
-.footer {
-  margin-left: 1rem !important;
+footer {
   margin-top: 20px;
   font-size: .8rem;
   opacity: .5;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media (max-width: $backend-breakpoint) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

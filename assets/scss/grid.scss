@@ -774,3 +774,21 @@ $mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 
   -webkit-user-select: none;
   user-select: none;
 }
+
+
+
+.box-scroll {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0px;
+
+  overflow: auto; //hidding scroll bar
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
