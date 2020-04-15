@@ -8,13 +8,17 @@
   <link href="assets/fontawesome/fontawesome.css" rel="stylesheet">
   <link href="assets/maksucocss.css" rel="stylesheet">
   <link href="assets/backend.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <style>
+  </style>
 </head>
 <body>
   
 <main class="container">
 
   <div id="navVue">
-  <aside class="sidebar">
+  <aside class="sidebar shadow-primary">
     <div class="sidebar-content">
       <a href="/" class="logo mt-4">
         <img src="assets/img/logo.png" alt="back_home" class="">
@@ -35,9 +39,8 @@
 
 
   <section class="topnav">
-    <div class="prefetch">
-      <input type="search" class="search" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false">
-      <i class="fas fa-spinner fa-spin search-spinner"></i>
+    <div class="">
+      <input type="search" class="search" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false" @focus="search_showBox = true" @blur="setTimeout(() => search_showBox = false, 150)" @change="searchFeed" v-model="search_terms">
     </div>
 
     <div class="sidemenu_toggler">
@@ -57,35 +60,91 @@
       </div>
     </div>
   </section>
+
+  <section class="search-results shadow-indigo absolute-tr top-70 right-20 max-w-400" v-if="search_showBox">
+    <div class="search-results-head text-bold color-gray-800 uppercase" v-text="(search_terms == '')? 'last Visited' : 'Search Results'"></div>
+    <div class="search-results-body">
+      <a v-for="(row, index) in filteredResults" v-bind:href="row.slug" class="row bg-white color-indigo-600 p-2 px-4 rounded-lg text-bold shadow-sm hover-bg-primary hover-color-white hover-shadow mt-1 items-center">
+        <div class="col-3 text-center">
+            <span class="text-bold bg-gray-900 color-light p-1 rounded text-lg">{{row.initials}}</span>
+        </div>
+        <div class="col-20 offset-1">{{row.name}}</div>
+      </a>
+      <div class="block color-gray text-center" v-if="filteredResults.length == 0">No hay resultados</div> 
+    </div>
+  </section>
+
   </div>
 
   <article id="app" class="bg-backend">
 
     <header>
-      <h1 class="color-dark text-bold w-full">BACKEND
-        <button type="button" class="btn btn-primary ml-1 px-4"><i class="fas fa-plus"></i></button>
-
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/"><i class="fas fa-home-alt"></i></a></li> 
+        <li class="breadcrumb-item"><a href="#">Collections</a></li>
+        <li class="breadcrumb-item"><a href="#">Camara Colombiana de Infraes</a></li>
+      </ol>
+      <h1 class="color-dark text-bold w-full">BACKEND 
         <div class="inline relative" @mouseover="options_dropdown = true" @mouseleave="options_dropdown = false" @click="options_dropdown = !options_dropdown">
           <button type="button" class="btn btn-primary ml-1 px-3"><i class="far fa-ellipsis-h"></i></button>
-          <div class="dropdown-caret-right" v-if="options_dropdown"></div>
-          <div class="dropdown-menu-right font-light min-w-200" v-if="options_dropdown">
-            <a href="/user/dashboard" class="dropdown-item">Duplicate</a>
-            <div class="dropdown-item hover-bg-transparent">Client <a href="/something-else" class="badge badge-light badge-sm ml-1">SEE</a> <a href="/something-else" class="badge badge-light badge-sm ml-1">DETAILS</a></div>
-            <a href="#contactSupport" data-toggle="modal" class="dropdown-item">contact_suppo hjka<br><small class="color-gray">Somethinsg</small> </a>
-            <a href="/user/profile" class="dropdown-item dropdown-item-row"><i class="fas fa-plus mr-2"></i> Add new</a>
+          <div class="dropdown-menu-right font-light min-w-200 md-mt-3" v-if="options_dropdown">
+            <div class="dropdown-item dropdown-item-row cursor-pointer mt-0" v-on:click="showModal('modal_add_payment')"><i class="fas fa-envelope mr-1 color-gray"></i> Send by email</div>
+            <a href="/user/dashboard" class="dropdown-item"><i class="fas fa-copy mr-1 color-gray"></i> Duplicate</a>
+            <a href="/user/dashboard" class="dropdown-item"><i class="fas fa-cloud-download mr-1 color-gray"></i> Download</a>
+            <a href="/user/dashboard" class="dropdown-item"><i class="fas fa-eye mr-1 color-gray"></i> Preview</a>
+            <a href="/user/dashboard" class="dropdown-item"><i class="fas fa-money-check-edit-alt mr-1 color-gray"></i> Report Payment</a>
+            <div class="dropdown-item hover-bg-transparent">Client<br><a href="/something-else" class="badge badge-light badge-sm mr-1 mt-1">INVOICES</a> <a href="/something-else" class="badge badge-light badge-sm mr-1 mt-1">DETAILS</a></div>
           </div>
-        </div>
-
+        </div> <span class="badge badge-red badge-sm text-sm shadow-none letter-spacing-sm">OVERDUE</span>
       </h1>
-      <a href="#" class="btn btn-secondary mt-1"> Secondary Button</a>  <span class="text-bold color-secondary ml-2">buttons in the middle</span>
+      <small class="color-gray">ID: 245 | Created: 1 Year Ago | Modified: 1 Year Ago <span class="badge badge-red">OVERDUE</span></small>
     </header>
 
-    <section class="container flex flex-wrap">
+    <section class="container" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 3500, "pageDots": false, "prevNextButtons": false }'>
 
-      <figure class="col-24 col-md-9 p-2">
-          <div class="bg-white shadow-sm p-4">
+      <figure class="col-24 col-md-8 p-2 block h-160">
+        <div class="flex items-center w-100p h-130 bg-gradient-indigo-purple color-white rounded p-6 shadow-indigo-sm hover-bg-dark">
+          <div class="col sm-text-center">
+            <p class="text-sm color-indigo-100">Client name</p>
+            <h2 class="text-3x text-shadow-sm letter-spacing-sm">2,100,000 <span class="text-2x letter-spacing-normal">COP</span></h2>
+            <p class="mt-1 text-sm color-indigo-100">Balance: 2,100,000</p>
+          </div>
+        </div>
+      </figure>
 
-            <h6 class="uppercase text-bold">GENERAL MANAGER</h6>
+      <figure class="col-24 col-md-8 p-2 block h-160">
+        <div class="flex items-center w-100p h-130 bg-gradient-indigo-purple color-white rounded p-6 shadow-indigo-sm hover-bg-dark">
+          <div class="col sm-text-center">
+            <h4 class="text-shadow-sm letter-spacing-sm color-indigo-100">Created <span class="color-white">Mar 14</span></h5>
+            <p class="color-indigo-100">1 year ago. Due <span class="color-white">Mar 24</span> (7 days)</p>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="col-24 col-md-8 p-2 block h-160">
+        <div class="flex items-center w-100p h-130 bg-gradient-indigo-purple color-white rounded p-6 shadow-indigo-sm hover-bg-dark">
+          <div class="col sm-text-center">
+            <h5 class="text-shadow-sm color-indigo-100">Not a recurring</h5>
+            <a href="#" class="btn btn-indigo bg-indigo-300 color-gray-100 btn-sm mt-2 border-0">Convert to recurring</a>
+          </div>
+        </div>
+      </figure>
+      
+    </section>
+
+    
+  <section class="container mt-6 flex">
+
+    <figure class="col-24 col-md-9">
+      <h2 class="mt-3">Invoices</h2>
+      <h5 class="color-gray mt-2">Fusce rutrum pharetra ntum mauris eu sem parturient consectetur egestas.</h5>
+      <button class="btn btn btn-primary mt-5 mb-5">Save</button>
+    </figure>
+
+      <figure class="col-24 col-md-11 offset-md-2 p-2">
+          <div class="bg-white shadow-lg rounded p-4">
+
+            <h6 class="uppercase text-bold color-gray-900">GENERAL MANAGER</h6>
             <p class="mt-1 text-sm color-gray">The general manager controls all staff, payments and settings of the business</p>
 
               <div class="block color-black pt-5">
@@ -131,7 +190,107 @@
           </div>
         </figure>  
 
-    </section>
+        
+    
+      
+    <div class="col-24 col-md-12 offset-md-1">
+
+      <figure class="bg-white shadow-lg rounded">
+      <div class="bg-light-500 color-gray-900 text-bold p-4 flex content-between rounded-t-lg uppercase">Active Invoices</div>
+
+      <div class="flex items-center p-4">
+          <span class="text-bold text-lg bg-gray-900 color-light p-2 py-1 rounded mr-2"><i class="fab fa-instagram"></i></span>
+          XXXXxxxxx <span class="badge badge-light badge-sm bg-blue-100 color-blue-800 ml-3 rounded-full">+80%</span>
+          <i class="fab fa-twitter ml-2"></i>
+          <a href="#" class="btn btn-teal btn-xs ml-auto">Search</a>
+      </div>
+
+      <hr class="bg-gray my-0">
+      
+      <div class="p-4">
+
+          <h6 class="color-gray-900 text-bold">GENERAL MANAGER</h6>
+          <p class="mt-1 text-sm color-gray">The general manager controls all staff, payments and settings of the business</p>
+
+            <div class="block color-black pt-5">
+              <img src="https://images.unsplash.com/photo-1572855471056-65365f934a8d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9" alt="" class="h-50 w-50 rounded-circle object-cover float-left mr-3">
+              <span class="block">Michael Mcswain</span>
+              <a href="#" class="btn btn-yellow btn-xs text-xs">Change Manager</a>
+            </div>
+
+
+
+
+            <h6 class="uppercase text-bold mt-12">LANGUAGES</h6>
+            <div class="row mt-2 color-gray">
+              
+              <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                <input type="checkbox" class="" name="currencies[]" id="currency_AED" value="AED">
+                <label class="" for="currency_AED">form-checkbox-sm</label>
+              </div>
+
+              <div class="form-checkbox form-checkbox-xs col-24 col-lg-12 col-xl-8">
+                <input type="checkbox" class="" name="currencies[]" id="currency_ZWD" value="ZWD">
+                <label class="" for="currency_ZWD">ZWD </label>
+            </div>
+          </div>
+          
+
+
+            <hr class="bg-gray mb-0">
+
+            <div class="flex items-center color-gray mt-2">
+              <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+              <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+            </div>
+
+        </div>
+
+      </figure>
+
+
+
+      <figure class="mt-5 bg-white shadow-lg rounded p-4">
+  
+              <h6 class="text-bold">API KEY</h6>
+              <p class="mt-2 text-xs color-gray">Changing your API can disconnect you from some things, please only use this when your certain your account is compromise.</p>
+                
+              <div class="flex">
+                  <div class="form-inner col required mt-5">
+                    <label for="manager">API KEY</label>
+                    <input type="text" class="form-control-inner" id="manager" placeholder="">
+                  </div>
+
+                  <div class="col-1 mt-5"></div>
+  
+                  <div class="form-inner col required mt-5">
+                    <label for="manager">API KEY</label>
+                    <input type="text" class="form-control-inner" id="manager" placeholder="">
+                  </div>
+              </div>
+
+                <a href="#" class="btn btn-primary btn-xs">Copy</a>
+                <a href="#" class="btn btn-teal btn-xs">Generate New</a>
+              
+
+                <div class="form-inner mt-3">
+                  <textarea class="" id="xxx" rows="3" placeholder="que quieres?"></textarea>
+                  <label>Message</label>
+                </div>
+
+  
+                <hr class="bg-gray mb-0">
+  
+                <div class="flex items-center color-gray mt-2">
+                  <small>Please <a href="xxxxx" target="_blank">click here</a></small>
+                  <a href="#" class="btn btn-primary btn-xs ml-auto">Search</a>
+                </div>
+  
+          </figure>
+
+      </div>
+
+  </section>
 
     <section class="container mt-6">
 
@@ -169,6 +328,23 @@
     </footer>
 
 
+<section class="modal modal-vue modal-right" v-if="modal_add_payment">
+<div class="modal-backdrop" v-on:click="closeModal('modal_add_payment')"></div>
+<div class="modal-dialog">
+  <div action="" id="modal_add_payment" method="POST" class="modal-content">
+    <div class="modal-header"><h4>Report Payment</h4> <i class="close far fa-times" v-on:click="closeModal('modal_add_payment')"></i></div> 
+      <div class="modal-body"><p>Use the following url to access the api <a href="https://api.webcms.dev/1.jkljkl/page/1" target="_blank" class="btn btn-light btn-xs">see json</a></p> 
+
+        <pre class="code-window clipboard mt-5"><code>axios.get('https://api.webcms.dev/1.jkljkl/page/1').then(response => (this.page = response))}</code></pre>
+
+        <h5 class="mt-10">OPTIONS</h5> 
+        <h6 class="color-gray-400 mt-3">SEARCH BY SLUG</h6>
+        <small>Just change <code>page/1</code> to <code>page/</code></small>
+      </div>
+    </div>
+  </div>
+</section>
+
   </article>
 </main>
 
@@ -179,7 +355,21 @@ var navVue = new Vue({
   el: '#navVue',
   data: {
     nav_dropdown: false,
+    search_showBox: false,
+    search_terms: '',
+    search_results: null,
+    search_results_visits: null,
+    search_results_items: null,
     navSidebarIcon: 'fa-bars'
+  },
+  mounted() {
+    axios.get('test-data/searchfeed.json').then(function (response) {
+      this.search_results_items = response.data.items;
+      this.search_results_visits = response.data.visits;
+      this.search_results = response.data.visits;
+      console.log(response.data);
+      console.log('hello41');
+    }).catch((err) => console.error(err));
   },
   methods: {
     navDropdown() {
@@ -192,7 +382,27 @@ var navVue = new Vue({
       document.querySelector(".sidebar").classList.toggle("active");
       //document.querySelector(".sidebar-before").classList.toggle("show");
       this.navSidebarIcon = (this.navSidebarIcon == "fa-bars")? "fa-times" : "fa-bars";
+    },
+    searchFeed() {
+      console.log(this.search_terms);
     }
+  },
+  computed: {
+    //you can erase this and do it any other way
+    filteredResults() {
+      //return search_results;
+      if(this.search_terms == ''){
+        return search_results;
+      }
+      //return search_results_items;
+      let results = search_results_items;
+
+      return results.filter((item) => {
+        return (item.name && item.name.toUpperCase().search(this.search_terms.toUpperCase()) !== -1)
+          || (item.names && item.names.toUpperCase().search(this.search_terms.toUpperCase()) !== -1)
+      }).slice(0,8);
+      return search_results_items.slice(0,8);
+    },
   },
   watch: {
   },
@@ -204,10 +414,7 @@ var navVue = new Vue({
 var app = new Vue({
   el: '#app',
   data: {
-    modal_left: false,
-    modal_right: false,
-    modal_full: false,
-    modal_center: false,
+    modal_add_payment: false,
     options_dropdown: false
   }
 });

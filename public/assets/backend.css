@@ -27,7 +27,7 @@ main {
 
 aside.sidebar {
   position: fixed;
-  z-index: 9;
+  z-index: 100;
   width: 250px;
   top: 0;
   bottom: 0;
@@ -148,6 +148,10 @@ aside.sidebar {
         text-align: center;
         padding: .8rem 0 .4rem 0 !important;
         letter-spacing: -.02rem; } }
+  aside.sidebar.shadow-primary {
+    box-shadow: 6px 0 15px -8px rgba(59, 32, 152, 0.1); }
+  aside.sidebar.shadow {
+    box-shadow: 6px 0 15px -8px rgba(21, 29, 46, 0.1); }
   @media (max-width: 768px) {
     aside.sidebar {
       transition: all .25s ease-out;
@@ -155,12 +159,16 @@ aside.sidebar {
       aside.sidebar.active {
         left: 0px !important; }
       aside.sidebar .logo {
-        display: none; } }
+        display: none; }
+      aside.sidebar.shadow-primary {
+        box-shadow: 6px 0 20px -8px rgba(59, 32, 152, 0.5); }
+      aside.sidebar.shadow {
+        box-shadow: 6px 0 20px -8px rgba(21, 29, 46, 0.5); } }
 
 .topnav {
   display: inline-flex !important;
   position: absolute;
-  z-index: 999;
+  z-index: 120;
   right: 12px;
   top: 8px;
   text-align: right;
@@ -200,6 +208,8 @@ aside.sidebar {
       padding-left: 35px; }
       .topnav .search:focus::placeholder {
         color: #A0AEC0; }
+    .topnav .search:not(:focus)::-webkit-search-cancel-button {
+      display: none; }
   .topnav::before {
     pointer-events: none;
     position: absolute;
@@ -257,8 +267,9 @@ article {
       display: block;
       width: 100%;
       font-size: 3.2rem;
-      line-height: 1.1;
-      letter-spacing: -1.2px; }
+      line-height: 1;
+      letter-spacing: -1.2px;
+      margin-top: 1rem; }
       article header h1 .btn {
         margin-top: -.4rem;
         padding: 0.25rem 0.5rem;
@@ -274,18 +285,14 @@ article {
       margin-left: 0px; }
       article header {
         text-align: center;
-        padding: 1.5rem 1rem; }
+        padding: 1.5rem 1rem;
+        padding-top: 65px; }
         article header h1 {
-          padding-top: 50px;
           font-size: 2.5rem; } }
 
-.breadcrumbs {
-  background-color: transparent;
-  font-size: .7em;
-  margin-bottom: 5px;
-  padding-left: 0px; }
-  .breadcrumbs a {
-    color: #edf2f8; }
+.breadcrumb {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; }
 
 footer {
   margin-top: 20px;

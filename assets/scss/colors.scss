@@ -208,6 +208,13 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   }
   .shadow-#{$name} {
     //horizontal vertical blur spread
+    box-shadow: 0px 6px 20px -5px rgba($color, 0.6);
+  }
+  .shadow-#{$name}-sm {
+    box-shadow: 0px 4px 15px -5px rgba($color, 0.6);
+  }
+  .shadow-#{$name}-lg {
+    //horizontal vertical blur spread
     box-shadow: 0px 8px 25px -5px rgba($color, 0.6);
   }
   .shadow-radar-#{$name} {

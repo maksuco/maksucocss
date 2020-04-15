@@ -15,7 +15,7 @@
 
   .modal-backdrop {
     position: absolute;
-    z-index: 1;
+    z-index: 900;
     width: 100vw;
     height: 100vh;
     background-color: rgba($modal-bg, 0.86);
@@ -24,7 +24,7 @@
 
   .modal-dialog {
     position: absolute;
-    z-index: 1;
+    z-index: 950;
     transform: none;
     min-width: 320px;
     max-height: 90%;

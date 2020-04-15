@@ -103,14 +103,14 @@ hr, .hr {
   align-items: center;
   background-color: transparent;
   font-size: .8rem;
-  padding: 0.75rem 1rem 0.75rem 0;
+  padding: 0.75rem 0.5rem 0.75rem 0;
   list-style: none;
   .breadcrumb-item {
-    padding-right: 0.5rem;
+    padding-right: 0.4rem;
     &:nth-child(n+2) {
       &:before {
         display: inline-block;
-        padding-right: 0.5rem;
+        padding-right: 0.4rem;
         color: lighten($gray, 20%);
         content: "/";
       }

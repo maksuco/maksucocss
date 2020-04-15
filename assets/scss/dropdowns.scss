@@ -71,10 +71,13 @@
 //CARET ARROW
 .dropdown-caret, .dropdown-caret-center, .dropdown-caret-right {
   position: absolute;
-  top: calc(#{$dropdown-top} - 6px) !important;
+  top: ($dropdown-top - 6px) !important;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid #FFFFFF;
+  @media (max-width: $desktop-breakpoint) {
+    top: (($dropdown-top * .9) - 4px) !important;
+  }
 }
 .dropdown-caret {
   left: 15px;
