@@ -7,7 +7,7 @@
 		"uuidString": "8F1D91EE-47FE-4435-A8B2-82A11AAEB6AE"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "32001",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -1096,9 +1096,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/public/assets/front-min.js",
+		"oAP": "/public/assets/packages/maksucocss-min.js",
 		"oF": 2,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/assets/maksucocss.scss": {
@@ -2059,17 +2059,6 @@
 		"oAP": "/public/assets/fontawesome/webfonts/fa-solid-900.woff2",
 		"oF": 0
 		},
-	"/public/assets/front-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/public/assets/front-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/public/assets/img/logo-white.png": {
 		"ft": 32768,
 		"iS": 37186,
@@ -2118,7 +2107,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/packages/axios/axios.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2140,7 +2129,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/packages/clipboard/clipboard.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2167,6 +2156,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/public/assets/packages/maksucocss-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/maksucocss-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/public/assets/packages/v-tooltip/v-tooltip.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2182,7 +2182,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/packages/v-tooltip/v-tooltip.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2908,7 +2908,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/packages/vue/vue.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -3651,6 +3651,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
+			},
 		"guard-for-in": {
 			"active": 0,
 			"optionString": ""
@@ -3827,6 +3831,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -3852,6 +3860,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -4155,6 +4167,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -4358,6 +4374,10 @@
 		"prefer-destructuring": {
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-named-capture-group": {
 			"active": 0,

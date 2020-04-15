@@ -1,9 +1,9 @@
-// @codekit-prepend "../public/assets/packages/vue/dist/vue.min.js";
-// @codekit-prepend "../public/assets/packages/axios/dist/axios.min.js";
+// @codekit-prepend "../public/assets/packages/vue/vue.min.js";
+// @codekit-prepend "../public/assets/packages/axios/axios.min.js";
 // @codekit-prepend "../public/assets/packages/vee-validate/dist/vee-validate.min.js";
 // @codekit-prepend "../public/assets/packages/vee-validate/dist/locale/es.js";
-// @codekit-prepend "../public/assets/packages/clipboard/dist/clipboard.min.js";
-// @codekit-prepend "../public/assets/packages/v-tooltip/dist/v-tooltip.min.js";
+// @codekit-prepend "../public/assets/packages/clipboard/clipboard.min.js";
+// @codekit-prepend "../public/assets/packages/v-tooltip/v-tooltip.min.js";
 
 
 Vue.directive('highlightjs', {
