@@ -15,7 +15,6 @@ main {
     .container {
       padding-left: .2rem;
       padding-right: .2rem; } }
-
 .bg-backend {
   background-color: #f8fafc; }
 
@@ -102,6 +101,7 @@ aside.sidebar {
         background: transparent !important; }
       aside.sidebar .sidebar-nav li i {
         width: 27px;
+        text-align: center;
         padding-right: 10px; }
       aside.sidebar .sidebar-nav li .badge {
         margin-right: 10px;
@@ -164,7 +164,6 @@ aside.sidebar {
         box-shadow: 6px 0 20px -8px rgba(59, 32, 152, 0.5); }
       aside.sidebar.shadow {
         box-shadow: 6px 0 20px -8px rgba(21, 29, 46, 0.5); } }
-
 .topnav {
   display: inline-flex !important;
   position: absolute;
@@ -213,7 +212,7 @@ aside.sidebar {
   .topnav::before {
     pointer-events: none;
     position: absolute;
-    z-index: 2;
+    z-index: 20;
     top: 12px;
     left: 17px;
     font-family: "Font Awesome 5 Pro";
@@ -228,6 +227,9 @@ aside.sidebar {
       top: 16px;
       left: 163px;
       color: #A0AEC0; }
+
+.hide_search_icon::before {
+  display: none !important; }
 
 @media screen and (max-width: 768px) {
   .topnav {
@@ -289,7 +291,6 @@ article {
         padding-top: 65px; }
         article header h1 {
           font-size: 2.5rem; } }
-
 .breadcrumb {
   padding-top: 0px !important;
   padding-bottom: 0px !important; }

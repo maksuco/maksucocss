@@ -230,13 +230,6 @@ ol, ul {
           align-items: center;
 }
 
-@media (min-width: $desktop-breakpoint) {
-  .md-items-center {
-    -webkit-box-align: center;
-            align-items: center;
-  }
-}
-
 .items-baseline {
   -webkit-box-align: baseline;
           align-items: baseline;
@@ -309,6 +302,22 @@ ol, ul {
 
 .content-around {
   align-content: space-around;
+}
+
+
+@media (min-width: $desktop-breakpoint) {
+  .md-items-center {
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .md-justify-start {
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+  .md-justify-center {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
 }
 
 

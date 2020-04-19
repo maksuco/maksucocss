@@ -4,34 +4,7 @@
 // @codekit-prepend "../public/assets/packages/vee-validate/dist/locale/es.js";
 // @codekit-prepend "../public/assets/packages/clipboard/clipboard.min.js";
 // @codekit-prepend "../public/assets/packages/v-tooltip/v-tooltip.min.js";
-
-
-// Vue.directive('highlightjs', {
-//   deep: true,
-//   bind: function (el, binding) {
-//     // on first bind, highlight all targets
-//     let targets = el.querySelectorAll('code')
-//     targets.forEach((target) => {
-//       // if a value is directly assigned to the directive, use this
-//       // instead of the element content.
-//       if (binding.value) {
-//         target.textContent = binding.value
-//       }
-//       hljs.highlightBlock(target)
-//     })
-//   },
-//   componentUpdated: function (el, binding) {
-//     // after an update, re-fill the content and then highlight
-//     let targets = el.querySelectorAll('code')
-//     targets.forEach((target) => {
-//       if (binding.value) {
-//         target.textContent = binding.value
-//         hljs.highlightBlock(target)
-//       }
-//     })
-//   }
-// })
-
+// @codekit-prepend "../public/assets/packages/vue-toasted/vue-toasted.min.js";
 
 var clipboard = new ClipboardJS('.clipboard');
 clipboard.on('success', function(e) {
@@ -162,9 +135,9 @@ Vue.mixin({
       button.classList.add("disabled");
       button.classList.add("opacity-1");
     },
-    handleFileChange(e) {
-      // Whenever the file changes, emit the 'input' event with the file data.
-      //this.$emit('input', e.target.files[0])
-    }
+    inputFileChange(element_id,event){
+      var fileName =  event.target.files[0];
+      document.getElementById(element_id).innerHTML = fileName.name;
+   }
   }
 })

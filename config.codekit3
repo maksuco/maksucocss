@@ -1090,17 +1090,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/maksucocss.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/public/assets/packages/maksucocss-min.js",
-		"oF": 2,
-		"sC": 0,
-		"tS": 0
-		},
 	"/assets/maksucocss.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2091,6 +2080,209 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/public/assets/packages/apexcharts/apexcharts.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/assets/packages/apexcharts/apexcharts-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/assets/packages/apexcharts/apexcharts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/apexcharts/apexcharts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/apexcharts/apexcharts.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/apexcharts/apexcharts.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/apexcharts/locales/ca.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/ca-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/de.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/de-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/el.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/el-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/fi.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/fi-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/fr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/fr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/hi.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/hi-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/hr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/hr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/hy.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/hy-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/id.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/id-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/ko.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/apexcharts/locales/ko-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/apexcharts/locales/ko.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/ko-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/nl.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/nl-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/pl.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/pl-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/pt-br.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/pt-br-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/ru.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/ru-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/se.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/se-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/tr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/tr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/public/assets/packages/apexcharts/locales/ua.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/public/assets/packages/apexcharts/locales/ua-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/public/assets/packages/axios/axios.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2107,7 +2299,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/public/assets/packages/axios/axios.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2129,7 +2321,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/public/assets/packages/clipboard/clipboard.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2167,6 +2359,446 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/public/assets/packages/maksucocss.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/maksucocss-min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/moment/moment-with-locales.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/moment/moment-with-locales-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/moment/moment.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/moment/moment-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/be-nl.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/be-nl.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/bg.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/bg.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/chs.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/chs.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/cs.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/cs.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/da-dk.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/da-dk.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/de-ch.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/de-ch.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/de.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/de.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/en-au.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/en-au.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/en-gb.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/en-gb.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/en-za.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/en-za.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/es-es.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/es-es.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/es.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/es.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/et.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/et.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/fi.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/fi.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/fr-ca.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/fr-ca.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/fr-ch.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/fr-ch.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/fr.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/fr.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/hu.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/hu.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/it.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/it.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/ja.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/ja.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/lv.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/lv.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/nl-be.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/nl-be.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/nl-nl.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/nl-nl.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/no.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/no.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/pl.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/pl.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/pt-br.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/pt-br.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/pt-pt.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/pt-pt.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/ru-ua.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/ru-ua.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/ru.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/ru.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/sk.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/sk.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/sl.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/sl.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/th.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/th.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/tr.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/tr.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/uk-ua.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/uk-ua.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/locales/vi.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/locales/vi.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/numeral/numeral.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/numeral/numeral.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/public/assets/packages/v-tooltip/v-tooltip.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2182,7 +2814,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/public/assets/packages/v-tooltip/v-tooltip.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2292,7 +2924,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/public/assets/packages/vee-validate/dist/locale/es-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2765,7 +3397,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/public/assets/packages/vee-validate/dist/vee-validate.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2908,7 +3540,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/public/assets/packages/vue/vue.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2976,6 +3608,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/public/masonry.html",
+		"oF": 0
+		},
+	"/public/pricing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/public/pricing.html",
 		"oF": 0
 		},
 	"/public/test-data/searchfeed.json": {
