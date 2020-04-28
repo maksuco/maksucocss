@@ -1456,7 +1456,8 @@ body {
   color: #151d2e;
   text-align: left;
   background-color: white;
-  letter-spacing: 0.025em; }
+  letter-spacing: 0.025em;
+  -webkit-print-color-adjust: exact !important; }
 
 a {
   color: #151d2e;
@@ -3394,6 +3395,54 @@ ol, ul {
 
 .h-unset {
   height: unset !important; }
+
+.min-h-auto {
+  min-height: auto !important; }
+
+.min-h-full {
+  min-height: 100% !important; }
+
+.min-h-half {
+  min-height: 50% !important; }
+
+.min-h-third {
+  min-height: 33.333% !important; }
+
+.min-h-fourth {
+  min-height: 25% !important; }
+
+.min-h-screen {
+  min-height: 100vh !important; }
+
+.min-h-fit {
+  min-height: fit-content !important; }
+
+.min-h-unset {
+  min-height: unset !important; }
+
+.max-h-auto {
+  max-height: auto !important; }
+
+.max-h-full {
+  max-height: 100% !important; }
+
+.max-h-half {
+  max-height: 50% !important; }
+
+.max-h-third {
+  max-height: 33.333% !important; }
+
+.max-h-fourth {
+  max-height: 25% !important; }
+
+.max-h-screen {
+  max-height: 100vh !important; }
+
+.max-h-fit {
+  max-height: fit-content !important; }
+
+.max-h-unset {
+  max-height: unset !important; }
 
 @media (min-width: 768px) {
   .md-h-auto {
@@ -6467,6 +6516,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #ffffff !important;
   -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
 
+.table th, .table td {
+  border-bottom-width: 0px;
+  vertical-align: middle; }
+
 @media (max-width: 768px) {
   .table-striped thead th {
     padding-top: 40px; } }
@@ -6573,6 +6626,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .btn-block {
   display: block;
   width: 100%; }
+
+.btn-rounded {
+  border-radius: 9999px !important; }
 
 @media (min-width: 768px) {
   .md-btn-xs {
@@ -15823,14 +15879,16 @@ hr, .hr {
     padding-bottom: 1rem;
     border: 0px;
     border-bottom: 4px solid transparent;
-    background-color: transparent; }
+    background-color: transparent;
+    outline: none !important; }
     .tabs-line .tab-link:hover {
       color: #151d2e; }
     .tabs-line .tab-link.active {
       cursor: default;
       color: #3B2098;
       background-color: transparent;
-      border-bottom: 4px solid #3B2098; }
+      border-bottom: 4px solid #3B2098;
+      outline: none !important; }
 
 .tabs-vertical {
   border-bottom: none; }
@@ -20825,7 +20883,7 @@ h6 {
 .text-sm {
   font-size: 0.875rem; }
 
-.text-base {
+.text-normal, .text-base {
   font-size: 1rem; }
 
 .text-lg {

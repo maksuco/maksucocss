@@ -1,0 +1,61 @@
+.pagination {
+  display: flex;
+}
+
+.page-item {
+  &:first-child {
+    .page-link {
+      margin-left: 0;
+    }
+  }
+  &:last-child {
+    .page-link {
+    }
+  }
+
+  &.active .page-link {
+    z-index: 1;
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+  }
+
+  &.disabled .page-link {
+    color: $white;
+    pointer-events: none;
+    // Opinionated: remove the "hand" cursor set previously for .page-link
+    cursor: auto;
+    background-color: lighten($primary, 30);
+    border-color: lighten($primary, 20);
+  }
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: $btn-padding-y $btn-padding-x;
+  margin-left: -$pagination-border-width;
+  line-height: $pagination-line-height;
+  color: $pagination-color;
+  background-color: $pagination-bg;
+  border: $pagination-border-width solid $pagination-border-color;
+
+  &:hover {
+    z-index: 2;
+    color: $pagination-hover-color;
+    text-decoration: none;
+    background-color: $pagination-hover-bg;
+    border-color: $pagination-hover-border-color;
+  }
+
+  &:focus {
+    z-index: 2;
+    outline: none;
+    box-shadow: none;
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .page-link elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}

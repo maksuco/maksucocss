@@ -1,0 +1,36 @@
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    font-size: 11pt; } }
+
+@media print {
+  .text-xxs {
+    font-size: 5.5pt; }
+  .text-xs {
+    font-size: 6.6pt; }
+  .text-sm {
+    font-size: 7.7pt; }
+  .text-normal, .text-base {
+    font-size: 11pt; }
+  .text-lg {
+    font-size: 12.1pt; }
+  .text-xl {
+    font-size: 13.2pt; }
+  .text-2x {
+    font-size: 16.5pt; }
+  .text-3x {
+    font-size: 18.7pt; }
+  .text-4x {
+    font-size: 22pt; }
+  .text-5x {
+    font-size: 25.3pt; }
+  .text-6x {
+    font-size: 27.5pt; }
+  .text-7x {
+    font-size: 30.8pt; }
+  .text-8x {
+    font-size: 33pt; }
+  .text-9x {
+    font-size: 36.3pt; }
+  .text-10x {
+    font-size: 39.6pt; } }

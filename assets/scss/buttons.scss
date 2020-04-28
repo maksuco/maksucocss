@@ -44,6 +44,10 @@
   width: 100%;
 }
 
+.btn-rounded {
+  border-radius: 9999px !important;
+}
+
 @media (min-width: $desktop-breakpoint) {
   .md-btn-xs {
     font-size: .74rem !important;

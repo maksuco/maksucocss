@@ -1,4 +1,10 @@
 //GRAY ODD AND EVEN
+
+
+.table th, .table td {
+  border-bottom-width: 0px;
+  vertical-align: middle;
+}
 //from CScontact
 .table-striped {
   thead th {

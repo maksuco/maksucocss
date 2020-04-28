@@ -16,6 +16,8 @@ body {
   text-align: left;
   background-color: $bg;
   letter-spacing: $font-letter-spacing;
+  //allow bg colors on print
+  -webkit-print-color-adjust: exact !important;
 }
 
 a {
@@ -658,6 +660,25 @@ $percentages: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
 .h-screen { height: 100vh !important; }
 .h-fit { height: fit-content !important; }
 .h-unset { height: unset !important; }
+
+.min-h-auto { min-height: auto !important; }
+.min-h-full { min-height: 100% !important; }
+.min-h-half { min-height: 50% !important; }
+.min-h-third { min-height: 33.333% !important; }
+.min-h-fourth { min-height: 25% !important; }
+.min-h-screen { min-height: 100vh !important; }
+.min-h-fit { min-height: fit-content !important; }
+.min-h-unset { min-height: unset !important; }
+
+.max-h-auto { max-height: auto !important; }
+.max-h-full { max-height: 100% !important; }
+.max-h-half { max-height: 50% !important; }
+.max-h-third { max-height: 33.333% !important; }
+.max-h-fourth { max-height: 25% !important; }
+.max-h-screen { max-height: 100vh !important; }
+.max-h-fit { max-height: fit-content !important; }
+.max-h-unset { max-height: unset !important; }
+
 @media (min-width: $desktop-breakpoint) {
   .md-h-auto { height: auto !important; }
   .md-h-full { height: 100% !important; }

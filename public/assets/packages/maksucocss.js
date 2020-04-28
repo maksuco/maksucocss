@@ -1,10 +1,10 @@
-// @codekit-prepend "../public/assets/packages/vue/vue.min.js";
-// @codekit-prepend "../public/assets/packages/axios/axios.min.js";
-// @codekit-prepend "../public/assets/packages/vee-validate/dist/vee-validate.min.js";
-// @codekit-prepend "../public/assets/packages/vee-validate/dist/locale/es.js";
-// @codekit-prepend "../public/assets/packages/clipboard/clipboard.min.js";
-// @codekit-prepend "../public/assets/packages/v-tooltip/v-tooltip.min.js";
-// @codekit-prepend "../public/assets/packages/vue-toasted/vue-toasted.min.js";
+// @codekit-prepend "vue/vue.min.js";
+// @codekit-prepend "axios/axios.min.js";
+// @codekit-prepend "vee-validate/dist/vee-validate.min.js";
+// @codekit-prepend "vee-validate/dist/locale/es.js";
+// @codekit-prepend "clipboard/clipboard.min.js";
+// @codekit-prepend "v-tooltip/v-tooltip.min.js";
+// @codekit-prepend "vue-toasted/vue-toasted.min.js";
 
 var clipboard = new ClipboardJS('.clipboard');
 clipboard.on('success', function(e) {
@@ -15,6 +15,10 @@ clipboard.on('success', function(e) {
 
 Vue.mixin({
   methods: {
+    //v-on:click.prevent="goToUrl('')
+    goToUrl(url) {
+      window.location.href = url;
+    },
     button_submit_form(target_element) {
       var buttons = document.querySelectorAll('.'+target_element);
       buttons.forEach(function(button) {
