@@ -17,6 +17,7 @@
     border-bottom: 4px solid transparent;
     background-color: transparent;
     outline: none !important;
+    white-space: nowrap;
     &:hover {
       color: $body;
     }

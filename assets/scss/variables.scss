@@ -37,6 +37,7 @@ $body: $dark !default;
 $bg: white !default;
 
 //TYPE
+//$font-family--wait: "-apple-system, system-ui, BlinkMacSystemFont" !default; Chrome needs to fix bold
 $font-family: "-apple-system" !default;
 $heading-font-family: $font-family !default;
 $font-base: 16px !default;
@@ -94,12 +95,14 @@ $backend-sidebar-links-hover: transparent !default;
 $backend-sidebar-links-padding-tb: .6rem !default;
 
 //MODAL
-$modal-bg: $dark;
+$modal-bg: $dark !default;
+$modal-min-width: 330px !default;
+$modal-padding: 25px !default;
 
 //CODE
 $code-bg: #1d2730 !default; //lighten($primary, 60%) !default; //#333333
 $code-color: #8ca0b8 !default; //$primary; //#a3c67a
-$code-label: white; //#ddd
+$code-label: white !default; //#ddd
 
 
 //EMAIL
@@ -115,9 +118,9 @@ $email-text-align: left !default;
 
 
 //OPERATIONS
-@if $btn-radius = 'full'  {
+@if $btn-radius == 'full'  {
   $btn-radius: 9999px !default;
 }
-@if $input-radius = 'full'  {
+@if $input-radius == 'full'  {
   $input-radius: 9999px !default;
 }

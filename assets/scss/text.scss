@@ -6,7 +6,7 @@ p {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: $heading-font-family, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: inherit;
   font-weight: $heading-weight;
   letter-spacing: $heading-letter-spacing;
@@ -60,9 +60,21 @@ h6 {
 }
 
 
+.text-sub-sm {
+  vertical-align: super;
+  font-size: 35%;
+}
 .text-sub {
   vertical-align: super;
   font-size: 50%;
+}
+.text-sub-lg {
+  vertical-align: text-top;
+  font-size: 80%;
+}
+.text-sub-xl {
+  vertical-align: text-top;
+  font-size: 90%;
 }
 
 //SIZES
@@ -120,7 +132,7 @@ h6 {
   .md-text-sm {
     font-size: 0.875rem;
   }
-  .md-text-normal {
+  .md-text-normal, .md-text-base {
     font-size: 1rem;
   }
   .md-text-lg {
@@ -173,6 +185,13 @@ $transforms: italic, uppercase, lowercase, capitalize, underline, line-through;
     }
   }
 }
+.uppercase-first {
+  text-transform: lowercase;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
 .normal {
   text-transform: none;
 }

@@ -21,7 +21,7 @@ body, .body{
   height: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: $font-base;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -58,7 +58,7 @@ a img{
 }
 
 table{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
   border-spacing: 0 !important;

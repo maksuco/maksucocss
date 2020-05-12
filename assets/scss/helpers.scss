@@ -148,6 +148,30 @@ $paddings: p, pl, pr, pt, pb, py, px;
   margin-bottom: 100vh !important;
 }
 
+@media (min-width: $desktop-breakpoint) {
+  .md-my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  .md-mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .md-ml-auto {
+    margin-left: auto !important;
+  }
+  .md-mr-auto {
+    margin-right: auto !important;
+  }
+  
+  .md-mt-screen {
+    margin-top: 100vh !important;
+  }
+  .md-mb-screen {
+    margin-bottom: 100vh !important;
+  }
+}
+
 $margins: m, ml, mr, mt, mb, my, mx;
 @each $row in $margins {
   .#{$row}-0 {
@@ -287,6 +311,16 @@ $margins: m, ml, mr, mt, mb, my, mx;
   }
 }
 
+.mt-full {
+  margin-top: calc(100vh - 0px);
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-mt-full {
+    margin-top: calc(100vh - 0px);
+  }
+}
+
 
 
 //RADIUS
@@ -304,6 +338,9 @@ $margins: m, ml, mr, mt, mb, my, mx;
 }
 .rounded-xl {
   border-radius: 1rem;
+}
+.rounded-xxl {
+  border-radius: 1.5rem;
 }
 .rounded-circle {
   border-radius: 50%!important;
@@ -327,6 +364,9 @@ $margins: m, ml, mr, mt, mb, my, mx;
   }
   .md-rounded-xl {
     border-radius: 1rem;
+  }
+  .md-rounded-xxl {
+    border-radius: 1.5rem;
   }
   .md-rounded-full {
     border-radius: 9999px;

@@ -1,15 +1,11 @@
 @import 'scss/variables';
 
-body {
-  @media print {
+//TEXT SIZES
+@media print {
+  body {
     -webkit-print-color-adjust: exact !important;
     font-size: $print-font-base;
   }
-}
-
-
-//TEXT SIZES
-@media print {
   .text-xxs {
     font-size: $print-font-base * .5;
   }

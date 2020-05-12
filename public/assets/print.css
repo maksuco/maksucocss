@@ -1,9 +1,7 @@
 @media print {
   body {
     -webkit-print-color-adjust: exact !important;
-    font-size: 11pt; } }
-
-@media print {
+    font-size: 11pt; }
   .text-xxs {
     font-size: 5.5pt; }
   .text-xs {

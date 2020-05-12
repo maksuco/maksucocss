@@ -199,3 +199,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: $form-bg !important;
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
+
+.form-muted.required label:after, .form-clean.required label:after, .form-muted-select.required label:after { 
+  color: $red;
+  content: "*";
+  margin-left: 5px;
+  vertical-align: super;
+}
