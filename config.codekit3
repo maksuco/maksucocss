@@ -2349,7 +2349,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/packages/cleave-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2377,6 +2377,27 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/public/assets/packages/flickity/flickity-fade.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/assets/packages/flickity/flickity-fade-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/assets/packages/flickity/flickity-fade.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/flickity/flickity-fade-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/public/assets/packages/flickity/flickity.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2387,13 +2408,34 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/public/assets/packages/flickity/flickity.pkgd.min.js": {
+	"/public/assets/packages/flickity/flickity.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/public/assets/packages/flickity/flickity.pkgd.min-min.js",
+		"oAP": "/public/assets/packages/flickity/flickity-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/public/assets/packages/flickity/fullscreen.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/assets/packages/flickity/fullscreen-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/assets/packages/flickity/fullscreen.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/public/assets/packages/flickity/fullscreen-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2425,7 +2467,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/packages/moment/moment-with-locales-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2843,7 +2885,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/public/assets/packages/numeral/numeral.min-min.js",
 		"oF": 0,
 		"sC": 3,

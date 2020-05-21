@@ -5981,7 +5981,7 @@ ol, ul {
   .form-inner label {
     position: absolute;
     top: 1px;
-    left: 14px;
+    left: 15px;
     display: block;
     padding-bottom: 3px;
     padding-top: 6px;
@@ -5997,13 +5997,6 @@ ol, ul {
       padding: 0.1rem 0.4rem !important;
       line-height: 1;
       margin-top: -1px; }
-  .form-inner input, .form-inner textarea {
-    padding-left: 25px; }
-  .form-inner label {
-    left: 25px;
-    width: calc(100% - 50px); }
-  .form-inner small {
-    padding-left: 25px; }
 
 .form-inner-select {
   position: relative;
@@ -6028,7 +6021,7 @@ ol, ul {
   .form-inner-select label {
     position: absolute;
     top: 1px;
-    left: 16px;
+    left: 15px;
     display: block;
     padding-bottom: 3px;
     padding-top: 7px;
@@ -6046,11 +6039,6 @@ ol, ul {
       margin-left: 6px;
       opacity: 0.5;
       font-size: .5rem; }
-  .form-inner-select select {
-    padding-left: 25px; }
-  .form-inner-select label {
-    left: 25px;
-    width: calc(100% - 50px); }
 
 .form-inner.required::after, .form-inner-select.required::after {
   content: "*";

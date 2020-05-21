@@ -29,7 +29,7 @@
   label {
     position: absolute;
     top: 1px;
-    left: 14px;
+    left: nth($form-padding, -1);
     display: block;
     padding-bottom: 3px;
     padding-top: 6px;
@@ -47,7 +47,7 @@
       margin-top: -1px;
     }
   }
-  @if $input-radius = 9999px or $input-radius = 'full'  {
+  @if $input-radius == 9999px or $input-radius == 'full'  {
     input, textarea {
       padding-left: 25px;
     }
@@ -57,7 +57,7 @@
     }
   }
 
-  @if $input-radius = 9999px or $input-radius = 'full'  {
+  @if $input-radius == 9999px or $input-radius == 'full'  {
     small {
       padding-left: 25px;
     }
@@ -91,7 +91,9 @@
   }
   label {
     position: absolute;
-    top: 1px; left: 16px; display: block;
+    top: 1px; 
+    left: nth($form-padding, -1); //get-side($form-padding, left);
+    display: block;
     padding-bottom: 3px;
     padding-top: 7px;
     width: calc(100% - 20px);
@@ -108,7 +110,7 @@
       font-size: .5rem;
     }
   }
-  @if $input-radius = 9999px or $input-radius = 'full'  {
+  @if $input-radius == 9999px or $input-radius == 'full'  {
     select {
       padding-left: 25px;
     }

@@ -5,12 +5,41 @@
 // @codekit-prepend "clipboard/clipboard.min.js";
 // @codekit-prepend "v-tooltip/v-tooltip.min.js";
 // @codekit-prepend "vue-toasted/vue-toasted.min.js";
+// @codekit-prepend "moment/moment-with-locales.js";
+// @codekit-prepend "numeral/numeral.min.js";
+// @codekit-prepend "cleave.js";
+
+
+Vue.use(VTooltip);
+Vue.use(VeeValidate, { locale: lang});
+moment.locale(lang);
+Vue.filter("formatDate", function (value) { return moment(value).locale(lang).format('MMM D YYYY'); });
+Vue.filter("formatMoney", function (value) { 
+  //value = value.replace(/\.00$/,'');
+  value = numeral(value).format('0,0.00'); 
+  return value.replace(/\.00$/,'');
+});
 
 var clipboard = new ClipboardJS('.clipboard');
 clipboard.on('success', function(e) {
   //Vue.toasted.show('Copied: '+e.text, {duration: 3000,className: "bg-secondary"});
   e.clearSelection();
 });
+
+
+Vue.directive('cleave', {
+  inserted: (el, binding) => {
+      el.cleave = new Cleave(el, binding.value || {})
+  },
+  update: (el) => {
+      const event = new Event('input', {bubbles: true});
+      setTimeout(function () {
+          el.value = el.cleave.properties.result
+          el.dispatchEvent(event)
+      }, 100);
+  }
+})
+
 
 
 Vue.mixin({
