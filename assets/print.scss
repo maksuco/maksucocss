@@ -52,3 +52,10 @@
     font-size: $print-font-base * 3.6;
   }
 }
+
+.page-break {
+  page-break-after: always;
+}
+.page-break-this {
+  page-break-inside: avoid;
+}

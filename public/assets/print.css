@@ -32,3 +32,9 @@
     font-size: 36.3pt; }
   .text-10x {
     font-size: 39.6pt; } }
+
+.page-break {
+  page-break-after: always; }
+
+.page-break-this {
+  page-break-inside: avoid; }
