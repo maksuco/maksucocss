@@ -41,23 +41,36 @@
   padding: ($btn-padding-y *.3) ($btn-padding-x * .6);
 }
 
-.badge-primary {
-  color: $light;
-  border-color: $primary;
-  background-color: $primary;
-}
 
-.badge-dark {
-  color: $light;
-  background-color: $dark;
-}
+@each $name, $color in $colors {
 
-.badge-light {
-  color: $dark;
-  background-color: $light;
-}
+  .badge-#{$name} {
+    @if $name == light or $name == white {
+      color: $body;
+    } @else {
+      color: $white;
+    }
+    background-color: $color;
+    border-color: $color;
+    &:hover {
+      @if $name == dark or $name == black {
+        background: lighten($color, 8%);
+        border-color: lighten($color, 8%);
+      } @else {
+        background: darken($secondary, 8%);
+        border-color: darken($secondary, 8%);
+      }
+    }
+    &:disabled{
+      opacity: .7;
+    }
+  }
 
-.badge-red {
-  color: $white;
-  background-color: $red;
+  .hover-btn-#{$name} {
+    &:hover {
+      background: lighten($color, 8%);
+      border-color: lighten($color, 8%);
+    }
+  }
+
 }

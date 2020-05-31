@@ -118,8 +118,13 @@
     background-color: $color;
     border-color: $color;
     &:hover {
-      background: lighten($color, 8%);
-      border-color: lighten($color, 8%);
+      @if $name == dark or $name == black {
+        background: lighten($color, 8%);
+        border-color: lighten($color, 8%);
+      } @else {
+        background: darken($secondary, 8%);
+        border-color: darken($secondary, 8%);
+      }
     }
     &:disabled{
       opacity: .7;

@@ -74,28 +74,13 @@
 }
 
 
+@each $name, $color in $colors {
 
-$colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purple, red, green, teal, yellow, orange;
-@each $name in $colors {
-  $color: $primary;
   $lighten400: 5%; $lighten300: 10%; $lighten200: 18%; $lighten100: 25%; 
-  @if $name == secondary { $color: $secondary;
-  } @else if $name == light {
-    $color: $light;
+  @if $name == light {
     $lighten400: 1%; $lighten300: 2%; $lighten200: 3%; $lighten100: 4%; 
-  } @else if $name == dark { $color: $dark;
-  } @else if $name == black { $color: #000000;
-  } @else if $name == white { $color: #ffffff;
-  } @else if $name == gray { $color: $gray;
-  } @else if $name == blue { $color: $blue;
-  } @else if $name == indigo { $color: $indigo;
-  } @else if $name == purple { $color: $purple;
-  } @else if $name == red { $color: $red;
-  } @else if $name == green { $color: $green;
-  } @else if $name == teal { $color: $teal;
-  } @else if $name == yellow { $color: $yellow;
-  } @else if $name == orange { $color: $orange;
   }
+
   .color-#{$name} {
     color: $color !important;
   }
@@ -246,23 +231,7 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   
 }
 @media (min-width: $desktop-breakpoint) {
-  @each $name in $colors {
-    $color: $primary;
-    @if $name == secondary { $color: $secondary;
-    } @else if $name == light { $color: $light;
-    } @else if $name == dark { $color: $dark;
-    } @else if $name == black { $color: #000000;
-    } @else if $name == white { $color: #ffffff;
-    } @else if $name == gray { $color: $gray;
-    } @else if $name == blue { $color: $blue;
-    } @else if $name == indigo { $color: $indigo;
-    } @else if $name == purple { $color: $purple;
-    } @else if $name == red { $color: $red;
-    } @else if $name == green { $color: $green;
-    } @else if $name == teal { $color: $teal;
-    } @else if $name == yellow { $color: $yellow;
-    } @else if $name == orange { $color: $orange;
-    }
+  @each $name, $color in $colors {
     .md-color-#{$name} {
       color: $color;
     }
@@ -348,23 +317,7 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
     background-color: transparent;
   }
 }
-@each $name in $colors {
-  $color: $primary;
-  @if $name == secondary { $color: $secondary;
-  } @else if $name == light { $color: $light;
-  } @else if $name == dark { $color: $dark;
-  } @else if $name == black { $color: #000000;
-  } @else if $name == white { $color: #ffffff;
-  } @else if $name == gray { $color: $gray;
-  } @else if $name == blue { $color: $blue;
-  } @else if $name == indigo { $color: $indigo;
-  } @else if $name == purple { $color: $purple;
-  } @else if $name == red { $color: $red;
-  } @else if $name == green { $color: $green;
-  } @else if $name == teal { $color: $teal;
-  } @else if $name == yellow { $color: $yellow;
-  } @else if $name == orange { $color: $orange;
-  }
+@each $name, $color in $colors {
   
   .bg-gradient-#{$name} {
     background-color: $color;
@@ -404,23 +357,8 @@ $colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purp
   }
 
   //DUAL COLORS
-@each $name2 in $colors {
-  $color2: $primary;
-  @if $name2 == secondary { $color2: $secondary;
-  } @else if $name2 == light { $color2: $light;
-  } @else if $name2 == dark { $color2: $dark;
-  } @else if $name2 == black { $color2: #000000;
-  } @else if $name2 == white { $color2: #ffffff;
-  } @else if $name2 == gray { $color2: $gray;
-  } @else if $name2 == blue { $color2: $blue;
-  } @else if $name2 == indigo { $color2: $indigo;
-  } @else if $name2 == purple { $color2: $purple;
-  } @else if $name2 == red { $color2: $red;
-  } @else if $name2 == green { $color2: $green;
-  } @else if $name2 == teal { $color2: $teal;
-  } @else if $name2 == yellow { $color2: $yellow;
-  } @else if $name2 == orange { $color2: $orange;
-  }
+@each $name2, $color2 in $colors {
+  
   @if $name != $name2 {
     .bg-gradient-#{$name}-#{$name2} {
       background-color: $color;
