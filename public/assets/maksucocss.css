@@ -7815,20 +7815,62 @@ hr, .hr {
 .bg-gradient-circular {
   background-image: radial-gradient(transparent 50%, rgba(0, 0, 0, 0.28)); }
 
+.border-blue {
+  border-color: #4299E1; }
+
+.border-indigo {
+  border-color: #667EEA; }
+
+.border-purple {
+  border-color: #9F7AEA; }
+
+.border-pink {
+  border-color: #ff008c; }
+
+.border-red {
+  border-color: #ff2400; }
+
+.border-orange {
+  border-color: #ff8800; }
+
+.border-yellow {
+  border-color: #ffeb04; }
+
+.border-green {
+  border-color: #1da139; }
+
+.border-teal {
+  border-color: #38B2AC; }
+
+.border-cyan {
+  border-color: #17a2b8; }
+
+.border-white {
+  border-color: #ffffff; }
+
+.border-gray {
+  border-color: #A0AEC0; }
+
+.border-gray-dark {
+  border-color: #343a40; }
+
+.border-primary {
+  border-color: #3B2098; }
+
+.border-secondary {
+  border-color: #112741; }
+
 .border-dark {
   border-color: #151d2e; }
 
 .border-light {
   border-color: #edf2f8; }
 
+.border-black {
+  border-color: #010102; }
+
 .border-transparent {
   border-color: transparent; }
-
-.border-black {
-  border-color: #000; }
-
-.border-white {
-  border-color: #fff; }
 
 .circle {
   display: inline-block;

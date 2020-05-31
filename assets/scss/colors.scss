@@ -24,20 +24,13 @@
 }
 
 //BORDER COLORS
-.border-dark {
-  border-color: $dark;
-}
-.border-light {
-  border-color: $light;
+@each $name, $color in $colors {
+  .border-#{$name} {
+    border-color: $color;
+  }
 }
 .border-transparent {
   border-color: transparent;
-}
-.border-black {
-  border-color: #000;
-}
-.border-white {
-  border-color: #fff;
 }
 
 //CIRCLES
@@ -358,7 +351,7 @@
 
   //DUAL COLORS
 @each $name2, $color2 in $colors {
-  
+
   @if $name != $name2 {
     .bg-gradient-#{$name}-#{$name2} {
       background-color: $color;
