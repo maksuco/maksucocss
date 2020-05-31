@@ -578,24 +578,7 @@ smaller {
 }
 
 
-$colors: primary, secondary, light, dark, black, white, gray, blue, indigo, purple, red, green, teal, yellow, orange;
-@each $name in $colors {
-  $color: $primary;
-  @if $name == secondary { $color: $secondary;
-  } @else if $name == light { $color: $light;
-  } @else if $name == dark { $color: $dark;
-  } @else if $name == black { $color: #000000;
-  } @else if $name == white { $color: #ffffff;
-  } @else if $name == gray { $color: $gray;
-  } @else if $name == blue { $color: $blue;
-  } @else if $name == indigo { $color: $indigo;
-  } @else if $name == purple { $color: $purple;
-  } @else if $name == red { $color: $red;
-  } @else if $name == green { $color: $green;
-  } @else if $name == teal { $color: $teal;
-  } @else if $name == yellow { $color: $yellow;
-  } @else if $name == orange { $color: $orange;
-  }
+@each $name, $color in $colors {
   .list-fa-#{$name} {
     li:before {
       color: $color;

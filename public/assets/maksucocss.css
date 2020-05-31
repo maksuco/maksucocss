@@ -24390,48 +24390,6 @@ smaller {
 .li-fa-arrow:before {
   content: "\f138" !important; }
 
-.list-fa-primary li:before {
-  color: #3B2098; }
-
-.li-fa-primary:before {
-  color: #3B2098 !important; }
-
-.list-fa-secondary li:before {
-  color: #112741; }
-
-.li-fa-secondary:before {
-  color: #112741 !important; }
-
-.list-fa-light li:before {
-  color: #edf2f8; }
-
-.li-fa-light:before {
-  color: #edf2f8 !important; }
-
-.list-fa-dark li:before {
-  color: #151d2e; }
-
-.li-fa-dark:before {
-  color: #151d2e !important; }
-
-.list-fa-black li:before {
-  color: #000000; }
-
-.li-fa-black:before {
-  color: #000000 !important; }
-
-.list-fa-white li:before {
-  color: #ffffff; }
-
-.li-fa-white:before {
-  color: #ffffff !important; }
-
-.list-fa-gray li:before {
-  color: #A0AEC0; }
-
-.li-fa-gray:before {
-  color: #A0AEC0 !important; }
-
 .list-fa-blue li:before {
   color: #4299E1; }
 
@@ -24450,11 +24408,29 @@ smaller {
 .li-fa-purple:before {
   color: #9F7AEA !important; }
 
+.list-fa-pink li:before {
+  color: #ff008c; }
+
+.li-fa-pink:before {
+  color: #ff008c !important; }
+
 .list-fa-red li:before {
   color: #ff2400; }
 
 .li-fa-red:before {
   color: #ff2400 !important; }
+
+.list-fa-orange li:before {
+  color: #ff8800; }
+
+.li-fa-orange:before {
+  color: #ff8800 !important; }
+
+.list-fa-yellow li:before {
+  color: #ffeb04; }
+
+.li-fa-yellow:before {
+  color: #ffeb04 !important; }
 
 .list-fa-green li:before {
   color: #1da139; }
@@ -24468,17 +24444,59 @@ smaller {
 .li-fa-teal:before {
   color: #38B2AC !important; }
 
-.list-fa-yellow li:before {
-  color: #ffeb04; }
+.list-fa-cyan li:before {
+  color: #17a2b8; }
 
-.li-fa-yellow:before {
-  color: #ffeb04 !important; }
+.li-fa-cyan:before {
+  color: #17a2b8 !important; }
 
-.list-fa-orange li:before {
-  color: #ff8800; }
+.list-fa-white li:before {
+  color: #ffffff; }
 
-.li-fa-orange:before {
-  color: #ff8800 !important; }
+.li-fa-white:before {
+  color: #ffffff !important; }
+
+.list-fa-gray li:before {
+  color: #A0AEC0; }
+
+.li-fa-gray:before {
+  color: #A0AEC0 !important; }
+
+.list-fa-gray-dark li:before {
+  color: #343a40; }
+
+.li-fa-gray-dark:before {
+  color: #343a40 !important; }
+
+.list-fa-primary li:before {
+  color: #3B2098; }
+
+.li-fa-primary:before {
+  color: #3B2098 !important; }
+
+.list-fa-secondary li:before {
+  color: #112741; }
+
+.li-fa-secondary:before {
+  color: #112741 !important; }
+
+.list-fa-dark li:before {
+  color: #151d2e; }
+
+.li-fa-dark:before {
+  color: #151d2e !important; }
+
+.list-fa-light li:before {
+  color: #edf2f8; }
+
+.li-fa-light:before {
+  color: #edf2f8 !important; }
+
+.list-fa-black li:before {
+  color: #010102; }
+
+.li-fa-black:before {
+  color: #010102 !important; }
 
 .ul-lines, .ul-clean {
   list-style-type: none; }
