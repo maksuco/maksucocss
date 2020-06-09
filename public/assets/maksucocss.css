@@ -2,7 +2,7 @@
   --blue: #4299E1;
   --indigo: #667EEA;
   --purple: #9F7AEA;
-  --pink: #ff008c;
+  --pink: #ffc0cb;
   --red: #ff2400;
   --orange: #ff8800;
   --yellow: #ffeb04;
@@ -6672,6 +6672,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #4299E1;
   border-color: #4299E1; }
   .btn-blue:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-blue:disabled {
@@ -6686,6 +6687,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #667EEA;
   border-color: #667EEA; }
   .btn-indigo:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-indigo:disabled {
@@ -6700,6 +6702,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #9F7AEA;
   border-color: #9F7AEA; }
   .btn-purple:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-purple:disabled {
@@ -6711,23 +6714,25 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .btn-pink {
   color: #ffffff;
-  background-color: #ff008c;
-  border-color: #ff008c; }
+  background-color: #ffc0cb;
+  border-color: #ffc0cb; }
   .btn-pink:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-pink:disabled {
     opacity: .7; }
 
 .hover-btn-pink:hover {
-  background: #ff299e;
-  border-color: #ff299e; }
+  background: #ffe9ed;
+  border-color: #ffe9ed; }
 
 .btn-red {
   color: #ffffff;
   background-color: #ff2400;
   border-color: #ff2400; }
   .btn-red:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-red:disabled {
@@ -6742,6 +6747,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #ff8800;
   border-color: #ff8800; }
   .btn-orange:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-orange:disabled {
@@ -6756,6 +6762,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #ffeb04;
   border-color: #ffeb04; }
   .btn-yellow:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-yellow:disabled {
@@ -6770,6 +6777,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #1da139;
   border-color: #1da139; }
   .btn-green:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-green:disabled {
@@ -6784,6 +6792,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #38B2AC;
   border-color: #38B2AC; }
   .btn-teal:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-teal:disabled {
@@ -6798,6 +6807,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #17a2b8;
   border-color: #17a2b8; }
   .btn-cyan:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-cyan:disabled {
@@ -6808,10 +6818,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   border-color: #1cc2dc; }
 
 .btn-white {
-  color: #ffffff;
+  color: #151d2e;
   background-color: #ffffff;
   border-color: #ffffff; }
   .btn-white:hover {
+    color: #151d2e;
     background: #091421;
     border-color: #091421; }
   .btn-white:disabled {
@@ -6826,6 +6837,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #A0AEC0;
   border-color: #A0AEC0; }
   .btn-gray:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-gray:disabled {
@@ -6840,6 +6852,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #343a40;
   border-color: #343a40; }
   .btn-gray-dark:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-gray-dark:disabled {
@@ -6854,6 +6867,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #3B2098;
   border-color: #3B2098; }
   .btn-primary:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-primary:disabled {
@@ -6868,6 +6882,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #112741;
   border-color: #112741; }
   .btn-secondary:hover {
+    color: #ffffff;
     background: #091421;
     border-color: #091421; }
   .btn-secondary:disabled {
@@ -6882,6 +6897,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #151d2e;
   border-color: #151d2e; }
   .btn-dark:hover {
+    color: #ffffff;
     background: #222f4a;
     border-color: #222f4a; }
   .btn-dark:disabled {
@@ -6896,6 +6912,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #edf2f8;
   border-color: #edf2f8; }
   .btn-light:hover {
+    color: #151d2e;
     background: #091421;
     border-color: #091421; }
   .btn-light:disabled {
@@ -6910,8 +6927,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #010102;
   border-color: #010102; }
   .btn-black:hover {
-    background: #091421;
-    border-color: #091421; }
+    color: #ffffff;
+    background: #0f0f1d;
+    border-color: #0f0f1d; }
   .btn-black:disabled {
     opacity: .7; }
 
@@ -6998,8 +7016,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .badge-pink {
   color: #ffffff;
-  background-color: #ff008c;
-  border-color: #ff008c; }
+  background-color: #ffc0cb;
+  border-color: #ffc0cb; }
   .badge-pink:hover {
     background: #091421;
     border-color: #091421; }
@@ -7007,8 +7025,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     opacity: .7; }
 
 .hover-btn-pink:hover {
-  background: #ff299e;
-  border-color: #ff299e; }
+  background: #ffe9ed;
+  border-color: #ffe9ed; }
 
 .badge-red {
   color: #ffffff;
@@ -7095,7 +7113,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   border-color: #1cc2dc; }
 
 .badge-white {
-  color: #ffffff;
+  color: #151d2e;
   background-color: #ffffff;
   border-color: #ffffff; }
   .badge-white:hover {
@@ -7197,8 +7215,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #010102;
   border-color: #010102; }
   .badge-black:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #0f0f1d;
+    border-color: #0f0f1d; }
   .badge-black:disabled {
     opacity: .7; }
 
@@ -7825,7 +7843,7 @@ hr, .hr {
   border-color: #9F7AEA; }
 
 .border-pink {
-  border-color: #ff008c; }
+  border-color: #ffc0cb; }
 
 .border-red {
   border-color: #ff2400; }
@@ -8307,139 +8325,139 @@ hr, .hr {
   border-color: white; }
 
 .color-pink {
-  color: #ff008c !important; }
+  color: #ffc0cb !important; }
 
 .color-pink-100 {
-  color: #ff80c6 !important; }
+  color: white !important; }
 
 .color-pink-200 {
-  color: #ff5cb5 !important; }
+  color: white !important; }
 
 .color-pink-300 {
-  color: #ff33a3 !important; }
+  color: #fff3f5 !important; }
 
 .color-pink-400 {
-  color: #ff1a98 !important; }
+  color: #ffdae0 !important; }
 
 .color-pink-500 {
-  color: #ff008c !important; }
+  color: #ffc0cb !important; }
 
 .color-pink-600 {
-  color: #e6007e !important; }
+  color: #ffa7b6 !important; }
 
 .color-pink-700 {
-  color: #cc0070 !important; }
+  color: #ff8da1 !important; }
 
 .color-pink-800 {
-  color: #b30062 !important; }
+  color: #ff748c !important; }
 
 .color-pink-900 {
-  color: #660038 !important; }
+  color: #ff274d !important; }
 
 .hover-color-pink:hover {
-  color: #ff008c !important; }
+  color: #ffc0cb !important; }
 
 .color-pink-o {
-  color: rgba(255, 0, 140, 0.3); }
+  color: rgba(255, 192, 203, 0.3); }
 
 .bg-pink {
-  background-color: #ff008c !important; }
+  background-color: #ffc0cb !important; }
 
 .bg-pink-100 {
-  background-color: #ff80c6 !important; }
+  background-color: white !important; }
 
 .bg-pink-200 {
-  background-color: #ff5cb5 !important; }
+  background-color: white !important; }
 
 .bg-pink-300 {
-  background-color: #ff33a3 !important; }
+  background-color: #fff3f5 !important; }
 
 .bg-pink-400 {
-  background-color: #ff1a98 !important; }
+  background-color: #ffdae0 !important; }
 
 .bg-pink-500 {
-  background-color: #ff008c !important; }
+  background-color: #ffc0cb !important; }
 
 .bg-pink-600 {
-  background-color: #e6007e !important; }
+  background-color: #ffa7b6 !important; }
 
 .bg-pink-700 {
-  background-color: #cc0070 !important; }
+  background-color: #ff8da1 !important; }
 
 .bg-pink-800 {
-  background-color: #b30062 !important; }
+  background-color: #ff748c !important; }
 
 .bg-pink-900 {
-  background-color: #660038 !important; }
+  background-color: #ff274d !important; }
 
 .hover-bg-pink:hover {
-  background-color: #ff008c !important; }
+  background-color: #ffc0cb !important; }
 
 .bg-pink-o {
-  background-color: rgba(255, 0, 140, 0.5); }
+  background-color: rgba(255, 192, 203, 0.5); }
 
 .bg-pink-o-7 {
-  background-color: rgba(255, 0, 140, 0.7); }
+  background-color: rgba(255, 192, 203, 0.7); }
 
 .border-pink {
-  border-color: #ff008c; }
+  border-color: #ffc0cb; }
 
 .border-pink-100 {
-  border-color: #ff80c6; }
+  border-color: white; }
 
 .border-pink-200 {
-  border-color: #ff5cb5; }
+  border-color: white; }
 
 .border-pink-300 {
-  border-color: #ff33a3; }
+  border-color: #fff3f5; }
 
 .border-pink-400 {
-  border-color: #ff1a98; }
+  border-color: #ffdae0; }
 
 .border-pink-500 {
-  border-color: #ff008c; }
+  border-color: #ffc0cb; }
 
 .border-pink-600 {
-  border-color: #e6007e; }
+  border-color: #ffa7b6; }
 
 .border-pink-700 {
-  border-color: #cc0070; }
+  border-color: #ff8da1; }
 
 .border-pink-800 {
-  border-color: #b30062; }
+  border-color: #ff748c; }
 
 .border-pink-900 {
-  border-color: #660038; }
+  border-color: #ff274d; }
 
 .shadow-pink {
-  box-shadow: 0px 6px 20px -5px rgba(255, 0, 140, 0.6); }
+  box-shadow: 0px 6px 20px -5px rgba(255, 192, 203, 0.6); }
 
 .shadow-pink-sm {
-  box-shadow: 0px 4px 15px -5px rgba(255, 0, 140, 0.6); }
+  box-shadow: 0px 4px 15px -5px rgba(255, 192, 203, 0.6); }
 
 .shadow-pink-lg {
-  box-shadow: 0px 8px 25px -5px rgba(255, 0, 140, 0.6); }
+  box-shadow: 0px 8px 25px -5px rgba(255, 192, 203, 0.6); }
 
 .shadow-radar-pink {
-  box-shadow: 0px 0px 1px 2.8rem rgba(255, 0, 140, 0.09), 0px 0px 1px 1.1rem rgba(255, 0, 140, 0.15); }
+  box-shadow: 0px 0px 1px 2.8rem rgba(255, 192, 203, 0.09), 0px 0px 1px 1.1rem rgba(255, 192, 203, 0.15); }
 
 .shadow-radar-pink-sm {
-  box-shadow: 0px 0px 1px 1.6rem rgba(255, 0, 140, 0.09), 0px 0px 1px 0.7rem rgba(255, 0, 140, 0.12); }
+  box-shadow: 0px 0px 1px 1.6rem rgba(255, 192, 203, 0.09), 0px 0px 1px 0.7rem rgba(255, 192, 203, 0.12); }
 
 .shadow-radar-pink-lg {
-  box-shadow: 0px 0px 1px 4rem rgba(255, 0, 140, 0.09), 0px 0px 1px 1.8rem rgba(255, 0, 140, 0.14), 0px 0px 1px 2.1rem rgba(255, 0, 140, 0.03); }
+  box-shadow: 0px 0px 1px 4rem rgba(255, 192, 203, 0.09), 0px 0px 1px 1.8rem rgba(255, 192, 203, 0.14), 0px 0px 1px 2.1rem rgba(255, 192, 203, 0.03); }
 
 .shadow-pink-full {
-  box-shadow: 0px 6px 28px 0px rgba(255, 0, 140, 0.2); }
+  box-shadow: 0px 6px 28px 0px rgba(255, 192, 203, 0.2); }
 
 .hover-shadow-pink:hover {
-  box-shadow: 0px 8px 25px -5px rgba(255, 0, 140, 0.6); }
+  box-shadow: 0px 8px 25px -5px rgba(255, 192, 203, 0.6); }
 
 .hover-shadow-pink-full:hover {
-  box-shadow: 0px 6px 28px 0px rgba(255, 0, 140, 0.2); }
+  box-shadow: 0px 6px 28px 0px rgba(255, 192, 203, 0.2); }
 
 .circle-pink {
-  background-color: #ff008c;
+  background-color: #ffc0cb;
   border-color: white; }
 
 .color-red {
@@ -10480,49 +10498,49 @@ hr, .hr {
   .md-hover-bg-purple:hover {
     background-color: #9F7AEA !important; }
   .md-color-pink {
-    color: #ff008c; }
+    color: #ffc0cb; }
   .md-color-pink-100 {
-    color: #ff80c6; }
+    color: white; }
   .md-color-pink-200 {
-    color: #ff5cb5; }
+    color: white; }
   .md-color-pink-300 {
-    color: #ff33a3; }
+    color: #fff3f5; }
   .md-color-pink-400 {
-    color: #ff1a98; }
+    color: #ffdae0; }
   .md-color-pink-500 {
-    color: #ff008c; }
+    color: #ffc0cb; }
   .md-color-pink-600 {
-    color: #e6007e; }
+    color: #ffa7b6; }
   .md-color-pink-700 {
-    color: #cc0070; }
+    color: #ff8da1; }
   .md-text-pink-800 {
-    color: #b30062; }
+    color: #ff748c; }
   .md-color-pink-900 {
-    color: #660038; }
+    color: #ff274d; }
   .md-hover-color-pink:hover {
-    color: #ff008c !important; }
+    color: #ffc0cb !important; }
   .md-bg-pink {
-    background-color: #ff008c; }
+    background-color: #ffc0cb; }
   .md-bg-pink-100 {
-    background-color: #ff80c6; }
+    background-color: white; }
   .md-bg-pink-200 {
-    background-color: #ff5cb5; }
+    background-color: white; }
   .md-bg-pink-300 {
-    background-color: #ff33a3; }
+    background-color: #fff3f5; }
   .md-bg-pink-400 {
-    background-color: #ff1a98; }
+    background-color: #ffdae0; }
   .md-bg-pink-500 {
-    background-color: #ff008c; }
+    background-color: #ffc0cb; }
   .md-bg-pink-600 {
-    background-color: #e6007e; }
+    background-color: #ffa7b6; }
   .md-bg-pink-700 {
-    background-color: #cc0070; }
+    background-color: #ff8da1; }
   .md-bg-pink-800 {
-    background-color: #b30062; }
+    background-color: #ff748c; }
   .md-bg-pink-900 {
-    background-color: #660038; }
+    background-color: #ff274d; }
   .md-hover-bg-pink:hover {
-    background-color: #ff008c !important; }
+    background-color: #ffc0cb !important; }
   .md-color-red {
     color: #ff2400; }
   .md-color-red-100 {
@@ -11223,23 +11241,23 @@ hr, .hr {
 
 .bg-gradient-blue-pink {
   background-color: #4299E1;
-  background-image: linear-gradient(120deg, #4299E1 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #4299E1 40%, #ffc0cb 100%); }
 
 .bg-gradient-blue-pink-90 {
   background-color: #4299E1;
-  background-image: linear-gradient(90deg, #4299E1 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #4299E1 40%, #ffc0cb 100%); }
 
 .bg-gradient-blue-pink-180 {
   background-color: #4299E1;
-  background-image: linear-gradient(180deg, #4299E1 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #4299E1 40%, #ffc0cb 100%); }
 
 .bg-gradient-blue-pink-270 {
   background-color: #4299E1;
-  background-image: linear-gradient(270deg, #4299E1 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #4299E1 40%, #ffc0cb 100%); }
 
 .bg-gradient-blue-pink-circular {
   background-color: #4299E1;
-  background-image: radial-gradient(#4299E1, #ff008c); }
+  background-image: radial-gradient(#4299E1, #ffc0cb); }
 
 .bg-gradient-blue-red {
   background-color: #4299E1;
@@ -11632,23 +11650,23 @@ hr, .hr {
 
 .bg-gradient-indigo-pink {
   background-color: #667EEA;
-  background-image: linear-gradient(120deg, #667EEA 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #667EEA 40%, #ffc0cb 100%); }
 
 .bg-gradient-indigo-pink-90 {
   background-color: #667EEA;
-  background-image: linear-gradient(90deg, #667EEA 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #667EEA 40%, #ffc0cb 100%); }
 
 .bg-gradient-indigo-pink-180 {
   background-color: #667EEA;
-  background-image: linear-gradient(180deg, #667EEA 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #667EEA 40%, #ffc0cb 100%); }
 
 .bg-gradient-indigo-pink-270 {
   background-color: #667EEA;
-  background-image: linear-gradient(270deg, #667EEA 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #667EEA 40%, #ffc0cb 100%); }
 
 .bg-gradient-indigo-pink-circular {
   background-color: #667EEA;
-  background-image: radial-gradient(#667EEA, #ff008c); }
+  background-image: radial-gradient(#667EEA, #ffc0cb); }
 
 .bg-gradient-indigo-red {
   background-color: #667EEA;
@@ -12041,23 +12059,23 @@ hr, .hr {
 
 .bg-gradient-purple-pink {
   background-color: #9F7AEA;
-  background-image: linear-gradient(120deg, #9F7AEA 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #9F7AEA 40%, #ffc0cb 100%); }
 
 .bg-gradient-purple-pink-90 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(90deg, #9F7AEA 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #9F7AEA 40%, #ffc0cb 100%); }
 
 .bg-gradient-purple-pink-180 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(180deg, #9F7AEA 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #9F7AEA 40%, #ffc0cb 100%); }
 
 .bg-gradient-purple-pink-270 {
   background-color: #9F7AEA;
-  background-image: linear-gradient(270deg, #9F7AEA 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #9F7AEA 40%, #ffc0cb 100%); }
 
 .bg-gradient-purple-pink-circular {
   background-color: #9F7AEA;
-  background-image: radial-gradient(#9F7AEA, #ff008c); }
+  background-image: radial-gradient(#9F7AEA, #ffc0cb); }
 
 .bg-gradient-purple-red {
   background-color: #9F7AEA;
@@ -12374,379 +12392,379 @@ hr, .hr {
   background-color: rgba(159, 122, 234, 0.4); }
 
 .bg-gradient-pink {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #b30062 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #ff748c 100%); }
 
 .bg-gradient-pink-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #b30062 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #ff748c 100%); }
 
 .bg-gradient-pink-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #b30062 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #ff748c 100%); }
 
 .bg-gradient-pink-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #b30062 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #ff748c 100%); }
 
 .bg-gradient-pink-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #b30062); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #ff748c); }
 
 .bg-gradient-pink-transparent {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #ff008c 40%, rgba(255, 0, 140, 0) 100%); }
+  background-image: linear-gradient(180deg, #ffc0cb 40%, rgba(255, 192, 203, 0) 100%); }
 
 .bg-gradient-transparent-pink {
   background-color: transparent;
-  background-image: linear-gradient(180deg, rgba(255, 0, 140, 0) 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, rgba(255, 192, 203, 0) 40%, #ffc0cb 100%); }
 
 .bg-frosted-pink {
-  background-color: rgba(255, 0, 140, 0.17);
+  background-color: rgba(255, 192, 203, 0.17);
   -webkit-backdrop-filter: blur(8px);
   /* Safari 9+ */
   backdrop-filter: blur(8px);
   /* Chrome and Opera */ }
 
 .bg-gradient-pink-blue {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #4299E1 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #4299E1 100%); }
 
 .bg-gradient-pink-blue-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #4299E1 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #4299E1 100%); }
 
 .bg-gradient-pink-blue-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #4299E1 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #4299E1 100%); }
 
 .bg-gradient-pink-blue-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #4299E1 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #4299E1 100%); }
 
 .bg-gradient-pink-blue-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #4299E1); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #4299E1); }
 
 .bg-gradient-pink-indigo {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #667EEA 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #667EEA 100%); }
 
 .bg-gradient-pink-indigo-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #667EEA 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #667EEA 100%); }
 
 .bg-gradient-pink-indigo-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #667EEA 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #667EEA 100%); }
 
 .bg-gradient-pink-indigo-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #667EEA 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #667EEA 100%); }
 
 .bg-gradient-pink-indigo-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #667EEA); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #667EEA); }
 
 .bg-gradient-pink-purple {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #9F7AEA 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #9F7AEA 100%); }
 
 .bg-gradient-pink-purple-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #9F7AEA 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #9F7AEA 100%); }
 
 .bg-gradient-pink-purple-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #9F7AEA 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #9F7AEA 100%); }
 
 .bg-gradient-pink-purple-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #9F7AEA 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #9F7AEA 100%); }
 
 .bg-gradient-pink-purple-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #9F7AEA); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #9F7AEA); }
 
 .bg-gradient-pink-red {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #ff2400 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #ff2400 100%); }
 
 .bg-gradient-pink-red-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #ff2400 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #ff2400 100%); }
 
 .bg-gradient-pink-red-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #ff2400 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #ff2400 100%); }
 
 .bg-gradient-pink-red-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #ff2400 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #ff2400 100%); }
 
 .bg-gradient-pink-red-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #ff2400); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #ff2400); }
 
 .bg-gradient-pink-orange {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #ff8800 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #ff8800 100%); }
 
 .bg-gradient-pink-orange-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #ff8800 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #ff8800 100%); }
 
 .bg-gradient-pink-orange-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #ff8800 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #ff8800 100%); }
 
 .bg-gradient-pink-orange-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #ff8800 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #ff8800 100%); }
 
 .bg-gradient-pink-orange-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #ff8800); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #ff8800); }
 
 .bg-gradient-pink-yellow {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #ffeb04 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #ffeb04 100%); }
 
 .bg-gradient-pink-yellow-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #ffeb04 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #ffeb04 100%); }
 
 .bg-gradient-pink-yellow-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #ffeb04 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #ffeb04 100%); }
 
 .bg-gradient-pink-yellow-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #ffeb04 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #ffeb04 100%); }
 
 .bg-gradient-pink-yellow-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #ffeb04); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #ffeb04); }
 
 .bg-gradient-pink-green {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #1da139 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #1da139 100%); }
 
 .bg-gradient-pink-green-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #1da139 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #1da139 100%); }
 
 .bg-gradient-pink-green-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #1da139 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #1da139 100%); }
 
 .bg-gradient-pink-green-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #1da139 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #1da139 100%); }
 
 .bg-gradient-pink-green-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #1da139); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #1da139); }
 
 .bg-gradient-pink-teal {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #38B2AC 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #38B2AC 100%); }
 
 .bg-gradient-pink-teal-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #38B2AC 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #38B2AC 100%); }
 
 .bg-gradient-pink-teal-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #38B2AC 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #38B2AC 100%); }
 
 .bg-gradient-pink-teal-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #38B2AC 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #38B2AC 100%); }
 
 .bg-gradient-pink-teal-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #38B2AC); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #38B2AC); }
 
 .bg-gradient-pink-cyan {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #17a2b8 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #17a2b8 100%); }
 
 .bg-gradient-pink-cyan-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #17a2b8 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #17a2b8 100%); }
 
 .bg-gradient-pink-cyan-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #17a2b8 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #17a2b8 100%); }
 
 .bg-gradient-pink-cyan-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #17a2b8 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #17a2b8 100%); }
 
 .bg-gradient-pink-cyan-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #17a2b8); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #17a2b8); }
 
 .bg-gradient-pink-white {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #ffffff 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #ffffff 100%); }
 
 .bg-gradient-pink-white-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #ffffff 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #ffffff 100%); }
 
 .bg-gradient-pink-white-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #ffffff 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #ffffff 100%); }
 
 .bg-gradient-pink-white-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #ffffff 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #ffffff 100%); }
 
 .bg-gradient-pink-white-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #ffffff); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #ffffff); }
 
 .bg-gradient-pink-gray {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #A0AEC0 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #A0AEC0 100%); }
 
 .bg-gradient-pink-gray-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #A0AEC0 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #A0AEC0 100%); }
 
 .bg-gradient-pink-gray-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #A0AEC0 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #A0AEC0 100%); }
 
 .bg-gradient-pink-gray-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #A0AEC0 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #A0AEC0 100%); }
 
 .bg-gradient-pink-gray-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #A0AEC0); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #A0AEC0); }
 
 .bg-gradient-pink-gray-dark {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #343a40 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #343a40 100%); }
 
 .bg-gradient-pink-gray-dark-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #343a40 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #343a40 100%); }
 
 .bg-gradient-pink-gray-dark-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #343a40 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #343a40 100%); }
 
 .bg-gradient-pink-gray-dark-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #343a40 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #343a40 100%); }
 
 .bg-gradient-pink-gray-dark-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #343a40); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #343a40); }
 
 .bg-gradient-pink-primary {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #3B2098 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #3B2098 100%); }
 
 .bg-gradient-pink-primary-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #3B2098 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #3B2098 100%); }
 
 .bg-gradient-pink-primary-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #3B2098 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #3B2098 100%); }
 
 .bg-gradient-pink-primary-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #3B2098 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #3B2098 100%); }
 
 .bg-gradient-pink-primary-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #3B2098); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #3B2098); }
 
 .bg-gradient-pink-secondary {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #112741 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #112741 100%); }
 
 .bg-gradient-pink-secondary-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #112741 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #112741 100%); }
 
 .bg-gradient-pink-secondary-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #112741 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #112741 100%); }
 
 .bg-gradient-pink-secondary-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #112741 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #112741 100%); }
 
 .bg-gradient-pink-secondary-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #112741); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #112741); }
 
 .bg-gradient-pink-dark {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #151d2e 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #151d2e 100%); }
 
 .bg-gradient-pink-dark-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #151d2e 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #151d2e 100%); }
 
 .bg-gradient-pink-dark-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #151d2e 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #151d2e 100%); }
 
 .bg-gradient-pink-dark-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #151d2e 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #151d2e 100%); }
 
 .bg-gradient-pink-dark-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #151d2e); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #151d2e); }
 
 .bg-gradient-pink-light {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #edf2f8 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #edf2f8 100%); }
 
 .bg-gradient-pink-light-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #edf2f8 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #edf2f8 100%); }
 
 .bg-gradient-pink-light-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #edf2f8 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #edf2f8 100%); }
 
 .bg-gradient-pink-light-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #edf2f8 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #edf2f8 100%); }
 
 .bg-gradient-pink-light-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #edf2f8); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #edf2f8); }
 
 .bg-gradient-pink-black {
-  background-color: #ff008c;
-  background-image: linear-gradient(120deg, #ff008c 40%, #010102 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(120deg, #ffc0cb 40%, #010102 100%); }
 
 .bg-gradient-pink-black-90 {
-  background-color: #ff008c;
-  background-image: linear-gradient(90deg, #ff008c 40%, #010102 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(90deg, #ffc0cb 40%, #010102 100%); }
 
 .bg-gradient-pink-black-180 {
-  background-color: #ff008c;
-  background-image: linear-gradient(180deg, #ff008c 40%, #010102 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(180deg, #ffc0cb 40%, #010102 100%); }
 
 .bg-gradient-pink-black-270 {
-  background-color: #ff008c;
-  background-image: linear-gradient(270deg, #ff008c 40%, #010102 100%); }
+  background-color: #ffc0cb;
+  background-image: linear-gradient(270deg, #ffc0cb 40%, #010102 100%); }
 
 .bg-gradient-pink-black-circular {
-  background-color: #ff008c;
-  background-image: radial-gradient(#ff008c, #010102); }
+  background-color: #ffc0cb;
+  background-image: radial-gradient(#ffc0cb, #010102); }
 
 .overlay-gradient-pink:after {
   display: block;
@@ -12757,8 +12775,8 @@ hr, .hr {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(255, 0, 140, 0.4);
-  background-image: linear-gradient(120deg, rgba(255, 0, 140, 0.4) 30%, rgba(255, 0, 140, 0.2) 100%); }
+  background-color: rgba(255, 192, 203, 0.4);
+  background-image: linear-gradient(120deg, rgba(255, 192, 203, 0.4) 30%, rgba(255, 192, 203, 0.2) 100%); }
 
 .overlay-pink:after {
   display: block;
@@ -12769,7 +12787,7 @@ hr, .hr {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(255, 0, 140, 0.4); }
+  background-color: rgba(255, 192, 203, 0.4); }
 
 .hover-overlay-pink:hover:after {
   display: block;
@@ -12780,7 +12798,7 @@ hr, .hr {
   width: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(255, 0, 140, 0.4); }
+  background-color: rgba(255, 192, 203, 0.4); }
 
 .bg-gradient-red {
   background-color: #ff2400;
@@ -12879,23 +12897,23 @@ hr, .hr {
 
 .bg-gradient-red-pink {
   background-color: #ff2400;
-  background-image: linear-gradient(120deg, #ff2400 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #ff2400 40%, #ffc0cb 100%); }
 
 .bg-gradient-red-pink-90 {
   background-color: #ff2400;
-  background-image: linear-gradient(90deg, #ff2400 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #ff2400 40%, #ffc0cb 100%); }
 
 .bg-gradient-red-pink-180 {
   background-color: #ff2400;
-  background-image: linear-gradient(180deg, #ff2400 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #ff2400 40%, #ffc0cb 100%); }
 
 .bg-gradient-red-pink-270 {
   background-color: #ff2400;
-  background-image: linear-gradient(270deg, #ff2400 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #ff2400 40%, #ffc0cb 100%); }
 
 .bg-gradient-red-pink-circular {
   background-color: #ff2400;
-  background-image: radial-gradient(#ff2400, #ff008c); }
+  background-image: radial-gradient(#ff2400, #ffc0cb); }
 
 .bg-gradient-red-orange {
   background-color: #ff2400;
@@ -13288,23 +13306,23 @@ hr, .hr {
 
 .bg-gradient-orange-pink {
   background-color: #ff8800;
-  background-image: linear-gradient(120deg, #ff8800 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #ff8800 40%, #ffc0cb 100%); }
 
 .bg-gradient-orange-pink-90 {
   background-color: #ff8800;
-  background-image: linear-gradient(90deg, #ff8800 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #ff8800 40%, #ffc0cb 100%); }
 
 .bg-gradient-orange-pink-180 {
   background-color: #ff8800;
-  background-image: linear-gradient(180deg, #ff8800 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #ff8800 40%, #ffc0cb 100%); }
 
 .bg-gradient-orange-pink-270 {
   background-color: #ff8800;
-  background-image: linear-gradient(270deg, #ff8800 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #ff8800 40%, #ffc0cb 100%); }
 
 .bg-gradient-orange-pink-circular {
   background-color: #ff8800;
-  background-image: radial-gradient(#ff8800, #ff008c); }
+  background-image: radial-gradient(#ff8800, #ffc0cb); }
 
 .bg-gradient-orange-red {
   background-color: #ff8800;
@@ -13697,23 +13715,23 @@ hr, .hr {
 
 .bg-gradient-yellow-pink {
   background-color: #ffeb04;
-  background-image: linear-gradient(120deg, #ffeb04 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #ffeb04 40%, #ffc0cb 100%); }
 
 .bg-gradient-yellow-pink-90 {
   background-color: #ffeb04;
-  background-image: linear-gradient(90deg, #ffeb04 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #ffeb04 40%, #ffc0cb 100%); }
 
 .bg-gradient-yellow-pink-180 {
   background-color: #ffeb04;
-  background-image: linear-gradient(180deg, #ffeb04 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #ffeb04 40%, #ffc0cb 100%); }
 
 .bg-gradient-yellow-pink-270 {
   background-color: #ffeb04;
-  background-image: linear-gradient(270deg, #ffeb04 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #ffeb04 40%, #ffc0cb 100%); }
 
 .bg-gradient-yellow-pink-circular {
   background-color: #ffeb04;
-  background-image: radial-gradient(#ffeb04, #ff008c); }
+  background-image: radial-gradient(#ffeb04, #ffc0cb); }
 
 .bg-gradient-yellow-red {
   background-color: #ffeb04;
@@ -14106,23 +14124,23 @@ hr, .hr {
 
 .bg-gradient-green-pink {
   background-color: #1da139;
-  background-image: linear-gradient(120deg, #1da139 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #1da139 40%, #ffc0cb 100%); }
 
 .bg-gradient-green-pink-90 {
   background-color: #1da139;
-  background-image: linear-gradient(90deg, #1da139 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #1da139 40%, #ffc0cb 100%); }
 
 .bg-gradient-green-pink-180 {
   background-color: #1da139;
-  background-image: linear-gradient(180deg, #1da139 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #1da139 40%, #ffc0cb 100%); }
 
 .bg-gradient-green-pink-270 {
   background-color: #1da139;
-  background-image: linear-gradient(270deg, #1da139 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #1da139 40%, #ffc0cb 100%); }
 
 .bg-gradient-green-pink-circular {
   background-color: #1da139;
-  background-image: radial-gradient(#1da139, #ff008c); }
+  background-image: radial-gradient(#1da139, #ffc0cb); }
 
 .bg-gradient-green-red {
   background-color: #1da139;
@@ -14515,23 +14533,23 @@ hr, .hr {
 
 .bg-gradient-teal-pink {
   background-color: #38B2AC;
-  background-image: linear-gradient(120deg, #38B2AC 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #38B2AC 40%, #ffc0cb 100%); }
 
 .bg-gradient-teal-pink-90 {
   background-color: #38B2AC;
-  background-image: linear-gradient(90deg, #38B2AC 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #38B2AC 40%, #ffc0cb 100%); }
 
 .bg-gradient-teal-pink-180 {
   background-color: #38B2AC;
-  background-image: linear-gradient(180deg, #38B2AC 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #38B2AC 40%, #ffc0cb 100%); }
 
 .bg-gradient-teal-pink-270 {
   background-color: #38B2AC;
-  background-image: linear-gradient(270deg, #38B2AC 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #38B2AC 40%, #ffc0cb 100%); }
 
 .bg-gradient-teal-pink-circular {
   background-color: #38B2AC;
-  background-image: radial-gradient(#38B2AC, #ff008c); }
+  background-image: radial-gradient(#38B2AC, #ffc0cb); }
 
 .bg-gradient-teal-red {
   background-color: #38B2AC;
@@ -14924,23 +14942,23 @@ hr, .hr {
 
 .bg-gradient-cyan-pink {
   background-color: #17a2b8;
-  background-image: linear-gradient(120deg, #17a2b8 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #17a2b8 40%, #ffc0cb 100%); }
 
 .bg-gradient-cyan-pink-90 {
   background-color: #17a2b8;
-  background-image: linear-gradient(90deg, #17a2b8 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #17a2b8 40%, #ffc0cb 100%); }
 
 .bg-gradient-cyan-pink-180 {
   background-color: #17a2b8;
-  background-image: linear-gradient(180deg, #17a2b8 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #17a2b8 40%, #ffc0cb 100%); }
 
 .bg-gradient-cyan-pink-270 {
   background-color: #17a2b8;
-  background-image: linear-gradient(270deg, #17a2b8 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #17a2b8 40%, #ffc0cb 100%); }
 
 .bg-gradient-cyan-pink-circular {
   background-color: #17a2b8;
-  background-image: radial-gradient(#17a2b8, #ff008c); }
+  background-image: radial-gradient(#17a2b8, #ffc0cb); }
 
 .bg-gradient-cyan-red {
   background-color: #17a2b8;
@@ -15333,23 +15351,23 @@ hr, .hr {
 
 .bg-gradient-white-pink {
   background-color: #ffffff;
-  background-image: linear-gradient(120deg, #ffffff 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #ffffff 40%, #ffc0cb 100%); }
 
 .bg-gradient-white-pink-90 {
   background-color: #ffffff;
-  background-image: linear-gradient(90deg, #ffffff 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #ffffff 40%, #ffc0cb 100%); }
 
 .bg-gradient-white-pink-180 {
   background-color: #ffffff;
-  background-image: linear-gradient(180deg, #ffffff 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #ffffff 40%, #ffc0cb 100%); }
 
 .bg-gradient-white-pink-270 {
   background-color: #ffffff;
-  background-image: linear-gradient(270deg, #ffffff 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #ffffff 40%, #ffc0cb 100%); }
 
 .bg-gradient-white-pink-circular {
   background-color: #ffffff;
-  background-image: radial-gradient(#ffffff, #ff008c); }
+  background-image: radial-gradient(#ffffff, #ffc0cb); }
 
 .bg-gradient-white-red {
   background-color: #ffffff;
@@ -15742,23 +15760,23 @@ hr, .hr {
 
 .bg-gradient-gray-pink {
   background-color: #A0AEC0;
-  background-image: linear-gradient(120deg, #A0AEC0 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #A0AEC0 40%, #ffc0cb 100%); }
 
 .bg-gradient-gray-pink-90 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(90deg, #A0AEC0 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #A0AEC0 40%, #ffc0cb 100%); }
 
 .bg-gradient-gray-pink-180 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(180deg, #A0AEC0 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #A0AEC0 40%, #ffc0cb 100%); }
 
 .bg-gradient-gray-pink-270 {
   background-color: #A0AEC0;
-  background-image: linear-gradient(270deg, #A0AEC0 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #A0AEC0 40%, #ffc0cb 100%); }
 
 .bg-gradient-gray-pink-circular {
   background-color: #A0AEC0;
-  background-image: radial-gradient(#A0AEC0, #ff008c); }
+  background-image: radial-gradient(#A0AEC0, #ffc0cb); }
 
 .bg-gradient-gray-red {
   background-color: #A0AEC0;
@@ -16151,23 +16169,23 @@ hr, .hr {
 
 .bg-gradient-gray-dark-pink {
   background-color: #343a40;
-  background-image: linear-gradient(120deg, #343a40 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #343a40 40%, #ffc0cb 100%); }
 
 .bg-gradient-gray-dark-pink-90 {
   background-color: #343a40;
-  background-image: linear-gradient(90deg, #343a40 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #343a40 40%, #ffc0cb 100%); }
 
 .bg-gradient-gray-dark-pink-180 {
   background-color: #343a40;
-  background-image: linear-gradient(180deg, #343a40 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #343a40 40%, #ffc0cb 100%); }
 
 .bg-gradient-gray-dark-pink-270 {
   background-color: #343a40;
-  background-image: linear-gradient(270deg, #343a40 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #343a40 40%, #ffc0cb 100%); }
 
 .bg-gradient-gray-dark-pink-circular {
   background-color: #343a40;
-  background-image: radial-gradient(#343a40, #ff008c); }
+  background-image: radial-gradient(#343a40, #ffc0cb); }
 
 .bg-gradient-gray-dark-red {
   background-color: #343a40;
@@ -16560,23 +16578,23 @@ hr, .hr {
 
 .bg-gradient-primary-pink {
   background-color: #3B2098;
-  background-image: linear-gradient(120deg, #3B2098 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #3B2098 40%, #ffc0cb 100%); }
 
 .bg-gradient-primary-pink-90 {
   background-color: #3B2098;
-  background-image: linear-gradient(90deg, #3B2098 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #3B2098 40%, #ffc0cb 100%); }
 
 .bg-gradient-primary-pink-180 {
   background-color: #3B2098;
-  background-image: linear-gradient(180deg, #3B2098 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #3B2098 40%, #ffc0cb 100%); }
 
 .bg-gradient-primary-pink-270 {
   background-color: #3B2098;
-  background-image: linear-gradient(270deg, #3B2098 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #3B2098 40%, #ffc0cb 100%); }
 
 .bg-gradient-primary-pink-circular {
   background-color: #3B2098;
-  background-image: radial-gradient(#3B2098, #ff008c); }
+  background-image: radial-gradient(#3B2098, #ffc0cb); }
 
 .bg-gradient-primary-red {
   background-color: #3B2098;
@@ -16969,23 +16987,23 @@ hr, .hr {
 
 .bg-gradient-secondary-pink {
   background-color: #112741;
-  background-image: linear-gradient(120deg, #112741 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #112741 40%, #ffc0cb 100%); }
 
 .bg-gradient-secondary-pink-90 {
   background-color: #112741;
-  background-image: linear-gradient(90deg, #112741 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #112741 40%, #ffc0cb 100%); }
 
 .bg-gradient-secondary-pink-180 {
   background-color: #112741;
-  background-image: linear-gradient(180deg, #112741 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #112741 40%, #ffc0cb 100%); }
 
 .bg-gradient-secondary-pink-270 {
   background-color: #112741;
-  background-image: linear-gradient(270deg, #112741 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #112741 40%, #ffc0cb 100%); }
 
 .bg-gradient-secondary-pink-circular {
   background-color: #112741;
-  background-image: radial-gradient(#112741, #ff008c); }
+  background-image: radial-gradient(#112741, #ffc0cb); }
 
 .bg-gradient-secondary-red {
   background-color: #112741;
@@ -17378,23 +17396,23 @@ hr, .hr {
 
 .bg-gradient-dark-pink {
   background-color: #151d2e;
-  background-image: linear-gradient(120deg, #151d2e 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #151d2e 40%, #ffc0cb 100%); }
 
 .bg-gradient-dark-pink-90 {
   background-color: #151d2e;
-  background-image: linear-gradient(90deg, #151d2e 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #151d2e 40%, #ffc0cb 100%); }
 
 .bg-gradient-dark-pink-180 {
   background-color: #151d2e;
-  background-image: linear-gradient(180deg, #151d2e 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #151d2e 40%, #ffc0cb 100%); }
 
 .bg-gradient-dark-pink-270 {
   background-color: #151d2e;
-  background-image: linear-gradient(270deg, #151d2e 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #151d2e 40%, #ffc0cb 100%); }
 
 .bg-gradient-dark-pink-circular {
   background-color: #151d2e;
-  background-image: radial-gradient(#151d2e, #ff008c); }
+  background-image: radial-gradient(#151d2e, #ffc0cb); }
 
 .bg-gradient-dark-red {
   background-color: #151d2e;
@@ -17787,23 +17805,23 @@ hr, .hr {
 
 .bg-gradient-light-pink {
   background-color: #edf2f8;
-  background-image: linear-gradient(120deg, #edf2f8 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #edf2f8 40%, #ffc0cb 100%); }
 
 .bg-gradient-light-pink-90 {
   background-color: #edf2f8;
-  background-image: linear-gradient(90deg, #edf2f8 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #edf2f8 40%, #ffc0cb 100%); }
 
 .bg-gradient-light-pink-180 {
   background-color: #edf2f8;
-  background-image: linear-gradient(180deg, #edf2f8 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #edf2f8 40%, #ffc0cb 100%); }
 
 .bg-gradient-light-pink-270 {
   background-color: #edf2f8;
-  background-image: linear-gradient(270deg, #edf2f8 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #edf2f8 40%, #ffc0cb 100%); }
 
 .bg-gradient-light-pink-circular {
   background-color: #edf2f8;
-  background-image: radial-gradient(#edf2f8, #ff008c); }
+  background-image: radial-gradient(#edf2f8, #ffc0cb); }
 
 .bg-gradient-light-red {
   background-color: #edf2f8;
@@ -18196,23 +18214,23 @@ hr, .hr {
 
 .bg-gradient-black-pink {
   background-color: #010102;
-  background-image: linear-gradient(120deg, #010102 40%, #ff008c 100%); }
+  background-image: linear-gradient(120deg, #010102 40%, #ffc0cb 100%); }
 
 .bg-gradient-black-pink-90 {
   background-color: #010102;
-  background-image: linear-gradient(90deg, #010102 40%, #ff008c 100%); }
+  background-image: linear-gradient(90deg, #010102 40%, #ffc0cb 100%); }
 
 .bg-gradient-black-pink-180 {
   background-color: #010102;
-  background-image: linear-gradient(180deg, #010102 40%, #ff008c 100%); }
+  background-image: linear-gradient(180deg, #010102 40%, #ffc0cb 100%); }
 
 .bg-gradient-black-pink-270 {
   background-color: #010102;
-  background-image: linear-gradient(270deg, #010102 40%, #ff008c 100%); }
+  background-image: linear-gradient(270deg, #010102 40%, #ffc0cb 100%); }
 
 .bg-gradient-black-pink-circular {
   background-color: #010102;
-  background-image: radial-gradient(#010102, #ff008c); }
+  background-image: radial-gradient(#010102, #ffc0cb); }
 
 .bg-gradient-black-red {
   background-color: #010102;
@@ -24409,10 +24427,10 @@ smaller {
   color: #9F7AEA !important; }
 
 .list-fa-pink li:before {
-  color: #ff008c; }
+  color: #ffc0cb; }
 
 .li-fa-pink:before {
-  color: #ff008c !important; }
+  color: #ffc0cb !important; }
 
 .list-fa-red li:before {
   color: #ff2400; }

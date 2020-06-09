@@ -45,7 +45,7 @@
 @each $name, $color in $colors {
 
   .badge-#{$name} {
-    @if $name == light or $name == white {
+    @if $name == 'light' or $name == 'white' {
       color: $body;
     } @else {
       color: $white;
@@ -53,7 +53,7 @@
     background-color: $color;
     border-color: $color;
     &:hover {
-      @if $name == dark or $name == black {
+      @if $name == 'dark' or $name == 'black' {
         background: lighten($color, 8%);
         border-color: lighten($color, 8%);
       } @else {
