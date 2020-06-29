@@ -18529,7 +18529,7 @@ hr, .hr {
 .hover-overlay-none:hover:after {
   display: none !important; }
 
-.facebook {
+.facebook, .color-facebook {
   color: #3b57a1; }
 
 .hover-facebook:hover {
@@ -18540,7 +18540,7 @@ hr, .hr {
   .bg-facebook:hover {
     background-color: #506fbf; }
 
-.twitter {
+.twitter, .color-twitter {
   color: #4aa0eb; }
 
 .hover-twitter:hover {
@@ -18551,7 +18551,7 @@ hr, .hr {
   .bg-twitter:hover {
     background-color: #78b8f0; }
 
-.google {
+.google, .color-google {
   color: #D93D2C; }
 
 .hover-google:hover {
@@ -18562,7 +18562,7 @@ hr, .hr {
   .bg-google:hover {
     background-color: #e16557; }
 
-.whatsapp {
+.whatsapp, .color-whatsapp {
   color: #35B83F; }
 
 .hover-whatsapp:hover {
@@ -18573,7 +18573,7 @@ hr, .hr {
   .bg-whatsapp:hover {
     background-color: #53cd5c; }
 
-.instagram {
+.instagram, .color-instagram {
   color: #e4405f; }
 
 .hover-instagram:hover {
