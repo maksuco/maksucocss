@@ -23383,9 +23383,9 @@ hr, .hr {
   border-width: 0px !important; }
 
 .outline-0 {
-  outline: 0; }
+  outline: 0 !important; }
   .outline-0:focus {
-    outline: 0; }
+    outline: 0 !important; }
 
 .overflow-auto {
   overflow: auto; }
