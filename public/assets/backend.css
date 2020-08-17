@@ -115,7 +115,7 @@ aside.sidebar {
     font-size: .8rem;
     line-height: 1;
     letter-spacing: .06rem; }
-  @media (min-width: 768px) and (max-width: 1168px) {
+  @media (min-width: 868px) and (max-width: 1168px) {
     aside.sidebar {
       width: 98px; }
       aside.sidebar .logo {
@@ -152,7 +152,7 @@ aside.sidebar {
     box-shadow: 6px 0 15px -8px rgba(59, 32, 152, 0.1); }
   aside.sidebar.shadow {
     box-shadow: 6px 0 15px -8px rgba(21, 29, 46, 0.1); }
-  @media (max-width: 768px) {
+  @media (max-width: 868px) {
     aside.sidebar {
       transition: all .25s ease-out;
       left: -250px; }
@@ -231,7 +231,7 @@ aside.sidebar {
 .hide_search_icon::before {
   display: none !important; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
   .topnav {
     right: 6px !important;
     top: 6px; }
@@ -277,12 +277,12 @@ article {
         padding: 0.25rem 0.5rem;
         font-size: 1.2rem;
         vertical-align: middle; }
-  @media (min-width: 768px) and (max-width: 1168px) {
+  @media (min-width: 868px) and (max-width: 1168px) {
     article {
       margin-left: 98px; }
       article header {
         padding: 1.5rem 1rem 2rem 1rem; } }
-  @media (max-width: 768px) {
+  @media (max-width: 868px) {
     article {
       margin-left: 0px; }
       article header {

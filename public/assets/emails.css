@@ -119,7 +119,7 @@ p {
 .email-p {
   padding: 20px; }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .container {
     padding: 6px; }
   .email-logo {
