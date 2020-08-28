@@ -1,9 +1,16 @@
 //GENERAL
+.font-body {
+  font-family: $font-family, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.font-heading {
+  font-family: $heading-font-family, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 p {
   font-weight: $paragraph-weight;
   line-height: $paragraph-line-height;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -172,7 +179,7 @@ h6 {
 
 
 //STYLES
-$transforms: italic, uppercase, lowercase, capitalize, underline, line-through;
+$transforms: italic, uppercase, lowercase, capitalize;
 @each $row in $transforms {
   .#{$row} {
     text-transform: $row;
@@ -185,6 +192,15 @@ $transforms: italic, uppercase, lowercase, capitalize, underline, line-through;
     }
   }
 }
+
+
+$decorations: overline, line-through, underline;
+@each $row in $decorations {
+  .#{$row} {
+    text-decoration: $row;
+  }
+}
+
 .uppercase-first {
   text-transform: lowercase;
   &:first-letter {

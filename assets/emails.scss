@@ -22,7 +22,7 @@ body, .body{
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: $font-base;
+  font-size: $font-size;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -76,7 +76,7 @@ table, td{
 th,
 td,
 p {
-  font-size: $font-base;
+  font-size: $font-size;
   margin: 0;
 }
 

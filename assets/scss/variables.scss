@@ -1,8 +1,9 @@
 
 //GRID
-$desktop-breakpoint: 768px !default;
+$desktop-breakpoint: 868px !default;
 $container: 1300px !default;
 $container-max: 1860px !default;
+$container-min: 1000px !default;
 $columns: 24 !default;
 $container-sm-px: 0.5rem !default; //0 !default;
 
@@ -42,7 +43,7 @@ $colors: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$lig
 //$font-family--wait: "-apple-system, system-ui, BlinkMacSystemFont" !default; Chrome needs to fix bold
 $font-family: "-apple-system" !default;
 $heading-font-family: $font-family !default;
-$font-base: 16px !default;
+$font-size: 16px !default;
 $print-font-base: 11pt !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -64,6 +65,7 @@ $heading-letter-spacing: $font-letter-spacing !default;
 $btn-padding-y: .6rem !default;
 $btn-padding-x: 1.3rem !default;
 $btn-radius: .2rem !default;
+$btn-border: 1px !default;
 
 //FORMS
 $form-bg: #ffffff !default;

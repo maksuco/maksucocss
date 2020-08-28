@@ -2020,63 +2020,6 @@ ol, ul {
   transform: translateY(-50%);
   right: 0; }
 
-@media (min-width: 868px) {
-  .md-absolute-full {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
-  .md-absolute-tc {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); }
-  .md-absolute-tl {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .md-absolute-tr {
-    position: absolute;
-    top: 0;
-    right: 0; }
-  .md-absolute-bc {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); }
-  .md-absolute-bl {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-  .md-absolute-br {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
-  .md-absolute-vc {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); }
-  .md-absolute-hc {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); }
-  .md-absolute-c {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .md-absolute-cl {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0; }
-  .md-absolute-cr {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0; } }
-
 @media (max-width: 868px) {
   .sm-absolute-full {
     position: absolute;

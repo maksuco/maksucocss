@@ -7,7 +7,7 @@
 		"uuidString": "8F1D91EE-47FE-4435-A8B2-82A11AAEB6AE"
 		}
 	],
-"creatorBuild": "32147",
+"creatorBuild": "32186",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -1363,19 +1363,6 @@
 		"oS": 0,
 		"sct": 1
 		},
-	"/assets/scss/grid-old-with-custom.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/scss/grid-old-with-custom.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
 	"/assets/scss/grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1574,6 +1561,16 @@
 		"oAP": "/LICENSE",
 		"oF": 0
 		},
+	"/public/assets/backend (michaels-mbp.lan's conflicted copy 2020-08-21).css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/assets/backend (michaels-mbp.lan's conflicted copy 2020-08-21)-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/public/assets/backend.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1582,6 +1579,16 @@
 		"oA": 1,
 		"oAP": "/public/assets/backend-min.css",
 		"oF": 1,
+		"oS": 3
+		},
+	"/public/assets/emails (michaels-mbp.lan's conflicted copy 2020-08-21).css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/assets/emails (michaels-mbp.lan's conflicted copy 2020-08-21)-min.css",
+		"oF": 0,
 		"oS": 3
 		},
 	"/public/assets/emails.css": {
@@ -2108,6 +2115,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/public/assets/maksucocss (michaels-mbp.lan's conflicted copy 2020-08-21).css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/assets/maksucocss (michaels-mbp.lan's conflicted copy 2020-08-21)-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/public/assets/maksucocss.css": {
 		"aP": 1,
@@ -4369,6 +4386,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"default-case-last": {
+			"active": 0,
+			"optionString": ""
+			},
 		"default-param-last": {
 			"active": 0,
 			"optionString": ""
@@ -4781,6 +4802,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-loss-of-precision": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
@@ -4896,6 +4921,10 @@
 		"no-regex-spaces": {
 			"active": 1,
 			"optionString": ""
+			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
 			},
 		"no-restricted-globals": {
 			"active": 0,
@@ -5040,6 +5069,10 @@
 		"no-use-before-define": {
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-backreference": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-useless-call": {
 			"active": 0,

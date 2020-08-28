@@ -8,7 +8,7 @@
   line-height: inherit;
   padding: ($btn-padding-y * .4) ($btn-padding-x * .4);
   background: transparent;
-  border-width: 1px;
+  border-width: $btn-border;
   border-style: solid;
   border-color: transparent;
   border-radius: $btn-radius;

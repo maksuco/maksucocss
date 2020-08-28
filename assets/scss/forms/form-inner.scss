@@ -131,7 +131,7 @@
     width: 1rem;
     top: 4px;
     right: .5rem;
-    @if $input-radius = 9999px or $input-radius = 'full'  {
+    @if $input-radius == 9999px or $input-radius == 'full'  {
       right: .7rem;
     }
     
