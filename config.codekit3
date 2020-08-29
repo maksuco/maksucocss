@@ -1077,6 +1077,16 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/assets/emails (michaels-mbp.lan's conflicted copy 2020-08-21).css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/emails (michaels-mbp.lan's conflicted copy 2020-08-21)-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/assets/emails.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1089,6 +1099,16 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 1
+		},
+	"/assets/maksucocss (michaels-mbp.lan's conflicted copy 2020-08-21).css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/maksucocss (michaels-mbp.lan's conflicted copy 2020-08-21)-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/assets/maksucocss.scss": {
 		"aP": 0,
@@ -1561,16 +1581,6 @@
 		"oAP": "/LICENSE",
 		"oF": 0
 		},
-	"/public/assets/backend (michaels-mbp.lan's conflicted copy 2020-08-21).css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/public/assets/backend (michaels-mbp.lan's conflicted copy 2020-08-21)-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/public/assets/backend.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1579,16 +1589,6 @@
 		"oA": 1,
 		"oAP": "/public/assets/backend-min.css",
 		"oF": 1,
-		"oS": 3
-		},
-	"/public/assets/emails (michaels-mbp.lan's conflicted copy 2020-08-21).css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/public/assets/emails (michaels-mbp.lan's conflicted copy 2020-08-21)-min.css",
-		"oF": 0,
 		"oS": 3
 		},
 	"/public/assets/emails.css": {
@@ -2115,16 +2115,6 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"/public/assets/maksucocss (michaels-mbp.lan's conflicted copy 2020-08-21).css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/public/assets/maksucocss (michaels-mbp.lan's conflicted copy 2020-08-21)-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/public/assets/maksucocss.css": {
 		"aP": 1,
