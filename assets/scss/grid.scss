@@ -545,6 +545,76 @@ $z: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   right: 0;
 }
 
+@media (max-width: $desktop-breakpoint) {
+  .sm-absolute-full {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .sm-absolute-tc {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sm-absolute-tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .sm-absolute-tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .sm-absolute-bc {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sm-absolute-bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .sm-absolute-br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .sm-absolute-vc {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .sm-absolute-hc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sm-absolute-c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .sm-absolute-cl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  .sm-absolute-cr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+
 
 @media (min-width: $desktop-breakpoint) {
   .md-absolute-full {
