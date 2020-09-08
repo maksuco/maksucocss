@@ -49,14 +49,15 @@ $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: 700 !default;
+$font-weight: $font-weight-normal !default;
 $font-letter-spacing: 0.025em !default;
+$paragraph-weight: $font-weight !default;
+$paragraph-line-height: 1.2 !default;
 $h1-size: 2.6rem !default;
 $h2-size: 2.2rem !default;
 $h3-size: 1.9rem !default;
 $h4-size: 1.6rem !default;
 $h5-size: 1.2rem !default;
-$paragraph-weight: $font-weight-light !default;
-$paragraph-line-height: 1.2 !default;
 $heading-weight: $font-weight-bold !default;
 $heading-line-height: 1.1 !default;
 $heading-letter-spacing: $font-letter-spacing !default;
@@ -79,7 +80,7 @@ $form-border: 1px solid $gray !default;
 $form-padding: 21px 10px 6px 15px !default;
 
 //DROPDOWNS
-$dropdown-radius: .5rem !default;
+$dropdown-radius: $btn-radius !default;
 $dropdown-font-size: .9rem !default;
 $dropdown-top: 40px !default;
 

@@ -8,7 +8,7 @@
   padding-right: auto;
 }
 
-$sizes:0.25rem, 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.25rem, 2.5rem, 2.75rem, 3rem, 4rem, 5rem, 6rem, 7rem, 8rem, 9rem, 10rem, 11rem, 12rem, 13rem, 14rem, 15rem, 16rem;
+$sizes:0.25rem, 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.25rem, 2.5rem, 2.75rem, 3rem, 4rem, 5rem, 6rem, 7rem, 8rem, 9rem, 10rem, 11rem, 12rem, 13rem, 14rem, 15rem, 16rem, 17rem, 18rem, 19rem, 20rem, 100px, 150px, 200px, 250px, 300px, 350px, 400px, 500px;
 $paddings: p, pl, pr, pt, pb, py, px;
 @each $row in $paddings {
   .#{$row}-0 {
