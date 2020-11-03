@@ -1499,17 +1499,6 @@ ol, ul {
     .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
       padding-left: 0.5rem;
       padding-right: 0.5rem; } }
-.container {
-  max-width: 1300px !important;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-  position: relative;
-  padding: 0; }
-  @media (max-width: 1128.4px) {
-    .container {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem; } }
 .container-max {
   width: 100%;
   max-width: 1860px !important;
@@ -1520,6 +1509,17 @@ ol, ul {
   padding: 0; }
   @media (max-width: 1128.4px) {
     .container-max {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; } }
+.container {
+  max-width: 1300px !important;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0; }
+  @media (max-width: 1128.4px) {
+    .container {
       padding-left: 0.5rem;
       padding-right: 0.5rem; } }
 .container-min {
@@ -7189,8 +7189,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #4299E1;
   border-color: #4299E1; }
   .badge-blue:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #2286d8;
+    border-color: #2286d8; }
   .badge-blue:disabled {
     opacity: .7; }
 
@@ -7203,8 +7203,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #667EEA;
   border-color: #667EEA; }
   .badge-indigo:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #4260e5;
+    border-color: #4260e5; }
   .badge-indigo:disabled {
     opacity: .7; }
 
@@ -7217,8 +7217,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #9F7AEA;
   border-color: #9F7AEA; }
   .badge-purple:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #8657e4;
+    border-color: #8657e4; }
   .badge-purple:disabled {
     opacity: .7; }
 
@@ -7231,8 +7231,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #ffc0cb;
   border-color: #ffc0cb; }
   .badge-pink:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #ff97a9;
+    border-color: #ff97a9; }
   .badge-pink:disabled {
     opacity: .7; }
 
@@ -7245,8 +7245,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #ff2400;
   border-color: #ff2400; }
   .badge-red:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #d61e00;
+    border-color: #d61e00; }
   .badge-red:disabled {
     opacity: .7; }
 
@@ -7259,8 +7259,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #ff8800;
   border-color: #ff8800; }
   .badge-orange:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #d67200;
+    border-color: #d67200; }
   .badge-orange:disabled {
     opacity: .7; }
 
@@ -7273,8 +7273,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #ffeb04;
   border-color: #ffeb04; }
   .badge-yellow:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #dac900;
+    border-color: #dac900; }
   .badge-yellow:disabled {
     opacity: .7; }
 
@@ -7287,8 +7287,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #1da139;
   border-color: #1da139; }
   .badge-green:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #177e2d;
+    border-color: #177e2d; }
   .badge-green:disabled {
     opacity: .7; }
 
@@ -7301,8 +7301,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #38B2AC;
   border-color: #38B2AC; }
   .badge-teal:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #2e938e;
+    border-color: #2e938e; }
   .badge-teal:disabled {
     opacity: .7; }
 
@@ -7315,8 +7315,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #17a2b8;
   border-color: #17a2b8; }
   .badge-cyan:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #128294;
+    border-color: #128294; }
   .badge-cyan:disabled {
     opacity: .7; }
 
@@ -7329,8 +7329,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #ffffff;
   border-color: #ffffff; }
   .badge-white:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #ebebeb;
+    border-color: #ebebeb; }
   .badge-white:disabled {
     opacity: .7; }
 
@@ -7343,8 +7343,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #A0AEC0;
   border-color: #A0AEC0; }
   .badge-gray:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #8799b0;
+    border-color: #8799b0; }
   .badge-gray:disabled {
     opacity: .7; }
 
@@ -7357,8 +7357,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #343a40;
   border-color: #343a40; }
   .badge-gray-dark:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #222629;
+    border-color: #222629; }
   .badge-gray-dark:disabled {
     opacity: .7; }
 
@@ -7371,8 +7371,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #3B2098;
   border-color: #3B2098; }
   .badge-primary:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #2e1976;
+    border-color: #2e1976; }
   .badge-primary:disabled {
     opacity: .7; }
 
@@ -7413,8 +7413,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: #edf2f8;
   border-color: #edf2f8; }
   .badge-light:hover {
-    background: #091421;
-    border-color: #091421; }
+    background: #d0dded;
+    border-color: #d0dded; }
   .badge-light:disabled {
     opacity: .7; }
 
@@ -25820,10 +25820,10 @@ pre.code {
     grid-gap: 10vh; } }
 
 .font-body {
-  font-family: "-apple-system", -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  font-family: "-apple-system", -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; }
 
 .font-heading {
-  font-family: "-apple-system", -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  font-family: "-apple-system", -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; }
 
 p {
   font-weight: 400;

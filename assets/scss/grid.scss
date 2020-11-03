@@ -64,8 +64,10 @@ ol, ul {
     padding-right: $container-sm-px;
   }
 }
-.container {
-  max-width: $container !important;
+
+.container-max {
+  width: 100%;
+  max-width: $container-max !important;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -77,9 +79,8 @@ ol, ul {
   }
 }
 
-.container-max {
-  width: 100%;
-  max-width: $container-max !important;
+.container {
+  max-width: $container !important;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;

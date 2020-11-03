@@ -45,6 +45,10 @@ Vue.directive('cleave', {
 Vue.mixin({
   methods: {
     //v-on:click.prevent="goToUrl('')
+    isMobile() {
+      var match = document.matchMedia('()pointer:coarse)');
+      return (match && match.matches);
+    },
     goToUrl(url) {
       window.location.href = url;
     },

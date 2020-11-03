@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MaksucoCSS MENU</title>
+  <link href="assets/fontawesome/fontawesome.css" rel="stylesheet">
+  <link href="assets/maksucocss.css" rel="stylesheet">
+  
+<link href="https://cdn.jsdelivr.net/npm/swiper@5.3.6/css/swiper.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@5.3.6/js/swiper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper"></script>
+
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+  <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+  <style>
+    .h-200 {
+      transition: all 0.5s ease-out;
+    }
+    /* .h-400 {
+      pointer-events:none; touch-action:none;
+      display: none;
+      opacity: 0;
+    } */
+    .nav_scroll {
+      position: fixed;
+      z-index: 99;
+      top: -105px;
+      top: -70px;
+    }
+    :root {
+      --plyr-color-main: #c21a1a;
+    }
+.carousel {
+  height: 400px;
+}
+.carousel:focus {
+    outline:none !important;
+}
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.carousel-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-cell .player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+.carousel-cell video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+  </style>
+</head>
+<body class="bg-light">
+<div id="main">
+
+  <header class="container p-5 sm-p-3 flex items-center">
+    <h1 class="text-6x md-text-8x text-bold letter-spacing-xs">Menu</h1>
+    <div class="block w-full mt-3">
+      <a href="index.html" class="btn btn-light btn-xs">Nuevos</a>
+      <a href="index.html" class="btn btn-light btn-xs">Descuento</a>
+      <a href="index.html" class="btn btn-primary btn-xs">Entradas</a>
+      <a href="backend.html" class="btn btn-white btn-xs">Carnes</a>
+      <a href="forms.html" class="btn btn-white btn-xs">Postres</a>
+    </div>
+  </header>
+  
+
+  <header class="container bg-white p-5 sm-p-3 flex items-center" v-bind:class="{ nav_scroll: nav_active_scroll }">
+    <button class="absolute-tr z-10 btn btn-transparent color-gray-o py-1 px-2"><i class="far fa-ellipsis-h fa-2x"></i></button>
+    <h1 class="text-6x md-text-8x text-bold letter-spacing-xs">Menu</h1>
+    <div class="block w-full mt-3">
+      <a href="index.html" class="btn btn-light btn-xs">Nuevos</a>
+      <a href="index.html" class="btn btn-light btn-xs">Descuento</a>
+      <a href="index.html" class="btn btn-primary btn-xs">Entradas</a>
+      <a href="backend.html" class="btn btn-white btn-xs">Carnes</a>
+      <a href="forms.html" class="btn btn-white btn-xs">Postres</a>
+    </div>
+  </header>
+  
+
+    <section class="container-max flex flex-wrap">
+
+
+
+      <figure class="col-24 bg-light-200 rounded mt-6 py-3 px-5">
+        <button class="absolute-tr z-10 btn btn-transparent color-gray-o py-1 px-2"><i class="far fa-ellipsis-h fa-2x"></i></button>
+        <h2 class="text-shadow-sm letter-spacing-sm">Carnes <button class="btn btn-gray btn-xs ml-3 border-0 text-light letter-spacing-normal"><i class="fas fa-arrow-up"></i> Ocultar</button></h2>
+        <p class="mt-2 color-gray">todas nuestras carnes son de alta calidad</p>
+      </figure>
+
+      <figure class="col-24 col-md-8 md-p-2 mt-3">
+        <img src="https://images.unsplash.com/photo-1520218576172-c1a2df3fa5fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80" alt="" class="relative bg-white rounded-t-lg shadow-lg h-200 object-cover w-100p" v-on:click="media_open('1')" v-bind:class="[item_media === '1' ? 'h-400' : '']">
+        
+        <div class="carousel relative bg-white rounded-t-lg shadow-lg h-200" ondblclick="openMedia(1)" id="1" data-flickity='{ "prevNextButtons": false, "pageDots": false, "lazyLoad": true }'>
+          <div class="carousel-cell">
+            <img src="https://images.unsplash.com/photo-1520218576172-c1a2df3fa5fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80" alt="" class="">
+          </div>
+          <div class="carousel-cell">
+            <video poster="https://i.stack.imgur.com/NoaWt.jpg" autoplay controls playsinline muted loop class="player">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="carousel-cell">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=2250&q=80" alt="" class="">
+          </div>
+          <div class="carousel-cell">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=1253&q=80" alt="" class="">
+          </div>
+        </div>
+
+          <div class="absolute-tr px-5 pt-5 h-200 color-white" v-on:click="media_open('1')" v-bind:class="[item_media === '1' ? 'h-400' : '']">
+            <span class="badge badge-orange badge-sm ml-1">Recomendada</span>
+            <span class="badge badge-light badge-sm ml-1 px-1 py-0"><i class="far fa-ellipsis-h fa-2x"></i></span>
+          </div>
+
+          <div class="px-3 md-px-6 py-4 bg-white rounded-b-lg relative">
+            <h4 class="color-red text-bold uppercase mt-1">Carne Mexicana</h4>
+            <p class="color-gray line-12 mt-1">300gr de carne nacional de la mejor calidad, cocinada a fuego lento por 2 horas y servida con una salsa mexicana. <span class="color-dark text-bold">$50</span></p>
+            <div class="text-xs color-gray mt-3">Tiempo <span class="color-primary">30min aprox</span> Para <span class="color-primary">1 persona</span> Acompañantes <span class="color-primary">1</span></div>
+            <span class="badge badge-red badge-xs mt-1"><i class="fas fa-allergies"></i> Nueces</span>
+            <span class="badge badge-orange badge-xs mt-1"><i class="fab fa-hotjar"></i> Picante</span>
+            <span class="badge badge-red badge-xs mt-1"><i class="fas fa-exclamation"></i> Mariscos</span><br>
+            <button class="btn bg-light btn-xs mt-3 inline-block" v-if="item_recommendation != 1" v-on:click="item_recommendation = 1">Ver recomendaciones</button>
+            <button class="btn bg-light btn-xs mt-3 inline-block" v-if="item_recommendation == 1" v-on:click="item_recommendation = false">Ocultar recomendaciones</button>
+
+            <figure class="col-7 m-2 cursor-pointer" v-if="item_recommendation == 1">
+              <div class="absolute-tr z-30 p-2 pt-1 text-2x color-red"><i class="fas fa-heart"></i></div>
+
+              <img class="object-cover rounded-lg w-full h-180" src="https://images.unsplash.com/photo-1545608508-78f351665a1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80">
+              
+              <div class="p-2 text-center">
+                <h6 class="uppercase tracking-wide text-sm color-dark mt-1">Casillero del Diablo Tinto</h6>
+              </div>
+            </figure>
+
+          </div>
+      
+        </div>
+      </figure>
+
+
+      <figure class="col-24 col-md-8 md-p-2 mt-3">
+        <div class="carousel relative bg-white rounded-t-lg shadow-lg h-200" ondblclick="openMedia(2)" id="2">
+          <div class="carousel-cell">
+            <img src="https://images.unsplash.com/photo-1520218576172-c1a2df3fa5fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80" alt="" class="">
+          </div>
+          <div class="carousel-cell">
+            <video poster="https://i.stack.imgur.com/NoaWt.jpg" autoplay playsinline muted loop class="player">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="carousel-cell">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=2250&q=80" alt="" class="">
+          </div>
+        </div>
+
+          <div class="absolute-tr px-5 pt-5 h-200 color-white" v-on:click="media_open('2')" v-bind:class="[item_media === '2' ? 'h-400' : '']">
+            <span class="badge badge-light badge-sm ml-1 px-1 py-0"><i class="far fa-ellipsis-h fa-2x"></i></span>
+          </div>
+
+          <div class="px-3 md-px-6 py-4 bg-white rounded-b-lg relative">
+            <h4 class="color-red text-bold uppercase mt-1">Carne Peruana</h4>
+            <p class="color-gray line-12 mt-1">300gr de carne nacional de la mejor calidad, cocinada a fuego lento por 2 horas y servida con una salsa mexicana. <span class="color-dark text-bold">$50</span></p>
+          </div>
+      
+        </div>
+      </figure>
+
+      <figure class="col-24 col-md-8 md-p-2 mt-3">
+        <div class="relative bg-white rounded-lg shadow-lg">
+
+          <div class="px-5 pt-5 flex justify-end items-start color-white">
+            <span class="badge badge-primary badge-sm ml-1">NUEVA</span>
+            <span class="badge badge-light badge-sm ml-1 px-1 py-0"><i class="far fa-ellipsis-h fa-2x"></i></span>
+          </div>
+
+          <div class="px-3 md-px-6 py-4 bg-white rounded-b-lg relative">
+            <h4 class="color-red text-bold uppercase mt-1">Carne Tres Quesos Rockefort</h4>
+            <p class="color-gray line-12 mt-1">250gr de carne nacional, servida en una salsa de queso rockefort. <span class="color-dark text-bold">$150.000</span></p>
+            <div class="text-xs color-gray mt-3">Tiempo <span class="color-primary">30min aprox</span> Para <span class="color-primary">1 persona</span> Acompañantes <span class="color-primary">1</span></div>
+            <span class="badge badge-red badge-xs mt-1"><i class="fas fa-allergies"></i> Nueces</span>
+            <span class="badge badge-orange badge-xs mt-1"><i class="fab fa-hotjar"></i> Picante</span>
+            <span class="badge badge-red badge-xs mt-1"><i class="fas fa-exclamation"></i> Mariscos</span><br>
+            <button class="btn bg-light btn-xs mt-3 inline-block">Ver recomendaciones</button>
+          </div>
+      
+        </div>
+      </figure>
+
+      <figure class="col-24 bg-light-200 rounded mt-6 py-3 px-5">
+          <button class="absolute-tr z-10 btn btn-transparent color-gray-o py-1 px-2"><i class="far fa-ellipsis-h fa-2x"></i></button>
+          <h2 class="text-shadow-sm letter-spacing-sm">Postres <button class="btn btn-gray btn-xs ml-3 border-0 text-light letter-spacing-normal"><i class="fas fa-arrow-up"></i> Ocultar</button></h2>
+          <p class="mt-2 color-gray">todas nuestras carnes son de alta calidad</p>
+      </figure>
+
+      <figure class="col-24 col-md-8 md-p-2 mt-3">
+        <div class="relative bg-white rounded-lg shadow-lg">
+
+          <div class="px-5 pt-5 flex justify-end items-start color-white">
+            <span class="badge badge-red badge-sm ml-1"><i class="fas fa-heart"></i> Favorito</span>
+            <span class="badge badge-light badge-sm ml-1 px-1 py-0"><i class="far fa-ellipsis-h fa-2x"></i></span>
+          </div>
+
+          <div class="px-3 md-px-6 py-4 bg-white rounded-b-lg relative">
+            <h4 class="color-red text-bold uppercase mt-1 flex items-center">Flan de Caramelo <span class="badge badge-primary badge-sm text-xs rounded-full ml-1">30%</span></h4>
+            <p class="color-gray line-12 mt-1"><span class="color-dark text-bold">$10.000</span></p>
+            <div class="text-xs color-gray mt-3">Tiempo <span class="color-primary">10min aprox</span> Para <span class="color-primary">2 persona</span></div>
+          </div>
+      
+        </div>
+      </figure>
+
+      <figure class="row mt-12"></figure>
+
+      <figure class="col-24 col-md-7 p-2">
+        <section class="col-24 bg-dark-300 color-light rounded-lg p-3 text-center" v-if="!newsletter_send">
+          <h4 class="text-shadow-sm letter-spacing-sm mt-5">Quieres recibir promociones de este restaurante?</h4>
+          <button class="btn btn-indigo btn-block mt-6 rounded-lg py-3" v-if="!newsletter_active" v-on:click="newsletter_active = !newsletter_active">REGISTRATE</button>
+
+          <section class="row text-left mt-3" v-if="newsletter_active">
+            <button class="absolute-tr top-5 right-10 z-10 text-xs bg-white-o p-1 px-3 color-light rounded-full border-0" v-on:click="newsletter_active = false">cerrar</button>
+            <div class="form-basic mt-3">
+              <input type="text" id="email-muted" placeholder="Nombre">
+              <small class="color-gray">We'll never share your email with anyone else.</small>
+            </div>
+
+            <button class="btn btn-indigo btn-block mt-2 rounded-lg py-3" v-on:click="newsletter_send = true">REGISTRATE</button>
+            <small class="color-gray mt-2">We'll never share your email with anyone else.</small>
+          </section>
+        </section>
+        <section class="col-24 bg-white color-indigo text-center p-3" v-if="newsletter_send">
+          <i class="fal fa-check-circle text-7x"></i>
+          <h2 class="text-2x text-shadow-sm letter-spacing-sm color-indigo-300 text-bold mt-3">Gracias por registrarte</h2>
+        </section>
+      </figure>
+
+      <figure class="col-24 col-md-7 p-2">
+        <div class="col-24 bg-dark-300 color-light rounded-lg p-3 text-center">
+          <h4 class="text-shadow-sm letter-spacing-sm text-bold mt-5">Como te pareció el restaurante?</h4>
+          <p class="color-indigo-100 text-sm mt-2">Esta calificación es interna, anónima y ayuda al restaurante a mejorar</p>
+          <button class="btn btn-indigo btn-block mt-6 rounded-lg py-3" v-if="!vote_active" v-on:click="vote_open()">CALIFICALO</button>
+
+          <section class="row text-left mt-3 p-2" v-if="vote_active">
+            <button class="absolute-tr top-5 right-10 z-10 text-xs bg-white-o p-1 px-3 color-light rounded-full border-0" v-on:click="vote_active = false">cerrar</button>
+  
+            <h6 class="mt-4 col-24">Como te pareció la comida?</h6>
+            <div class="form-radio form-inline">
+              <input type="radio" id="comida_buena" name="comida" class="">
+              <label class="" for="comida_buena">Buena</label>
+            </div>
+            <div class="form-radio form-inline">
+              <input type="radio" id="comida_mala" name="comida" class="">
+              <label class="" for="comida_mala">Mala</label>
+            </div>
+  
+            <h6 class="mt-4 col-24">Como te pareció la atención?</h6>
+            <div class="form-radio form-inline">
+              <input type="radio" id="buena" name="customRadioInline1" class="">
+              <label class="" for="buena">Buena</label>
+            </div>
+            <div class="form-radio form-inline">
+              <input type="radio" id="mala" name="customRadioInline1" class="">
+              <label class="" for="mala">Mala</label>
+            </div>
+            <button class="btn btn-indigo btn-block mt-6 rounded-lg py-3 shadow-radar-dark-lg" v-on:click="vote_open()">ENVIAR</button>
+          </section>
+
+        </div>
+      </figure>
+
+      <figure class="col-24 col-md-8 p-2">
+        <div class="col-24 bg-dark-300 color-white rounded-lg">
+          <div class="px-5 py-6 flex flex-wrap items-start">
+            <div class="w-40">
+              <span class="icon-layer icon-calendar color-dark-100 text-3x top--10" data-icon="24"><i class="fas fa-calendar"></i></span>
+            </div>
+            <div class="col">
+              <h4 class="text-shadow-sm letter-spacing-sm color-light">Reservar</h4>
+              <p class="mt-2 text-sm color-indigo-100">Todas las reservas deben ser confirmadas por el restaurante</p>
+            </div>
+          </div>
+          <hr class="m-0 bg-dark-100">
+          <div class="px-5 py-3 flex justify-end">
+            <span class="btn btn-dark bg-dark-200 color-indigo-100 btn-sm mr-1 border-0">4 <i class="fas fa-users"></i></span>
+            <span class="btn btn-dark bg-dark-200 color-indigo-100 btn-sm mr-1 border-0">FECHA</span>
+            <span class="btn btn-dark bg-transparent color-dark-100 btn-sm mr-1 border-0">SOLICITAR</span>
+          </div>
+        </div>
+      </figure>
+
+    </section>
+  </div>
+<script src="/assets/packages/maksucocss-min.js"></script>
+
+<script>
+const player = new Plyr('.player', {
+  controls: [],
+  settings: []
+});
+
+
+var flkty = new Flickity('#2', {
+  prevNextButtons: false,
+  pageDots: false,
+  lazyLoad: true
+});
+
+function openMedia(element_id) {
+  var element = document.getElementById(element_id);
+  element.classList.add("h-400");
+  flkty.playPlayer()
+  alert('hello');
+}
+
+var nav = new Vue({
+  el: '#main',
+  data: {
+    nav_active_scroll: false,
+    newsletter_active: false,
+    newsletter_send: false,
+    vote_active: false,
+    item_recommendation: false,
+    item_media: false
+  },
+  methods: {
+    vote_open(){
+      this.vote_active = !this.vote_active;
+    },
+    media_open(id){
+      if (this.item_media == id) {
+        this.item_media = false;
+        var element = document.getElementById(id);
+        element.classList.remove("h-400");
+      } else {
+        this.item_media = id;
+        var element = document.getElementById(id);
+        element.classList.add("h-400");
+      }
+    },
+    handleScroll (event) {
+      if (window.scrollY > 150) {
+        this.nav_active_scroll = true;
+      } else if (window.scrollY < 150) {
+        this.nav_active_scroll = false;
+      }
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+});
+</script>
+  
+    
+</body>
+</html>
