@@ -80,6 +80,16 @@
   background-attachment: fixed;
 }
 
+.bg-c {
+  background-position: center;
+}
+.bg-r {
+  background-attachment: right;
+}
+.bg-l {
+  background-attachment: left;
+}
+
 //ANIMATION
 .bg-zoom { 
   transition: all .3s ease-in-out;
