@@ -266,7 +266,7 @@
       line-height: 1;
       &::before {
         content: '$';
-        font-weight: $font-weight-normal;
+        font-weight: $font-weight-regular;
         position: absolute;
         font-size: 1.5rem;
         top: .5rem;
