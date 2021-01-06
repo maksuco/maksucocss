@@ -49,10 +49,10 @@
   }
   .active-item {
     a {
-      color: lighten($primary, 50%);
+      color: lighten($primary, 30%);
       cursor: default;
       &:hover {
-        color: lighten($primary, 70%);
+        color: lighten($primary, 20%);
         cursor: default;
       }
     }
