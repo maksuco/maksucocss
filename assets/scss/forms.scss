@@ -45,7 +45,53 @@
 }
 
 
-.big-search {
+.md-search {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  input {
+    font-size: 1rem;
+    padding: .8rem;
+    width: 100%;
+    outline: none;
+    color: $dark;
+    border: none;
+    border-radius: $btn-radius;
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+  }
+  i {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    color: $gray;
+    border: 0;
+    opacity: 0.6;
+    font-size: 2em;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+  }
+  i:hover {
+    opacity: 1
+  }
+
+  &.typeahead {
+    input {
+      &::-webkit-search-cancel-button {
+        display: block;
+      }
+      &:not(:placeholder-shown) + i {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.lg-search {
   position: relative;
   width: 100%;
   max-width: 600px;
@@ -89,6 +135,7 @@
     }
   }
 }
+
 
 .search-results {
   position: absolute;
