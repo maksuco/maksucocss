@@ -28,12 +28,10 @@
       border-bottom: 1px solid #ddd;
     }
     h3 {
-      font-weight: normal;
       margin-top: 2.6rem;
       margin-bottom: 1rem;
     }
     h4 {
-      font-weight: normal;
       font-size: 1.6rem;
       margin-top: 1.6rem;
       margin-bottom: 1rem;
@@ -51,10 +49,10 @@
   }
   .active-item {
     a {
-      color: lighten($primary, 40%);
+      color: lighten($primary, 50%);
       cursor: default;
       &:hover {
-        color: lighten($primary, 40%);
+        color: lighten($primary, 70%);
         cursor: default;
       }
     }
