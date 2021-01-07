@@ -853,6 +853,11 @@ $positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 
   }
 }
 
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
 //WIDTH
 .w-auto { width: auto !important; }
 .w-full { width: 100% !important; }
