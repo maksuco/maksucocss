@@ -701,3 +701,56 @@ smaller {
   min-width: 34px;
   min-height: 30px;
 }
+
+//COOL UNDERLINES
+
+  // &[data-aos] {
+  //   div {
+  //     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  //     transform: scaleX(0);
+  //     transform-origin: left;
+  //   }
+
+  //   &.aos-animate div {
+  //     transform: none;
+  //   }
+  // }
+
+.border-underline {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    left: -.1rem;
+    bottom: .1rem;
+    width: calc(100% + (.1rem * 2));
+    height: 22%;
+    background-color: $indigo;
+    content: "";
+    border-radius: calc($btn-radius * .7);
+  }
+}
+
+.border-underline-complete {
+  &::before {
+    left: -.35rem;
+    right: -.22rem;
+    top: -.1rem;
+    bottom: -.1rem;
+    width: auto;
+    height: auto;
+    border-radius: $btn-radius;
+  }
+}
+
+//BORDER COLORS
+@each $name, $color in $colors {
+  .border-underline-#{$name} {
+    &::before {
+      background-color: $color;
+    }
+  }
+}

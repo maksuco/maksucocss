@@ -119,6 +119,8 @@ ol, ul {
 .inline       { display: inline !important; }
 .inline-block { display: inline-block !important; }
 .block        { display: block !important; }
+.flex         { display: flex !important; }
+.inline-flex  { display: inline-flex !important; }
 .table        { display: table !important; }
 .table-row    { display: table-row !important; }
 .table-cell   { display: table-cell !important; }
@@ -134,6 +136,7 @@ ol, ul {
   .sm-inline-block { display: inline-block !important; }
   .sm-block        { display: block !important; }
   .sm-flex { display: flex !important; }
+  .sm-inline-flex  { display: inline-flex !important; }
   .sm-breakline { 
     display: table;
     width: 100%;
@@ -147,6 +150,7 @@ ol, ul {
   .md-inline-block { display: inline-block !important; }
   .md-block        { display: block !important; }
   .md-flex { display: flex !important; }
+  .md-inline-flex  { display: inline-flex !important; }
   .md-breakline { 
     display: table;
     width: 100%;
@@ -432,6 +436,20 @@ $orders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 
 .float-none {
   float: none;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-float-right {
+    float: right;
+  }
+  
+  .md-float-left {
+    float: left;
+  }
+  
+  .md-float-none {
+    float: none;
+  }
 }
 
 .clearfix {
