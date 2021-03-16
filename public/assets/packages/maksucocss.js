@@ -1,10 +1,4 @@
-// @codekit-prepend "vue/vue.min.js";
-// @codekit-prepend "axios/axios.min.js";
-// @codekit-prepend "vee-validate/dist/vee-validate.min.js";
-// @codekit-prepend "vee-validate/dist/locale/es.js";
 // @codekit-prepend "clipboard/clipboard.min.js";
-// @codekit-prepend "v-tooltip/v-tooltip.min.js";
-// @codekit-prepend "vue-toasted/vue-toasted.min.js";
 // @codekit-prepend "moment/moment-with-locales.js";
 // @codekit-prepend "numeral/numeral.min.js";
 // @codekit-prepend "cleave.js";
