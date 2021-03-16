@@ -77,6 +77,13 @@
   .color-#{$name} {
     color: $color !important;
   }
+  //all content
+  .color-#{$name}-all {
+    color: $color !important;
+    h1, h2, h3, h4, h5, h6, p, a, small {
+      color: $color;
+    }
+  }
 
   .color-#{$name}-100 {
     color: lighten($color, $lighten100) !important;
@@ -110,6 +117,7 @@
       color: $color !important;
     }
   }
+
   .color-#{$name}-o {
     color: rgba($color, .3);
   }
@@ -148,6 +156,53 @@
       background-color: $color !important;
     }
   }
+  .hover-bg-#{$name}-100 {
+    &:hover {
+      background-color: lighten($color, $lighten100) !important;
+    }
+  }
+  .hover-bg-#{$name}-200 {
+    &:hover {
+      background-color: lighten($color, $lighten200) !important;
+    }
+  }
+  .hover-bg-#{$name}-300 {
+    &:hover {
+      background-color: lighten($color, $lighten300) !important;
+    }
+  }
+  .hover-bg-#{$name}-400 {
+    &:hover {
+      background-color: lighten($color, $lighten400) !important;
+    }
+  }
+  .hover-bg-#{$name}-500 {
+    &:hover {
+      background-color: $color !important;
+    }
+  }
+  .hover-bg-#{$name}-600 {
+    &:hover {
+      background-color: darken($color, 5%) !important;
+    }
+  }
+  .hover-bg-#{$name}-700 {
+    &:hover {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+  .hover-bg-#{$name}-800 {
+    &:hover {
+      background-color: darken($color, 15%) !important;
+    }
+  }
+  .hover-bg-#{$name}-900 {
+    &:hover {
+      background-color: darken($color, 30%) !important;
+    }
+  }
+
+
   .bg-#{$name}-o {
     background-color: rgba($color, .5);
   }
@@ -313,7 +368,7 @@
   
   .bg-gradient-#{$name} {
     background-color: $color;
-    background-image: linear-gradient(120deg, $color 40%, darken($color, 15%) 100%);
+    background-image: linear-gradient(135deg, $color 40%, darken($color, 15%) 100%);
   }
   .bg-gradient-#{$name}-90 {
     background-color: $color;
@@ -342,6 +397,11 @@
 
 
   //BG FROSTED BLUR
+  .bg-frosted, .bg-blur {
+    background-color: rgba($white, 0.17);
+    -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+    backdrop-filter: blur(8px); /* Chrome and Opera */
+  }
   .bg-frosted-#{$name} {
     background-color: rgba($color, 0.17);
     -webkit-backdrop-filter: blur(8px); /* Safari 9+ */

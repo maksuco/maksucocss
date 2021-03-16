@@ -60,14 +60,6 @@ h6 {
   }
 }
 
-.visible {
-  visibility: visible;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
 
 .text-sub-sm {
   vertical-align: super;
@@ -179,9 +171,8 @@ h6 {
   }
 }
 
-
-//STYLES
-$transforms: italic, uppercase, lowercase, capitalize;
+//TRANSFORMS
+$transforms: uppercase, lowercase, capitalize, initial, inherit;
 @each $row in $transforms {
   .#{$row} {
     text-transform: $row;
@@ -194,8 +185,37 @@ $transforms: italic, uppercase, lowercase, capitalize;
     }
   }
 }
+.transform-none {
+  text-transform: none;
+}
+@media (min-width: $desktop-breakpoint) {
+  .md-transform-none {
+    text-transform: none;
+  }
+}
 
+//STYLES
+$styles: normal, italic, oblique, initial, inherit;
+@each $row in $styles {
+  .#{$row} {
+    font-style: $row;
+  }
+  .text-#{$row} {
+    font-style: $row;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  @each $row in $styles {
+    .md-#{$row} {
+      font-style: $row;
+    }
+    .md-text-#{$row} {
+      font-style: $row;
+    }
+  }
+}
 
+//TRANSFORMS
 $decorations: overline, line-through, underline;
 @each $row in $decorations {
   .#{$row} {
@@ -278,30 +298,30 @@ $aligns: left, center, right, justify;
 
 
 //WEIGHT
-.text-light {
+.text-light, .light {
   font-weight: $font-weight-light;
 }
-.text-regular {
+.text-regular, .regular {
   font-weight: $font-weight-regular;
 }
-.text-bold {
+.text-bold, .bold{
   font-weight: $font-weight-bold;
 }
-.text-bolder {
+.text-bolder, .bolder, .text-black {
   font-weight: $font-weight-bolder;
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .md-text-light {
+  .md-text-light, .md-light {
     font-weight: $font-weight-light;
   }
-  .md-text-regular {
+  .md-text-regular, .md-regular {
     font-weight: $font-weight-regular;
   }
-  .md-text-bold {
+  .md-text-bold, .md-bold {
     font-weight: $font-weight-bold;
   }
-  .md-text-black {
+  .md-text-bolder, .md-bolder, .md-text-black {
     font-weight: $font-weight-bolder;
   }
 }
@@ -753,4 +773,12 @@ smaller {
       background-color: $color;
     }
   }
+}
+
+//FOR GRADIENT BACKGROUNDS
+.text-clip {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

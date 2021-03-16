@@ -986,3 +986,30 @@ $borders: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
   transform-origin: top right;
   transform: rotate(-90deg) translateY(-100%);
 }
+
+
+//VERTICAL
+.vertical-center, .vertical-middle {
+  vertical-align: middle;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.vertical-bottom {
+  vertical-align: bottom;
+}
+.vertical-sub {
+  vertical-align: sub;
+}
+.vertical-super {
+  vertical-align: super;
+}
+.vertical-baseline {
+  vertical-align: baseline;
+}
+.vertical-text-top {
+  vertical-align: text-top;
+}
+.vertical-text-bottom {
+  vertical-align: text-bottom;
+}

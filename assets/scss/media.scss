@@ -186,6 +186,19 @@
 }
 
 
+@media (min-width: $desktop-breakpoint) {
+  .md-object-contain {
+    -o-object-fit: contain;
+       object-fit: contain !important;
+  }
+  
+  .md-object-cover {
+    -o-object-fit: cover;
+       object-fit: cover !important;
+  }
+}
+
+
 //VIDEO
 
 
@@ -209,13 +222,14 @@
 
 .icon-badge {
   &::before {
-    background-color: $light;
     content: attr(data-icon);
     position: absolute;
+    z-index: 1;
     top: -2px;
     right: -6px;
     border-radius: 3rem;
     font-size: 22%;
+    background-color: $light;
     color: $body;
     padding: 2px 4px 1.5px 4px;
   }
@@ -223,28 +237,28 @@
 
 .icon-badge-primary {
   &::before {
-    background-color: $primary;
     content: attr(data-icon);
     position: absolute;
     top: -2px;
     right: -6px;
     border-radius: $btn-radius;
     font-size: 22%;
-    color: white;
+    background-color: $primary;
+    color: $white;
     padding: 2px 4px 1.5px 4px;
   }
 }
 
 .icon-badge-orange {
   &::before {
-    background-color: $orange;
     content: attr(data-icon);
     position: absolute;
     top: -2px;
     right: -6px;
     border-radius: $btn-radius;
     font-size: 22%;
-    color: white;
+    background-color: $orange;
+    color: $white;
     padding: 2px 4px 1.5px 4px;
   }
 }
@@ -275,7 +289,52 @@
 }
 
 
+
 //TOOLTIP
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: default; //help;
+  .tooltip-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 1.5rem;
+    visibility: hidden;
+    background-color: $primary;
+    color: $light;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: normal;
+    border-radius: $btn-radius;
+    padding: .7rem .5rem;
+    min-height: 2rem;
+    width: 130%;
+    display: block;
+    min-width: 160px;
+    max-width: 240px;
+    text-decoration: none;
+  
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    transform: perspective(1px) translate(-50%, -5px);
+
+    &::before {
+      overflow: hidden;
+      content:"";
+      width: 0;
+      height: 0;
+      line-height: 0;
+      border-top: 5px solid $primary;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: transparent;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 *[data-tooltip] {
   position: relative;
   display: inline-block;
@@ -327,6 +386,7 @@
   padding: .7rem .5rem;
   min-height: 2rem;
   width: 130%;
+  display: block;
   min-width: 160px;
   max-width: 240px;
   text-decoration: none;

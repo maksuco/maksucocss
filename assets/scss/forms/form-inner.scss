@@ -18,7 +18,7 @@
       opacity: 0.8;
     }
     &:not(:placeholder-shown) ~ label {
-      color: $form-light;
+      color: $form-label;
     }
     &:focus {
       outline: none;
@@ -37,7 +37,7 @@
     font-size: .7rem;
     line-height: 1;
     text-transform: uppercase;
-    color: $form-light;
+    color: $form-label;
     background: $form-bg;
     .btn {
       border: none !important;
@@ -100,7 +100,7 @@
     font-size: .7rem;
     line-height: 1;
     text-transform: uppercase;
-    color: $form-light;
+    color: $form-label;
     background-color: $form-bg;
     &::after {
       font-family: "Font Awesome 5 Pro"; font-weight: 900; content: "\f078";

@@ -136,6 +136,31 @@
     }
   }
 
+  .btn-outline-#{$name} {
+    color: $color;
+    background-color: transparent;
+    border-color: $color;
+    border-width: 1px;
+    &:hover {
+      background-color: $color;
+      @if $name == 'light' or $name == 'white' {
+        color: $body;
+      } @else {
+        color: $white;
+      }
+      @if $name == 'dark' or $name == 'black' {
+        background: lighten($color, 6%);
+        border-color: lighten($color, 6%);
+      } @else {
+        background: darken($color, 8%);
+        border-color: darken($color, 8%);
+      }
+    }
+    &:disabled{
+      opacity: .7;
+    }
+  }
+
   .hover-btn-#{$name} {
     &:hover {
       background: $color;

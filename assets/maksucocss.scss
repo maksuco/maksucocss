@@ -1,4 +1,4 @@
-@import 'scss/variables';
+@import "scss/variables";
 
 //BOOTSTRAP GRID
 @import "bootstrap/scss/_functions";
@@ -11,28 +11,28 @@
 
 //MaksucoCSS
 //@import 'reset';
-@import 'scss/grid';
-@import 'scss/animations';
-@import 'scss/forms';
-@import 'scss/tables';
-@import 'scss/buttons';
-@import 'scss/badges';
-@import 'scss/modals';
-@import 'scss/media';
-@import 'scss/styles';
-@import 'scss/colors';
-@import 'scss/charts';
-@import 'scss/boxes';
-@import 'scss/tabs';
-@import 'scss/helpers';
-@import 'scss/nav';
-@import 'scss/dropdowns';
-@import 'scss/docs';
-@import 'scss/code';
-@import 'scss/masonry';
-@import 'scss/text';
-@import 'scss/pagination';
-
+@import "scss/grid";
+@import "scss/animations";
+@import "scss/forms";
+@import "scss/tables";
+@import "scss/buttons";
+@import "scss/badges";
+@import "scss/modals";
+@import "scss/media";
+@import "scss/styles";
+@import "scss/colors";
+@import "scss/charts";
+@import "scss/boxes";
+@import "scss/tabs";
+@import "scss/helpers";
+@import "scss/nav";
+@import "scss/dropdowns";
+@import "scss/docs";
+@import "scss/code";
+@import "scss/masonry";
+@import "scss/text";
+@import "scss/pagination";
+@import "scss/packages";
 
 /* purgecss start ignore */
 /* purgecss end ignore */

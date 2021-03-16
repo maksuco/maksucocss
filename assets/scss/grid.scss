@@ -115,6 +115,8 @@ ol, ul {
 
 
 //DISPLAY
+.visible { visibility: visible;}
+.invisible { visibility: hidden; }
 .hidden { display: none !important; }
 .inline       { display: inline !important; }
 .inline-block { display: inline-block !important; }
@@ -131,6 +133,8 @@ ol, ul {
   clear: both;
 }
 @media (max-width: $desktop-breakpoint) {
+  .sm-visible { visibility: visible;}
+  .sm-invisible { visibility: hidden; }
   .sm-hidden { display: none !important; }
   .sm-inline       { display: inline !important; }
   .sm-inline-block { display: inline-block !important; }
@@ -145,6 +149,8 @@ ol, ul {
   }
 }
 @media (min-width: $desktop-breakpoint) {
+  .md-visible { visibility: visible;}
+  .md-invisible { visibility: hidden; }
   .md-hidden { display: none !important; }
   .md-inline       { display: inline !important; }
   .md-inline-block { display: inline-block !important; }
@@ -298,26 +304,58 @@ ol, ul {
 
 .justify-start {
   -webkit-box-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .justify-end {
   -webkit-box-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .justify-center {
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .justify-between {
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-items-center {
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .md-justify-start {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+  .md-justify-center {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .md-justify-end {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+  }
+  .md-justify-between {
+     justify-content: space-between;
+  }
+  .md-justify-around {
+    justify-content: space-around;
+  }
+  .md-justify-evenly {
+    justify-content: space-evenly;
+  }
 }
 
 .content-center {
@@ -338,22 +376,6 @@ ol, ul {
 
 .content-around {
   align-content: space-around;
-}
-
-
-@media (min-width: $desktop-breakpoint) {
-  .md-items-center {
-    -webkit-box-align: center;
-            align-items: center;
-  }
-  .md-justify-start {
-    -webkit-box-pack: start;
-            justify-content: flex-start;
-  }
-  .md-justify-center {
-    -webkit-box-pack: center;
-            justify-content: center;
-  }
 }
 
 
