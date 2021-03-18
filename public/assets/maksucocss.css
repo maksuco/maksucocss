@@ -6000,7 +6000,7 @@ ol, ul {
   .form-basic-select:after {
     content: ' ';
     position: absolute;
-    top: 2.8rem;
+    top: 55%;
     right: 20px;
     pointer-events: none;
     opacity: 0.4;
@@ -6211,7 +6211,7 @@ ol, ul {
   .form-muted-select:after {
     content: ' ';
     position: absolute;
-    top: 2.8rem;
+    top: 55%;
     right: 20px;
     pointer-events: none;
     opacity: 0.4;
