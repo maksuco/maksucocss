@@ -82,14 +82,16 @@
     padding-bottom: 1rem;
   }
   &:after {
-    content:"\f078";   
-    font-family: "Font Awesome 5 Pro";
-  	font-size: 1rem;
-  	position: absolute;
-  	bottom: 15%;
-  	right: 20px;
-  	color: $form-text;
+    content: ' ';
+    position: absolute;
+    top: 2.8rem;
+    right: 20px;
     pointer-events: none;
     opacity: 0.4;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    height: 10px;
+    width: 10px;
+    transform: rotate(135deg);
   }
 }

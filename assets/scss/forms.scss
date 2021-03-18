@@ -197,14 +197,14 @@ input[type=number]::-webkit-outer-spin-button {
     outline: none !important;
     //font-weight: $font-weight-regular;
   }
-  &:not(:focus){
+  &:not(:focus) {
     font-weight: $font-weight-bold;
 
   }
   &* {
     font-weight: $font-weight-regular;
   }
-  &>option{
+  &>option {
     font-size: .9rem;
     font-weight: $font-weight-regular;
   }

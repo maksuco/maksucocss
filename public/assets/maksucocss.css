@@ -5998,15 +5998,17 @@ ol, ul {
   .form-basic-select > option {
     padding-bottom: 1rem; }
   .form-basic-select:after {
-    content: "\f078";
-    font-family: "Font Awesome 5 Pro";
-    font-size: 1rem;
+    content: ' ';
     position: absolute;
-    bottom: 15%;
+    top: 2.8rem;
     right: 20px;
-    color: #151d2e;
     pointer-events: none;
-    opacity: 0.4; }
+    opacity: 0.4;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    height: 10px;
+    width: 10px;
+    transform: rotate(135deg); }
 
 .form-invisible {
   margin-bottom: .8rem;
@@ -6207,15 +6209,17 @@ ol, ul {
   .form-muted-select > option {
     padding-bottom: 1rem; }
   .form-muted-select:after {
-    content: "\f078";
-    font-family: "Font Awesome 5 Pro";
-    font-size: 1.1rem;
+    content: ' ';
     position: absolute;
-    bottom: 15%;
+    top: 2.8rem;
     right: 20px;
-    color: #151d2e;
     pointer-events: none;
-    opacity: 0.4; }
+    opacity: 0.4;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    height: 10px;
+    width: 10px;
+    transform: rotate(135deg); }
 
 .custom-control-label::before {
   background-color: #edf2f8 !important; }
@@ -6298,13 +6302,16 @@ ol, ul {
     color: #384e7b;
     background-color: #ffffff; }
     .form-inner-select label::after {
-      font-family: "Font Awesome 5 Pro";
-      font-weight: 900;
-      content: "\f078";
+      content: ' ';
+      display: inline-block;
       pointer-events: none;
-      margin-left: 6px;
       opacity: 0.5;
-      font-size: .5rem; }
+      border-style: solid;
+      border-width: 1px 1px 0 0;
+      height: 8px;
+      width: 8px;
+      margin-left: .5rem;
+      transform: rotate(135deg); }
 
 .form-inner.required::after, .form-inner-select.required::after {
   content: "*";
