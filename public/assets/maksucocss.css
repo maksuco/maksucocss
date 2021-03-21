@@ -5932,6 +5932,64 @@ ol, ul {
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); } }
 
+.form-none, .form-none-select {
+  position: relative;
+  margin-bottom: .8rem; }
+  .form-none label, .form-none-select label {
+    color: #384e7b;
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    font-weight: 400;
+    letter-spacing: 0.3; }
+
+.form-none input, .form-none textarea, .form-none select {
+  width: 100%;
+  display: block;
+  outline: none;
+  color: #151d2e;
+  background-color: #ffffff;
+  border: 1px solid #455f97;
+  border-radius: 0.2rem;
+  padding: 12px 14px;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+  .form-none input:focus, .form-none textarea:focus, .form-none select:focus {
+    border-color: #3B2098; }
+
+.form-none select {
+  line-height: 1.5rem;
+  height: 3rem; }
+
+.form-none input::placeholder, .form-none textarea::placeholder {
+  color: #A0AEC0; }
+
+.form-none input {
+  max-width: 600px; }
+
+.form-none-select {
+  max-width: 600px; }
+  .form-none-select select {
+    width: auto;
+    display: block;
+    outline: none;
+    color: #151d2e;
+    background-color: #ffffff;
+    border: 1px solid #455f97;
+    border-radius: 0.2rem;
+    padding: 0.6rem 1.3rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    .form-none-select select::-ms-expand {
+      display: none; }
+    .form-none-select select:focus {
+      outline: none; }
+    .form-none-select select > option {
+      color: #edf2f8 !important; }
+  .form-none-select > option {
+    padding-bottom: 1rem; }
+
 .form-basic, .form-basic-select {
   position: relative;
   margin-bottom: .8rem; }
@@ -8546,6 +8604,11 @@ hr, .hr {
 .hover-color-blue:hover {
   color: #4299E1 !important; }
 
+.hover-color-blue-all:hover {
+  color: #4299E1 !important; }
+  .hover-color-blue-all:hover h1, .hover-color-blue-all:hover h2, .hover-color-blue-all:hover h3, .hover-color-blue-all:hover h4, .hover-color-blue-all:hover h5, .hover-color-blue-all:hover h6, .hover-color-blue-all:hover p, .hover-color-blue-all:hover a, .hover-color-blue-all:hover small {
+    color: #4299E1; }
+
 .color-blue-o {
   color: rgba(66, 153, 225, 0.3); }
 
@@ -8713,6 +8776,11 @@ hr, .hr {
 
 .hover-color-indigo:hover {
   color: #667EEA !important; }
+
+.hover-color-indigo-all:hover {
+  color: #667EEA !important; }
+  .hover-color-indigo-all:hover h1, .hover-color-indigo-all:hover h2, .hover-color-indigo-all:hover h3, .hover-color-indigo-all:hover h4, .hover-color-indigo-all:hover h5, .hover-color-indigo-all:hover h6, .hover-color-indigo-all:hover p, .hover-color-indigo-all:hover a, .hover-color-indigo-all:hover small {
+    color: #667EEA; }
 
 .color-indigo-o {
   color: rgba(102, 126, 234, 0.3); }
@@ -8882,6 +8950,11 @@ hr, .hr {
 .hover-color-purple:hover {
   color: #9F7AEA !important; }
 
+.hover-color-purple-all:hover {
+  color: #9F7AEA !important; }
+  .hover-color-purple-all:hover h1, .hover-color-purple-all:hover h2, .hover-color-purple-all:hover h3, .hover-color-purple-all:hover h4, .hover-color-purple-all:hover h5, .hover-color-purple-all:hover h6, .hover-color-purple-all:hover p, .hover-color-purple-all:hover a, .hover-color-purple-all:hover small {
+    color: #9F7AEA; }
+
 .color-purple-o {
   color: rgba(159, 122, 234, 0.3); }
 
@@ -9049,6 +9122,11 @@ hr, .hr {
 
 .hover-color-pink:hover {
   color: #ffc0cb !important; }
+
+.hover-color-pink-all:hover {
+  color: #ffc0cb !important; }
+  .hover-color-pink-all:hover h1, .hover-color-pink-all:hover h2, .hover-color-pink-all:hover h3, .hover-color-pink-all:hover h4, .hover-color-pink-all:hover h5, .hover-color-pink-all:hover h6, .hover-color-pink-all:hover p, .hover-color-pink-all:hover a, .hover-color-pink-all:hover small {
+    color: #ffc0cb; }
 
 .color-pink-o {
   color: rgba(255, 192, 203, 0.3); }
@@ -9218,6 +9296,11 @@ hr, .hr {
 .hover-color-red:hover {
   color: #ff2400 !important; }
 
+.hover-color-red-all:hover {
+  color: #ff2400 !important; }
+  .hover-color-red-all:hover h1, .hover-color-red-all:hover h2, .hover-color-red-all:hover h3, .hover-color-red-all:hover h4, .hover-color-red-all:hover h5, .hover-color-red-all:hover h6, .hover-color-red-all:hover p, .hover-color-red-all:hover a, .hover-color-red-all:hover small {
+    color: #ff2400; }
+
 .color-red-o {
   color: rgba(255, 36, 0, 0.3); }
 
@@ -9385,6 +9468,11 @@ hr, .hr {
 
 .hover-color-orange:hover {
   color: #ff8800 !important; }
+
+.hover-color-orange-all:hover {
+  color: #ff8800 !important; }
+  .hover-color-orange-all:hover h1, .hover-color-orange-all:hover h2, .hover-color-orange-all:hover h3, .hover-color-orange-all:hover h4, .hover-color-orange-all:hover h5, .hover-color-orange-all:hover h6, .hover-color-orange-all:hover p, .hover-color-orange-all:hover a, .hover-color-orange-all:hover small {
+    color: #ff8800; }
 
 .color-orange-o {
   color: rgba(255, 136, 0, 0.3); }
@@ -9554,6 +9642,11 @@ hr, .hr {
 .hover-color-yellow:hover {
   color: #ffeb04 !important; }
 
+.hover-color-yellow-all:hover {
+  color: #ffeb04 !important; }
+  .hover-color-yellow-all:hover h1, .hover-color-yellow-all:hover h2, .hover-color-yellow-all:hover h3, .hover-color-yellow-all:hover h4, .hover-color-yellow-all:hover h5, .hover-color-yellow-all:hover h6, .hover-color-yellow-all:hover p, .hover-color-yellow-all:hover a, .hover-color-yellow-all:hover small {
+    color: #ffeb04; }
+
 .color-yellow-o {
   color: rgba(255, 235, 4, 0.3); }
 
@@ -9721,6 +9814,11 @@ hr, .hr {
 
 .hover-color-green:hover {
   color: #1da139 !important; }
+
+.hover-color-green-all:hover {
+  color: #1da139 !important; }
+  .hover-color-green-all:hover h1, .hover-color-green-all:hover h2, .hover-color-green-all:hover h3, .hover-color-green-all:hover h4, .hover-color-green-all:hover h5, .hover-color-green-all:hover h6, .hover-color-green-all:hover p, .hover-color-green-all:hover a, .hover-color-green-all:hover small {
+    color: #1da139; }
 
 .color-green-o {
   color: rgba(29, 161, 57, 0.3); }
@@ -9890,6 +9988,11 @@ hr, .hr {
 .hover-color-teal:hover {
   color: #38B2AC !important; }
 
+.hover-color-teal-all:hover {
+  color: #38B2AC !important; }
+  .hover-color-teal-all:hover h1, .hover-color-teal-all:hover h2, .hover-color-teal-all:hover h3, .hover-color-teal-all:hover h4, .hover-color-teal-all:hover h5, .hover-color-teal-all:hover h6, .hover-color-teal-all:hover p, .hover-color-teal-all:hover a, .hover-color-teal-all:hover small {
+    color: #38B2AC; }
+
 .color-teal-o {
   color: rgba(56, 178, 172, 0.3); }
 
@@ -10057,6 +10160,11 @@ hr, .hr {
 
 .hover-color-cyan:hover {
   color: #17a2b8 !important; }
+
+.hover-color-cyan-all:hover {
+  color: #17a2b8 !important; }
+  .hover-color-cyan-all:hover h1, .hover-color-cyan-all:hover h2, .hover-color-cyan-all:hover h3, .hover-color-cyan-all:hover h4, .hover-color-cyan-all:hover h5, .hover-color-cyan-all:hover h6, .hover-color-cyan-all:hover p, .hover-color-cyan-all:hover a, .hover-color-cyan-all:hover small {
+    color: #17a2b8; }
 
 .color-cyan-o {
   color: rgba(23, 162, 184, 0.3); }
@@ -10226,6 +10334,11 @@ hr, .hr {
 .hover-color-white:hover {
   color: #ffffff !important; }
 
+.hover-color-white-all:hover {
+  color: #ffffff !important; }
+  .hover-color-white-all:hover h1, .hover-color-white-all:hover h2, .hover-color-white-all:hover h3, .hover-color-white-all:hover h4, .hover-color-white-all:hover h5, .hover-color-white-all:hover h6, .hover-color-white-all:hover p, .hover-color-white-all:hover a, .hover-color-white-all:hover small {
+    color: #ffffff; }
+
 .color-white-o {
   color: rgba(255, 255, 255, 0.3); }
 
@@ -10393,6 +10506,11 @@ hr, .hr {
 
 .hover-color-gray:hover {
   color: #A0AEC0 !important; }
+
+.hover-color-gray-all:hover {
+  color: #A0AEC0 !important; }
+  .hover-color-gray-all:hover h1, .hover-color-gray-all:hover h2, .hover-color-gray-all:hover h3, .hover-color-gray-all:hover h4, .hover-color-gray-all:hover h5, .hover-color-gray-all:hover h6, .hover-color-gray-all:hover p, .hover-color-gray-all:hover a, .hover-color-gray-all:hover small {
+    color: #A0AEC0; }
 
 .color-gray-o {
   color: rgba(160, 174, 192, 0.3); }
@@ -10562,6 +10680,11 @@ hr, .hr {
 .hover-color-gray-dark:hover {
   color: #343a40 !important; }
 
+.hover-color-gray-dark-all:hover {
+  color: #343a40 !important; }
+  .hover-color-gray-dark-all:hover h1, .hover-color-gray-dark-all:hover h2, .hover-color-gray-dark-all:hover h3, .hover-color-gray-dark-all:hover h4, .hover-color-gray-dark-all:hover h5, .hover-color-gray-dark-all:hover h6, .hover-color-gray-dark-all:hover p, .hover-color-gray-dark-all:hover a, .hover-color-gray-dark-all:hover small {
+    color: #343a40; }
+
 .color-gray-dark-o {
   color: rgba(52, 58, 64, 0.3); }
 
@@ -10729,6 +10852,11 @@ hr, .hr {
 
 .hover-color-primary:hover {
   color: #3B2098 !important; }
+
+.hover-color-primary-all:hover {
+  color: #3B2098 !important; }
+  .hover-color-primary-all:hover h1, .hover-color-primary-all:hover h2, .hover-color-primary-all:hover h3, .hover-color-primary-all:hover h4, .hover-color-primary-all:hover h5, .hover-color-primary-all:hover h6, .hover-color-primary-all:hover p, .hover-color-primary-all:hover a, .hover-color-primary-all:hover small {
+    color: #3B2098; }
 
 .color-primary-o {
   color: rgba(59, 32, 152, 0.3); }
@@ -10898,6 +11026,11 @@ hr, .hr {
 .hover-color-secondary:hover {
   color: #112741 !important; }
 
+.hover-color-secondary-all:hover {
+  color: #112741 !important; }
+  .hover-color-secondary-all:hover h1, .hover-color-secondary-all:hover h2, .hover-color-secondary-all:hover h3, .hover-color-secondary-all:hover h4, .hover-color-secondary-all:hover h5, .hover-color-secondary-all:hover h6, .hover-color-secondary-all:hover p, .hover-color-secondary-all:hover a, .hover-color-secondary-all:hover small {
+    color: #112741; }
+
 .color-secondary-o {
   color: rgba(17, 39, 65, 0.3); }
 
@@ -11065,6 +11198,11 @@ hr, .hr {
 
 .hover-color-dark:hover {
   color: #151d2e !important; }
+
+.hover-color-dark-all:hover {
+  color: #151d2e !important; }
+  .hover-color-dark-all:hover h1, .hover-color-dark-all:hover h2, .hover-color-dark-all:hover h3, .hover-color-dark-all:hover h4, .hover-color-dark-all:hover h5, .hover-color-dark-all:hover h6, .hover-color-dark-all:hover p, .hover-color-dark-all:hover a, .hover-color-dark-all:hover small {
+    color: #151d2e; }
 
 .color-dark-o {
   color: rgba(21, 29, 46, 0.3); }
@@ -11234,6 +11372,11 @@ hr, .hr {
 .hover-color-light:hover {
   color: #edf2f8 !important; }
 
+.hover-color-light-all:hover {
+  color: #edf2f8 !important; }
+  .hover-color-light-all:hover h1, .hover-color-light-all:hover h2, .hover-color-light-all:hover h3, .hover-color-light-all:hover h4, .hover-color-light-all:hover h5, .hover-color-light-all:hover h6, .hover-color-light-all:hover p, .hover-color-light-all:hover a, .hover-color-light-all:hover small {
+    color: #edf2f8; }
+
 .color-light-o {
   color: rgba(237, 242, 248, 0.3); }
 
@@ -11401,6 +11544,11 @@ hr, .hr {
 
 .hover-color-black:hover {
   color: #010102 !important; }
+
+.hover-color-black-all:hover {
+  color: #010102 !important; }
+  .hover-color-black-all:hover h1, .hover-color-black-all:hover h2, .hover-color-black-all:hover h3, .hover-color-black-all:hover h4, .hover-color-black-all:hover h5, .hover-color-black-all:hover h6, .hover-color-black-all:hover p, .hover-color-black-all:hover a, .hover-color-black-all:hover small {
+    color: #010102; }
 
 .color-black-o {
   color: rgba(1, 1, 2, 0.3); }

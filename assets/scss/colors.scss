@@ -117,6 +117,16 @@
       color: $color !important;
     }
   }
+  //all content
+  .hover-color-#{$name}-all {
+    &:hover {
+      color: $color !important;
+      h1, h2, h3, h4, h5, h6, p, a, small {
+        color: $color;
+      }
+    }
+  }
+
 
   .color-#{$name}-o {
     color: rgba($color, .3);
