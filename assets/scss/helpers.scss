@@ -812,7 +812,7 @@ $borders: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 
 //OUTLINE
 
-.outline-0 {
+.outline-0, .outline-none {
   outline:0 !important;
   &:focus {
     outline:0 !important;
