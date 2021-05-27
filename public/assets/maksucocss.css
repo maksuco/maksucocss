@@ -7784,9 +7784,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #4299E1;
   border-color: #4299E1; }
-  .badge-blue:hover {
-    background: #2286d8;
-    border-color: #2286d8; }
   .badge-blue:disabled {
     opacity: .7; }
 
@@ -7798,9 +7795,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #667EEA;
   border-color: #667EEA; }
-  .badge-indigo:hover {
-    background: #4260e5;
-    border-color: #4260e5; }
   .badge-indigo:disabled {
     opacity: .7; }
 
@@ -7812,9 +7806,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #9F7AEA;
   border-color: #9F7AEA; }
-  .badge-purple:hover {
-    background: #8657e4;
-    border-color: #8657e4; }
   .badge-purple:disabled {
     opacity: .7; }
 
@@ -7826,9 +7817,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #ffc0cb;
   border-color: #ffc0cb; }
-  .badge-pink:hover {
-    background: #ff97a9;
-    border-color: #ff97a9; }
   .badge-pink:disabled {
     opacity: .7; }
 
@@ -7840,9 +7828,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #ff2400;
   border-color: #ff2400; }
-  .badge-red:hover {
-    background: #d61e00;
-    border-color: #d61e00; }
   .badge-red:disabled {
     opacity: .7; }
 
@@ -7854,9 +7839,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #ff8800;
   border-color: #ff8800; }
-  .badge-orange:hover {
-    background: #d67200;
-    border-color: #d67200; }
   .badge-orange:disabled {
     opacity: .7; }
 
@@ -7868,9 +7850,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #ffeb04;
   border-color: #ffeb04; }
-  .badge-yellow:hover {
-    background: #dac900;
-    border-color: #dac900; }
   .badge-yellow:disabled {
     opacity: .7; }
 
@@ -7882,9 +7861,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #1da139;
   border-color: #1da139; }
-  .badge-green:hover {
-    background: #177e2d;
-    border-color: #177e2d; }
   .badge-green:disabled {
     opacity: .7; }
 
@@ -7896,9 +7872,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #38B2AC;
   border-color: #38B2AC; }
-  .badge-teal:hover {
-    background: #2e938e;
-    border-color: #2e938e; }
   .badge-teal:disabled {
     opacity: .7; }
 
@@ -7910,9 +7883,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #17a2b8;
   border-color: #17a2b8; }
-  .badge-cyan:hover {
-    background: #128294;
-    border-color: #128294; }
   .badge-cyan:disabled {
     opacity: .7; }
 
@@ -7924,9 +7894,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #151d2e;
   background-color: #ffffff;
   border-color: #ffffff; }
-  .badge-white:hover {
-    background: #ebebeb;
-    border-color: #ebebeb; }
   .badge-white:disabled {
     opacity: .7; }
 
@@ -7938,9 +7905,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #A0AEC0;
   border-color: #A0AEC0; }
-  .badge-gray:hover {
-    background: #8799b0;
-    border-color: #8799b0; }
   .badge-gray:disabled {
     opacity: .7; }
 
@@ -7952,9 +7916,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #343a40;
   border-color: #343a40; }
-  .badge-gray-dark:hover {
-    background: #222629;
-    border-color: #222629; }
   .badge-gray-dark:disabled {
     opacity: .7; }
 
@@ -7966,9 +7927,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #3B2098;
   border-color: #3B2098; }
-  .badge-primary:hover {
-    background: #2e1976;
-    border-color: #2e1976; }
   .badge-primary:disabled {
     opacity: .7; }
 
@@ -7980,9 +7938,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #112741;
   border-color: #112741; }
-  .badge-secondary:hover {
-    background: #091421;
-    border-color: #091421; }
   .badge-secondary:disabled {
     opacity: .7; }
 
@@ -7994,9 +7949,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #151d2e;
   border-color: #151d2e; }
-  .badge-dark:hover {
-    background: #222f4a;
-    border-color: #222f4a; }
   .badge-dark:disabled {
     opacity: .7; }
 
@@ -8008,9 +7960,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #151d2e;
   background-color: #edf2f8;
   border-color: #edf2f8; }
-  .badge-light:hover {
-    background: #d0dded;
-    border-color: #d0dded; }
   .badge-light:disabled {
     opacity: .7; }
 
@@ -8022,9 +7971,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #010102;
   border-color: #010102; }
-  .badge-black:hover {
-    background: #0f0f1d;
-    border-color: #0f0f1d; }
   .badge-black:disabled {
     opacity: .7; }
 
@@ -8036,9 +7982,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #ffffff;
   background-color: #151d2e;
   border-color: #151d2e; }
-  .badge-body:hover {
-    background: #080b12;
-    border-color: #080b12; }
   .badge-body:disabled {
     opacity: .7; }
 

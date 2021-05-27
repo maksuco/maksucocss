@@ -106,15 +106,15 @@
     }
     background-color: $color;
     border-color: $color;
-    &:hover {
-      @if $name == 'dark' or $name == 'black' {
-        background: lighten($color, 8%);
-        border-color: lighten($color, 8%);
-      } @else {
-        background: darken($color, 8%);
-        border-color: darken($color, 8%);
-      }
-    }
+    // &:hover {
+    //   @if $name == 'dark' or $name == 'black' {
+    //     background: lighten($color, 8%);
+    //     border-color: lighten($color, 8%);
+    //   } @else {
+    //     background: darken($color, 8%);
+    //     border-color: darken($color, 8%);
+    //   }
+    // }
     &:disabled{
       opacity: .7;
     }
