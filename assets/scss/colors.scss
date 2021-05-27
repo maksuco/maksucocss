@@ -161,6 +161,7 @@
   .bg-#{$name}-900 {
     background-color: darken($color, 30%) !important;
   }
+  //HOVER
   .hover-bg-#{$name} {
     &:hover {
       background-color: $color !important;
@@ -212,7 +213,147 @@
     }
   }
 
+  //FOCUS
+  .focus-bg-#{$name}, .focus-bg-#{$name}-500 {
+    &:focus-within {
+      background-color: $color !important;
+    }
+  }
+  .focus-bg-#{$name}-100 {
+    &:focus-within {
+      background-color: lighten($color, $lighten100) !important;
+    }
+  }
+  .focus-bg-#{$name}-200 {
+    &:focus-within {
+      background-color: lighten($color, $lighten200) !important;
+    }
+  }
+  .focus-bg-#{$name}-300 {
+    &:focus-within {
+      background-color: lighten($color, $lighten300) !important;
+    }
+  }
+  .focus-bg-#{$name}-400 {
+    &:focus-within {
+      background-color: lighten($color, $lighten400) !important;
+    }
+  }
+  .focus-bg-#{$name}-600 {
+    &:focus-within {
+      background-color: darken($color, 5%) !important;
+    }
+  }
+  .focus-bg-#{$name}-700 {
+    &:focus-within {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+  .focus-bg-#{$name}-800 {
+    &:focus-within {
+      background-color: darken($color, 15%) !important;
+    }
+  }
+  .focus-bg-#{$name}-900 {
+    &:focus-within {
+      background-color: darken($color, 30%) !important;
+    }
+  }
+//FOCUS INSIDE G
+  .focus-inside-bg-#{$name}, .focus-inside-bg-#{$name}-500 {
+    &:focus {
+      background-color: $color !important;
+    }
+  }
+  .focus-inside-bg-#{$name}-100 {
+    &:focus {
+      background-color: lighten($color, $lighten100) !important;
+    }
+  }
+  .focus-inside-bg-#{$name}-200 {
+    &:focus {
+      background-color: lighten($color, $lighten200) !important;
+    }
+  }
+  .focus-inside-bg-#{$name}-300 {
+    &:focus {
+      background-color: lighten($color, $lighten300) !important;
+    }
+  }
+  .focus-inside-bg-#{$name}-400 {
+    &:focus {
+      background-color: lighten($color, $lighten400) !important;
+    }
+  }
+  .focus-inside-bg-#{$name}-600 {
+    &:focus {
+      background-color: darken($color, 5%) !important;
+    }
+  }
+  .focus-inside-bg-#{$name}-700 {
+    &:focus {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+  .focus-inside-bg-#{$name}-800 {
+    &:focus {
+      background-color: darken($color, 15%) !important;
+    }
+  }
+  .focus-inside-bg-#{$name}-900 {
+    &:focus {
+      background-color: darken($color, 30%) !important;
+    }
+  }
 
+//FOCUS INSIDE COLOR
+.focus-inside-color-#{$name}, .focus--inside-color-#{$name}-500 {
+  &:focus {
+    color: $color !important;
+  }
+}
+.focus-inside-color-#{$name}-100 {
+  &:focus {
+    color: lighten($color, $lighten100);
+  }
+}
+.focus-inside-color-#{$name}-200 {
+  &:focus {
+    color: lighten($color, $lighten200);
+  }
+}
+.focus-inside-color-#{$name}-300 {
+  &:focus {
+    color: lighten($color, $lighten300);
+  }
+}
+.focus-inside-color-#{$name}-400 {
+  &:focus {
+    color: lighten($color, $lighten400);
+  }
+}
+.focus-inside-color-#{$name}-600 {
+  &:focus {
+    color: darken($color, 5%);
+  }
+}
+.focus-inside-color-#{$name}-700 {
+  &:focus {
+    color: darken($color, 10%);
+  }
+}
+.focus-inside-color-#{$name}-800 {
+  &:focus {
+    color: darken($color, 15%);
+  }
+}
+.focus-inside-color-#{$name}-900 {
+  &:focus {
+    color: darken($color, 30%);
+  }
+}
+
+//OPACITY
   .bg-#{$name}-o {
     background-color: rgba($color, .5);
   }

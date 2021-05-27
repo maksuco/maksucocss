@@ -41,6 +41,60 @@
   padding: ($btn-padding-y *.3) ($btn-padding-x * .6);
 }
 
+@media (min-width: $desktop-breakpoint) {
+  .md-badge-xs {
+    font-size: 55%;
+    padding: ($btn-padding-y * .1) ($btn-padding-x * .2);
+  }
+  
+  .md-badge-sm {
+    font-size: 60%;
+    padding: ($btn-padding-y * .3) ($btn-padding-x * .35);
+  }
+  
+  .md-badge-lg {
+    margin-top: -.5%;
+    font-size: 90%;
+  }
+  
+  .md-badge-xl {
+    margin-top: -.5%;
+    font-size: 100%;
+    padding: ($btn-padding-y *.3) ($btn-padding-x * .6);
+  }
+  .md-badge-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .sm-badge-xs {
+    font-size: 55%;
+    padding: ($btn-padding-y * .1) ($btn-padding-x * .2);
+  }
+  
+  .sm-badge-sm {
+    font-size: 60%;
+    padding: ($btn-padding-y * .3) ($btn-padding-x * .35);
+  }
+  
+  .sm-badge-lg {
+    margin-top: -.5%;
+    font-size: 90%;
+  }
+  
+  .sm-badge-xl {
+    margin-top: -.5%;
+    font-size: 100%;
+    padding: ($btn-padding-y *.3) ($btn-padding-x * .6);
+  }
+  .sm-badge-block {
+    display: block;
+    width: 100%;
+  }
+}
+
 
 @each $name, $color in $colors {
 

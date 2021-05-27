@@ -148,6 +148,30 @@ $paddings: p, pl, pr, pt, pb, py, px;
   margin-bottom: 100vh !important;
 }
 
+@media (max-width: $desktop-breakpoint) {
+  .sm-my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  .sm-mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .sm-ml-auto {
+    margin-left: auto !important;
+  }
+  .sm-mr-auto {
+    margin-right: auto !important;
+  }
+  
+  .sm-mt-screen {
+    margin-top: 100vh !important;
+  }
+  .sm-mb-screen {
+    margin-bottom: 100vh !important;
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .md-my-auto {
     margin-top: auto !important;

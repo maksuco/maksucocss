@@ -1298,6 +1298,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/assets/scss/forms/form-elegant.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/forms/form-elegant.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/assets/scss/forms/form-inner-floating.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1573,6 +1586,28 @@
 		"oA": 0,
 		"oAP": "/LICENSE",
 		"oF": 0
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/public/assets/backend.css": {
 		"aP": 1,

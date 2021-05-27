@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: .9rem;
+    //padding: .9rem; //good for text but doesn't allow 0
+    height: 100%;
     color: $light;
     text-align: center;
     font-size: 90%;

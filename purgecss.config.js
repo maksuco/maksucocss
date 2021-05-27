@@ -1,7 +1,8 @@
 module.exports = {
   content: ['*.html', '*.blade', '*.blade.php', '*.php', '*/*.php', '*.js', '*/*.js','frontend-min.js'],
   css: ['maksucocss.css'],
-  whitelist: ['body','fa','fab','fas','fal','far','fa-instagram'],
-  //whitelistPatterns: [/fa-/]
+  //whitelist: ['flickity-viewport','flickity-slider','flickity-page-dots','flickity-button','flickity-prev-next-button','x-clock','v-clock'],
+  whitelist: ['x-clock','v-clock'],
+  whitelistPatterns: [/flickity-/]
 }
-//purgecss --config ./purgecss.config.js --out css
+//purgecss --config ./purgecss.config.js --output css
