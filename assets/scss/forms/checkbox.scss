@@ -231,8 +231,8 @@
     border: 0;
     overflow: hidden;
     &:checked + label {
-      background-color: $primary;
-      border-color: $primary;
+      background-color: $primary !important;
+      border-color: $primary !important;
       color: white !important;
       box-shadow: none;
     }
@@ -282,6 +282,7 @@
     }
     &:hover {
       cursor: pointer;
+      background-color: lighten($primary, 60);
     }
     
   }
